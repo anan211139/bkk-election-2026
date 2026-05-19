@@ -67,18 +67,6 @@ export function Council(props: PropsType) {
                 <p className="typo-b3 font-bold">{council.career}</p>
               </div>
             </div>
-            <Link href={`https://www.google.com/search?q=${council.name}`}>
-              <a rel="noopener noreferrer" target="_blank">
-                <div className="flex font-body text-[9pt] border border-[#dadada] p-[10px] w-fit hover:cursor-pointer">
-                  <img
-                    src={searchIcon.src}
-                    alt="search"
-                    className="w-[14px] h-[14px]"
-                  />
-                  <span className="ml-[8px]">ค้นประวัติใน Google</span>
-                </div>
-              </a>
-            </Link>
           </div>
         </div>
       </div>

@@ -38,12 +38,15 @@ interface MapCandidate {
   fullname: string;
   party: string;
   image: string;
+  age: number;
+  education: string;
+  sex: string;
+  career: string;
 }
 
 interface OriginalCandidatePage {
   pageProps: {
     candidate: IGovernor & {
-      answersList?: IGovernor['answers'];
       disqualified: null | string;
     };
   };
@@ -84,7 +87,6 @@ const createGovernorFallback = (candidate: MapCandidate): IGovernor => ({
   contact_email: null,
   contact_instagram: null,
   contact_line: null,
-  answers: [],
   disqualified: DISQUALIFIED_GOVERNOR[candidate.number] || '',
 });
 
@@ -92,7 +94,6 @@ const normalizeOriginalGovernor = (page: OriginalCandidatePage): IGovernor => {
   const candidate = page.pageProps.candidate;
   return {
     ...candidate,
-    answers: candidate.answers || candidate.answersList || [],
     disqualified: candidate.disqualified || '',
   };
 };
@@ -158,11 +159,10 @@ export const fallbackCouncilList = Object.entries(
       number: candidate.number,
       district,
       party: candidate.party,
-      age: 0,
-      sex: '',
-      education: '',
-      career: '',
-      disqualified: '',
+      age: candidate.age,
+      sex: candidate.sex,
+      education: candidate.education,
+      career: candidate.career
     } as ICouncil;
   })
   .sort((a, b) => a.district.localeCompare(b.district) || a.number - b.number);

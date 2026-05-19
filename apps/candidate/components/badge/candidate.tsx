@@ -27,8 +27,6 @@ export function CandidateBadge({
     }
   };
 
-  const showVideo = showPlayButton && candidate.answers.length > 0;
-
   return (
     <div className="h-full max-w-[250px] w-[43vw] md:w-[15vw] relative">
       {candidate.disqualified && (
@@ -54,13 +52,6 @@ export function CandidateBadge({
                 alt="candidate"
                 className={`w-[43vw] h-[43vw] md:w-[15vw] md:h-[15vw] max-w-[250px] max-h-[250px] hover:border border-white`}
               />
-              {showVideo && (
-                <img
-                  src={playGrayWhite.src}
-                  alt="play"
-                  className="w-[30px] h-[30px] absolute bottom-[10px] right-[10px] pointer-events-none"
-                />
-              )}
             </div>
             <div className="flex text-white mt-[10px]">
               <div
