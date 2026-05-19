@@ -1,11 +1,5 @@
 [
   {
-    "name": "socialtrend",
-    "path": "/socialtrend",
-    "port": 3002,
-    "output": "/dist"
-  },
-  {
     "name": "candidate",
     "path": "/candidate",
     "port": 3003,
@@ -15,9 +9,25 @@
   {
     "name": "map",
     "path": "/map",
+    "routes": ["/map/map"],
+    "assets": [
+      "/map/@vite",
+      "/map/@fs",
+      "/map/src",
+      "/map/node_modules",
+      "/map/assets",
+      "/map/data",
+      "/map/images"
+    ],
     "port": 3004,
     "output": "/dist",
     "excludeFromProduction": false
   },
-  { "name": "landing", "path": "/", "port": 3001, "output": "/build" }
+  {
+    "name": "landing",
+    "path": "/",
+    "routes": ["/about"],
+    "port": 3001,
+    "output": "/build"
+  }
 ]

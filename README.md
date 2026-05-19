@@ -16,8 +16,7 @@ Monorepo for Bangkok Election 2022 projects managed by [Turborepo](https://turbo
 
 - **`/apps`** Framework independent subprojects
 
-  - `/landing` Landing page ([SvelteKit](https://kit.svelte.dev/))
-  - `/socialtrend` Social trend analysis ([NuxtJS](https://nuxtjs.org/))
+  - `/landing` About page ([SvelteKit](https://kit.svelte.dev/))
   - `/candidate` Candidates information ([NextJS](https://nextjs.org/))
   - `/map` Election map of results in the past and realtime ([Preact](https://preactjs.ir/))
 
@@ -27,7 +26,7 @@ Monorepo for Bangkok Election 2022 projects managed by [Turborepo](https://turbo
 - **`/packages`** Shared packages used by apps
   - `/tailwind` [Tailwind](https://tailwindcss.com/) config and base stylesheet with shared design guideline
   - `/ui` Shared web component written by [SolidJS](https://www.solidjs.com/) and typography stylesheet from design system
-  - `/wordpress-api` TypeScript library help fetching data from [The Standard](https://thestandard.co) and [WeVis](https://wevis.info) Wordpress REST API
+  - `/wordpress-api` TypeScript library used by the candidate app for Wordpress REST API data
 - **`/static`** Static directory serving at `/static` eg. favicon and fonts
 
 ## ⚙️ Setup
@@ -50,17 +49,16 @@ yarn run dev
 
 Each app will be started in development server in difference port
 
-- **Landing**: http://localhost:3001
-- **Social trend**: http://localhost:3002/socialtrend
+- **About**: http://localhost:3001/about
 - **Candidate**: http://localhost:3003/candidate
-- **Map**: http://localhost:3004/map
+- **Map**: http://localhost:3004/map/map
 
 While **moderator** will run at http://localhost:3000 and
 
-- Forward `/` request to **Landing** dev server
-- Forward `/socialtrend` request to **Social trend** dev server
+- Forward `/about` request to **About** dev server
 - Forward `/candidate` request to **Candidate** dev server
-- Forward `/map` request to **Map** dev server
+- Forward `/map/map` request to **Map** dev server
+- Forward `/map/assets`, `/map/data`, and `/map/images` requests to **Map** dev server
 - Serve files in `/static` at `/static`
 - Serve UI package built output at `/ui`
 
@@ -69,7 +67,6 @@ Each project can also be run individually (with moderator proxy and ui package)
 ```
 yarn run dev:landing
 yarn run dev:candidate
-yarn run dev:socialtrend
 yarn run dev:map
 ```
 

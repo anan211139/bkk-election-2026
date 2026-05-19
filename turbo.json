@@ -8,8 +8,7 @@
       "dependsOn": [
         "landing#dev",
         "ui#dev",
-        "moderator#dev",
-        "wordpress-api#dev"
+        "moderator#dev"
       ],
       "cache": false
     },
@@ -20,10 +19,6 @@
         "moderator#dev",
         "wordpress-api#dev"
       ],
-      "cache": false
-    },
-    "dev:socialtrend": {
-      "dependsOn": ["socialtrend#dev", "ui#dev", "moderator#dev"],
       "cache": false
     },
     "dev:map": {

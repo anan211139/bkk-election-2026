@@ -11,7 +11,7 @@ const Navbar: Component = () => {
   return (
     <div class="ui-relative ui-p-2 md:ui-p-3 ui-flex ui-flex-col md:ui-flex-row ui-bg-white">
       <div class="ui-flex-1 ui-flex ui-flex-row ui-justify-between">
-        <a href="/" class="ui-my-auto">
+        <a href="/map/map" class="ui-my-auto">
           <img
             src="/static/images/bkkelection-logo.svg"
             alt="BKK Election 2022"
@@ -64,9 +64,8 @@ const Navbar: Component = () => {
               class="ui-h-full ui-py-1 ui-px-2 typo-u4 hover:ui-underline ui-flex ui-items-center ui-justify-end"
               classList={{
                 'ui-font-bold':
-                  href === '/'
-                    ? location.pathname === '/'
-                    : location.pathname.includes(href),
+                  location.pathname === href ||
+                  (href === '/map/map' && location.pathname.startsWith('/map/')),
               }}
             >
               {label}

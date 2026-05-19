@@ -151,7 +151,4 @@
 	.paragraph {
 		@apply space-y-8;
 	}
-	.sub-paragraph {
-		@apply space-y-2;
-	}
 </style>

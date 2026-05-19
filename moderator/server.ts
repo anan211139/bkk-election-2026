@@ -11,11 +11,22 @@ export const STATIC_PATH = '/static/';
 const app = express();
 var server = http.createServer(app);
 
+type AppConfig = {
+  name: string;
+  path: string;
+  routes?: string[];
+  assets?: string[];
+  port: number;
+  output: string;
+  websocket?: string;
+  excludeFromProduction?: boolean;
+};
+
 assets.forEach(({ source, serve }) => {
   app.use(serve, express.static(join(__dirname, '..', source)));
 });
 
-apps.forEach(({ path, port, websocket }) => {
+(apps as AppConfig[]).forEach(({ path, routes, assets: assetPaths = [], port, websocket }) => {
   if (websocket) {
     const wsPropxy = httpProxy.createProxyServer({
       target: `ws://localhost:${port}`,
@@ -29,9 +40,22 @@ apps.forEach(({ path, port, websocket }) => {
     target: `http://localhost:${port}`,
   });
 
-  app.get(`${path}*`, (req, res) => {
-    webProxy.web(req, res, {});
+  const proxiedPaths = [...(routes || []), ...assetPaths.map((assetPath) => `${assetPath}*`)];
+  const paths = proxiedPaths.length ? proxiedPaths : [`${path}*`];
+
+  paths.forEach((proxiedPath) => {
+    app.get(proxiedPath, (req, res) => {
+      webProxy.web(req, res, {});
+    });
   });
+});
+
+app.get('/', (_req, res) => {
+  res.redirect('/map/map');
+});
+
+app.use((_req, res) => {
+  res.status(404).send('Not found');
 });
 
 server.listen(PORT);
@@ -42,6 +66,10 @@ assets.forEach(({ name, serve }) => {
   console.log(`> [Asset] ${name} - http://localhost:${PORT}${serve}`);
 });
 
-apps.forEach(({ name, path }) => {
-  console.log(`> [App] ${name} - http://localhost:${PORT}${path}`);
+(apps as AppConfig[]).forEach(({ name, routes, path }) => {
+  const displayRoutes = routes?.length ? routes : [path];
+
+  displayRoutes.forEach((route) => {
+    console.log(`> [App] ${name} - http://localhost:${PORT}${route}`);
+  });
 });
