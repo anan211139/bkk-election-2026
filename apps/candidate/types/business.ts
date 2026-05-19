@@ -1,12 +1,3 @@
-export interface ICandidate {
-  id: number;
-  name: string;
-  team: string;
-  image_url: string;
-  video_url: string;
-  is_highlight: boolean;
-}
-
 export interface IDistrict {
   display: string;
   value: string;
@@ -84,7 +75,6 @@ export interface IGovernor {
   profile_pic: null | string;
   cover_pic: null | string;
   nickname: null | string;
-  highlight: null | true;
   policy_url: null | string;
   age: null | number;
   basic_education: null | string;

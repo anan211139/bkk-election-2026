@@ -1,14 +1,12 @@
 import type { GetStaticProps } from 'next';
 import arrow from '../static/icons/arrow.svg';
 import arrowW from '../static/icons/arrow-white.svg';
-import { HighLightCandidateList } from '../components/wrapper/highlightCandidateList';
-import { QuestionOverview } from '../components/card/questionOverview';
 import { CandidateList } from '../components/wrapper/candidateList';
 import { useEffect, useRef, useState } from 'react';
 import { CouncilList } from '../components/wrapper/councilList';
 import { ShareList } from '../components/wrapper/shareList';
 import { getNocoApi } from '../utils/nocoHandler';
-import { ICouncil, IGovernor, IQuestion } from '../types/business';
+import { ICouncil, IGovernor } from '../types/business';
 import Metadata from '../components/metadata';
 import { useRouter } from 'next/router';
 import candidateHome from '../static/images/og/candidates_home.png';
@@ -16,14 +14,12 @@ import candidateHome from '../static/images/og/candidates_home.png';
 interface PropsType {
   candidateList: IGovernor[];
   councilList: ICouncil[];
-  questionList: IQuestion[];
   isComingSoon: boolean;
   errMsg: string;
 }
 const Home = ({
   candidateList,
   councilList,
-  questionList,
   isComingSoon,
   errMsg,
 }: PropsType) => {
@@ -101,10 +97,6 @@ const Home = ({
     });
   };
 
-  const getCandidateHighlight = () => {
-    return candidateList.filter((candidate) => candidate.highlight);
-  };
-
   const onSelectDistrict = () => {
     jumpToCounSection();
   };
@@ -177,22 +169,6 @@ const Home = ({
         </div>
         {/* break */}
         <div ref={candidateRef}>
-          <div className="bg-black">
-            <div
-              id="highlight-candidate-list"
-              className=" m-auto flex flex-col pb-[126px] pt-[20px]"
-            >
-              <HighLightCandidateList
-                candidateList={getCandidateHighlight()}
-                isComingSoon={isComingSoon}
-              />
-              <QuestionOverview
-                isComingSoon={isComingSoon}
-                questionList={questionList}
-                candidateList={getCandidateHighlight()}
-              />
-            </div>
-          </div>
           <div className="bg-[#333333]">
             <div
               id="candidate-list"
@@ -225,14 +201,12 @@ export const getStaticProps: GetStaticProps<PropsType> = async (context) => {
   const isComingSoon = process.env.COMING_SOON === 'true' ? true : false;
   let candidateList = [] as IGovernor[];
   let councilList = [] as ICouncil[];
-  let questionList = [] as IQuestion[];
   const [candidateRes, errMsg1] = await getNocoApi('governors');
   if (errMsg1) {
     return {
       props: {
         candidateList,
         councilList,
-        questionList,
         isComingSoon,
         errMsg: errMsg1,
       },
@@ -246,7 +220,6 @@ export const getStaticProps: GetStaticProps<PropsType> = async (context) => {
       props: {
         candidateList,
         councilList,
-        questionList,
         isComingSoon,
         errMsg: errMsg2,
       },
@@ -255,25 +228,10 @@ export const getStaticProps: GetStaticProps<PropsType> = async (context) => {
   councilList = councilRes.data.list as ICouncil[];
   councilList.sort((a, b) => (a.number > b.number ? 1 : -1));
 
-  const [questionRes, errMsg3] = await getNocoApi('questions');
-  if (errMsg3) {
-    return {
-      props: {
-        candidateList,
-        councilList,
-        questionList,
-        isComingSoon,
-        errMsg: errMsg3,
-      },
-    };
-  }
-  questionList = questionRes.data.list as IQuestion[];
-
   return {
     props: {
       candidateList,
       councilList,
-      questionList,
       isComingSoon,
       errMsg: '',
     },
