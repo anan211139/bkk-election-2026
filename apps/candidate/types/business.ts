@@ -3,14 +3,6 @@ export interface IDistrict {
   value: string;
 }
 
-export interface IQuestionCategory {
-  exclusive: IQuestion[];
-  policy: IQuestion[];
-  opinion: IQuestion[];
-  lifestyle: IQuestion[];
-  special: IQuestion[];
-}
-
 export interface ICouncil {
   name: string;
   number: number;
@@ -21,40 +13,6 @@ export interface ICouncil {
   education: string;
   career: string;
   disqualified: string;
-}
-
-interface IQuestionAnswerList {
-  id: number;
-  text: string;
-}
-export interface IQuestion {
-  id: number;
-  type: string;
-  number: number;
-  question: string;
-  description: string;
-  nc_xeff__candidates_id: number;
-  answers: IQuestionAnswerList[];
-  special_for_governor: {
-    id: number;
-    name: string;
-  };
-}
-
-export interface IAnswer {
-  id: number;
-  nc_xeff__candidates_id: number;
-  nc_xeff__questions_id: number;
-  text: string;
-  url: string;
-  governor: {
-    id: number;
-    name: string;
-  };
-  question: {
-    id: number;
-    question: string;
-  };
 }
 
 export interface IGovernor {
@@ -85,11 +43,5 @@ export interface IGovernor {
   contact_email: null | string;
   contact_instagram: null | string;
   contact_line: null | string;
-  answers: IGovernorAnswer[];
   disqualified: string;
-}
-
-interface IGovernorAnswer {
-  id: number;
-  text: string;
 }

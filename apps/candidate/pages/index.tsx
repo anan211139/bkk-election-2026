@@ -4,7 +4,6 @@ import arrowW from '../static/icons/arrow-white.svg';
 import { CandidateList } from '../components/wrapper/candidateList';
 import { useEffect, useRef, useState } from 'react';
 import { CouncilList } from '../components/wrapper/councilList';
-import { ShareList } from '../components/wrapper/shareList';
 import { getNocoApi } from '../utils/nocoHandler';
 import { ICouncil, IGovernor } from '../types/business';
 import Metadata from '../components/metadata';
@@ -188,9 +187,6 @@ const Home = ({
             councils={councilList}
             onSelectDistrict={onSelectDistrict}
           />
-        </div>
-        <div className="m-auto mb-[20px] text-center">
-          <ShareList url={pageUrl} />
         </div>
         <ui-footer />
       </div>

@@ -56,7 +56,6 @@ export default function Governor({
       <CandidatePage
         isComingSoon={isComingSoon}
         governor={candidate}
-        newsList={news}
         pageUrl={pageUrl}
       />
     </div>

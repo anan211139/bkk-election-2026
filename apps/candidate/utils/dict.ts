@@ -1,11 +1,5 @@
 const img = require('../public/images/candidates/1/1.webp');
 
-export const QuestionTypeDict = {
-  policy: 'ด้านนโยบาย',
-  opiniion: 'ด้านวิศัยทัศน์',
-  lifestyle: 'ด้าน Lifestyle',
-  special: 'ด้านเคลียใจ',
-};
 
 export const getCouncilImage = (districtId: number, councilNumber: number) => {
   try {
@@ -25,14 +19,6 @@ export const getCandidateOG = (id: number): string => {
   }
 };
 
-export const getQuestionOG = (type: string, id: number): string => {
-  try {
-    const img = require(`../static/images/og/question/question_${type}_${id}.png`);
-    return img.default.src as string;
-  } catch {
-    return '';
-  }
-};
 
 export type numberListType =
   | 1

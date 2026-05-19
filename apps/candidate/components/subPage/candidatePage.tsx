@@ -3,20 +3,16 @@ import arrow from '../../static/icons/arrow.svg';
 import { BackToHomeCard } from '../card/backToHome';
 import { CandidateInfoCard } from '../card/candidateInfo';
 import { Post } from 'wordpress-api';
-import { NewsList } from '../wrapper/newsList';
-import { ShareList } from '../wrapper/shareList';
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import md from 'markdown-it';
 interface PropsType {
   governor: IGovernor;
-  newsList: Post[];
   pageUrl: string;
   isComingSoon: boolean;
 }
 export function CandidatePage({
   governor,
-  newsList,
   pageUrl,
   isComingSoon,
 }: PropsType) {
@@ -103,14 +99,6 @@ export function CandidatePage({
           </p>
         </div>
       )}
-      {newsList.length > 0 && (
-        <div>
-          <NewsList newsList={newsList} />
-        </div>
-      )}
-      <div className="m-auto mb-[20px] mt-[70px] text-center">
-        <ShareList url={pageUrl} />
-      </div>
       <BackToHomeCard hash={hashFrom} />
     </div>
   );
