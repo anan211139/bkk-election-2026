@@ -7,6 +7,7 @@ import { getNocoApi } from '../utils/nocoHandler';
 import Metadata from '../components/metadata';
 import { getCandidateOG } from '../utils/dict';
 import { useRouter } from 'next/router';
+import { fallbackGovernorList, getFallbackGovernor } from '../utils/fallbackData';
 
 interface PropsType {
   candidate: IGovernor;
@@ -64,9 +65,7 @@ export default function Governor({
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const [res, errMsg] = await getNocoApi('governors');
-  if (!errMsg) {
-  }
-  const data = res.data.list as IGovernor[];
+  const data = errMsg ? fallbackGovernorList : (res.data.list as IGovernor[]);
 
   const govList = data.filter((gov) => !gov.disqualified);
 
@@ -82,7 +81,10 @@ export const getStaticProps: GetStaticProps<PropsType> = async (context) => {
   const isComingSoon = process.env.COMING_SOON === 'true' ? true : false;
   const id = context.params?.id;
   const [candidateRes, errMsg] = await getNocoApi(`governors/${id}`);
-  if (errMsg) {
+  const candidate = errMsg
+    ? getFallbackGovernor(id)
+    : (candidateRes.data as IGovernor);
+  if (!candidate) {
     return {
       redirect: {
         permanent: true,
@@ -90,7 +92,6 @@ export const getStaticProps: GetStaticProps<PropsType> = async (context) => {
       },
     };
   }
-  const candidate = candidateRes.data as IGovernor;
   if (candidate.disqualified) {
     return {
       redirect: {

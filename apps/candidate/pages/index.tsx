@@ -10,6 +10,7 @@ import { ICouncil, IGovernor } from '../types/business';
 import Metadata from '../components/metadata';
 import { useRouter } from 'next/router';
 import candidateHome from '../static/images/og/candidates_home.png';
+import { fallbackCouncilList, fallbackGovernorList } from '../utils/fallbackData';
 
 interface PropsType {
   candidateList: IGovernor[];
@@ -203,29 +204,17 @@ export const getStaticProps: GetStaticProps<PropsType> = async (context) => {
   let councilList = [] as ICouncil[];
   const [candidateRes, errMsg1] = await getNocoApi('governors');
   if (errMsg1) {
-    return {
-      props: {
-        candidateList,
-        councilList,
-        isComingSoon,
-        errMsg: errMsg1,
-      },
-    };
+    candidateList = fallbackGovernorList;
+  } else {
+    candidateList = candidateRes.data.list as IGovernor[];
   }
-  candidateList = candidateRes.data.list as IGovernor[];
 
   const [councilRes, errMsg2] = await getNocoApi('councils?limit=1000');
   if (errMsg2) {
-    return {
-      props: {
-        candidateList,
-        councilList,
-        isComingSoon,
-        errMsg: errMsg2,
-      },
-    };
+    councilList = fallbackCouncilList;
+  } else {
+    councilList = councilRes.data.list as ICouncil[];
   }
-  councilList = councilRes.data.list as ICouncil[];
   councilList.sort((a, b) => (a.number > b.number ? 1 : -1));
 
   return {
@@ -233,7 +222,7 @@ export const getStaticProps: GetStaticProps<PropsType> = async (context) => {
       candidateList,
       councilList,
       isComingSoon,
-      errMsg: '',
+      errMsg: errMsg1 || errMsg2 || '',
     },
   };
 };
