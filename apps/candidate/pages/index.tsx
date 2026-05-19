@@ -8,7 +8,6 @@ import { getNocoApi } from '../utils/nocoHandler';
 import { ICouncil, IGovernor } from '../types/business';
 import Metadata from '../components/metadata';
 import { useRouter } from 'next/router';
-import candidateHome from '../static/images/og/candidates_home.png';
 import { fallbackCouncilList, fallbackGovernorList } from '../utils/fallbackData';
 
 interface PropsType {
@@ -105,7 +104,7 @@ const Home = ({
     <>
       <Metadata
         title="ข้อมูลผู้สมัครผู้ว่าฯ กทม. และ ส.ก. 2565"
-        imageSrc={candidateHome.src}
+        imageSrc="/candidate/static/images/og/01-1.jpg"
       />
       <div>
         <div className="flex flex-col items-center text-center px-[20px] mt-12">

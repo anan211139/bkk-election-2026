@@ -38,10 +38,10 @@ interface MapCandidate {
   fullname: string;
   party: string;
   image: string;
-  age: number;
-  education: string;
-  sex: string;
-  career: string;
+  age?: number;
+  education?: string;
+  sex?: string;
+  career?: string;
 }
 
 interface OriginalCandidatePage {
@@ -53,11 +53,22 @@ interface OriginalCandidatePage {
 }
 
 const NAME_TITLE_REGEX = /^(นาย|นางสาว|นาง)\s*/;
+const CANDIDATE_BASE_PATH = '/candidate';
 const DISQUALIFIED_GOVERNOR: Record<number, string> = {
-  27: 'ถูก กกต. สั่งถอนชื่อออกจากบัญชีรายชื่อผู้สมัครผู้ว่าฯ กทม. แต่ยังมีสิทธิ์อุทธรณ์คำวินิจฉัยของ กกต. ได้ (ข้อมูล ณ วันที่ 12 พ.ค. 2565)',
+  28: 'ถูก กกต. สั่งถอนชื่อออกจากบัญชีรายชื่อผู้สมัครผู้ว่าฯ กทม. แต่ยังมีสิทธิ์อุทธรณ์คำวินิจฉัยของ กกต. ได้ (ข้อมูล ณ วันที่ 12 พ.ค. 2565)',
 };
 
 const cleanName = (name: string) => name.replace(NAME_TITLE_REGEX, '').trim();
+const getLocalCandidateImage = (
+  candidateNumber: number | null,
+  imageType: 1 | 2 | 3
+) => {
+  if (!candidateNumber) {
+    return null;
+  }
+  const paddedNumber = candidateNumber.toString().padStart(2, '0');
+  return `${CANDIDATE_BASE_PATH}/static/images/og/${paddedNumber}-${imageType}.jpg`;
+};
 
 const createGovernorFallback = (candidate: MapCandidate): IGovernor => ({
   id: Number(candidate.id),
@@ -74,8 +85,8 @@ const createGovernorFallback = (candidate: MapCandidate): IGovernor => ({
   contact_web: null,
   contact_facebook: null,
   contact_twitter: null,
-  profile_pic: candidate.image,
-  cover_pic: candidate.image,
+  profile_pic: getLocalCandidateImage(candidate.number, 2),
+  cover_pic: getLocalCandidateImage(candidate.number, 3),
   nickname: null,
   policy_url: null,
   age: null,
@@ -94,6 +105,9 @@ const normalizeOriginalGovernor = (page: OriginalCandidatePage): IGovernor => {
   const candidate = page.pageProps.candidate;
   return {
     ...candidate,
+    profile_pic:
+      getLocalCandidateImage(candidate.number, 2) || candidate.profile_pic,
+    cover_pic: getLocalCandidateImage(candidate.number, 3) || candidate.cover_pic,
     disqualified: candidate.disqualified || '',
   };
 };
@@ -134,7 +148,7 @@ const originalGovernorList = [
 );
 
 const mapGovernorList = Object.values(
-  governorCandidates as Record<string, MapCandidate>
+  governorCandidates as unknown as Record<string, MapCandidate>
 )
   .map(createGovernorFallback)
   .sort((a, b) => (a.number || 0) - (b.number || 0));
@@ -150,7 +164,7 @@ export const fallbackGovernorList = mapGovernorList
   .sort((a, b) => (a.number || 0) - (b.number || 0));
 
 export const fallbackCouncilList = Object.entries(
-  councilCandidates as Record<string, MapCandidate>
+  councilCandidates as unknown as Record<string, MapCandidate>
 )
   .map(([key, candidate]) => {
     const [district] = key.split('-');
@@ -159,10 +173,10 @@ export const fallbackCouncilList = Object.entries(
       number: candidate.number,
       district,
       party: candidate.party,
-      age: candidate.age,
-      sex: candidate.sex,
-      education: candidate.education,
-      career: candidate.career
+      age: candidate.age || 0,
+      sex: candidate.sex || '',
+      education: candidate.education || '',
+      career: candidate.career || '',
     } as ICouncil;
   })
   .sort((a, b) => a.district.localeCompare(b.district) || a.number - b.number);
