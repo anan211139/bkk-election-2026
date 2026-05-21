@@ -11,7 +11,6 @@ interface PresetToggleProps {
 const HeaderPresetToggle: FunctionComponent<PresetToggleProps> = ({ activeIndex, onChange }) => {
 	const preset = useContext(presetContext);
 	const config = useContext(configContext);
-	const [isDropdownOpen, setIsDropdownOpen] = useState<boolean>(false);
 	const [isDescriptionModalOpen, setIsDescriptionModalOpen] = useState<boolean>(false);
 
 	if (!config || !preset) return <></>;
@@ -43,48 +42,39 @@ const HeaderPresetToggle: FunctionComponent<PresetToggleProps> = ({ activeIndex,
 							)}
 						</>
 					)}
-					<button
-						className="px-1 bg-[#ccc] m-1 text-black rounded font-body text-[12px] xs:text-[14px] font-[600]"
-						onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+					<span
+						className="inline-flex items-center align-middle bg-[#ccc] m-1 p-[2px] rounded font-body text-[12px] xs:text-[14px] font-[600]"
+						aria-label="เลือกชุดข้อมูล"
 					>
-						เปลี่ยนชุดข้อมูล
-						<svg
-							width="14"
-							height="9"
-							viewBox="0 0 14 9"
-							fill="none"
-							className="inline-block transform transition-transform duration-150 ml-1"
-						>
-							<path d="M1 1L7 7L13 1" stroke="black" stroke-width="2" />
-						</svg>
-					</button>
+						{config.presetIndexes.map(({ shortname, electionDataUrl }, index) => {
+							const label = shortname.includes('ส.ก') ? 'สก.' : 'ผู้ว่า';
+							const isActive = index === activeIndex;
+
+							return (
+								<React.Fragment key={shortname}>
+									{index > 0 && <span className="px-1 text-black">|</span>}
+									<button
+										type="button"
+										disabled={!electionDataUrl}
+										aria-pressed={isActive}
+										onClick={() => {
+											if (electionDataUrl) onChange(index);
+										}}
+										className={`px-2 py-[1px] rounded-sm transition-colors duration-150 ${
+											isActive
+												? 'bg-black text-white'
+												: electionDataUrl
+												? 'text-black hover:bg-white'
+												: 'text-black opacity-40'
+										}`}
+									>
+										{label}
+									</button>
+								</React.Fragment>
+							);
+						})}
+					</span>
 				</p>
-			</div>
-			<div
-				className={`absolute max-w-[360px] m-auto inset-x-0 top-full flex-col rounded-sm border border-white bg-black z-10 overflow-hidden ${
-					isDropdownOpen ? 'flex' : 'hidden'
-				}`}
-			>
-				{config.presetIndexes.map(({ shortname, electionDataUrl }, index) => (
-					<button
-						key={shortname}
-						disabled={!electionDataUrl}
-						onClick={() => {
-							setIsDropdownOpen(false);
-							if (electionDataUrl) onChange(index);
-						}}
-						className={`typo-u4 px-3 py-2 rounded-sm h-fit m-[2px] flex flex-row ${
-							index === activeIndex
-								? 'bg-white text-black font-semibold'
-								: electionDataUrl
-								? 'hover:bg-white hover:text-black'
-								: 'opacity-40'
-						}`}
-					>
-						{config.presetIndexes[index].isLive && <LiveBadge />}
-						{shortname}
-					</button>
-				))}
 			</div>
 		</div>
 	);

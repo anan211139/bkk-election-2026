@@ -28,12 +28,18 @@ export interface Voting {
 	badVotes?: number;
 	noVotes?: number;
 	progress?: number;
+	pollingUnits?: PollingUnits;
 	result: Result[];
 }
 
 export interface Result {
 	candidateId: string;
 	count: number;
+}
+
+export interface PollingUnits {
+	total: number;
+	reported: number;
 }
 
 export enum ElectionDataType {

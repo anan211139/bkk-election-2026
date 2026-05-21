@@ -2,7 +2,7 @@ import React, { FunctionComponent, useContext, useState } from 'react';
 import Modal from './Modal';
 import partners from 'ui/src/data/partners.json';
 import { presetContext } from '../contexts/preset';
-import { ElectionDataType } from '../models/election';
+import CountingSummary from './CountingSummary';
 
 const Footer: FunctionComponent = () => {
 	const preset = useContext(presetContext);
@@ -10,61 +10,14 @@ const Footer: FunctionComponent = () => {
 
 	return (
 		<div className="bg-black text-white px-4 lg:px-12 fixed bottom-0 left-0 right-0 z-10 lg:relative">
-			<div class="flex flex-row justify-end border-t border-gray py-3 lg:py-6">
-				<div className="flex-1 flex flex-row font-body typo-footer space-x-4 lg:space-x-8">
-					{preset?.electionData.type === ElectionDataType.Live &&
-						preset?.electionData.total.progress !== undefined && (
-							<div className="flex flex-row lg:flex-col space-y-1">
-								<div>
-									จำนวนหน่วย ที่อาสาฯ <br className="lg:hidden" />
-									เริ่มนับแล้ว {preset?.electionData.total.progress.toFixed(1)}%
-								</div>
-								<div className="lg:h-2 lg:w-56 bg-white bg-opacity-30 w-1 h-7 order-first lg:order-none relative mr-2 counting-progress-xs">
-									<div
-										className="absolute bg-white w-full bottom-0 lg:hidden"
-										style={{ height: `${preset?.electionData.total.progress}%` }}
-									>
-										{preset.electionData.type === ElectionDataType.Live && (
-											<div
-												className="absolute inset-0 opacity-20"
-												style={{ backgroundImage: `url(/map/images/strip-black.gif)` }}
-											/>
-										)}
-									</div>
-									<div
-										className="absolute bg-white h-full left-0 hidden lg:block"
-										style={{ width: `${preset?.electionData.total.progress}%` }}
-									>
-										{preset.electionData.type === ElectionDataType.Live && (
-											<div
-												className="absolute inset-0 opacity-20"
-												style={{ backgroundImage: `url(/map/images/strip-black.gif)` }}
-											/>
-										)}
-									</div>
-								</div>
-							</div>
-						)}
-					{preset?.electionData.lastUpdatedAt && (
-						<div>
-							<p>อัปเดตล่าสุด</p>
-							<p>
-								{new Date(preset?.electionData.lastUpdatedAt).toLocaleString('th-TH', {
-									dateStyle: 'short',
-									timeStyle: 'short'
-								})}
-							</p>
-						</div>
-					)}
-					{preset?.electionData.type === ElectionDataType.Live && (
-						<div>
-							<p>Powered by</p>
-							<p>
-								<a href="https://vive.co.th/#" target="_blank" className="underline">
-									Vive Digital
-								</a>
-							</p>
-						</div>
+			<div class="flex flex-row justify-end border-t border-gray py-3 lg:py-6 gap-4">
+				<div className="flex-1 min-w-0">
+					{preset?.electionData.total.progress !== undefined && (
+						<CountingSummary
+							votingData={preset.electionData.total}
+							lastUpdatedAt={preset.electionData.lastUpdatedAt}
+							compact
+						/>
 					)}
 				</div>
 
@@ -92,7 +45,7 @@ const Footer: FunctionComponent = () => {
 					</svg>
 				</button> */}
 
-				<div className="hidden lg:flex flex-row space-x-8 items-center">
+				<div className="hidden lg:flex flex-row space-x-8 items-center shrink-0">
 					<ui-sharer />
 					<div className="flex flex-row space-x-6">
 						{partners.map(({ name, logo, href }) => (

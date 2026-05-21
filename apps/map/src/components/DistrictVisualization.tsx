@@ -3,7 +3,7 @@ import { Visualization } from '../models/visualization';
 import { presetContext } from '../contexts/preset';
 import VisualizationToggle from './VisualizationToggle';
 import CandidateLegend from './CandidateLegend';
-import { District, ElectionDataType } from '../models/election';
+import { District } from '../models/election';
 import DistrictModal from './DistrictModal';
 import LazyloadContainer from './LazyloadContainer';
 
@@ -80,7 +80,6 @@ const DistrictVisualization: FunctionComponent<DistrictVisualizationProps> = ({
 							preset.electionData.districts.findIndex((d) => d.name === activeDistrict.name)
 						].voting
 					}
-					isLive={preset.electionData.type === ElectionDataType.Live}
 					onClose={() => setActiveDistrict(null)}
 				/>
 			)}
