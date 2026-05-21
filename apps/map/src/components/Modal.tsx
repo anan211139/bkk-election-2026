@@ -50,11 +50,11 @@ const Modal: FunctionComponent<ModalProps> = ({
 				)}
 
 				<div
-					className={`overflow-y-auto grow ${
+					className={`overflow-y-auto grow min-h-0 ${
 						imageUrl ? 'pt-0 pb-6 lg:py-6 lg:pl-4' : 'py-6'
 					} px-8 flex flex-col`}
 				>
-					<div className="flex flex-col mb-8">
+					<div className="flex flex-col mb-8 shrink-0">
 						<h5 className="typo-h5 flex-1">{title}</h5>
 						{subtitle && <p className="typo-u4">{subtitle}</p>}
 					</div>

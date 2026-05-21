@@ -22,19 +22,21 @@ const DistrictModal: FunctionComponent<DistrictModalProps> = ({
 
 	return (
 		<Modal
-			containerClassName="lg:absolute lg:z-10 lg:top-0 lg:left-0 lg:right-0 lg:bottom-0"
-			className="max-h-full max-w-[calc(100vw-2rem)] h-full w-full lg:absolute lg:z-10 lg:top-0 lg:left-0 lg:right-0 lg:bottom-0 !max-w-none"
+			className="max-h-[calc(100vh-2rem)] max-w-[calc(100vw-2rem)] h-[calc(100vh-2rem)] w-full lg:max-w-[calc(100vw-6rem)] lg:h-[calc(100vh-8rem)]"
 			title={`เขต${activeDistrict.name}`}
 			subtitle={`ผู้มีสิทธิ์เลือกตั้ง ${activeDistrict.voting.eligiblePopulation.toLocaleString()} คน`}
 			imageUrl={`/map/images/districts-attraction/${activeDistrict.name}.webp`}
 			onClose={onClose}
 		>
-			<CandidateOverviewList votingData={votingData} enableTopHighlight={false} />
+			<div className="min-h-[260px] flex-1 overflow-hidden">
+				<CandidateOverviewList votingData={votingData} enableTopHighlight={false} />
+			</div>
 			{votingData.progress !== undefined && (
-				<div class="border-t border-gray py-3 pb-0 mt-4">
+				<div class="border-t border-gray py-3 pb-0 mt-4 shrink-0">
 					<CountingSummary
 						votingData={votingData}
 						lastUpdatedAt={preset.electionData.lastUpdatedAt}
+						compact
 					/>
 				</div>
 			)}
