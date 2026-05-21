@@ -1,56 +1,99 @@
-import { writeFile, mkdir, rm, symlink } from 'fs/promises';
+import { writeFile, mkdir, rm, symlink, rename, readFile } from 'fs/promises';
 import { scheduleJob } from "node-schedule";
-import { ElectionData } from '../src/models/election';
+import { ElectionData, ElectionDataType } from '../src/models/election';
 import { fetchElectionData } from "./ers";
 import { ElectionDataFetcherType } from "./fetcher";
 
-const cron = '*/15 * * * * *';
-const outputPath = './output';
+const cron = '*/5 * * * *';
+const outputPath = process.env.CACHE_OUTPUT_PATH || './output';
+const useRemoteElectionData = process.env.FETCH_REMOTE_ELECTION_DATA === 'true';
 const outputFilename = 'election-data';
+const cachedGovernorOutputFilename = '65-governor-electiondata-cache';
+const cachedCouncilOutputFilename = '65-bmc-electiondata-cache';
 const ectOutputFilename = 'election-data-ect';
 const councilOutputFilename = 'election-data-council';
+const localGovernorSourcePath =
+  process.env.GOVERNOR_ELECTION_DATA_SOURCE || './public/data/65-electiondata-live-mock.json';
+const localCouncilSourcePath =
+  process.env.COUNCIL_ELECTION_DATA_SOURCE || './public/data/65-bmc-electiondata-live.json';
+
+type ElectionCacheTarget = {
+  filename: string;
+  fetcherType: ElectionDataFetcherType;
+  localSourcePath: string;
+};
 
 export function live() {
-  // scheduleJob(cron, async () => {
-  //   console.info('===================');
-  //   console.info('=== Attempt to fetch at ', new Date().toISOString());
-  //   try {
-  //     const filename = await writeElectionData();
-  //     console.info(`=== [SUCCEED] File has been written at ${filename}`);
-  //   } catch (e) {
-  //     console.error('=== [ERROR] ', e);
-  //   } finally {
-  //     console.info('===================');
-  //   }
-  // });
-
-  // scheduleJob(cron, async () => {
-  //   console.info('>>>>>>>>>>>>>>>>>>>');
-  //   console.info('>>> Attempt to fetch at ', new Date().toISOString());
-  //   try {
-  //     const filename = await writeCouncilMemberElectionData();
-  //     console.info(`>>> [SUCCEED] File has been written at ${filename}`);
-  //   } catch (e) {
-  //     console.error('>>> [ERROR] ', e);
-  //   } finally {
-  //     console.info('>>>>>>>>>>>>>>>>>>>');
-  //   }
-  // });
-
-  scheduleJob(cron, async () => {
-    console.info('^^^^^^^^^^^^^^^^^^^^');
-    console.info('^^^ Attempt to fetch at ', new Date().toISOString());
-    try {
-      const filename = await writeECTElectionData();
-      console.info(`^^^ [SUCCEED] File has been written at ${filename}`);
-    } catch (e) {
-      console.error('^^^ [ERROR] ', e);
-    } finally {
-      console.info('^^^^^^^^^^^^^^^^^^^^');
-    }
-  });
+  runCacheUpdate();
+  scheduleJob(cron, runCacheUpdate);
 
   console.info('data-fetch has been scheduled with ', cron);
+}
+
+async function runCacheUpdate() {
+  console.info('===================');
+  console.info('=== Attempt to update election cache at ', new Date().toISOString());
+  await Promise.all([
+    writeCachedElectionData({
+      filename: `${cachedGovernorOutputFilename}.json`,
+      fetcherType: ElectionDataFetcherType.LiveECTGovernor,
+      localSourcePath: localGovernorSourcePath,
+    }),
+    writeCachedElectionData({
+      filename: `${cachedCouncilOutputFilename}.json`,
+      fetcherType: ElectionDataFetcherType.LiveECTCouncilMember,
+      localSourcePath: localCouncilSourcePath,
+    }),
+  ]);
+  console.info('===================');
+}
+
+async function writeCachedElectionData({
+  filename,
+  fetcherType,
+  localSourcePath,
+}: ElectionCacheTarget) {
+  try {
+    const publicPath = `${outputPath}/${filename}`;
+    const currentData = await readElectionDataIfExists(publicPath);
+
+    if (currentData?.type === ElectionDataType.Completed) {
+      console.info(`=== [SKIP] ${filename} is already completed.`);
+      return publicPath;
+    }
+
+    const data = await getNextElectionData(fetcherType, localSourcePath);
+    data.lastUpdatedAt = new Date().toISOString();
+
+    await writeJsonAtomic(publicPath, data);
+    console.info(`=== [SUCCEED] Cache has been written at ${publicPath}`);
+    return publicPath;
+  } catch (e) {
+    console.error(`=== [ERROR] Fail to update ${filename}. Keeping previous cache.`, e);
+    return null;
+  }
+}
+
+async function getNextElectionData(
+  fetcherType: ElectionDataFetcherType,
+  localSourcePath: string
+): Promise<ElectionData> {
+  if (useRemoteElectionData) {
+    return fetchElectionData(fetcherType);
+  }
+  return readElectionData(localSourcePath);
+}
+
+async function readElectionData(path: string): Promise<ElectionData> {
+  return JSON.parse(await readFile(path, 'utf-8'));
+}
+
+async function readElectionDataIfExists(path: string): Promise<ElectionData | null> {
+  try {
+    return await readElectionData(path);
+  } catch (e) {
+    return null;
+  }
 }
 
 async function writeCouncilMemberElectionData() {
@@ -59,7 +102,7 @@ async function writeCouncilMemberElectionData() {
   data.lastUpdatedAt = now;
 
   const publicPath = `${outputPath}/${councilOutputFilename}.json`;
-  await writeFile(publicPath, JSON.stringify(data));
+  await writeJsonAtomic(publicPath, data);
   return publicPath;
 }
 
@@ -69,7 +112,7 @@ async function writeECTElectionData() {
   data.lastUpdatedAt = now;
 
   const publicPath = `${outputPath}/${ectOutputFilename}.json`;
-  await writeFile(publicPath, JSON.stringify(data));
+  await writeJsonAtomic(publicPath, data);
   return publicPath;
 }
 
@@ -85,7 +128,7 @@ async function writeElectionData() {
   if (!isLiveInProgress(data)) {
     console.info(`[NOT LIVE] progress = ${data.total.progress}. Writing directly to ${publicPath}`);
     await rmIfExists(publicPath);
-    await writeFile(publicPath, JSON.stringify(data));
+    await writeJsonAtomic(publicPath, data);
     return publicPath;
   }
 
@@ -100,6 +143,13 @@ async function writeElectionData() {
     console.error(`[ERROR] Fail to create a symlink at ${publicPath}: ${e}`);
   }
   return newFilePath;
+}
+
+async function writeJsonAtomic(path: string, data: ElectionData): Promise<void> {
+  await mkdirIfNotExists(outputPath);
+  const tempPath = `${path}.${process.pid}.${Date.now()}.tmp`;
+  await writeFile(tempPath, JSON.stringify(data));
+  await rename(tempPath, path);
 }
 
 function isLiveInProgress(data: ElectionData): boolean {
@@ -119,7 +169,7 @@ async function rmIfExists(path: string): Promise<void> {
 
 async function mkdirIfNotExists(path: string): Promise<void> {
   try {
-    await mkdir(path);
+    await mkdir(path, { recursive: true });
     console.log(`[INFO] ${path} is created.`);
   } catch (e) { }
 }

@@ -3,6 +3,8 @@ import { Preset } from '../contexts/preset';
 import { CandidateMap } from '../models/candidate';
 import { ElectionData, PresetIndex } from '../models/election';
 
+const candidateJsonCache = new Map<string, Promise<CandidateMap>>();
+
 export async function fetchConfig(): Promise<Config> {
 	return getJson<Config>(
 		(() => {
@@ -25,8 +27,8 @@ export async function fetchPreset({
 	...rest
 }: PresetIndex): Promise<Preset> {
 	const [electionData, candidateMap] = await Promise.all([
-		getJson<ElectionData>(electionDataUrl),
-		getJson<CandidateMap>(candidateDataUrl)
+		getJson<ElectionData>(electionDataUrl, 'no-cache'),
+		getCandidateMap(candidateDataUrl)
 	]);
 
 	electionData.districts.forEach(({ voting }) => voting.result.sort((a, z) => z.count - a.count));
@@ -38,7 +40,17 @@ export async function fetchPreset({
 	};
 }
 
-export async function getJson<T>(url: string): Promise<T> {
-	const response = await fetch(url);
+async function getCandidateMap(url: string): Promise<CandidateMap> {
+	if (!candidateJsonCache.has(url)) {
+		candidateJsonCache.set(url, getJson<CandidateMap>(url));
+	}
+	return candidateJsonCache.get(url) as Promise<CandidateMap>;
+}
+
+export async function getJson<T>(url: string, cache?: RequestCache): Promise<T> {
+	const response = await fetch(url, cache ? { cache } : undefined);
+	if (!response.ok) {
+		throw new Error(`Fail to fetch ${url}: ${response.status}`);
+	}
 	return response.json();
 }

@@ -6,10 +6,12 @@ import Dashboard from './components/dashboard';
 import Footer from './components/Footer';
 import { Config, configContext } from './contexts/config';
 import { Preset, presetContext } from './contexts/preset';
+import { ElectionDataType } from './models/election';
 import { fetchConfig, fetchPreset } from './utils/fetch';
 
 const DEFAULT_PRESET_INDEX = 0;
 // const CONFIG_REFRESH_INTERVAL = 60000;
+const MAX_REFRESH_JITTER_MS = 30000;
 
 const App: FunctionComponent = () => {
 	const [config, setConfig] = useState<Config | null>(null);
@@ -17,7 +19,6 @@ const App: FunctionComponent = () => {
 	const [configDefaultPresetIndex, setConfigDefaultPresetIndex] =
 		useState<number>(DEFAULT_PRESET_INDEX);
 	const [preset, setPreset] = useState<Preset | null>(null);
-	const [presetRefreshTimer, setPresetRefreshTimer] = useState<NodeJS.Timer | null>(null);
 	const [isNewPresetLoading, setIsNewPresetLoading] = useState(true);
 
 	useEffect(() => {
@@ -54,29 +55,48 @@ const App: FunctionComponent = () => {
 	useEffect(() => {
 		if (!config) return;
 
-		if (presetRefreshTimer) {
-			clearInterval(presetRefreshTimer);
-			setPresetRefreshTimer(null);
-		}
-
 		const presetIndex = config.presetIndexes[activePresetIndex];
 		const { refreshIntervalMs } = presetIndex;
+		let isCancelled = false;
+		let timer: ReturnType<typeof setTimeout> | null = null;
 
-		setIsNewPresetLoading(true);
+		const loadPreset = (showLoading: boolean) => {
+			if (showLoading) setIsNewPresetLoading(true);
+			return fetchPreset(presetIndex)
+				.then((newPreset) => {
+					if (!isCancelled) setPreset(newPreset);
+					return newPreset;
+				})
+				.catch((error) => {
+					console.error('Failed to fetch preset', error);
+					return null;
+				})
+				.finally(() => {
+					if (!isCancelled && showLoading) setIsNewPresetLoading(false);
+				});
+		};
 
-		fetchPreset(presetIndex).then((newPreset) => {
-			setPreset(newPreset);
-			setIsNewPresetLoading(false);
+		const scheduleRefresh = () => {
+			if (isCancelled || !refreshIntervalMs) return;
+			timer = setTimeout(() => {
+				if (isCancelled) return;
+				loadPreset(false).then((newPreset) => {
+					if (newPreset?.electionData.type !== ElectionDataType.Completed) {
+						scheduleRefresh();
+					}
+				});
+			}, getRefreshDelay(refreshIntervalMs));
+		};
+
+		loadPreset(true).then((newPreset) => {
+			if (newPreset?.electionData.type !== ElectionDataType.Completed) {
+				scheduleRefresh();
+			}
 		});
 
-		if (refreshIntervalMs) {
-			setPresetRefreshTimer(
-				setInterval(() => fetchPreset(presetIndex).then(setPreset), refreshIntervalMs)
-			);
-		}
-
 		return () => {
-			if (presetRefreshTimer) clearInterval(presetRefreshTimer);
+			isCancelled = true;
+			if (timer) clearTimeout(timer);
 		};
 	}, [config, activePresetIndex]);
 
@@ -106,5 +126,9 @@ const App: FunctionComponent = () => {
 		</div>
 	);
 };
+
+function getRefreshDelay(refreshIntervalMs: number): number {
+	return refreshIntervalMs + Math.floor(Math.random() * MAX_REFRESH_JITTER_MS);
+}
 
 export default App;
