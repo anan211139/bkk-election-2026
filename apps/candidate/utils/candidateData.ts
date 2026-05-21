@@ -1,5 +1,5 @@
-import governorCandidates from '../../map/public/data/65-governor-candidates.json';
-import councilCandidates from '../../map/public/data/65-bmc-candidates.json';
+import governorCandidates from '../data/65-governor-candidates.json';
+import councilCandidates from '../data/65-bmc-candidates.json';
 import candidate1 from '../data/original-candidates/1.json';
 import candidate2 from '../data/original-candidates/2.json';
 import candidate3 from '../data/original-candidates/3.json';
@@ -70,7 +70,7 @@ const getLocalCandidateImage = (
   return `${CANDIDATE_BASE_PATH}/static/images/og/${paddedNumber}-${imageType}.jpg`;
 };
 
-const createGovernorFallback = (candidate: MapCandidate): IGovernor => ({
+const createGovernorFromMapCandidate = (candidate: MapCandidate): IGovernor => ({
   id: Number(candidate.id),
   name: cleanName(candidate.fullname),
   number: candidate.number,
@@ -150,10 +150,10 @@ const originalGovernorList = [
 const mapGovernorList = Object.values(
   governorCandidates as unknown as Record<string, MapCandidate>
 )
-  .map(createGovernorFallback)
+  .map(createGovernorFromMapCandidate)
   .sort((a, b) => (a.number || 0) - (b.number || 0));
 
-export const fallbackGovernorList = mapGovernorList
+export const governorList = mapGovernorList
   .map((mapCandidate) => {
     return (
       originalGovernorList.find(
@@ -163,7 +163,7 @@ export const fallbackGovernorList = mapGovernorList
   })
   .sort((a, b) => (a.number || 0) - (b.number || 0));
 
-export const fallbackCouncilList = Object.entries(
+export const councilList = Object.entries(
   councilCandidates as unknown as Record<string, MapCandidate>
 )
   .map(([key, candidate]) => {
@@ -181,9 +181,9 @@ export const fallbackCouncilList = Object.entries(
   })
   .sort((a, b) => a.district.localeCompare(b.district) || a.number - b.number);
 
-export const getFallbackGovernor = (id: string | string[] | undefined) => {
-  const candidateId = Array.isArray(id) ? id[0] : id;
-  return fallbackGovernorList.find(
-    (candidate) => candidate.id?.toString() === candidateId
-  );
+export const getGovernor = (id: string | string[] | undefined) => {
+	const candidateId = Array.isArray(id) ? id[0] : id;
+	return governorList.find(
+		(candidate) => candidate.id?.toString() === candidateId
+	);
 };

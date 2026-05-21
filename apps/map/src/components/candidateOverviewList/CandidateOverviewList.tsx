@@ -21,12 +21,18 @@ interface CandidateOverviewListProps {
 	district?: string;
 	votingData: Voting;
 	enableTopHighlight: boolean;
+	topHighlightCount?: number;
 }
 
 // export default function CandidateOverviewList({votingData, enableTopHighlight = true}: CandidateOverviewListProps) {
 const NAME_TITLE_REGEX = /(นาย|นาง(สาว)?|((น|พล|พ)\.(ต\.|อ\.)?(อ|ท|ต)\.)(หญิง)?|ม\.ร\.ว\.)/i
 
-export default function CandidateOverviewList({ district, votingData, enableTopHighlight = true }: CandidateOverviewListProps) {
+export default function CandidateOverviewList({
+	district,
+	votingData,
+	enableTopHighlight = true,
+	topHighlightCount = TOP_CANDIDATE_DISPLAY
+}: CandidateOverviewListProps) {
 	const preset = useContext(presetContext);
 	const [isBottom, setIsBottom] = useState<boolean>(false);
 	const [descending, setDescending] = useState<boolean>(true);
@@ -162,8 +168,8 @@ export default function CandidateOverviewList({ district, votingData, enableTopH
 							isInTop={
 								enableTopHighlight &&
 								(sortType === CandidateOverviewSortType.COUNT || sortType === CandidateOverviewSortType.PERCENT) &&
-								descending && !district &&
-								index < TOP_CANDIDATE_DISPLAY
+								descending &&
+								index < topHighlightCount
 							}
 							votingData={votingData}
 						/>

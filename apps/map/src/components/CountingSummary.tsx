@@ -72,7 +72,7 @@ const CountingSummary: FunctionComponent<CountingSummaryProps> = ({
 
 	return (
 		<div className={`font-body ${compact ? 'typo-footer' : 'typo-u4'}`}>
-			<div className="flex flex-col lg:flex-row lg:items-end gap-3 lg:gap-6">
+			<div className="flex flex-col lg:flex-row lg:items-end gap-3 lg:gap-6 justify-between mb-6">
 				<div className="min-w-[240px] lg:min-w-[320px]">
 					<div className="font-semibold mb-2">
 						นับคะแนนแล้ว {formatNumber(countedVotes)} ใบ ({formatPercent(progress)})

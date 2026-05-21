@@ -4,11 +4,13 @@ import arrowW from '../static/icons/arrow-white.svg';
 import { CandidateList } from '../components/wrapper/candidateList';
 import { useEffect, useRef, useState } from 'react';
 import { CouncilList } from '../components/wrapper/councilList';
-import { getNocoApi } from '../utils/nocoHandler';
 import { ICouncil, IGovernor } from '../types/business';
 import Metadata from '../components/metadata';
 import { useRouter } from 'next/router';
-import { fallbackCouncilList, fallbackGovernorList } from '../utils/fallbackData';
+import {
+  councilList as localCouncilList,
+  governorList,
+} from '../utils/candidateData';
 
 interface PropsType {
   candidateList: IGovernor[];
@@ -195,21 +197,8 @@ const Home = ({
 
 export const getStaticProps: GetStaticProps<PropsType> = async (context) => {
   const isComingSoon = process.env.COMING_SOON === 'true' ? true : false;
-  let candidateList = [] as IGovernor[];
-  let councilList = [] as ICouncil[];
-  const [candidateRes, errMsg1] = await getNocoApi('governors');
-  if (errMsg1) {
-    candidateList = fallbackGovernorList;
-  } else {
-    candidateList = candidateRes.data.list as IGovernor[];
-  }
-
-  const [councilRes, errMsg2] = await getNocoApi('councils?limit=1000');
-  if (errMsg2) {
-    councilList = fallbackCouncilList;
-  } else {
-    councilList = councilRes.data.list as ICouncil[];
-  }
+  const candidateList = [...governorList] as IGovernor[];
+  const councilList = [...localCouncilList] as ICouncil[];
   councilList.sort((a, b) => (a.number > b.number ? 1 : -1));
 
   return {
@@ -217,7 +206,7 @@ export const getStaticProps: GetStaticProps<PropsType> = async (context) => {
       candidateList,
       councilList,
       isComingSoon,
-      errMsg: errMsg1 || errMsg2 || '',
+      errMsg: '',
     },
   };
 };

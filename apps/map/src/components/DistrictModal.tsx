@@ -29,7 +29,11 @@ const DistrictModal: FunctionComponent<DistrictModalProps> = ({
 			onClose={onClose}
 		>
 			<div className="min-h-[260px] flex-1 overflow-hidden">
-				<CandidateOverviewList votingData={votingData} enableTopHighlight={false} />
+				<CandidateOverviewList
+					votingData={votingData}
+					enableTopHighlight={true}
+					topHighlightCount={1}
+				/>
 			</div>
 			{votingData.progress !== undefined && (
 				<div class="border-t border-gray py-3 pb-0 mt-4 shrink-0">

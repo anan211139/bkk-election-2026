@@ -3,11 +3,10 @@ import { CandidatePage } from '../components/subPage/candidatePage';
 import { IGovernor } from '../types/business';
 import { fetchTheStandardElectionPosts, Post } from 'wordpress-api';
 import { useEffect, useState } from 'react';
-import { getNocoApi } from '../utils/nocoHandler';
 import Metadata from '../components/metadata';
 import { getCandidateOG } from '../utils/dict';
 import { useRouter } from 'next/router';
-import { fallbackGovernorList, getFallbackGovernor } from '../utils/fallbackData';
+import { getGovernor, governorList } from '../utils/candidateData';
 
 interface PropsType {
   candidate: IGovernor;
@@ -63,10 +62,7 @@ export default function Governor({
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const [res, errMsg] = await getNocoApi('governors');
-  const data = errMsg ? fallbackGovernorList : (res.data.list as IGovernor[]);
-
-  const govList = data.filter((gov) => !gov.disqualified);
+  const govList = governorList.filter((gov) => !gov.disqualified);
 
   const paths = govList.map((gov) => {
     return {
@@ -79,10 +75,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 export const getStaticProps: GetStaticProps<PropsType> = async (context) => {
   const isComingSoon = process.env.COMING_SOON === 'true' ? true : false;
   const id = context.params?.id;
-  const [candidateRes, errMsg] = await getNocoApi(`governors/${id}`);
-  const candidate = errMsg
-    ? getFallbackGovernor(id)
-    : (candidateRes.data as IGovernor);
+  const candidate = getGovernor(id);
   if (!candidate) {
     return {
       redirect: {

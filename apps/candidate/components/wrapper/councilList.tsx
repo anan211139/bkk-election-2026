@@ -93,7 +93,7 @@ export function CouncilList(props: PropsType) {
         </div>
       )}
       {section == 'district' && (
-        <div className="grid grid-cols-1 gap-[10px]">
+        <div className="grid grid-cols-3 gap-[10px]">
           {districtListComponent}
         </div>
       )}
