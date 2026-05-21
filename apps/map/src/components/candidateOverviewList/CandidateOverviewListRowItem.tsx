@@ -31,6 +31,7 @@ export default function CandidateOverviewListRowItem({
 	if (!result) return <tr></tr>;
 
 	const candidate = preset.candidateMap[candidateId];
+	const isCouncilCandidate = candidate.id.includes('-');
 
 	return (
 		<>
@@ -102,7 +103,15 @@ export default function CandidateOverviewListRowItem({
 					}`}
 				>
 					{isInTop && candidate.image && (
-						<img src={candidate.image} class="h-12 absolute right-2 bottom-0 object-cover" />
+						<img
+							src={candidate.image}
+							alt={candidate.fullname}
+							class={
+								isCouncilCandidate
+									? 'h-[52px] w-[52px] rounded-full absolute right-2 bottom-[-4px] object-cover object-top'
+									: 'h-12 absolute right-2 bottom-0 object-cover'
+							}
+						/>
 					)}
 				</Progress>
 			</div>
