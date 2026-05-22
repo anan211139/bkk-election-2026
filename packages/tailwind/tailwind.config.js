@@ -2,7 +2,7 @@ module.exports = {
   mode: "jit",
   theme: {
     fontFamily: {
-      heading: ["Kanit", "ui-sans-serif"],
+      heading: ["Sao Chingcha", "ui-sans-serif"],
       body: ["Anuphan", "ui-serif"],
     },
     colors: {
@@ -10,7 +10,7 @@ module.exports = {
       white: "white",
       gray: "#333333",
       transparent: "transparent",
-      ultramarine: "#3904E9",
+      ultramarine: "#205a41",
     },
   },
 };

@@ -68,7 +68,7 @@
 			</li>
 			<li class="list-none">
 				<div class="mt-6">
-					โครงสร้างระบบ: พัฒนาจากต้นฉบับโดย
+					เว็บไซต์ต้นฉบับพัฒนาโดย
 					<div class="mt-4">
 						<PartnersLogo black />
 					</div>

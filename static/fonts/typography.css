@@ -15,9 +15,16 @@
   src: url(Anuphan-Bold.otf) format("opentype");
   font-display: swap;
 }
-@font-face {
-  font-family: "Kanit";
+/* @font-face {
+  font-family: "Sao Chingcha";
   font-weight: 600;
-  src: url(Kanit-SemiBold.ttf) format("truetype");
+  src: url(SaoChingcha-Regular.ttf) format("truetype");
+  font-display: swap;
+} */
+
+@font-face {
+  font-family: "Sao Chingcha";
+  font-weight: 600;
+  src: url(SaoChingcha-Bold.otf) format("opentype");
   font-display: swap;
 }
