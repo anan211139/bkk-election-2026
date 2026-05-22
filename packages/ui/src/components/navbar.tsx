@@ -13,8 +13,8 @@ const Navbar: Component = () => {
       <div class="ui-flex-1 ui-flex ui-flex-row ui-justify-between">
         <a href="/map/map" class="ui-my-auto">
           <img
-            src="/static/images/bkkelection-logo.svg"
-            alt="BKK Election 2022"
+            src="/static/images/bangkok-vote-logo.svg"
+            alt="Bangkok Vote 2026"
             class="ui-h-6 md:ui-h-8"
           />
         </a>

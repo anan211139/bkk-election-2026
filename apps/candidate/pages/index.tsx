@@ -110,17 +110,16 @@ const Home = ({
       />
       <div>
         <div className="flex flex-col items-center text-center px-[20px] mt-12">
-          <p className="typo-h6">MEET THE CANDIDATES</p>
 
           <h1>
             <p className="typo-h1">ข้อมูลผู้สมัคร</p>
             <span className="hidden">
-              ผู้ว่าฯ กทม. และผู้สมัครสมาชิกสภา กทม. (ส.ก.) 2565
+              ผู้ว่าฯ กทม. และผู้สมัครสมาชิกสภา กทม. (ส.ก.) 2569
             </span>
           </h1>
 
           <div className="typo-u3 mt-[10px] mb-[70px] max-w-[280px] md:max-w-[47rem]">
-            ทำความรู้จักผู้สมัครผู้ว่าฯ กทม. และค้นหาสมาชิกสภา กทม. ในเขตของคุณ
+            ผู้ว่าฯ กทม. และผู้สมัครสมาชิกสภา กทม. (ส.ก.) 2569
           </div>
         </div>
         <div ref={navRef} className="w-full grid grid-cols-2 sticky top-0 z-20">
