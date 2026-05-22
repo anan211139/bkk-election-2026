@@ -14,6 +14,7 @@ const Footer: FunctionComponent = () => {
 					{preset?.electionData.total.progress !== undefined && (
 						<CountingSummary
 							votingData={preset.electionData.total}
+							electionType={preset.electionData.type}
 							lastUpdatedAt={preset.electionData.lastUpdatedAt}
 							compact
 						/>

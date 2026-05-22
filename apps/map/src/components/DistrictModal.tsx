@@ -39,6 +39,7 @@ const DistrictModal: FunctionComponent<DistrictModalProps> = ({
 				<div class="border-t border-gray py-3 pb-0 mt-4 shrink-0">
 					<CountingSummary
 						votingData={votingData}
+						electionType={preset.electionData.type}
 						lastUpdatedAt={preset.electionData.lastUpdatedAt}
 						compact
 					/>

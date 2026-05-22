@@ -1,8 +1,9 @@
 import React, { FunctionComponent } from 'react';
-import { Voting } from '../models/election';
+import { ElectionDataType, Voting } from '../models/election';
 
 interface CountingSummaryProps {
 	votingData: Voting;
+	electionType?: ElectionDataType;
 	lastUpdatedAt?: string;
 	compact?: boolean;
 }
@@ -43,10 +44,12 @@ const getReportedUnits = (votingData: Voting) => {
 
 const CountingSummary: FunctionComponent<CountingSummaryProps> = ({
 	votingData,
+	electionType,
 	lastUpdatedAt,
 	compact
 }) => {
 	const progress = getProgress(votingData);
+	const shouldShowProgressStrip = electionType !== ElectionDataType.Completed;
 	const countedVotes = Math.round((votingData.totalVotes * progress) / 100);
 	const goodVotes = getGoodVotes(votingData);
 	const badVotes = votingData.badVotes || 0;
@@ -82,10 +85,12 @@ const CountingSummary: FunctionComponent<CountingSummaryProps> = ({
 							className="absolute h-full left-0 bg-white"
 							style={{ width: `${clampPercent(progress)}%` }}
 						>
-							<div
-								className="absolute inset-0 opacity-20"
-								style={{ backgroundImage: `url(/map/images/strip-black.gif)` }}
-							/>
+							{shouldShowProgressStrip && (
+								<div
+									className="absolute inset-0 opacity-20"
+									style={{ backgroundImage: `url(/map/images/strip-black.gif)` }}
+								/>
+							)}
 						</div>
 					</div>
 				</div>
