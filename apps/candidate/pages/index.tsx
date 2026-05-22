@@ -189,7 +189,6 @@ const Home = ({
             onSelectDistrict={onSelectDistrict}
           />
         </div>
-        <ui-footer />
       </div>
     </>
   );

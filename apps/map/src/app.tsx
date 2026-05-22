@@ -112,6 +112,7 @@ const App: FunctionComponent = () => {
 								onPresetChange={setActivePresetIndex}
 							/>
 							<Footer />
+							<ui-footer></ui-footer>
 						</presetContext.Provider>
 					)}
 					{isNewPresetLoading && (

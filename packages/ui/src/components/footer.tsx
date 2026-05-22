@@ -1,25 +1,19 @@
 /* @refresh reload */
-import { Component, For } from 'solid-js';
+import { Component } from 'solid-js';
 import { noShadowDOM } from 'component-register';
-import pages from '../data/pages';
 
 const Footer: Component = () => {
   noShadowDOM();
 
   return (
     <div class="ui-bg-black ui-text-white ui-flex ui-justify-center">
-      <div class="ui-flex ui-flex-row ui-w-full ui-max-w-screen-xl ui-m-6 md:ui-m-8 ui-space-x-4">
-        <div className="ui-flex-1 ui-grid ui-grid-cols-1 md:ui-grid-cols-3 ui-gap-2">
-          <span class="typo-u5 ui-font-bold md:ui-col-span-3">LINKS</span>
-          <For each={pages}>
-            {({ label, href }) => (
-              <a href={href} target="_blank" class="typo-u4 ui-underline">
-                {label}
-              </a>
-            )}
-          </For>
-        </div>
-      </div>
+      <p class="typo-u5 ui-w-full ui-max-w-screen-xl ui-m-6 md:ui-m-8 ui-text-center ui-text-white/80">
+        © 2026 กรุงเทพมหานคร | พัฒนาต่อยอดจากโครงการ{' '}
+        <a href="https://bkkelection2022.wevis.info/" target="_blank" rel="noreferrer" class="ui-underline">
+          Bangkok Election 2022
+        </a>{' '}
+        โดย WeVis x THE STANDARD x Wisesight ภายใต้สัญญาอนุญาต CC BY-NC-SA 4.0
+      </p>
     </div>
   );
 };

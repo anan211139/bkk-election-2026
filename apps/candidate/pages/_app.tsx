@@ -17,6 +17,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     >
       <ui-navbar />
       <Component {...pageProps} />
+      <ui-footer />
     </PlausibleProvider>
   );
 }
