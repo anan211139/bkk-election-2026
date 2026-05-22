@@ -2,8 +2,8 @@
 	"defaultPresetIndex": 0,
 	"presetIndexes": [
 		{
-			"shortname": "คะแนนผู้ว่าฯ '65 โดย กทม.",
-			"fullname": "ผลการนับคะแนนเลือกตั้งผู้ว่าฯ กทม. 65",
+			"shortname": "คะแนนผู้ว่าฯ '69 โดย กทม.",
+			"fullname": "ผลการนับคะแนนเลือกตั้งผู้ว่าฯ กทม. 69",
 			"subtitle": "แสดงผลคะแนน : ",
 			"electionDataUrl": "/map/data/65-governor-electiondata-cache.json",
 			"candidateDataUrl": "/map/data/65-governor-candidates.json",
@@ -11,8 +11,8 @@
 			"enableCandidateLink": true
 		},
 		{
-			"shortname": "คะแนน ส.ก. '65 โดย กทม.",
-			"fullname": "ผลการนับคะแนนเลือกตั้ง สมาชิกสภา กทม. (ส.ก.) 65",
+			"shortname": "คะแนน ส.ก. '69 โดย กทม.",
+			"fullname": "ผลการนับคะแนนเลือกตั้ง สมาชิกสภา กทม. (ส.ก.) 69",
 			"subtitle": "แสดงผลคะแนน : ",
 			"electionDataUrl": "/map/data/65-bmc-electiondata-cache.json",
 			"candidateDataUrl": "/map/data/65-bmc-candidates.json",
