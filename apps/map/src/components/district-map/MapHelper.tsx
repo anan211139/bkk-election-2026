@@ -89,7 +89,13 @@ export class DistrictMapWinnerData {
     if (this.district) {
       const { voting } = this.district
       const { result } = voting
-      this.highestScoreResult = result.reduce((maxResult: Result, res: Result) => maxResult.count > res.count ? maxResult : res)
+      const highestScoreResult = result.reduce<Result | undefined>(
+        (maxResult, res) => !maxResult || res.count > maxResult.count ? res : maxResult,
+        undefined
+      )
+      if (highestScoreResult && highestScoreResult.count > 0) {
+        this.highestScoreResult = highestScoreResult
+      }
     }
     if (this.highestScoreResult && c) {
       this.highestScoreCandidate = c[this.highestScoreResult.candidateId];
@@ -109,7 +115,13 @@ export class DistrictGridWinnerData {
     if (this.district) {
       const { voting } = this.district
       const { result } = voting
-      this.highestScoreResult = result.reduce((maxResult: Result, res: Result) => maxResult.count > res.count ? maxResult : res)
+      const highestScoreResult = result.reduce<Result | undefined>(
+        (maxResult, res) => !maxResult || res.count > maxResult.count ? res : maxResult,
+        undefined
+      )
+      if (highestScoreResult && highestScoreResult.count > 0) {
+        this.highestScoreResult = highestScoreResult
+      }
     }
     if (this.highestScoreResult && c) {
       this.highestScoreCandidate = c[this.highestScoreResult.candidateId];

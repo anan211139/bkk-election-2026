@@ -1,0 +1,5306 @@
+{
+	"type": "LIVE",
+	"total": {
+		"eligiblePopulation": 4398168,
+		"totalVotes": 80229,
+		"badVotes": 1195,
+		"noVotes": 2166,
+		"progress": 3,
+		"pollingUnits": {
+			"total": 6303,
+			"reported": 189
+		},
+		"result": [
+			{
+				"candidateId": "1",
+				"count": 5718
+			},
+			{
+				"candidateId": "2",
+				"count": 2287
+			},
+			{
+				"candidateId": "3",
+				"count": 8903
+			},
+			{
+				"candidateId": "4",
+				"count": 6431
+			},
+			{
+				"candidateId": "5",
+				"count": 2344
+			},
+			{
+				"candidateId": "6",
+				"count": 5203
+			},
+			{
+				"candidateId": "7",
+				"count": 2364
+			},
+			{
+				"candidateId": "8",
+				"count": 7704
+			},
+			{
+				"candidateId": "9",
+				"count": 2294
+			},
+			{
+				"candidateId": "10",
+				"count": 2335
+			},
+			{
+				"candidateId": "11",
+				"count": 5984
+			},
+			{
+				"candidateId": "12",
+				"count": 2346
+			},
+			{
+				"candidateId": "13",
+				"count": 2247
+			},
+			{
+				"candidateId": "14",
+				"count": 2141
+			},
+			{
+				"candidateId": "15",
+				"count": 2253
+			},
+			{
+				"candidateId": "16",
+				"count": 2277
+			},
+			{
+				"candidateId": "17",
+				"count": 2385
+			},
+			{
+				"candidateId": "18",
+				"count": 2277
+			},
+			{
+				"candidateId": "19",
+				"count": 2326
+			},
+			{
+				"candidateId": "20",
+				"count": 2323
+			},
+			{
+				"candidateId": "21",
+				"count": 2397
+			},
+			{
+				"candidateId": "22",
+				"count": 2329
+			}
+		]
+	},
+	"districts": [
+		{
+			"name": "พระนคร",
+			"voting": {
+				"eligiblePopulation": 29829,
+				"totalVotes": 411,
+				"badVotes": 6,
+				"noVotes": 10,
+				"progress": 2,
+				"pollingUnits": {
+					"total": 50,
+					"reported": 1
+				},
+				"result": [
+					{
+						"candidateId": "6",
+						"count": 141
+					},
+					{
+						"candidateId": "19",
+						"count": 17
+					},
+					{
+						"candidateId": "20",
+						"count": 17
+					},
+					{
+						"candidateId": "7",
+						"count": 17
+					},
+					{
+						"candidateId": "18",
+						"count": 16
+					},
+					{
+						"candidateId": "17",
+						"count": 15
+					},
+					{
+						"candidateId": "5",
+						"count": 15
+					},
+					{
+						"candidateId": "16",
+						"count": 14
+					},
+					{
+						"candidateId": "4",
+						"count": 14
+					},
+					{
+						"candidateId": "15",
+						"count": 13
+					},
+					{
+						"candidateId": "3",
+						"count": 13
+					},
+					{
+						"candidateId": "14",
+						"count": 12
+					},
+					{
+						"candidateId": "2",
+						"count": 12
+					},
+					{
+						"candidateId": "1",
+						"count": 11
+					},
+					{
+						"candidateId": "13",
+						"count": 11
+					},
+					{
+						"candidateId": "12",
+						"count": 10
+					},
+					{
+						"candidateId": "11",
+						"count": 9
+					},
+					{
+						"candidateId": "10",
+						"count": 8
+					},
+					{
+						"candidateId": "22",
+						"count": 8
+					},
+					{
+						"candidateId": "9",
+						"count": 8
+					},
+					{
+						"candidateId": "21",
+						"count": 7
+					},
+					{
+						"candidateId": "8",
+						"count": 7
+					}
+				]
+			}
+		},
+		{
+			"name": "ดุสิต",
+			"voting": {
+				"eligiblePopulation": 63550,
+				"totalVotes": 1080,
+				"badVotes": 18,
+				"noVotes": 41,
+				"progress": 3.3,
+				"pollingUnits": {
+					"total": 91,
+					"reported": 3
+				},
+				"result": [
+					{
+						"candidateId": "6",
+						"count": 374
+					},
+					{
+						"candidateId": "17",
+						"count": 46
+					},
+					{
+						"candidateId": "3",
+						"count": 46
+					},
+					{
+						"candidateId": "16",
+						"count": 43
+					},
+					{
+						"candidateId": "2",
+						"count": 43
+					},
+					{
+						"candidateId": "1",
+						"count": 40
+					},
+					{
+						"candidateId": "15",
+						"count": 40
+					},
+					{
+						"candidateId": "14",
+						"count": 37
+					},
+					{
+						"candidateId": "13",
+						"count": 35
+					},
+					{
+						"candidateId": "12",
+						"count": 32
+					},
+					{
+						"candidateId": "9",
+						"count": 32
+					},
+					{
+						"candidateId": "11",
+						"count": 29
+					},
+					{
+						"candidateId": "8",
+						"count": 29
+					},
+					{
+						"candidateId": "10",
+						"count": 26
+					},
+					{
+						"candidateId": "22",
+						"count": 26
+					},
+					{
+						"candidateId": "7",
+						"count": 26
+					},
+					{
+						"candidateId": "21",
+						"count": 23
+					},
+					{
+						"candidateId": "19",
+						"count": 20
+					},
+					{
+						"candidateId": "20",
+						"count": 20
+					},
+					{
+						"candidateId": "5",
+						"count": 20
+					},
+					{
+						"candidateId": "18",
+						"count": 17
+					},
+					{
+						"candidateId": "4",
+						"count": 17
+					}
+				]
+			}
+		},
+		{
+			"name": "หนองจอก",
+			"voting": {
+				"eligiblePopulation": 136547,
+				"totalVotes": 2466,
+				"badVotes": 50,
+				"noVotes": 102,
+				"progress": 3.08,
+				"pollingUnits": {
+					"total": 195,
+					"reported": 6
+				},
+				"result": [
+					{
+						"candidateId": "8",
+						"count": 802
+					},
+					{
+						"candidateId": "4",
+						"count": 198
+					},
+					{
+						"candidateId": "13",
+						"count": 99
+					},
+					{
+						"candidateId": "12",
+						"count": 93
+					},
+					{
+						"candidateId": "11",
+						"count": 86
+					},
+					{
+						"candidateId": "9",
+						"count": 86
+					},
+					{
+						"candidateId": "10",
+						"count": 80
+					},
+					{
+						"candidateId": "22",
+						"count": 80
+					},
+					{
+						"candidateId": "21",
+						"count": 74
+					},
+					{
+						"candidateId": "7",
+						"count": 74
+					},
+					{
+						"candidateId": "19",
+						"count": 68
+					},
+					{
+						"candidateId": "20",
+						"count": 68
+					},
+					{
+						"candidateId": "6",
+						"count": 68
+					},
+					{
+						"candidateId": "18",
+						"count": 62
+					},
+					{
+						"candidateId": "5",
+						"count": 62
+					},
+					{
+						"candidateId": "17",
+						"count": 56
+					},
+					{
+						"candidateId": "16",
+						"count": 49
+					},
+					{
+						"candidateId": "3",
+						"count": 49
+					},
+					{
+						"candidateId": "15",
+						"count": 43
+					},
+					{
+						"candidateId": "2",
+						"count": 43
+					},
+					{
+						"candidateId": "1",
+						"count": 37
+					},
+					{
+						"candidateId": "14",
+						"count": 37
+					}
+				]
+			}
+		},
+		{
+			"name": "บางรัก",
+			"voting": {
+				"eligiblePopulation": 30041,
+				"totalVotes": 437,
+				"badVotes": 6,
+				"noVotes": 9,
+				"progress": 2.33,
+				"pollingUnits": {
+					"total": 43,
+					"reported": 1
+				},
+				"result": [
+					{
+						"candidateId": "8",
+						"count": 145
+					},
+					{
+						"candidateId": "4",
+						"count": 36
+					},
+					{
+						"candidateId": "15",
+						"count": 18
+					},
+					{
+						"candidateId": "2",
+						"count": 18
+					},
+					{
+						"candidateId": "1",
+						"count": 17
+					},
+					{
+						"candidateId": "14",
+						"count": 17
+					},
+					{
+						"candidateId": "13",
+						"count": 15
+					},
+					{
+						"candidateId": "12",
+						"count": 14
+					},
+					{
+						"candidateId": "11",
+						"count": 13
+					},
+					{
+						"candidateId": "9",
+						"count": 13
+					},
+					{
+						"candidateId": "10",
+						"count": 12
+					},
+					{
+						"candidateId": "22",
+						"count": 12
+					},
+					{
+						"candidateId": "21",
+						"count": 11
+					},
+					{
+						"candidateId": "7",
+						"count": 11
+					},
+					{
+						"candidateId": "19",
+						"count": 10
+					},
+					{
+						"candidateId": "20",
+						"count": 10
+					},
+					{
+						"candidateId": "6",
+						"count": 10
+					},
+					{
+						"candidateId": "18",
+						"count": 9
+					},
+					{
+						"candidateId": "5",
+						"count": 9
+					},
+					{
+						"candidateId": "17",
+						"count": 8
+					},
+					{
+						"candidateId": "16",
+						"count": 7
+					},
+					{
+						"candidateId": "3",
+						"count": 7
+					}
+				]
+			}
+		},
+		{
+			"name": "บางเขน",
+			"voting": {
+				"eligiblePopulation": 152133,
+				"totalVotes": 2686,
+				"badVotes": 33,
+				"noVotes": 73,
+				"progress": 2.75,
+				"pollingUnits": {
+					"total": 218,
+					"reported": 6
+				},
+				"result": [
+					{
+						"candidateId": "1",
+						"count": 890
+					},
+					{
+						"candidateId": "8",
+						"count": 219
+					},
+					{
+						"candidateId": "17",
+						"count": 109
+					},
+					{
+						"candidateId": "16",
+						"count": 103
+					},
+					{
+						"candidateId": "9",
+						"count": 103
+					},
+					{
+						"candidateId": "15",
+						"count": 96
+					},
+					{
+						"candidateId": "14",
+						"count": 89
+					},
+					{
+						"candidateId": "7",
+						"count": 89
+					},
+					{
+						"candidateId": "13",
+						"count": 82
+					},
+					{
+						"candidateId": "6",
+						"count": 82
+					},
+					{
+						"candidateId": "12",
+						"count": 75
+					},
+					{
+						"candidateId": "5",
+						"count": 75
+					},
+					{
+						"candidateId": "11",
+						"count": 68
+					},
+					{
+						"candidateId": "4",
+						"count": 68
+					},
+					{
+						"candidateId": "10",
+						"count": 62
+					},
+					{
+						"candidateId": "3",
+						"count": 62
+					},
+					{
+						"candidateId": "22",
+						"count": 61
+					},
+					{
+						"candidateId": "2",
+						"count": 55
+					},
+					{
+						"candidateId": "21",
+						"count": 55
+					},
+					{
+						"candidateId": "19",
+						"count": 48
+					},
+					{
+						"candidateId": "20",
+						"count": 48
+					},
+					{
+						"candidateId": "18",
+						"count": 41
+					}
+				]
+			}
+		},
+		{
+			"name": "บางกะปิ",
+			"voting": {
+				"eligiblePopulation": 115128,
+				"totalVotes": 2098,
+				"badVotes": 26,
+				"noVotes": 47,
+				"progress": 3.03,
+				"pollingUnits": {
+					"total": 165,
+					"reported": 5
+				},
+				"result": [
+					{
+						"candidateId": "11",
+						"count": 735
+					},
+					{
+						"candidateId": "12",
+						"count": 90
+					},
+					{
+						"candidateId": "3",
+						"count": 90
+					},
+					{
+						"candidateId": "2",
+						"count": 85
+					},
+					{
+						"candidateId": "1",
+						"count": 79
+					},
+					{
+						"candidateId": "10",
+						"count": 79
+					},
+					{
+						"candidateId": "22",
+						"count": 79
+					},
+					{
+						"candidateId": "21",
+						"count": 74
+					},
+					{
+						"candidateId": "19",
+						"count": 68
+					},
+					{
+						"candidateId": "20",
+						"count": 68
+					},
+					{
+						"candidateId": "18",
+						"count": 62
+					},
+					{
+						"candidateId": "9",
+						"count": 62
+					},
+					{
+						"candidateId": "17",
+						"count": 57
+					},
+					{
+						"candidateId": "8",
+						"count": 57
+					},
+					{
+						"candidateId": "16",
+						"count": 51
+					},
+					{
+						"candidateId": "7",
+						"count": 51
+					},
+					{
+						"candidateId": "15",
+						"count": 45
+					},
+					{
+						"candidateId": "6",
+						"count": 45
+					},
+					{
+						"candidateId": "14",
+						"count": 40
+					},
+					{
+						"candidateId": "5",
+						"count": 40
+					},
+					{
+						"candidateId": "13",
+						"count": 34
+					},
+					{
+						"candidateId": "4",
+						"count": 34
+					}
+				]
+			}
+		},
+		{
+			"name": "ปทุมวัน",
+			"voting": {
+				"eligiblePopulation": 30966,
+				"totalVotes": 407,
+				"badVotes": 6,
+				"noVotes": 9,
+				"progress": 2.27,
+				"pollingUnits": {
+					"total": 44,
+					"reported": 1
+				},
+				"result": [
+					{
+						"candidateId": "8",
+						"count": 143
+					},
+					{
+						"candidateId": "17",
+						"count": 18
+					},
+					{
+						"candidateId": "16",
+						"count": 16
+					},
+					{
+						"candidateId": "7",
+						"count": 16
+					},
+					{
+						"candidateId": "15",
+						"count": 15
+					},
+					{
+						"candidateId": "6",
+						"count": 15
+					},
+					{
+						"candidateId": "14",
+						"count": 14
+					},
+					{
+						"candidateId": "5",
+						"count": 14
+					},
+					{
+						"candidateId": "13",
+						"count": 13
+					},
+					{
+						"candidateId": "4",
+						"count": 13
+					},
+					{
+						"candidateId": "12",
+						"count": 12
+					},
+					{
+						"candidateId": "3",
+						"count": 12
+					},
+					{
+						"candidateId": "11",
+						"count": 11
+					},
+					{
+						"candidateId": "2",
+						"count": 11
+					},
+					{
+						"candidateId": "1",
+						"count": 10
+					},
+					{
+						"candidateId": "10",
+						"count": 10
+					},
+					{
+						"candidateId": "22",
+						"count": 10
+					},
+					{
+						"candidateId": "21",
+						"count": 9
+					},
+					{
+						"candidateId": "19",
+						"count": 8
+					},
+					{
+						"candidateId": "20",
+						"count": 8
+					},
+					{
+						"candidateId": "18",
+						"count": 7
+					},
+					{
+						"candidateId": "9",
+						"count": 7
+					}
+				]
+			}
+		},
+		{
+			"name": "ป้อมปราบศัตรูพ่าย",
+			"voting": {
+				"eligiblePopulation": 32005,
+				"totalVotes": 406,
+				"badVotes": 6,
+				"noVotes": 8,
+				"progress": 2.17,
+				"pollingUnits": {
+					"total": 46,
+					"reported": 1
+				},
+				"result": [
+					{
+						"candidateId": "1",
+						"count": 146
+					},
+					{
+						"candidateId": "19",
+						"count": 18
+					},
+					{
+						"candidateId": "20",
+						"count": 18
+					},
+					{
+						"candidateId": "18",
+						"count": 17
+					},
+					{
+						"candidateId": "17",
+						"count": 16
+					},
+					{
+						"candidateId": "9",
+						"count": 15
+					},
+					{
+						"candidateId": "16",
+						"count": 14
+					},
+					{
+						"candidateId": "15",
+						"count": 13
+					},
+					{
+						"candidateId": "8",
+						"count": 13
+					},
+					{
+						"candidateId": "14",
+						"count": 12
+					},
+					{
+						"candidateId": "7",
+						"count": 12
+					},
+					{
+						"candidateId": "13",
+						"count": 11
+					},
+					{
+						"candidateId": "6",
+						"count": 11
+					},
+					{
+						"candidateId": "12",
+						"count": 10
+					},
+					{
+						"candidateId": "5",
+						"count": 10
+					},
+					{
+						"candidateId": "11",
+						"count": 9
+					},
+					{
+						"candidateId": "4",
+						"count": 9
+					},
+					{
+						"candidateId": "10",
+						"count": 8
+					},
+					{
+						"candidateId": "22",
+						"count": 8
+					},
+					{
+						"candidateId": "3",
+						"count": 8
+					},
+					{
+						"candidateId": "2",
+						"count": 7
+					},
+					{
+						"candidateId": "21",
+						"count": 7
+					}
+				]
+			}
+		},
+		{
+			"name": "พระโขนง",
+			"voting": {
+				"eligiblePopulation": 71850,
+				"totalVotes": 1262,
+				"badVotes": 17,
+				"noVotes": 28,
+				"progress": 2.91,
+				"pollingUnits": {
+					"total": 103,
+					"reported": 3
+				},
+				"result": [
+					{
+						"candidateId": "11",
+						"count": 438
+					},
+					{
+						"candidateId": "4",
+						"count": 54
+					},
+					{
+						"candidateId": "10",
+						"count": 51
+					},
+					{
+						"candidateId": "3",
+						"count": 51
+					},
+					{
+						"candidateId": "22",
+						"count": 50
+					},
+					{
+						"candidateId": "2",
+						"count": 47
+					},
+					{
+						"candidateId": "21",
+						"count": 47
+					},
+					{
+						"candidateId": "1",
+						"count": 44
+					},
+					{
+						"candidateId": "19",
+						"count": 44
+					},
+					{
+						"candidateId": "20",
+						"count": 44
+					},
+					{
+						"candidateId": "18",
+						"count": 40
+					},
+					{
+						"candidateId": "17",
+						"count": 37
+					},
+					{
+						"candidateId": "16",
+						"count": 34
+					},
+					{
+						"candidateId": "9",
+						"count": 34
+					},
+					{
+						"candidateId": "15",
+						"count": 30
+					},
+					{
+						"candidateId": "8",
+						"count": 30
+					},
+					{
+						"candidateId": "14",
+						"count": 27
+					},
+					{
+						"candidateId": "7",
+						"count": 27
+					},
+					{
+						"candidateId": "13",
+						"count": 24
+					},
+					{
+						"candidateId": "6",
+						"count": 24
+					},
+					{
+						"candidateId": "12",
+						"count": 20
+					},
+					{
+						"candidateId": "5",
+						"count": 20
+					}
+				]
+			}
+		},
+		{
+			"name": "มีนบุรี",
+			"voting": {
+				"eligiblePopulation": 109500,
+				"totalVotes": 2267,
+				"badVotes": 41,
+				"noVotes": 63,
+				"progress": 3.18,
+				"pollingUnits": {
+					"total": 157,
+					"reported": 5
+				},
+				"result": [
+					{
+						"candidateId": "3",
+						"count": 766
+					},
+					{
+						"candidateId": "12",
+						"count": 94
+					},
+					{
+						"candidateId": "11",
+						"count": 88
+					},
+					{
+						"candidateId": "9",
+						"count": 88
+					},
+					{
+						"candidateId": "10",
+						"count": 83
+					},
+					{
+						"candidateId": "8",
+						"count": 83
+					},
+					{
+						"candidateId": "22",
+						"count": 82
+					},
+					{
+						"candidateId": "21",
+						"count": 77
+					},
+					{
+						"candidateId": "7",
+						"count": 77
+					},
+					{
+						"candidateId": "19",
+						"count": 71
+					},
+					{
+						"candidateId": "20",
+						"count": 71
+					},
+					{
+						"candidateId": "6",
+						"count": 71
+					},
+					{
+						"candidateId": "18",
+						"count": 65
+					},
+					{
+						"candidateId": "5",
+						"count": 65
+					},
+					{
+						"candidateId": "17",
+						"count": 59
+					},
+					{
+						"candidateId": "4",
+						"count": 59
+					},
+					{
+						"candidateId": "16",
+						"count": 53
+					},
+					{
+						"candidateId": "15",
+						"count": 47
+					},
+					{
+						"candidateId": "2",
+						"count": 47
+					},
+					{
+						"candidateId": "1",
+						"count": 41
+					},
+					{
+						"candidateId": "14",
+						"count": 41
+					},
+					{
+						"candidateId": "13",
+						"count": 35
+					}
+				]
+			}
+		},
+		{
+			"name": "ลาดกระบัง",
+			"voting": {
+				"eligiblePopulation": 138720,
+				"totalVotes": 2470,
+				"badVotes": 42,
+				"noVotes": 76,
+				"progress": 3.02,
+				"pollingUnits": {
+					"total": 199,
+					"reported": 6
+				},
+				"result": [
+					{
+						"candidateId": "3",
+						"count": 813
+					},
+					{
+						"candidateId": "10",
+						"count": 100
+					},
+					{
+						"candidateId": "22",
+						"count": 100
+					},
+					{
+						"candidateId": "8",
+						"count": 100
+					},
+					{
+						"candidateId": "21",
+						"count": 94
+					},
+					{
+						"candidateId": "7",
+						"count": 94
+					},
+					{
+						"candidateId": "19",
+						"count": 88
+					},
+					{
+						"candidateId": "20",
+						"count": 88
+					},
+					{
+						"candidateId": "6",
+						"count": 88
+					},
+					{
+						"candidateId": "18",
+						"count": 81
+					},
+					{
+						"candidateId": "5",
+						"count": 81
+					},
+					{
+						"candidateId": "17",
+						"count": 75
+					},
+					{
+						"candidateId": "4",
+						"count": 75
+					},
+					{
+						"candidateId": "16",
+						"count": 69
+					},
+					{
+						"candidateId": "15",
+						"count": 63
+					},
+					{
+						"candidateId": "2",
+						"count": 63
+					},
+					{
+						"candidateId": "1",
+						"count": 56
+					},
+					{
+						"candidateId": "14",
+						"count": 56
+					},
+					{
+						"candidateId": "13",
+						"count": 50
+					},
+					{
+						"candidateId": "12",
+						"count": 44
+					},
+					{
+						"candidateId": "11",
+						"count": 37
+					},
+					{
+						"candidateId": "9",
+						"count": 37
+					}
+				]
+			}
+		},
+		{
+			"name": "ยานนาวา",
+			"voting": {
+				"eligiblePopulation": 60503,
+				"totalVotes": 1203,
+				"badVotes": 17,
+				"noVotes": 29,
+				"progress": 3.45,
+				"pollingUnits": {
+					"total": 87,
+					"reported": 3
+				},
+				"result": [
+					{
+						"candidateId": "11",
+						"count": 414
+					},
+					{
+						"candidateId": "21",
+						"count": 51
+					},
+					{
+						"candidateId": "4",
+						"count": 51
+					},
+					{
+						"candidateId": "19",
+						"count": 48
+					},
+					{
+						"candidateId": "20",
+						"count": 48
+					},
+					{
+						"candidateId": "3",
+						"count": 48
+					},
+					{
+						"candidateId": "18",
+						"count": 45
+					},
+					{
+						"candidateId": "2",
+						"count": 45
+					},
+					{
+						"candidateId": "1",
+						"count": 41
+					},
+					{
+						"candidateId": "17",
+						"count": 41
+					},
+					{
+						"candidateId": "16",
+						"count": 38
+					},
+					{
+						"candidateId": "15",
+						"count": 35
+					},
+					{
+						"candidateId": "14",
+						"count": 32
+					},
+					{
+						"candidateId": "9",
+						"count": 32
+					},
+					{
+						"candidateId": "13",
+						"count": 29
+					},
+					{
+						"candidateId": "8",
+						"count": 29
+					},
+					{
+						"candidateId": "7",
+						"count": 26
+					},
+					{
+						"candidateId": "12",
+						"count": 25
+					},
+					{
+						"candidateId": "6",
+						"count": 22
+					},
+					{
+						"candidateId": "10",
+						"count": 19
+					},
+					{
+						"candidateId": "22",
+						"count": 19
+					},
+					{
+						"candidateId": "5",
+						"count": 19
+					}
+				]
+			}
+		},
+		{
+			"name": "สัมพันธวงศ์",
+			"voting": {
+				"eligiblePopulation": 17099,
+				"totalVotes": 436,
+				"badVotes": 7,
+				"noVotes": 10,
+				"progress": 4.17,
+				"pollingUnits": {
+					"total": 24,
+					"reported": 1
+				},
+				"result": [
+					{
+						"candidateId": "1",
+						"count": 139
+					},
+					{
+						"candidateId": "8",
+						"count": 34
+					},
+					{
+						"candidateId": "13",
+						"count": 17
+					},
+					{
+						"candidateId": "9",
+						"count": 17
+					},
+					{
+						"candidateId": "12",
+						"count": 16
+					},
+					{
+						"candidateId": "11",
+						"count": 15
+					},
+					{
+						"candidateId": "7",
+						"count": 15
+					},
+					{
+						"candidateId": "10",
+						"count": 14
+					},
+					{
+						"candidateId": "22",
+						"count": 14
+					},
+					{
+						"candidateId": "6",
+						"count": 14
+					},
+					{
+						"candidateId": "21",
+						"count": 13
+					},
+					{
+						"candidateId": "5",
+						"count": 13
+					},
+					{
+						"candidateId": "19",
+						"count": 12
+					},
+					{
+						"candidateId": "20",
+						"count": 12
+					},
+					{
+						"candidateId": "4",
+						"count": 12
+					},
+					{
+						"candidateId": "18",
+						"count": 11
+					},
+					{
+						"candidateId": "3",
+						"count": 11
+					},
+					{
+						"candidateId": "2",
+						"count": 10
+					},
+					{
+						"candidateId": "17",
+						"count": 9
+					},
+					{
+						"candidateId": "16",
+						"count": 8
+					},
+					{
+						"candidateId": "15",
+						"count": 7
+					},
+					{
+						"candidateId": "14",
+						"count": 6
+					}
+				]
+			}
+		},
+		{
+			"name": "พญาไท",
+			"voting": {
+				"eligiblePopulation": 51977,
+				"totalVotes": 1319,
+				"badVotes": 13,
+				"noVotes": 36,
+				"progress": 4,
+				"pollingUnits": {
+					"total": 75,
+					"reported": 3
+				},
+				"result": [
+					{
+						"candidateId": "8",
+						"count": 476
+					},
+					{
+						"candidateId": "1",
+						"count": 58
+					},
+					{
+						"candidateId": "17",
+						"count": 58
+					},
+					{
+						"candidateId": "16",
+						"count": 55
+					},
+					{
+						"candidateId": "15",
+						"count": 51
+					},
+					{
+						"candidateId": "9",
+						"count": 48
+					},
+					{
+						"candidateId": "14",
+						"count": 47
+					},
+					{
+						"candidateId": "13",
+						"count": 44
+					},
+					{
+						"candidateId": "12",
+						"count": 40
+					},
+					{
+						"candidateId": "7",
+						"count": 40
+					},
+					{
+						"candidateId": "11",
+						"count": 37
+					},
+					{
+						"candidateId": "6",
+						"count": 37
+					},
+					{
+						"candidateId": "10",
+						"count": 33
+					},
+					{
+						"candidateId": "22",
+						"count": 33
+					},
+					{
+						"candidateId": "5",
+						"count": 33
+					},
+					{
+						"candidateId": "21",
+						"count": 29
+					},
+					{
+						"candidateId": "4",
+						"count": 29
+					},
+					{
+						"candidateId": "19",
+						"count": 26
+					},
+					{
+						"candidateId": "20",
+						"count": 26
+					},
+					{
+						"candidateId": "3",
+						"count": 26
+					},
+					{
+						"candidateId": "18",
+						"count": 22
+					},
+					{
+						"candidateId": "2",
+						"count": 22
+					}
+				]
+			}
+		},
+		{
+			"name": "ธนบุรี",
+			"voting": {
+				"eligiblePopulation": 83468,
+				"totalVotes": 1204,
+				"badVotes": 23,
+				"noVotes": 35,
+				"progress": 2.5,
+				"pollingUnits": {
+					"total": 120,
+					"reported": 3
+				},
+				"result": [
+					{
+						"candidateId": "3",
+						"count": 415
+					},
+					{
+						"candidateId": "17",
+						"count": 51
+					},
+					{
+						"candidateId": "7",
+						"count": 51
+					},
+					{
+						"candidateId": "16",
+						"count": 48
+					},
+					{
+						"candidateId": "6",
+						"count": 48
+					},
+					{
+						"candidateId": "15",
+						"count": 45
+					},
+					{
+						"candidateId": "5",
+						"count": 45
+					},
+					{
+						"candidateId": "4",
+						"count": 42
+					},
+					{
+						"candidateId": "14",
+						"count": 41
+					},
+					{
+						"candidateId": "13",
+						"count": 38
+					},
+					{
+						"candidateId": "12",
+						"count": 35
+					},
+					{
+						"candidateId": "2",
+						"count": 35
+					},
+					{
+						"candidateId": "1",
+						"count": 32
+					},
+					{
+						"candidateId": "11",
+						"count": 32
+					},
+					{
+						"candidateId": "10",
+						"count": 29
+					},
+					{
+						"candidateId": "22",
+						"count": 29
+					},
+					{
+						"candidateId": "21",
+						"count": 26
+					},
+					{
+						"candidateId": "19",
+						"count": 22
+					},
+					{
+						"candidateId": "20",
+						"count": 22
+					},
+					{
+						"candidateId": "9",
+						"count": 22
+					},
+					{
+						"candidateId": "18",
+						"count": 19
+					},
+					{
+						"candidateId": "8",
+						"count": 19
+					}
+				]
+			}
+		},
+		{
+			"name": "บางกอกใหญ่",
+			"voting": {
+				"eligiblePopulation": 52474,
+				"totalVotes": 851,
+				"badVotes": 13,
+				"noVotes": 23,
+				"progress": 2.67,
+				"pollingUnits": {
+					"total": 75,
+					"reported": 2
+				},
+				"result": [
+					{
+						"candidateId": "6",
+						"count": 291
+					},
+					{
+						"candidateId": "16",
+						"count": 36
+					},
+					{
+						"candidateId": "9",
+						"count": 36
+					},
+					{
+						"candidateId": "15",
+						"count": 34
+					},
+					{
+						"candidateId": "8",
+						"count": 34
+					},
+					{
+						"candidateId": "14",
+						"count": 31
+					},
+					{
+						"candidateId": "7",
+						"count": 31
+					},
+					{
+						"candidateId": "13",
+						"count": 29
+					},
+					{
+						"candidateId": "12",
+						"count": 27
+					},
+					{
+						"candidateId": "5",
+						"count": 27
+					},
+					{
+						"candidateId": "11",
+						"count": 25
+					},
+					{
+						"candidateId": "4",
+						"count": 25
+					},
+					{
+						"candidateId": "10",
+						"count": 22
+					},
+					{
+						"candidateId": "22",
+						"count": 22
+					},
+					{
+						"candidateId": "3",
+						"count": 22
+					},
+					{
+						"candidateId": "2",
+						"count": 20
+					},
+					{
+						"candidateId": "21",
+						"count": 20
+					},
+					{
+						"candidateId": "1",
+						"count": 18
+					},
+					{
+						"candidateId": "19",
+						"count": 18
+					},
+					{
+						"candidateId": "20",
+						"count": 18
+					},
+					{
+						"candidateId": "18",
+						"count": 16
+					},
+					{
+						"candidateId": "17",
+						"count": 13
+					}
+				]
+			}
+		},
+		{
+			"name": "ห้วยขวาง",
+			"voting": {
+				"eligiblePopulation": 67392,
+				"totalVotes": 1303,
+				"badVotes": 17,
+				"noVotes": 28,
+				"progress": 3.13,
+				"pollingUnits": {
+					"total": 96,
+					"reported": 3
+				},
+				"result": [
+					{
+						"candidateId": "3",
+						"count": 458
+					},
+					{
+						"candidateId": "13",
+						"count": 56
+					},
+					{
+						"candidateId": "12",
+						"count": 53
+					},
+					{
+						"candidateId": "11",
+						"count": 49
+					},
+					{
+						"candidateId": "9",
+						"count": 49
+					},
+					{
+						"candidateId": "10",
+						"count": 46
+					},
+					{
+						"candidateId": "22",
+						"count": 46
+					},
+					{
+						"candidateId": "8",
+						"count": 46
+					},
+					{
+						"candidateId": "21",
+						"count": 42
+					},
+					{
+						"candidateId": "7",
+						"count": 42
+					},
+					{
+						"candidateId": "19",
+						"count": 39
+					},
+					{
+						"candidateId": "20",
+						"count": 39
+					},
+					{
+						"candidateId": "6",
+						"count": 39
+					},
+					{
+						"candidateId": "18",
+						"count": 35
+					},
+					{
+						"candidateId": "5",
+						"count": 35
+					},
+					{
+						"candidateId": "17",
+						"count": 32
+					},
+					{
+						"candidateId": "4",
+						"count": 32
+					},
+					{
+						"candidateId": "16",
+						"count": 28
+					},
+					{
+						"candidateId": "15",
+						"count": 25
+					},
+					{
+						"candidateId": "2",
+						"count": 25
+					},
+					{
+						"candidateId": "1",
+						"count": 21
+					},
+					{
+						"candidateId": "14",
+						"count": 21
+					}
+				]
+			}
+		},
+		{
+			"name": "คลองสาน",
+			"voting": {
+				"eligiblePopulation": 53307,
+				"totalVotes": 1283,
+				"badVotes": 21,
+				"noVotes": 29,
+				"progress": 3.95,
+				"pollingUnits": {
+					"total": 76,
+					"reported": 3
+				},
+				"result": [
+					{
+						"candidateId": "4",
+						"count": 445
+					},
+					{
+						"candidateId": "21",
+						"count": 55
+					},
+					{
+						"candidateId": "6",
+						"count": 55
+					},
+					{
+						"candidateId": "19",
+						"count": 51
+					},
+					{
+						"candidateId": "20",
+						"count": 51
+					},
+					{
+						"candidateId": "5",
+						"count": 51
+					},
+					{
+						"candidateId": "18",
+						"count": 48
+					},
+					{
+						"candidateId": "3",
+						"count": 45
+					},
+					{
+						"candidateId": "17",
+						"count": 44
+					},
+					{
+						"candidateId": "16",
+						"count": 41
+					},
+					{
+						"candidateId": "2",
+						"count": 41
+					},
+					{
+						"candidateId": "1",
+						"count": 38
+					},
+					{
+						"candidateId": "15",
+						"count": 38
+					},
+					{
+						"candidateId": "14",
+						"count": 34
+					},
+					{
+						"candidateId": "13",
+						"count": 31
+					},
+					{
+						"candidateId": "12",
+						"count": 27
+					},
+					{
+						"candidateId": "9",
+						"count": 27
+					},
+					{
+						"candidateId": "11",
+						"count": 24
+					},
+					{
+						"candidateId": "8",
+						"count": 24
+					},
+					{
+						"candidateId": "10",
+						"count": 21
+					},
+					{
+						"candidateId": "22",
+						"count": 21
+					},
+					{
+						"candidateId": "7",
+						"count": 21
+					}
+				]
+			}
+		},
+		{
+			"name": "ตลิ่งชัน",
+			"voting": {
+				"eligiblePopulation": 84954,
+				"totalVotes": 1746,
+				"badVotes": 30,
+				"noVotes": 60,
+				"progress": 3.28,
+				"pollingUnits": {
+					"total": 122,
+					"reported": 4
+				},
+				"result": [
+					{
+						"candidateId": "11",
+						"count": 603
+					},
+					{
+						"candidateId": "2",
+						"count": 74
+					},
+					{
+						"candidateId": "1",
+						"count": 70
+					},
+					{
+						"candidateId": "10",
+						"count": 70
+					},
+					{
+						"candidateId": "22",
+						"count": 70
+					},
+					{
+						"candidateId": "21",
+						"count": 65
+					},
+					{
+						"candidateId": "19",
+						"count": 60
+					},
+					{
+						"candidateId": "20",
+						"count": 60
+					},
+					{
+						"candidateId": "18",
+						"count": 56
+					},
+					{
+						"candidateId": "9",
+						"count": 56
+					},
+					{
+						"candidateId": "17",
+						"count": 51
+					},
+					{
+						"candidateId": "8",
+						"count": 51
+					},
+					{
+						"candidateId": "16",
+						"count": 46
+					},
+					{
+						"candidateId": "7",
+						"count": 46
+					},
+					{
+						"candidateId": "15",
+						"count": 42
+					},
+					{
+						"candidateId": "6",
+						"count": 42
+					},
+					{
+						"candidateId": "14",
+						"count": 37
+					},
+					{
+						"candidateId": "5",
+						"count": 37
+					},
+					{
+						"candidateId": "13",
+						"count": 32
+					},
+					{
+						"candidateId": "4",
+						"count": 32
+					},
+					{
+						"candidateId": "12",
+						"count": 28
+					},
+					{
+						"candidateId": "3",
+						"count": 28
+					}
+				]
+			}
+		},
+		{
+			"name": "บางกอกน้อย",
+			"voting": {
+				"eligiblePopulation": 83321,
+				"totalVotes": 1211,
+				"badVotes": 19,
+				"noVotes": 31,
+				"progress": 2.52,
+				"pollingUnits": {
+					"total": 119,
+					"reported": 3
+				},
+				"result": [
+					{
+						"candidateId": "6",
+						"count": 423
+					},
+					{
+						"candidateId": "2",
+						"count": 52
+					},
+					{
+						"candidateId": "21",
+						"count": 52
+					},
+					{
+						"candidateId": "1",
+						"count": 49
+					},
+					{
+						"candidateId": "19",
+						"count": 49
+					},
+					{
+						"candidateId": "20",
+						"count": 49
+					},
+					{
+						"candidateId": "18",
+						"count": 46
+					},
+					{
+						"candidateId": "17",
+						"count": 42
+					},
+					{
+						"candidateId": "16",
+						"count": 39
+					},
+					{
+						"candidateId": "9",
+						"count": 39
+					},
+					{
+						"candidateId": "15",
+						"count": 36
+					},
+					{
+						"candidateId": "8",
+						"count": 36
+					},
+					{
+						"candidateId": "7",
+						"count": 33
+					},
+					{
+						"candidateId": "14",
+						"count": 32
+					},
+					{
+						"candidateId": "13",
+						"count": 29
+					},
+					{
+						"candidateId": "12",
+						"count": 26
+					},
+					{
+						"candidateId": "5",
+						"count": 26
+					},
+					{
+						"candidateId": "11",
+						"count": 23
+					},
+					{
+						"candidateId": "4",
+						"count": 23
+					},
+					{
+						"candidateId": "10",
+						"count": 19
+					},
+					{
+						"candidateId": "22",
+						"count": 19
+					},
+					{
+						"candidateId": "3",
+						"count": 19
+					}
+				]
+			}
+		},
+		{
+			"name": "บางขุนเทียน",
+			"voting": {
+				"eligiblePopulation": 143434,
+				"totalVotes": 2534,
+				"badVotes": 38,
+				"noVotes": 69,
+				"progress": 2.93,
+				"pollingUnits": {
+					"total": 205,
+					"reported": 6
+				},
+				"result": [
+					{
+						"candidateId": "3",
+						"count": 860
+					},
+					{
+						"candidateId": "13",
+						"count": 106
+					},
+					{
+						"candidateId": "7",
+						"count": 106
+					},
+					{
+						"candidateId": "12",
+						"count": 99
+					},
+					{
+						"candidateId": "6",
+						"count": 99
+					},
+					{
+						"candidateId": "5",
+						"count": 93
+					},
+					{
+						"candidateId": "11",
+						"count": 92
+					},
+					{
+						"candidateId": "10",
+						"count": 86
+					},
+					{
+						"candidateId": "22",
+						"count": 86
+					},
+					{
+						"candidateId": "4",
+						"count": 86
+					},
+					{
+						"candidateId": "21",
+						"count": 79
+					},
+					{
+						"candidateId": "19",
+						"count": 73
+					},
+					{
+						"candidateId": "2",
+						"count": 73
+					},
+					{
+						"candidateId": "20",
+						"count": 73
+					},
+					{
+						"candidateId": "1",
+						"count": 66
+					},
+					{
+						"candidateId": "18",
+						"count": 66
+					},
+					{
+						"candidateId": "17",
+						"count": 59
+					},
+					{
+						"candidateId": "16",
+						"count": 53
+					},
+					{
+						"candidateId": "15",
+						"count": 46
+					},
+					{
+						"candidateId": "9",
+						"count": 46
+					},
+					{
+						"candidateId": "14",
+						"count": 40
+					},
+					{
+						"candidateId": "8",
+						"count": 40
+					}
+				]
+			}
+		},
+		{
+			"name": "ภาษีเจริญ",
+			"voting": {
+				"eligiblePopulation": 100628,
+				"totalVotes": 1734,
+				"badVotes": 29,
+				"noVotes": 49,
+				"progress": 2.78,
+				"pollingUnits": {
+					"total": 144,
+					"reported": 4
+				},
+				"result": [
+					{
+						"candidateId": "1",
+						"count": 606
+					},
+					{
+						"candidateId": "15",
+						"count": 75
+					},
+					{
+						"candidateId": "14",
+						"count": 70
+					},
+					{
+						"candidateId": "13",
+						"count": 65
+					},
+					{
+						"candidateId": "9",
+						"count": 65
+					},
+					{
+						"candidateId": "12",
+						"count": 61
+					},
+					{
+						"candidateId": "8",
+						"count": 61
+					},
+					{
+						"candidateId": "11",
+						"count": 56
+					},
+					{
+						"candidateId": "7",
+						"count": 56
+					},
+					{
+						"candidateId": "10",
+						"count": 51
+					},
+					{
+						"candidateId": "22",
+						"count": 51
+					},
+					{
+						"candidateId": "6",
+						"count": 51
+					},
+					{
+						"candidateId": "21",
+						"count": 47
+					},
+					{
+						"candidateId": "5",
+						"count": 47
+					},
+					{
+						"candidateId": "19",
+						"count": 42
+					},
+					{
+						"candidateId": "20",
+						"count": 42
+					},
+					{
+						"candidateId": "4",
+						"count": 42
+					},
+					{
+						"candidateId": "18",
+						"count": 37
+					},
+					{
+						"candidateId": "3",
+						"count": 37
+					},
+					{
+						"candidateId": "17",
+						"count": 33
+					},
+					{
+						"candidateId": "2",
+						"count": 33
+					},
+					{
+						"candidateId": "16",
+						"count": 28
+					}
+				]
+			}
+		},
+		{
+			"name": "หนองแขม",
+			"voting": {
+				"eligiblePopulation": 123840,
+				"totalVotes": 2123,
+				"badVotes": 42,
+				"noVotes": 67,
+				"progress": 2.82,
+				"pollingUnits": {
+					"total": 177,
+					"reported": 5
+				},
+				"result": [
+					{
+						"candidateId": "8",
+						"count": 696
+					},
+					{
+						"candidateId": "4",
+						"count": 171
+					},
+					{
+						"candidateId": "17",
+						"count": 86
+					},
+					{
+						"candidateId": "5",
+						"count": 86
+					},
+					{
+						"candidateId": "16",
+						"count": 80
+					},
+					{
+						"candidateId": "15",
+						"count": 75
+					},
+					{
+						"candidateId": "3",
+						"count": 75
+					},
+					{
+						"candidateId": "14",
+						"count": 70
+					},
+					{
+						"candidateId": "2",
+						"count": 70
+					},
+					{
+						"candidateId": "1",
+						"count": 64
+					},
+					{
+						"candidateId": "13",
+						"count": 64
+					},
+					{
+						"candidateId": "12",
+						"count": 59
+					},
+					{
+						"candidateId": "11",
+						"count": 54
+					},
+					{
+						"candidateId": "10",
+						"count": 48
+					},
+					{
+						"candidateId": "22",
+						"count": 48
+					},
+					{
+						"candidateId": "9",
+						"count": 48
+					},
+					{
+						"candidateId": "21",
+						"count": 43
+					},
+					{
+						"candidateId": "19",
+						"count": 38
+					},
+					{
+						"candidateId": "7",
+						"count": 38
+					},
+					{
+						"candidateId": "20",
+						"count": 37
+					},
+					{
+						"candidateId": "18",
+						"count": 32
+					},
+					{
+						"candidateId": "6",
+						"count": 32
+					}
+				]
+			}
+		},
+		{
+			"name": "ราษฎร์บูรณะ",
+			"voting": {
+				"eligiblePopulation": 62386,
+				"totalVotes": 1223,
+				"badVotes": 23,
+				"noVotes": 38,
+				"progress": 3.37,
+				"pollingUnits": {
+					"total": 89,
+					"reported": 3
+				},
+				"result": [
+					{
+						"candidateId": "8",
+						"count": 386
+					},
+					{
+						"candidateId": "4",
+						"count": 95
+					},
+					{
+						"candidateId": "12",
+						"count": 47
+					},
+					{
+						"candidateId": "9",
+						"count": 47
+					},
+					{
+						"candidateId": "11",
+						"count": 44
+					},
+					{
+						"candidateId": "10",
+						"count": 41
+					},
+					{
+						"candidateId": "22",
+						"count": 41
+					},
+					{
+						"candidateId": "7",
+						"count": 41
+					},
+					{
+						"candidateId": "21",
+						"count": 39
+					},
+					{
+						"candidateId": "6",
+						"count": 39
+					},
+					{
+						"candidateId": "19",
+						"count": 36
+					},
+					{
+						"candidateId": "20",
+						"count": 36
+					},
+					{
+						"candidateId": "5",
+						"count": 36
+					},
+					{
+						"candidateId": "18",
+						"count": 33
+					},
+					{
+						"candidateId": "17",
+						"count": 30
+					},
+					{
+						"candidateId": "3",
+						"count": 30
+					},
+					{
+						"candidateId": "16",
+						"count": 27
+					},
+					{
+						"candidateId": "2",
+						"count": 27
+					},
+					{
+						"candidateId": "1",
+						"count": 24
+					},
+					{
+						"candidateId": "15",
+						"count": 24
+					},
+					{
+						"candidateId": "14",
+						"count": 21
+					},
+					{
+						"candidateId": "13",
+						"count": 18
+					}
+				]
+			}
+		},
+		{
+			"name": "บางพลัด",
+			"voting": {
+				"eligiblePopulation": 74359,
+				"totalVotes": 1331,
+				"badVotes": 21,
+				"noVotes": 33,
+				"progress": 2.83,
+				"pollingUnits": {
+					"total": 106,
+					"reported": 3
+				},
+				"result": [
+					{
+						"candidateId": "3",
+						"count": 452
+					},
+					{
+						"candidateId": "11",
+						"count": 56
+					},
+					{
+						"candidateId": "2",
+						"count": 56
+					},
+					{
+						"candidateId": "1",
+						"count": 52
+					},
+					{
+						"candidateId": "10",
+						"count": 52
+					},
+					{
+						"candidateId": "22",
+						"count": 52
+					},
+					{
+						"candidateId": "21",
+						"count": 49
+					},
+					{
+						"candidateId": "19",
+						"count": 45
+					},
+					{
+						"candidateId": "20",
+						"count": 45
+					},
+					{
+						"candidateId": "18",
+						"count": 42
+					},
+					{
+						"candidateId": "9",
+						"count": 42
+					},
+					{
+						"candidateId": "17",
+						"count": 38
+					},
+					{
+						"candidateId": "8",
+						"count": 38
+					},
+					{
+						"candidateId": "16",
+						"count": 35
+					},
+					{
+						"candidateId": "7",
+						"count": 35
+					},
+					{
+						"candidateId": "15",
+						"count": 31
+					},
+					{
+						"candidateId": "6",
+						"count": 31
+					},
+					{
+						"candidateId": "14",
+						"count": 28
+					},
+					{
+						"candidateId": "5",
+						"count": 28
+					},
+					{
+						"candidateId": "4",
+						"count": 25
+					},
+					{
+						"candidateId": "13",
+						"count": 24
+					},
+					{
+						"candidateId": "12",
+						"count": 21
+					}
+				]
+			}
+		},
+		{
+			"name": "ดินแดง",
+			"voting": {
+				"eligiblePopulation": 93387,
+				"totalVotes": 1676,
+				"badVotes": 26,
+				"noVotes": 41,
+				"progress": 2.99,
+				"pollingUnits": {
+					"total": 134,
+					"reported": 4
+				},
+				"result": [
+					{
+						"candidateId": "6",
+						"count": 561
+					},
+					{
+						"candidateId": "11",
+						"count": 69
+					},
+					{
+						"candidateId": "5",
+						"count": 69
+					},
+					{
+						"candidateId": "10",
+						"count": 65
+					},
+					{
+						"candidateId": "22",
+						"count": 65
+					},
+					{
+						"candidateId": "4",
+						"count": 65
+					},
+					{
+						"candidateId": "21",
+						"count": 60
+					},
+					{
+						"candidateId": "3",
+						"count": 60
+					},
+					{
+						"candidateId": "19",
+						"count": 56
+					},
+					{
+						"candidateId": "2",
+						"count": 56
+					},
+					{
+						"candidateId": "20",
+						"count": 56
+					},
+					{
+						"candidateId": "1",
+						"count": 52
+					},
+					{
+						"candidateId": "18",
+						"count": 52
+					},
+					{
+						"candidateId": "17",
+						"count": 47
+					},
+					{
+						"candidateId": "16",
+						"count": 43
+					},
+					{
+						"candidateId": "15",
+						"count": 39
+					},
+					{
+						"candidateId": "9",
+						"count": 39
+					},
+					{
+						"candidateId": "8",
+						"count": 35
+					},
+					{
+						"candidateId": "14",
+						"count": 34
+					},
+					{
+						"candidateId": "13",
+						"count": 30
+					},
+					{
+						"candidateId": "7",
+						"count": 30
+					},
+					{
+						"candidateId": "12",
+						"count": 26
+					}
+				]
+			}
+		},
+		{
+			"name": "บึงกุ่ม",
+			"voting": {
+				"eligiblePopulation": 113478,
+				"totalVotes": 2178,
+				"badVotes": 28,
+				"noVotes": 51,
+				"progress": 3.09,
+				"pollingUnits": {
+					"total": 162,
+					"reported": 5
+				},
+				"result": [
+					{
+						"candidateId": "3",
+						"count": 782
+					},
+					{
+						"candidateId": "17",
+						"count": 97
+					},
+					{
+						"candidateId": "16",
+						"count": 91
+					},
+					{
+						"candidateId": "9",
+						"count": 85
+					},
+					{
+						"candidateId": "15",
+						"count": 84
+					},
+					{
+						"candidateId": "14",
+						"count": 78
+					},
+					{
+						"candidateId": "8",
+						"count": 78
+					},
+					{
+						"candidateId": "13",
+						"count": 72
+					},
+					{
+						"candidateId": "7",
+						"count": 72
+					},
+					{
+						"candidateId": "12",
+						"count": 66
+					},
+					{
+						"candidateId": "6",
+						"count": 66
+					},
+					{
+						"candidateId": "11",
+						"count": 60
+					},
+					{
+						"candidateId": "5",
+						"count": 60
+					},
+					{
+						"candidateId": "10",
+						"count": 54
+					},
+					{
+						"candidateId": "22",
+						"count": 54
+					},
+					{
+						"candidateId": "4",
+						"count": 54
+					},
+					{
+						"candidateId": "21",
+						"count": 48
+					},
+					{
+						"candidateId": "19",
+						"count": 42
+					},
+					{
+						"candidateId": "2",
+						"count": 42
+					},
+					{
+						"candidateId": "20",
+						"count": 42
+					},
+					{
+						"candidateId": "1",
+						"count": 36
+					},
+					{
+						"candidateId": "18",
+						"count": 36
+					}
+				]
+			}
+		},
+		{
+			"name": "สาทร",
+			"voting": {
+				"eligiblePopulation": 59821,
+				"totalVotes": 1224,
+				"badVotes": 17,
+				"noVotes": 31,
+				"progress": 3.49,
+				"pollingUnits": {
+					"total": 86,
+					"reported": 3
+				},
+				"result": [
+					{
+						"candidateId": "8",
+						"count": 384
+					},
+					{
+						"candidateId": "4",
+						"count": 95
+					},
+					{
+						"candidateId": "10",
+						"count": 47
+					},
+					{
+						"candidateId": "22",
+						"count": 47
+					},
+					{
+						"candidateId": "7",
+						"count": 47
+					},
+					{
+						"candidateId": "21",
+						"count": 44
+					},
+					{
+						"candidateId": "6",
+						"count": 44
+					},
+					{
+						"candidateId": "19",
+						"count": 41
+					},
+					{
+						"candidateId": "20",
+						"count": 41
+					},
+					{
+						"candidateId": "5",
+						"count": 41
+					},
+					{
+						"candidateId": "18",
+						"count": 38
+					},
+					{
+						"candidateId": "17",
+						"count": 35
+					},
+					{
+						"candidateId": "3",
+						"count": 35
+					},
+					{
+						"candidateId": "16",
+						"count": 33
+					},
+					{
+						"candidateId": "2",
+						"count": 33
+					},
+					{
+						"candidateId": "1",
+						"count": 30
+					},
+					{
+						"candidateId": "15",
+						"count": 30
+					},
+					{
+						"candidateId": "14",
+						"count": 27
+					},
+					{
+						"candidateId": "13",
+						"count": 24
+					},
+					{
+						"candidateId": "12",
+						"count": 21
+					},
+					{
+						"candidateId": "9",
+						"count": 21
+					},
+					{
+						"candidateId": "11",
+						"count": 18
+					}
+				]
+			}
+		},
+		{
+			"name": "บางซื่อ",
+			"voting": {
+				"eligiblePopulation": 100687,
+				"totalVotes": 1686,
+				"badVotes": 27,
+				"noVotes": 44,
+				"progress": 2.78,
+				"pollingUnits": {
+					"total": 144,
+					"reported": 4
+				},
+				"result": [
+					{
+						"candidateId": "4",
+						"count": 561
+					},
+					{
+						"candidateId": "1",
+						"count": 138
+					},
+					{
+						"candidateId": "19",
+						"count": 69
+					},
+					{
+						"candidateId": "20",
+						"count": 69
+					},
+					{
+						"candidateId": "18",
+						"count": 65
+					},
+					{
+						"candidateId": "17",
+						"count": 60
+					},
+					{
+						"candidateId": "16",
+						"count": 56
+					},
+					{
+						"candidateId": "9",
+						"count": 56
+					},
+					{
+						"candidateId": "15",
+						"count": 52
+					},
+					{
+						"candidateId": "8",
+						"count": 52
+					},
+					{
+						"candidateId": "14",
+						"count": 48
+					},
+					{
+						"candidateId": "7",
+						"count": 48
+					},
+					{
+						"candidateId": "13",
+						"count": 43
+					},
+					{
+						"candidateId": "6",
+						"count": 43
+					},
+					{
+						"candidateId": "12",
+						"count": 39
+					},
+					{
+						"candidateId": "5",
+						"count": 39
+					},
+					{
+						"candidateId": "11",
+						"count": 35
+					},
+					{
+						"candidateId": "10",
+						"count": 30
+					},
+					{
+						"candidateId": "22",
+						"count": 30
+					},
+					{
+						"candidateId": "3",
+						"count": 30
+					},
+					{
+						"candidateId": "2",
+						"count": 26
+					},
+					{
+						"candidateId": "21",
+						"count": 26
+					}
+				]
+			}
+		},
+		{
+			"name": "จตุจักร",
+			"voting": {
+				"eligiblePopulation": 127138,
+				"totalVotes": 2573,
+				"badVotes": 24,
+				"noVotes": 60,
+				"progress": 3.3,
+				"pollingUnits": {
+					"total": 182,
+					"reported": 6
+				},
+				"result": [
+					{
+						"candidateId": "4",
+						"count": 899
+					},
+					{
+						"candidateId": "16",
+						"count": 111
+					},
+					{
+						"candidateId": "7",
+						"count": 111
+					},
+					{
+						"candidateId": "15",
+						"count": 104
+					},
+					{
+						"candidateId": "6",
+						"count": 104
+					},
+					{
+						"candidateId": "14",
+						"count": 97
+					},
+					{
+						"candidateId": "5",
+						"count": 97
+					},
+					{
+						"candidateId": "13",
+						"count": 90
+					},
+					{
+						"candidateId": "12",
+						"count": 83
+					},
+					{
+						"candidateId": "3",
+						"count": 83
+					},
+					{
+						"candidateId": "11",
+						"count": 76
+					},
+					{
+						"candidateId": "2",
+						"count": 76
+					},
+					{
+						"candidateId": "1",
+						"count": 69
+					},
+					{
+						"candidateId": "10",
+						"count": 69
+					},
+					{
+						"candidateId": "22",
+						"count": 69
+					},
+					{
+						"candidateId": "21",
+						"count": 62
+					},
+					{
+						"candidateId": "19",
+						"count": 55
+					},
+					{
+						"candidateId": "20",
+						"count": 55
+					},
+					{
+						"candidateId": "18",
+						"count": 48
+					},
+					{
+						"candidateId": "9",
+						"count": 48
+					},
+					{
+						"candidateId": "8",
+						"count": 42
+					},
+					{
+						"candidateId": "17",
+						"count": 41
+					}
+				]
+			}
+		},
+		{
+			"name": "บางคอแหลม",
+			"voting": {
+				"eligiblePopulation": 64851,
+				"totalVotes": 1234,
+				"badVotes": 21,
+				"noVotes": 32,
+				"progress": 3.23,
+				"pollingUnits": {
+					"total": 93,
+					"reported": 3
+				},
+				"result": [
+					{
+						"candidateId": "4",
+						"count": 415
+					},
+					{
+						"candidateId": "11",
+						"count": 51
+					},
+					{
+						"candidateId": "7",
+						"count": 51
+					},
+					{
+						"candidateId": "10",
+						"count": 48
+					},
+					{
+						"candidateId": "22",
+						"count": 48
+					},
+					{
+						"candidateId": "6",
+						"count": 48
+					},
+					{
+						"candidateId": "21",
+						"count": 45
+					},
+					{
+						"candidateId": "5",
+						"count": 45
+					},
+					{
+						"candidateId": "19",
+						"count": 42
+					},
+					{
+						"candidateId": "20",
+						"count": 41
+					},
+					{
+						"candidateId": "18",
+						"count": 38
+					},
+					{
+						"candidateId": "3",
+						"count": 38
+					},
+					{
+						"candidateId": "17",
+						"count": 35
+					},
+					{
+						"candidateId": "2",
+						"count": 35
+					},
+					{
+						"candidateId": "1",
+						"count": 32
+					},
+					{
+						"candidateId": "16",
+						"count": 32
+					},
+					{
+						"candidateId": "15",
+						"count": 29
+					},
+					{
+						"candidateId": "14",
+						"count": 26
+					},
+					{
+						"candidateId": "13",
+						"count": 22
+					},
+					{
+						"candidateId": "9",
+						"count": 22
+					},
+					{
+						"candidateId": "12",
+						"count": 19
+					},
+					{
+						"candidateId": "8",
+						"count": 19
+					}
+				]
+			}
+		},
+		{
+			"name": "ประเวศ",
+			"voting": {
+				"eligiblePopulation": 140134,
+				"totalVotes": 2475,
+				"badVotes": 39,
+				"noVotes": 63,
+				"progress": 3,
+				"pollingUnits": {
+					"total": 200,
+					"reported": 6
+				},
+				"result": [
+					{
+						"candidateId": "3",
+						"count": 886
+					},
+					{
+						"candidateId": "18",
+						"count": 109
+					},
+					{
+						"candidateId": "4",
+						"count": 109
+					},
+					{
+						"candidateId": "17",
+						"count": 102
+					},
+					{
+						"candidateId": "16",
+						"count": 95
+					},
+					{
+						"candidateId": "2",
+						"count": 95
+					},
+					{
+						"candidateId": "1",
+						"count": 89
+					},
+					{
+						"candidateId": "15",
+						"count": 89
+					},
+					{
+						"candidateId": "14",
+						"count": 82
+					},
+					{
+						"candidateId": "13",
+						"count": 75
+					},
+					{
+						"candidateId": "12",
+						"count": 68
+					},
+					{
+						"candidateId": "9",
+						"count": 68
+					},
+					{
+						"candidateId": "11",
+						"count": 61
+					},
+					{
+						"candidateId": "8",
+						"count": 61
+					},
+					{
+						"candidateId": "10",
+						"count": 55
+					},
+					{
+						"candidateId": "22",
+						"count": 55
+					},
+					{
+						"candidateId": "7",
+						"count": 55
+					},
+					{
+						"candidateId": "21",
+						"count": 48
+					},
+					{
+						"candidateId": "6",
+						"count": 48
+					},
+					{
+						"candidateId": "19",
+						"count": 41
+					},
+					{
+						"candidateId": "20",
+						"count": 41
+					},
+					{
+						"candidateId": "5",
+						"count": 41
+					}
+				]
+			}
+		},
+		{
+			"name": "คลองเตย",
+			"voting": {
+				"eligiblePopulation": 73153,
+				"totalVotes": 1202,
+				"badVotes": 25,
+				"noVotes": 29,
+				"progress": 2.86,
+				"pollingUnits": {
+					"total": 105,
+					"reported": 3
+				},
+				"result": [
+					{
+						"candidateId": "8",
+						"count": 404
+					},
+					{
+						"candidateId": "12",
+						"count": 50
+					},
+					{
+						"candidateId": "5",
+						"count": 50
+					},
+					{
+						"candidateId": "11",
+						"count": 47
+					},
+					{
+						"candidateId": "4",
+						"count": 47
+					},
+					{
+						"candidateId": "10",
+						"count": 44
+					},
+					{
+						"candidateId": "3",
+						"count": 44
+					},
+					{
+						"candidateId": "22",
+						"count": 43
+					},
+					{
+						"candidateId": "2",
+						"count": 40
+					},
+					{
+						"candidateId": "21",
+						"count": 40
+					},
+					{
+						"candidateId": "1",
+						"count": 37
+					},
+					{
+						"candidateId": "19",
+						"count": 37
+					},
+					{
+						"candidateId": "20",
+						"count": 37
+					},
+					{
+						"candidateId": "18",
+						"count": 34
+					},
+					{
+						"candidateId": "17",
+						"count": 31
+					},
+					{
+						"candidateId": "16",
+						"count": 28
+					},
+					{
+						"candidateId": "9",
+						"count": 28
+					},
+					{
+						"candidateId": "15",
+						"count": 25
+					},
+					{
+						"candidateId": "14",
+						"count": 22
+					},
+					{
+						"candidateId": "7",
+						"count": 22
+					},
+					{
+						"candidateId": "13",
+						"count": 19
+					},
+					{
+						"candidateId": "6",
+						"count": 19
+					}
+				]
+			}
+		},
+		{
+			"name": "สวนหลวง",
+			"voting": {
+				"eligiblePopulation": 97144,
+				"totalVotes": 1689,
+				"badVotes": 22,
+				"noVotes": 42,
+				"progress": 2.88,
+				"pollingUnits": {
+					"total": 139,
+					"reported": 4
+				},
+				"result": [
+					{
+						"candidateId": "8",
+						"count": 577
+					},
+					{
+						"candidateId": "14",
+						"count": 71
+					},
+					{
+						"candidateId": "9",
+						"count": 71
+					},
+					{
+						"candidateId": "13",
+						"count": 67
+					},
+					{
+						"candidateId": "12",
+						"count": 62
+					},
+					{
+						"candidateId": "7",
+						"count": 62
+					},
+					{
+						"candidateId": "11",
+						"count": 58
+					},
+					{
+						"candidateId": "6",
+						"count": 58
+					},
+					{
+						"candidateId": "10",
+						"count": 53
+					},
+					{
+						"candidateId": "22",
+						"count": 53
+					},
+					{
+						"candidateId": "5",
+						"count": 53
+					},
+					{
+						"candidateId": "21",
+						"count": 49
+					},
+					{
+						"candidateId": "4",
+						"count": 49
+					},
+					{
+						"candidateId": "19",
+						"count": 44
+					},
+					{
+						"candidateId": "20",
+						"count": 44
+					},
+					{
+						"candidateId": "3",
+						"count": 44
+					},
+					{
+						"candidateId": "18",
+						"count": 40
+					},
+					{
+						"candidateId": "2",
+						"count": 40
+					},
+					{
+						"candidateId": "1",
+						"count": 36
+					},
+					{
+						"candidateId": "17",
+						"count": 36
+					},
+					{
+						"candidateId": "16",
+						"count": 31
+					},
+					{
+						"candidateId": "15",
+						"count": 27
+					}
+				]
+			}
+		},
+		{
+			"name": "จอมทอง",
+			"voting": {
+				"eligiblePopulation": 117583,
+				"totalVotes": 2030,
+				"badVotes": 34,
+				"noVotes": 56,
+				"progress": 2.98,
+				"pollingUnits": {
+					"total": 168,
+					"reported": 5
+				},
+				"result": [
+					{
+						"candidateId": "11",
+						"count": 687
+					},
+					{
+						"candidateId": "15",
+						"count": 85
+					},
+					{
+						"candidateId": "9",
+						"count": 85
+					},
+					{
+						"candidateId": "14",
+						"count": 79
+					},
+					{
+						"candidateId": "8",
+						"count": 79
+					},
+					{
+						"candidateId": "13",
+						"count": 74
+					},
+					{
+						"candidateId": "7",
+						"count": 74
+					},
+					{
+						"candidateId": "12",
+						"count": 69
+					},
+					{
+						"candidateId": "6",
+						"count": 69
+					},
+					{
+						"candidateId": "5",
+						"count": 63
+					},
+					{
+						"candidateId": "10",
+						"count": 58
+					},
+					{
+						"candidateId": "22",
+						"count": 58
+					},
+					{
+						"candidateId": "4",
+						"count": 58
+					},
+					{
+						"candidateId": "21",
+						"count": 53
+					},
+					{
+						"candidateId": "3",
+						"count": 53
+					},
+					{
+						"candidateId": "19",
+						"count": 48
+					},
+					{
+						"candidateId": "2",
+						"count": 48
+					},
+					{
+						"candidateId": "20",
+						"count": 47
+					},
+					{
+						"candidateId": "1",
+						"count": 42
+					},
+					{
+						"candidateId": "18",
+						"count": 42
+					},
+					{
+						"candidateId": "17",
+						"count": 37
+					},
+					{
+						"candidateId": "16",
+						"count": 32
+					}
+				]
+			}
+		},
+		{
+			"name": "ดอนเมือง",
+			"voting": {
+				"eligiblePopulation": 132987,
+				"totalVotes": 2550,
+				"badVotes": 41,
+				"noVotes": 82,
+				"progress": 3.14,
+				"pollingUnits": {
+					"total": 191,
+					"reported": 6
+				},
+				"result": [
+					{
+						"candidateId": "1",
+						"count": 815
+					},
+					{
+						"candidateId": "8",
+						"count": 201
+					},
+					{
+						"candidateId": "19",
+						"count": 100
+					},
+					{
+						"candidateId": "20",
+						"count": 100
+					},
+					{
+						"candidateId": "18",
+						"count": 94
+					},
+					{
+						"candidateId": "7",
+						"count": 94
+					},
+					{
+						"candidateId": "17",
+						"count": 88
+					},
+					{
+						"candidateId": "6",
+						"count": 88
+					},
+					{
+						"candidateId": "5",
+						"count": 82
+					},
+					{
+						"candidateId": "16",
+						"count": 81
+					},
+					{
+						"candidateId": "15",
+						"count": 75
+					},
+					{
+						"candidateId": "4",
+						"count": 75
+					},
+					{
+						"candidateId": "14",
+						"count": 69
+					},
+					{
+						"candidateId": "3",
+						"count": 69
+					},
+					{
+						"candidateId": "13",
+						"count": 63
+					},
+					{
+						"candidateId": "2",
+						"count": 63
+					},
+					{
+						"candidateId": "12",
+						"count": 56
+					},
+					{
+						"candidateId": "11",
+						"count": 50
+					},
+					{
+						"candidateId": "10",
+						"count": 44
+					},
+					{
+						"candidateId": "22",
+						"count": 44
+					},
+					{
+						"candidateId": "21",
+						"count": 38
+					},
+					{
+						"candidateId": "9",
+						"count": 38
+					}
+				]
+			}
+		},
+		{
+			"name": "ราชเทวี",
+			"voting": {
+				"eligiblePopulation": 48780,
+				"totalVotes": 769,
+				"badVotes": 9,
+				"noVotes": 21,
+				"progress": 2.86,
+				"pollingUnits": {
+					"total": 70,
+					"reported": 2
+				},
+				"result": [
+					{
+						"candidateId": "4",
+						"count": 250
+					},
+					{
+						"candidateId": "1",
+						"count": 62
+					},
+					{
+						"candidateId": "11",
+						"count": 31
+					},
+					{
+						"candidateId": "5",
+						"count": 31
+					},
+					{
+						"candidateId": "10",
+						"count": 29
+					},
+					{
+						"candidateId": "22",
+						"count": 29
+					},
+					{
+						"candidateId": "21",
+						"count": 27
+					},
+					{
+						"candidateId": "3",
+						"count": 27
+					},
+					{
+						"candidateId": "19",
+						"count": 25
+					},
+					{
+						"candidateId": "2",
+						"count": 25
+					},
+					{
+						"candidateId": "20",
+						"count": 25
+					},
+					{
+						"candidateId": "18",
+						"count": 23
+					},
+					{
+						"candidateId": "17",
+						"count": 21
+					},
+					{
+						"candidateId": "16",
+						"count": 19
+					},
+					{
+						"candidateId": "15",
+						"count": 17
+					},
+					{
+						"candidateId": "9",
+						"count": 17
+					},
+					{
+						"candidateId": "14",
+						"count": 15
+					},
+					{
+						"candidateId": "8",
+						"count": 15
+					},
+					{
+						"candidateId": "7",
+						"count": 14
+					},
+					{
+						"candidateId": "13",
+						"count": 13
+					},
+					{
+						"candidateId": "12",
+						"count": 12
+					},
+					{
+						"candidateId": "6",
+						"count": 12
+					}
+				]
+			}
+		},
+		{
+			"name": "ลาดพร้าว",
+			"voting": {
+				"eligiblePopulation": 94462,
+				"totalVotes": 1782,
+				"badVotes": 21,
+				"noVotes": 40,
+				"progress": 2.96,
+				"pollingUnits": {
+					"total": 135,
+					"reported": 4
+				},
+				"result": [
+					{
+						"candidateId": "8",
+						"count": 627
+					},
+					{
+						"candidateId": "21",
+						"count": 77
+					},
+					{
+						"candidateId": "19",
+						"count": 72
+					},
+					{
+						"candidateId": "20",
+						"count": 72
+					},
+					{
+						"candidateId": "9",
+						"count": 72
+					},
+					{
+						"candidateId": "18",
+						"count": 67
+					},
+					{
+						"candidateId": "17",
+						"count": 63
+					},
+					{
+						"candidateId": "7",
+						"count": 63
+					},
+					{
+						"candidateId": "16",
+						"count": 58
+					},
+					{
+						"candidateId": "6",
+						"count": 58
+					},
+					{
+						"candidateId": "15",
+						"count": 53
+					},
+					{
+						"candidateId": "5",
+						"count": 53
+					},
+					{
+						"candidateId": "14",
+						"count": 48
+					},
+					{
+						"candidateId": "4",
+						"count": 48
+					},
+					{
+						"candidateId": "13",
+						"count": 43
+					},
+					{
+						"candidateId": "3",
+						"count": 43
+					},
+					{
+						"candidateId": "12",
+						"count": 39
+					},
+					{
+						"candidateId": "2",
+						"count": 39
+					},
+					{
+						"candidateId": "1",
+						"count": 34
+					},
+					{
+						"candidateId": "11",
+						"count": 34
+					},
+					{
+						"candidateId": "10",
+						"count": 29
+					},
+					{
+						"candidateId": "22",
+						"count": 29
+					}
+				]
+			}
+		},
+		{
+			"name": "วัฒนา",
+			"voting": {
+				"eligiblePopulation": 55830,
+				"totalVotes": 766,
+				"badVotes": 9,
+				"noVotes": 15,
+				"progress": 2.5,
+				"pollingUnits": {
+					"total": 80,
+					"reported": 2
+				},
+				"result": [
+					{
+						"candidateId": "6",
+						"count": 270
+					},
+					{
+						"candidateId": "15",
+						"count": 33
+					},
+					{
+						"candidateId": "14",
+						"count": 31
+					},
+					{
+						"candidateId": "5",
+						"count": 31
+					},
+					{
+						"candidateId": "13",
+						"count": 29
+					},
+					{
+						"candidateId": "4",
+						"count": 29
+					},
+					{
+						"candidateId": "12",
+						"count": 27
+					},
+					{
+						"candidateId": "3",
+						"count": 27
+					},
+					{
+						"candidateId": "11",
+						"count": 25
+					},
+					{
+						"candidateId": "2",
+						"count": 25
+					},
+					{
+						"candidateId": "1",
+						"count": 23
+					},
+					{
+						"candidateId": "10",
+						"count": 23
+					},
+					{
+						"candidateId": "22",
+						"count": 23
+					},
+					{
+						"candidateId": "21",
+						"count": 21
+					},
+					{
+						"candidateId": "19",
+						"count": 19
+					},
+					{
+						"candidateId": "20",
+						"count": 19
+					},
+					{
+						"candidateId": "18",
+						"count": 17
+					},
+					{
+						"candidateId": "9",
+						"count": 17
+					},
+					{
+						"candidateId": "8",
+						"count": 15
+					},
+					{
+						"candidateId": "17",
+						"count": 14
+					},
+					{
+						"candidateId": "16",
+						"count": 12
+					},
+					{
+						"candidateId": "7",
+						"count": 12
+					}
+				]
+			}
+		},
+		{
+			"name": "บางแค",
+			"voting": {
+				"eligiblePopulation": 157372,
+				"totalVotes": 2610,
+				"badVotes": 43,
+				"noVotes": 76,
+				"progress": 2.67,
+				"pollingUnits": {
+					"total": 225,
+					"reported": 6
+				},
+				"result": [
+					{
+						"candidateId": "8",
+						"count": 895
+					},
+					{
+						"candidateId": "21",
+						"count": 110
+					},
+					{
+						"candidateId": "19",
+						"count": 103
+					},
+					{
+						"candidateId": "20",
+						"count": 103
+					},
+					{
+						"candidateId": "7",
+						"count": 103
+					},
+					{
+						"candidateId": "18",
+						"count": 96
+					},
+					{
+						"candidateId": "6",
+						"count": 96
+					},
+					{
+						"candidateId": "5",
+						"count": 90
+					},
+					{
+						"candidateId": "17",
+						"count": 89
+					},
+					{
+						"candidateId": "16",
+						"count": 83
+					},
+					{
+						"candidateId": "4",
+						"count": 83
+					},
+					{
+						"candidateId": "15",
+						"count": 76
+					},
+					{
+						"candidateId": "3",
+						"count": 76
+					},
+					{
+						"candidateId": "14",
+						"count": 69
+					},
+					{
+						"candidateId": "2",
+						"count": 69
+					},
+					{
+						"candidateId": "1",
+						"count": 62
+					},
+					{
+						"candidateId": "13",
+						"count": 62
+					},
+					{
+						"candidateId": "12",
+						"count": 55
+					},
+					{
+						"candidateId": "11",
+						"count": 48
+					},
+					{
+						"candidateId": "10",
+						"count": 41
+					},
+					{
+						"candidateId": "22",
+						"count": 41
+					},
+					{
+						"candidateId": "9",
+						"count": 41
+					}
+				]
+			}
+		},
+		{
+			"name": "หลักสี่",
+			"voting": {
+				"eligiblePopulation": 82916,
+				"totalVotes": 1297,
+				"badVotes": 16,
+				"noVotes": 37,
+				"progress": 2.52,
+				"pollingUnits": {
+					"total": 119,
+					"reported": 3
+				},
+				"result": [
+					{
+						"candidateId": "11",
+						"count": 447
+					},
+					{
+						"candidateId": "10",
+						"count": 52
+					},
+					{
+						"candidateId": "9",
+						"count": 52
+					},
+					{
+						"candidateId": "22",
+						"count": 51
+					},
+					{
+						"candidateId": "21",
+						"count": 48
+					},
+					{
+						"candidateId": "8",
+						"count": 48
+					},
+					{
+						"candidateId": "19",
+						"count": 45
+					},
+					{
+						"candidateId": "20",
+						"count": 45
+					},
+					{
+						"candidateId": "7",
+						"count": 45
+					},
+					{
+						"candidateId": "18",
+						"count": 41
+					},
+					{
+						"candidateId": "6",
+						"count": 41
+					},
+					{
+						"candidateId": "17",
+						"count": 38
+					},
+					{
+						"candidateId": "5",
+						"count": 38
+					},
+					{
+						"candidateId": "16",
+						"count": 34
+					},
+					{
+						"candidateId": "4",
+						"count": 34
+					},
+					{
+						"candidateId": "15",
+						"count": 31
+					},
+					{
+						"candidateId": "3",
+						"count": 31
+					},
+					{
+						"candidateId": "14",
+						"count": 27
+					},
+					{
+						"candidateId": "2",
+						"count": 27
+					},
+					{
+						"candidateId": "1",
+						"count": 24
+					},
+					{
+						"candidateId": "13",
+						"count": 24
+					},
+					{
+						"candidateId": "12",
+						"count": 21
+					}
+				]
+			}
+		},
+		{
+			"name": "สายไหม",
+			"voting": {
+				"eligiblePopulation": 163082,
+				"totalVotes": 3024,
+				"badVotes": 42,
+				"noVotes": 73,
+				"progress": 3,
+				"pollingUnits": {
+					"total": 233,
+					"reported": 7
+				},
+				"result": [
+					{
+						"candidateId": "4",
+						"count": 1008
+					},
+					{
+						"candidateId": "1",
+						"count": 248
+					},
+					{
+						"candidateId": "13",
+						"count": 124
+					},
+					{
+						"candidateId": "12",
+						"count": 116
+					},
+					{
+						"candidateId": "11",
+						"count": 109
+					},
+					{
+						"candidateId": "10",
+						"count": 101
+					},
+					{
+						"candidateId": "22",
+						"count": 101
+					},
+					{
+						"candidateId": "9",
+						"count": 101
+					},
+					{
+						"candidateId": "21",
+						"count": 93
+					},
+					{
+						"candidateId": "8",
+						"count": 93
+					},
+					{
+						"candidateId": "19",
+						"count": 85
+					},
+					{
+						"candidateId": "20",
+						"count": 85
+					},
+					{
+						"candidateId": "7",
+						"count": 85
+					},
+					{
+						"candidateId": "18",
+						"count": 78
+					},
+					{
+						"candidateId": "6",
+						"count": 78
+					},
+					{
+						"candidateId": "17",
+						"count": 70
+					},
+					{
+						"candidateId": "5",
+						"count": 70
+					},
+					{
+						"candidateId": "16",
+						"count": 62
+					},
+					{
+						"candidateId": "15",
+						"count": 54
+					},
+					{
+						"candidateId": "3",
+						"count": 54
+					},
+					{
+						"candidateId": "14",
+						"count": 47
+					},
+					{
+						"candidateId": "2",
+						"count": 47
+					}
+				]
+			}
+		},
+		{
+			"name": "คันนายาว",
+			"voting": {
+				"eligiblePopulation": 70521,
+				"totalVotes": 1336,
+				"badVotes": 19,
+				"noVotes": 35,
+				"progress": 2.97,
+				"pollingUnits": {
+					"total": 101,
+					"reported": 3
+				},
+				"result": [
+					{
+						"candidateId": "4",
+						"count": 456
+					},
+					{
+						"candidateId": "13",
+						"count": 56
+					},
+					{
+						"candidateId": "3",
+						"count": 56
+					},
+					{
+						"candidateId": "12",
+						"count": 53
+					},
+					{
+						"candidateId": "2",
+						"count": 53
+					},
+					{
+						"candidateId": "1",
+						"count": 49
+					},
+					{
+						"candidateId": "11",
+						"count": 49
+					},
+					{
+						"candidateId": "10",
+						"count": 46
+					},
+					{
+						"candidateId": "22",
+						"count": 46
+					},
+					{
+						"candidateId": "21",
+						"count": 42
+					},
+					{
+						"candidateId": "19",
+						"count": 39
+					},
+					{
+						"candidateId": "20",
+						"count": 39
+					},
+					{
+						"candidateId": "9",
+						"count": 39
+					},
+					{
+						"candidateId": "18",
+						"count": 35
+					},
+					{
+						"candidateId": "8",
+						"count": 35
+					},
+					{
+						"candidateId": "17",
+						"count": 32
+					},
+					{
+						"candidateId": "7",
+						"count": 32
+					},
+					{
+						"candidateId": "16",
+						"count": 28
+					},
+					{
+						"candidateId": "6",
+						"count": 28
+					},
+					{
+						"candidateId": "15",
+						"count": 24
+					},
+					{
+						"candidateId": "5",
+						"count": 24
+					},
+					{
+						"candidateId": "14",
+						"count": 21
+					}
+				]
+			}
+		},
+		{
+			"name": "สะพานสูง",
+			"voting": {
+				"eligiblePopulation": 76216,
+				"totalVotes": 1798,
+				"badVotes": 21,
+				"noVotes": 45,
+				"progress": 3.67,
+				"pollingUnits": {
+					"total": 109,
+					"reported": 4
+				},
+				"result": [
+					{
+						"candidateId": "11",
+						"count": 636
+					},
+					{
+						"candidateId": "14",
+						"count": 78
+					},
+					{
+						"candidateId": "2",
+						"count": 78
+					},
+					{
+						"candidateId": "1",
+						"count": 74
+					},
+					{
+						"candidateId": "13",
+						"count": 73
+					},
+					{
+						"candidateId": "12",
+						"count": 69
+					},
+					{
+						"candidateId": "10",
+						"count": 59
+					},
+					{
+						"candidateId": "22",
+						"count": 59
+					},
+					{
+						"candidateId": "9",
+						"count": 59
+					},
+					{
+						"candidateId": "21",
+						"count": 54
+					},
+					{
+						"candidateId": "8",
+						"count": 54
+					},
+					{
+						"candidateId": "19",
+						"count": 49
+					},
+					{
+						"candidateId": "20",
+						"count": 49
+					},
+					{
+						"candidateId": "7",
+						"count": 49
+					},
+					{
+						"candidateId": "18",
+						"count": 44
+					},
+					{
+						"candidateId": "6",
+						"count": 44
+					},
+					{
+						"candidateId": "17",
+						"count": 39
+					},
+					{
+						"candidateId": "5",
+						"count": 39
+					},
+					{
+						"candidateId": "16",
+						"count": 34
+					},
+					{
+						"candidateId": "4",
+						"count": 34
+					},
+					{
+						"candidateId": "15",
+						"count": 29
+					},
+					{
+						"candidateId": "3",
+						"count": 29
+					}
+				]
+			}
+		},
+		{
+			"name": "วังทองหลาง",
+			"voting": {
+				"eligiblePopulation": 85119,
+				"totalVotes": 1735,
+				"badVotes": 20,
+				"noVotes": 37,
+				"progress": 3.28,
+				"pollingUnits": {
+					"total": 122,
+					"reported": 4
+				},
+				"result": [
+					{
+						"candidateId": "3",
+						"count": 596
+					},
+					{
+						"candidateId": "12",
+						"count": 73
+					},
+					{
+						"candidateId": "6",
+						"count": 73
+					},
+					{
+						"candidateId": "11",
+						"count": 69
+					},
+					{
+						"candidateId": "5",
+						"count": 69
+					},
+					{
+						"candidateId": "10",
+						"count": 64
+					},
+					{
+						"candidateId": "22",
+						"count": 64
+					},
+					{
+						"candidateId": "4",
+						"count": 64
+					},
+					{
+						"candidateId": "21",
+						"count": 60
+					},
+					{
+						"candidateId": "19",
+						"count": 55
+					},
+					{
+						"candidateId": "2",
+						"count": 55
+					},
+					{
+						"candidateId": "20",
+						"count": 55
+					},
+					{
+						"candidateId": "1",
+						"count": 50
+					},
+					{
+						"candidateId": "18",
+						"count": 50
+					},
+					{
+						"candidateId": "17",
+						"count": 46
+					},
+					{
+						"candidateId": "16",
+						"count": 41
+					},
+					{
+						"candidateId": "15",
+						"count": 37
+					},
+					{
+						"candidateId": "9",
+						"count": 37
+					},
+					{
+						"candidateId": "14",
+						"count": 32
+					},
+					{
+						"candidateId": "8",
+						"count": 32
+					},
+					{
+						"candidateId": "13",
+						"count": 28
+					},
+					{
+						"candidateId": "7",
+						"count": 28
+					}
+				]
+			}
+		},
+		{
+			"name": "คลองสามวา",
+			"voting": {
+				"eligiblePopulation": 160227,
+				"totalVotes": 3027,
+				"badVotes": 44,
+				"noVotes": 98,
+				"progress": 3.06,
+				"pollingUnits": {
+					"total": 229,
+					"reported": 7
+				},
+				"result": [
+					{
+						"candidateId": "6",
+						"count": 1045
+					},
+					{
+						"candidateId": "18",
+						"count": 129
+					},
+					{
+						"candidateId": "5",
+						"count": 129
+					},
+					{
+						"candidateId": "17",
+						"count": 121
+					},
+					{
+						"candidateId": "4",
+						"count": 121
+					},
+					{
+						"candidateId": "16",
+						"count": 113
+					},
+					{
+						"candidateId": "3",
+						"count": 113
+					},
+					{
+						"candidateId": "15",
+						"count": 105
+					},
+					{
+						"candidateId": "2",
+						"count": 105
+					},
+					{
+						"candidateId": "1",
+						"count": 96
+					},
+					{
+						"candidateId": "14",
+						"count": 96
+					},
+					{
+						"candidateId": "13",
+						"count": 88
+					},
+					{
+						"candidateId": "12",
+						"count": 80
+					},
+					{
+						"candidateId": "11",
+						"count": 72
+					},
+					{
+						"candidateId": "9",
+						"count": 72
+					},
+					{
+						"candidateId": "10",
+						"count": 64
+					},
+					{
+						"candidateId": "22",
+						"count": 64
+					},
+					{
+						"candidateId": "8",
+						"count": 64
+					},
+					{
+						"candidateId": "21",
+						"count": 56
+					},
+					{
+						"candidateId": "7",
+						"count": 56
+					},
+					{
+						"candidateId": "19",
+						"count": 48
+					},
+					{
+						"candidateId": "20",
+						"count": 48
+					}
+				]
+			}
+		},
+		{
+			"name": "บางนา",
+			"voting": {
+				"eligiblePopulation": 70973,
+				"totalVotes": 1195,
+				"badVotes": 15,
+				"noVotes": 29,
+				"progress": 2.94,
+				"pollingUnits": {
+					"total": 102,
+					"reported": 3
+				},
+				"result": [
+					{
+						"candidateId": "1",
+						"count": 399
+					},
+					{
+						"candidateId": "8",
+						"count": 98
+					},
+					{
+						"candidateId": "21",
+						"count": 49
+					},
+					{
+						"candidateId": "19",
+						"count": 46
+					},
+					{
+						"candidateId": "20",
+						"count": 46
+					},
+					{
+						"candidateId": "18",
+						"count": 43
+					},
+					{
+						"candidateId": "9",
+						"count": 43
+					},
+					{
+						"candidateId": "17",
+						"count": 40
+					},
+					{
+						"candidateId": "16",
+						"count": 37
+					},
+					{
+						"candidateId": "7",
+						"count": 37
+					},
+					{
+						"candidateId": "15",
+						"count": 34
+					},
+					{
+						"candidateId": "6",
+						"count": 34
+					},
+					{
+						"candidateId": "14",
+						"count": 31
+					},
+					{
+						"candidateId": "5",
+						"count": 31
+					},
+					{
+						"candidateId": "13",
+						"count": 28
+					},
+					{
+						"candidateId": "4",
+						"count": 28
+					},
+					{
+						"candidateId": "3",
+						"count": 25
+					},
+					{
+						"candidateId": "12",
+						"count": 24
+					},
+					{
+						"candidateId": "11",
+						"count": 21
+					},
+					{
+						"candidateId": "2",
+						"count": 21
+					},
+					{
+						"candidateId": "10",
+						"count": 18
+					},
+					{
+						"candidateId": "22",
+						"count": 18
+					}
+				]
+			}
+		},
+		{
+			"name": "ทวีวัฒนา",
+			"voting": {
+				"eligiblePopulation": 64832,
+				"totalVotes": 1415,
+				"badVotes": 19,
+				"noVotes": 37,
+				"progress": 3.23,
+				"pollingUnits": {
+					"total": 93,
+					"reported": 3
+				},
+				"result": [
+					{
+						"candidateId": "1",
+						"count": 447
+					},
+					{
+						"candidateId": "8",
+						"count": 110
+					},
+					{
+						"candidateId": "11",
+						"count": 55
+					},
+					{
+						"candidateId": "6",
+						"count": 55
+					},
+					{
+						"candidateId": "10",
+						"count": 52
+					},
+					{
+						"candidateId": "22",
+						"count": 52
+					},
+					{
+						"candidateId": "5",
+						"count": 52
+					},
+					{
+						"candidateId": "21",
+						"count": 48
+					},
+					{
+						"candidateId": "4",
+						"count": 48
+					},
+					{
+						"candidateId": "19",
+						"count": 45
+					},
+					{
+						"candidateId": "20",
+						"count": 45
+					},
+					{
+						"candidateId": "3",
+						"count": 45
+					},
+					{
+						"candidateId": "18",
+						"count": 41
+					},
+					{
+						"candidateId": "2",
+						"count": 41
+					},
+					{
+						"candidateId": "17",
+						"count": 38
+					},
+					{
+						"candidateId": "16",
+						"count": 34
+					},
+					{
+						"candidateId": "15",
+						"count": 31
+					},
+					{
+						"candidateId": "14",
+						"count": 27
+					},
+					{
+						"candidateId": "9",
+						"count": 27
+					},
+					{
+						"candidateId": "13",
+						"count": 24
+					},
+					{
+						"candidateId": "12",
+						"count": 21
+					},
+					{
+						"candidateId": "7",
+						"count": 21
+					}
+				]
+			}
+		},
+		{
+			"name": "ทุ่งครุ",
+			"voting": {
+				"eligiblePopulation": 98485,
+				"totalVotes": 2150,
+				"badVotes": 28,
+				"noVotes": 54,
+				"progress": 3.55,
+				"pollingUnits": {
+					"total": 141,
+					"reported": 5
+				},
+				"result": [
+					{
+						"candidateId": "3",
+						"count": 747
+					},
+					{
+						"candidateId": "12",
+						"count": 92
+					},
+					{
+						"candidateId": "4",
+						"count": 92
+					},
+					{
+						"candidateId": "11",
+						"count": 86
+					},
+					{
+						"candidateId": "10",
+						"count": 80
+					},
+					{
+						"candidateId": "2",
+						"count": 80
+					},
+					{
+						"candidateId": "22",
+						"count": 80
+					},
+					{
+						"candidateId": "1",
+						"count": 75
+					},
+					{
+						"candidateId": "21",
+						"count": 75
+					},
+					{
+						"candidateId": "19",
+						"count": 69
+					},
+					{
+						"candidateId": "20",
+						"count": 69
+					},
+					{
+						"candidateId": "18",
+						"count": 63
+					},
+					{
+						"candidateId": "17",
+						"count": 57
+					},
+					{
+						"candidateId": "9",
+						"count": 57
+					},
+					{
+						"candidateId": "16",
+						"count": 52
+					},
+					{
+						"candidateId": "8",
+						"count": 52
+					},
+					{
+						"candidateId": "15",
+						"count": 46
+					},
+					{
+						"candidateId": "7",
+						"count": 46
+					},
+					{
+						"candidateId": "14",
+						"count": 40
+					},
+					{
+						"candidateId": "6",
+						"count": 40
+					},
+					{
+						"candidateId": "13",
+						"count": 35
+					},
+					{
+						"candidateId": "5",
+						"count": 35
+					}
+				]
+			}
+		},
+		{
+			"name": "บางบอน",
+			"voting": {
+				"eligiblePopulation": 79579,
+				"totalVotes": 1317,
+				"badVotes": 21,
+				"noVotes": 35,
+				"progress": 2.63,
+				"pollingUnits": {
+					"total": 114,
+					"reported": 3
+				},
+				"result": [
+					{
+						"candidateId": "3",
+						"count": 467
+					},
+					{
+						"candidateId": "15",
+						"count": 57
+					},
+					{
+						"candidateId": "14",
+						"count": 54
+					},
+					{
+						"candidateId": "2",
+						"count": 54
+					},
+					{
+						"candidateId": "1",
+						"count": 50
+					},
+					{
+						"candidateId": "13",
+						"count": 50
+					},
+					{
+						"candidateId": "12",
+						"count": 47
+					},
+					{
+						"candidateId": "11",
+						"count": 43
+					},
+					{
+						"candidateId": "10",
+						"count": 40
+					},
+					{
+						"candidateId": "9",
+						"count": 40
+					},
+					{
+						"candidateId": "22",
+						"count": 39
+					},
+					{
+						"candidateId": "21",
+						"count": 36
+					},
+					{
+						"candidateId": "8",
+						"count": 36
+					},
+					{
+						"candidateId": "19",
+						"count": 32
+					},
+					{
+						"candidateId": "20",
+						"count": 32
+					},
+					{
+						"candidateId": "7",
+						"count": 32
+					},
+					{
+						"candidateId": "18",
+						"count": 29
+					},
+					{
+						"candidateId": "6",
+						"count": 29
+					},
+					{
+						"candidateId": "17",
+						"count": 25
+					},
+					{
+						"candidateId": "5",
+						"count": 25
+					},
+					{
+						"candidateId": "16",
+						"count": 22
+					},
+					{
+						"candidateId": "4",
+						"count": 22
+					}
+				]
+			}
+		}
+	]
+}

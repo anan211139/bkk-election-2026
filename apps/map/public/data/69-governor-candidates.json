@@ -1,0 +1,200 @@
+{
+    "1": {
+        "id": "1",
+        "number": 1,
+        "fullname": "นายสมชาย รัตนโชติ",
+        "shortname": "สมชาย",
+        "color": "#1E90FF",
+        "party": "พรรคมหานครก้าวหน้า",
+        "image": "/map/images/69-governor-candidates/1.png"
+    },
+    "2": {
+        "id": "2",
+        "number": 2,
+        "fullname": "นายอัญวุฒิ สันติธรรม",
+        "shortname": "อัญวุฒิ",
+        "color": "#666666",
+        "party": "อิสระ",
+        "image": "/map/images/69-governor-candidates/2.png"
+    },
+    "3": {
+        "id": "3",
+        "number": 3,
+        "fullname": "นางสาวศิริพร อารีย์เลิศ",
+        "shortname": "ศิริพร",
+        "color": "#008989",
+        "party": "สวัสดีกรุงเทพ",
+        "image": "/map/images/69-governor-candidates/3.png"
+    },
+    "4": {
+        "id": "4",
+        "number": 4,
+        "fullname": "นางนภาลักษณ์ พงษ์ศิริ",
+        "shortname": "นภาลักษณ์",
+        "color": "#E31E2B",
+        "party": "พรรครวมใจไทย",
+        "image": "/map/images/69-governor-candidates/4.png"
+    },
+    "5": {
+        "id": "5",
+        "number": 5,
+        "fullname": "นางสาวกุลธิดา วงศ์สว่าง",
+        "shortname": "กุลธิดา",
+        "color": "#666666",
+        "party": "อิสระ",
+        "image": "/map/images/69-governor-candidates/5.png"
+    },
+    "6": {
+        "id": "6",
+        "number": 6,
+        "fullname": "นางมณีรัตน์ เกื้อกูล",
+        "shortname": "มณีรัตน์",
+        "color": "#009543",
+        "party": "พรรคเขียวเพื่อเมือง",
+        "image": "/map/images/69-governor-candidates/6.png"
+    },
+    "7": {
+        "id": "7",
+        "number": 7,
+        "fullname": "นางสาวเจนจิรา พัฒนาการ",
+        "shortname": "เจนจิรา",
+        "color": "#666666",
+        "party": "อิสระ",
+        "image": "/map/images/69-governor-candidates/7.png"
+    },
+    "8": {
+        "id": "8",
+        "number": 8,
+        "fullname": "นางนิตยา บุญรักษ์",
+        "shortname": "นิตยา",
+        "color": "#FFD700",
+        "party": "พรรครุ่งเรืองอนาคต",
+        "image": "/map/images/69-governor-candidates/8.png"
+    },
+    "9": {
+        "id": "9",
+        "number": 9,
+        "fullname": "นางสาวพิมลพรรณ สุขจิตต์",
+        "shortname": "พิมลพรรณ",
+        "color": "#666666",
+        "party": "อิสระ",
+        "image": "/map/images/69-governor-candidates/9.png"
+    },
+    "10": {
+        "id": "10",
+        "number": 10,
+        "fullname": "นายวรวุฒิ เลิศปัญญา",
+        "shortname": "วรวุฒิ",
+        "color": "#800080",
+        "party": "พรรคทางเลือกใหม่",
+        "image": "/map/images/69-governor-candidates/10.png"
+    },
+    "11": {
+        "id": "11",
+        "number": 11,
+        "fullname": "นายประมวล แสงทอง",
+        "shortname": "ประมวล",
+        "color": "#666666",
+        "party": "อิสระ",
+        "image": "/map/images/69-governor-candidates/11.png"
+    },
+    "12": {
+        "id": "12",
+        "number": 12,
+        "fullname": "นายธนวัฒน์ ปรีชากุล",
+        "shortname": "ธนวัฒน์",
+        "color": "#FF69B4",
+        "party": "พรรคสีสันกรุงเทพ",
+        "image": "/map/images/69-governor-candidates/12.png"
+    },
+    "13": {
+        "id": "13",
+        "number": 13,
+        "fullname": "ดร.วรรณภา สุขสวัสดิ์",
+        "shortname": "ดร.วรรณภา",
+        "color": "#666666",
+        "party": "อิสระ",
+        "image": "/map/images/69-governor-candidates/13.png"
+    },
+    "14": {
+        "id": "14",
+        "number": 14,
+        "fullname": "นายชัยชนะ พูนสวัสดิ์",
+        "shortname": "ชัยชนะ",
+        "color": "#000080",
+        "party": "พรรคภูมิปัญญาไทย",
+        "image": "/map/images/69-governor-candidates/14.png"
+    },
+    "15": {
+        "id": "15",
+        "number": 15,
+        "fullname": "นางสาววิไลลักษณ์ จิตพะยอม",
+        "shortname": "วิไลลักษณ์",
+        "color": "#666666",
+        "party": "อิสระ",
+        "image": "/map/images/69-governor-candidates/15.png"
+    },
+    "16": {
+        "id": "16",
+        "number": 16,
+        "fullname": "นายกิตติศักดิ์ มีสุข",
+        "shortname": "กิตติศักดิ์",
+        "color": "#FF4500",
+        "party": "พรรคพลังธรรมภิบาล",
+        "image": "/map/images/69-governor-candidates/16.png"
+    },
+    "17": {
+        "id": "17",
+        "number": 17,
+        "fullname": "นายสิทธิโชค ยั่งยืน",
+        "shortname": "สิทธิโชค",
+        "color": "#666666",
+        "party": "อิสระ",
+        "image": "/map/images/69-governor-candidates/17.png"
+    },
+    "18": {
+        "id": "18",
+        "number": 18,
+        "fullname": "นายเกรียงไกร นำชัย",
+        "shortname": "เกรียงไกร",
+        "color": "#4B0082",
+        "party": "พรรคพิทักษ์เมือง",
+        "image": "/map/images/69-governor-candidates/18.png"
+    },
+    "19": {
+        "id": "19",
+        "number": 19,
+        "fullname": "นายอภิชาติ สวัสดิผล",
+        "shortname": "อภิชาติ",
+        "color": "#666666",
+        "party": "อิสระ",
+        "image": "/map/images/69-governor-candidates/19.png"
+    },
+    "20": {
+        "id": "20",
+        "number": 20,
+        "fullname": "นายธเนศ วรโชติ",
+        "shortname": "ธเนศ",
+        "color": "#2E8B57",
+        "party": "พรรคไทยสร้างสรรค์",
+        "image": "/map/images/69-governor-candidates/20.png"
+    },
+    "21": {
+        "id": "21",
+        "number": 21,
+        "fullname": "นายณรงค์ฤทธิ์ คงไทย",
+        "shortname": "ณรงค์ฤทธิ์",
+        "color": "#666666",
+        "party": "อิสระ",
+        "image": "/map/images/69-governor-candidates/21.png"
+    },
+    "22": {
+        "id": "22",
+        "number": 22,
+        "fullname": "นายเอกพล เจริญยิ่ง",
+        "shortname": "เอกพล",
+        "color": "#666666",
+        "party": "อิสระ",
+        "image": "/map/images/69-governor-candidates/22.png"
+    }
+}

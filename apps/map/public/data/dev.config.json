@@ -5,8 +5,8 @@
 			"shortname": "คะแนนผู้ว่าฯ '69 โดย กทม.",
 			"fullname": "ผลการนับคะแนนเลือกตั้งผู้ว่าฯ กทม. 69",
 			"subtitle": "แสดงผลคะแนน : ",
-			"electionDataUrl": "/map/data/65-governor-electiondata-cache.json",
-			"candidateDataUrl": "/map/data/65-governor-candidates.json",
+			"electionDataUrl": "/map/data/69-governor-electiondata-95pct.json",
+			"candidateDataUrl": "/map/data/69-governor-candidates.json",
 			"refreshIntervalMs": 300000,
 			"enableCandidateLink": true
 		},
@@ -14,8 +14,8 @@
 			"shortname": "คะแนน ส.ก. '69 โดย กทม.",
 			"fullname": "ผลการนับคะแนนเลือกตั้ง สมาชิกสภา กทม. (ส.ก.) 69",
 			"subtitle": "แสดงผลคะแนน : ",
-			"electionDataUrl": "/map/data/65-bmc-electiondata-cache.json",
-			"candidateDataUrl": "/map/data/65-bmc-candidates.json",
+			"electionDataUrl": "/map/data/69-bmc-electiondata-95pct.json",
+			"candidateDataUrl": "/map/data/69-bmc-candidates.json",
 			"refreshIntervalMs": 300000
 		}
 	]

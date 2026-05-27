@@ -50,7 +50,7 @@ const CountingSummary: FunctionComponent<CountingSummaryProps> = ({
 }) => {
 	const progress = getProgress(votingData);
 	const shouldShowProgressStrip = electionType !== ElectionDataType.Completed;
-	const countedVotes = Math.round((votingData.totalVotes * progress) / 100);
+	const countedVotes = votingData.totalVotes;
 	const goodVotes = getGoodVotes(votingData);
 	const badVotes = votingData.badVotes || 0;
 	const noVotes = votingData.noVotes || 0;

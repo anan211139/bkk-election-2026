@@ -1,0 +1,2149 @@
+{
+	"type": "LIVE",
+	"total": {
+		"eligiblePopulation": 4398168,
+		"totalVotes": 0,
+		"badVotes": 0,
+		"noVotes": 0,
+		"progress": 0,
+		"pollingUnits": {
+			"total": 6303,
+			"reported": 0
+		},
+		"result": []
+	},
+	"districts": [
+		{
+			"name": "พระนคร",
+			"voting": {
+				"eligiblePopulation": 29829,
+				"totalVotes": 0,
+				"badVotes": 0,
+				"noVotes": 0,
+				"progress": 0,
+				"pollingUnits": {
+					"total": 50,
+					"reported": 0
+				},
+				"result": [
+					{
+						"candidateId": "พระนคร-1",
+						"count": 0
+					},
+					{
+						"candidateId": "พระนคร-10",
+						"count": 0
+					},
+					{
+						"candidateId": "พระนคร-2",
+						"count": 0
+					},
+					{
+						"candidateId": "พระนคร-3",
+						"count": 0
+					},
+					{
+						"candidateId": "พระนคร-4",
+						"count": 0
+					},
+					{
+						"candidateId": "พระนคร-5",
+						"count": 0
+					},
+					{
+						"candidateId": "พระนคร-6",
+						"count": 0
+					},
+					{
+						"candidateId": "พระนคร-7",
+						"count": 0
+					},
+					{
+						"candidateId": "พระนคร-8",
+						"count": 0
+					},
+					{
+						"candidateId": "พระนคร-9",
+						"count": 0
+					}
+				]
+			}
+		},
+		{
+			"name": "ดุสิต",
+			"voting": {
+				"eligiblePopulation": 63550,
+				"totalVotes": 0,
+				"badVotes": 0,
+				"noVotes": 0,
+				"progress": 0,
+				"pollingUnits": {
+					"total": 91,
+					"reported": 0
+				},
+				"result": [
+					{
+						"candidateId": "ดุสิต-1",
+						"count": 0
+					},
+					{
+						"candidateId": "ดุสิต-2",
+						"count": 0
+					},
+					{
+						"candidateId": "ดุสิต-3",
+						"count": 0
+					},
+					{
+						"candidateId": "ดุสิต-4",
+						"count": 0
+					},
+					{
+						"candidateId": "ดุสิต-5",
+						"count": 0
+					},
+					{
+						"candidateId": "ดุสิต-6",
+						"count": 0
+					},
+					{
+						"candidateId": "ดุสิต-7",
+						"count": 0
+					},
+					{
+						"candidateId": "ดุสิต-8",
+						"count": 0
+					},
+					{
+						"candidateId": "ดุสิต-9",
+						"count": 0
+					}
+				]
+			}
+		},
+		{
+			"name": "หนองจอก",
+			"voting": {
+				"eligiblePopulation": 136547,
+				"totalVotes": 0,
+				"badVotes": 0,
+				"noVotes": 0,
+				"progress": 0,
+				"pollingUnits": {
+					"total": 195,
+					"reported": 0
+				},
+				"result": [
+					{
+						"candidateId": "หนองจอก-1",
+						"count": 0
+					},
+					{
+						"candidateId": "หนองจอก-2",
+						"count": 0
+					},
+					{
+						"candidateId": "หนองจอก-3",
+						"count": 0
+					},
+					{
+						"candidateId": "หนองจอก-4",
+						"count": 0
+					},
+					{
+						"candidateId": "หนองจอก-5",
+						"count": 0
+					},
+					{
+						"candidateId": "หนองจอก-6",
+						"count": 0
+					},
+					{
+						"candidateId": "หนองจอก-7",
+						"count": 0
+					},
+					{
+						"candidateId": "หนองจอก-8",
+						"count": 0
+					}
+				]
+			}
+		},
+		{
+			"name": "บางรัก",
+			"voting": {
+				"eligiblePopulation": 30041,
+				"totalVotes": 0,
+				"badVotes": 0,
+				"noVotes": 0,
+				"progress": 0,
+				"pollingUnits": {
+					"total": 43,
+					"reported": 0
+				},
+				"result": [
+					{
+						"candidateId": "บางรัก-1",
+						"count": 0
+					},
+					{
+						"candidateId": "บางรัก-2",
+						"count": 0
+					},
+					{
+						"candidateId": "บางรัก-3",
+						"count": 0
+					},
+					{
+						"candidateId": "บางรัก-4",
+						"count": 0
+					},
+					{
+						"candidateId": "บางรัก-5",
+						"count": 0
+					},
+					{
+						"candidateId": "บางรัก-6",
+						"count": 0
+					},
+					{
+						"candidateId": "บางรัก-7",
+						"count": 0
+					},
+					{
+						"candidateId": "บางรัก-8",
+						"count": 0
+					}
+				]
+			}
+		},
+		{
+			"name": "บางเขน",
+			"voting": {
+				"eligiblePopulation": 152133,
+				"totalVotes": 0,
+				"badVotes": 0,
+				"noVotes": 0,
+				"progress": 0,
+				"pollingUnits": {
+					"total": 218,
+					"reported": 0
+				},
+				"result": [
+					{
+						"candidateId": "บางเขน-1",
+						"count": 0
+					},
+					{
+						"candidateId": "บางเขน-2",
+						"count": 0
+					},
+					{
+						"candidateId": "บางเขน-3",
+						"count": 0
+					},
+					{
+						"candidateId": "บางเขน-4",
+						"count": 0
+					},
+					{
+						"candidateId": "บางเขน-5",
+						"count": 0
+					}
+				]
+			}
+		},
+		{
+			"name": "บางกะปิ",
+			"voting": {
+				"eligiblePopulation": 115128,
+				"totalVotes": 0,
+				"badVotes": 0,
+				"noVotes": 0,
+				"progress": 0,
+				"pollingUnits": {
+					"total": 165,
+					"reported": 0
+				},
+				"result": [
+					{
+						"candidateId": "บางกะปิ-1",
+						"count": 0
+					},
+					{
+						"candidateId": "บางกะปิ-2",
+						"count": 0
+					},
+					{
+						"candidateId": "บางกะปิ-3",
+						"count": 0
+					},
+					{
+						"candidateId": "บางกะปิ-4",
+						"count": 0
+					},
+					{
+						"candidateId": "บางกะปิ-5",
+						"count": 0
+					}
+				]
+			}
+		},
+		{
+			"name": "ปทุมวัน",
+			"voting": {
+				"eligiblePopulation": 30966,
+				"totalVotes": 0,
+				"badVotes": 0,
+				"noVotes": 0,
+				"progress": 0,
+				"pollingUnits": {
+					"total": 44,
+					"reported": 0
+				},
+				"result": [
+					{
+						"candidateId": "ปทุมวัน-1",
+						"count": 0
+					},
+					{
+						"candidateId": "ปทุมวัน-2",
+						"count": 0
+					},
+					{
+						"candidateId": "ปทุมวัน-3",
+						"count": 0
+					},
+					{
+						"candidateId": "ปทุมวัน-4",
+						"count": 0
+					},
+					{
+						"candidateId": "ปทุมวัน-5",
+						"count": 0
+					},
+					{
+						"candidateId": "ปทุมวัน-6",
+						"count": 0
+					}
+				]
+			}
+		},
+		{
+			"name": "ป้อมปราบศัตรูพ่าย",
+			"voting": {
+				"eligiblePopulation": 32005,
+				"totalVotes": 0,
+				"badVotes": 0,
+				"noVotes": 0,
+				"progress": 0,
+				"pollingUnits": {
+					"total": 46,
+					"reported": 0
+				},
+				"result": [
+					{
+						"candidateId": "ป้อมปราบศัตรูพ่าย-1",
+						"count": 0
+					},
+					{
+						"candidateId": "ป้อมปราบศัตรูพ่าย-2",
+						"count": 0
+					},
+					{
+						"candidateId": "ป้อมปราบศัตรูพ่าย-3",
+						"count": 0
+					},
+					{
+						"candidateId": "ป้อมปราบศัตรูพ่าย-4",
+						"count": 0
+					}
+				]
+			}
+		},
+		{
+			"name": "พระโขนง",
+			"voting": {
+				"eligiblePopulation": 71850,
+				"totalVotes": 0,
+				"badVotes": 0,
+				"noVotes": 0,
+				"progress": 0,
+				"pollingUnits": {
+					"total": 103,
+					"reported": 0
+				},
+				"result": [
+					{
+						"candidateId": "พระโขนง-1",
+						"count": 0
+					},
+					{
+						"candidateId": "พระโขนง-2",
+						"count": 0
+					},
+					{
+						"candidateId": "พระโขนง-3",
+						"count": 0
+					},
+					{
+						"candidateId": "พระโขนง-4",
+						"count": 0
+					}
+				]
+			}
+		},
+		{
+			"name": "มีนบุรี",
+			"voting": {
+				"eligiblePopulation": 109500,
+				"totalVotes": 0,
+				"badVotes": 0,
+				"noVotes": 0,
+				"progress": 0,
+				"pollingUnits": {
+					"total": 157,
+					"reported": 0
+				},
+				"result": [
+					{
+						"candidateId": "มีนบุรี-1",
+						"count": 0
+					},
+					{
+						"candidateId": "มีนบุรี-2",
+						"count": 0
+					},
+					{
+						"candidateId": "มีนบุรี-3",
+						"count": 0
+					},
+					{
+						"candidateId": "มีนบุรี-4",
+						"count": 0
+					}
+				]
+			}
+		},
+		{
+			"name": "ลาดกระบัง",
+			"voting": {
+				"eligiblePopulation": 138720,
+				"totalVotes": 0,
+				"badVotes": 0,
+				"noVotes": 0,
+				"progress": 0,
+				"pollingUnits": {
+					"total": 199,
+					"reported": 0
+				},
+				"result": [
+					{
+						"candidateId": "ลาดกระบัง-1",
+						"count": 0
+					},
+					{
+						"candidateId": "ลาดกระบัง-2",
+						"count": 0
+					},
+					{
+						"candidateId": "ลาดกระบัง-3",
+						"count": 0
+					},
+					{
+						"candidateId": "ลาดกระบัง-4",
+						"count": 0
+					}
+				]
+			}
+		},
+		{
+			"name": "ยานนาวา",
+			"voting": {
+				"eligiblePopulation": 60503,
+				"totalVotes": 0,
+				"badVotes": 0,
+				"noVotes": 0,
+				"progress": 0,
+				"pollingUnits": {
+					"total": 87,
+					"reported": 0
+				},
+				"result": [
+					{
+						"candidateId": "ยานนาวา-1",
+						"count": 0
+					},
+					{
+						"candidateId": "ยานนาวา-2",
+						"count": 0
+					},
+					{
+						"candidateId": "ยานนาวา-3",
+						"count": 0
+					},
+					{
+						"candidateId": "ยานนาวา-4",
+						"count": 0
+					},
+					{
+						"candidateId": "ยานนาวา-5",
+						"count": 0
+					},
+					{
+						"candidateId": "ยานนาวา-6",
+						"count": 0
+					}
+				]
+			}
+		},
+		{
+			"name": "สัมพันธวงศ์",
+			"voting": {
+				"eligiblePopulation": 17099,
+				"totalVotes": 0,
+				"badVotes": 0,
+				"noVotes": 0,
+				"progress": 0,
+				"pollingUnits": {
+					"total": 24,
+					"reported": 0
+				},
+				"result": [
+					{
+						"candidateId": "สัมพันธวงศ์-1",
+						"count": 0
+					},
+					{
+						"candidateId": "สัมพันธวงศ์-10",
+						"count": 0
+					},
+					{
+						"candidateId": "สัมพันธวงศ์-11",
+						"count": 0
+					},
+					{
+						"candidateId": "สัมพันธวงศ์-12",
+						"count": 0
+					},
+					{
+						"candidateId": "สัมพันธวงศ์-13",
+						"count": 0
+					},
+					{
+						"candidateId": "สัมพันธวงศ์-2",
+						"count": 0
+					},
+					{
+						"candidateId": "สัมพันธวงศ์-3",
+						"count": 0
+					},
+					{
+						"candidateId": "สัมพันธวงศ์-4",
+						"count": 0
+					},
+					{
+						"candidateId": "สัมพันธวงศ์-5",
+						"count": 0
+					},
+					{
+						"candidateId": "สัมพันธวงศ์-6",
+						"count": 0
+					},
+					{
+						"candidateId": "สัมพันธวงศ์-7",
+						"count": 0
+					},
+					{
+						"candidateId": "สัมพันธวงศ์-8",
+						"count": 0
+					},
+					{
+						"candidateId": "สัมพันธวงศ์-9",
+						"count": 0
+					}
+				]
+			}
+		},
+		{
+			"name": "พญาไท",
+			"voting": {
+				"eligiblePopulation": 51977,
+				"totalVotes": 0,
+				"badVotes": 0,
+				"noVotes": 0,
+				"progress": 0,
+				"pollingUnits": {
+					"total": 75,
+					"reported": 0
+				},
+				"result": [
+					{
+						"candidateId": "พญาไท-1",
+						"count": 0
+					},
+					{
+						"candidateId": "พญาไท-2",
+						"count": 0
+					},
+					{
+						"candidateId": "พญาไท-3",
+						"count": 0
+					},
+					{
+						"candidateId": "พญาไท-4",
+						"count": 0
+					},
+					{
+						"candidateId": "พญาไท-5",
+						"count": 0
+					}
+				]
+			}
+		},
+		{
+			"name": "ธนบุรี",
+			"voting": {
+				"eligiblePopulation": 83468,
+				"totalVotes": 0,
+				"badVotes": 0,
+				"noVotes": 0,
+				"progress": 0,
+				"pollingUnits": {
+					"total": 120,
+					"reported": 0
+				},
+				"result": [
+					{
+						"candidateId": "ธนบุรี-1",
+						"count": 0
+					},
+					{
+						"candidateId": "ธนบุรี-10",
+						"count": 0
+					},
+					{
+						"candidateId": "ธนบุรี-11",
+						"count": 0
+					},
+					{
+						"candidateId": "ธนบุรี-12",
+						"count": 0
+					},
+					{
+						"candidateId": "ธนบุรี-13",
+						"count": 0
+					},
+					{
+						"candidateId": "ธนบุรี-14",
+						"count": 0
+					},
+					{
+						"candidateId": "ธนบุรี-2",
+						"count": 0
+					},
+					{
+						"candidateId": "ธนบุรี-3",
+						"count": 0
+					},
+					{
+						"candidateId": "ธนบุรี-4",
+						"count": 0
+					},
+					{
+						"candidateId": "ธนบุรี-5",
+						"count": 0
+					},
+					{
+						"candidateId": "ธนบุรี-6",
+						"count": 0
+					},
+					{
+						"candidateId": "ธนบุรี-7",
+						"count": 0
+					},
+					{
+						"candidateId": "ธนบุรี-8",
+						"count": 0
+					},
+					{
+						"candidateId": "ธนบุรี-9",
+						"count": 0
+					}
+				]
+			}
+		},
+		{
+			"name": "บางกอกใหญ่",
+			"voting": {
+				"eligiblePopulation": 52474,
+				"totalVotes": 0,
+				"badVotes": 0,
+				"noVotes": 0,
+				"progress": 0,
+				"pollingUnits": {
+					"total": 75,
+					"reported": 0
+				},
+				"result": [
+					{
+						"candidateId": "บางกอกใหญ่-1",
+						"count": 0
+					},
+					{
+						"candidateId": "บางกอกใหญ่-2",
+						"count": 0
+					},
+					{
+						"candidateId": "บางกอกใหญ่-3",
+						"count": 0
+					},
+					{
+						"candidateId": "บางกอกใหญ่-4",
+						"count": 0
+					}
+				]
+			}
+		},
+		{
+			"name": "ห้วยขวาง",
+			"voting": {
+				"eligiblePopulation": 67392,
+				"totalVotes": 0,
+				"badVotes": 0,
+				"noVotes": 0,
+				"progress": 0,
+				"pollingUnits": {
+					"total": 96,
+					"reported": 0
+				},
+				"result": [
+					{
+						"candidateId": "ห้วยขวาง-1",
+						"count": 0
+					},
+					{
+						"candidateId": "ห้วยขวาง-10",
+						"count": 0
+					},
+					{
+						"candidateId": "ห้วยขวาง-11",
+						"count": 0
+					},
+					{
+						"candidateId": "ห้วยขวาง-12",
+						"count": 0
+					},
+					{
+						"candidateId": "ห้วยขวาง-13",
+						"count": 0
+					},
+					{
+						"candidateId": "ห้วยขวาง-14",
+						"count": 0
+					},
+					{
+						"candidateId": "ห้วยขวาง-15",
+						"count": 0
+					},
+					{
+						"candidateId": "ห้วยขวาง-16",
+						"count": 0
+					},
+					{
+						"candidateId": "ห้วยขวาง-2",
+						"count": 0
+					},
+					{
+						"candidateId": "ห้วยขวาง-3",
+						"count": 0
+					},
+					{
+						"candidateId": "ห้วยขวาง-4",
+						"count": 0
+					},
+					{
+						"candidateId": "ห้วยขวาง-5",
+						"count": 0
+					},
+					{
+						"candidateId": "ห้วยขวาง-6",
+						"count": 0
+					},
+					{
+						"candidateId": "ห้วยขวาง-7",
+						"count": 0
+					},
+					{
+						"candidateId": "ห้วยขวาง-8",
+						"count": 0
+					},
+					{
+						"candidateId": "ห้วยขวาง-9",
+						"count": 0
+					}
+				]
+			}
+		},
+		{
+			"name": "คลองสาน",
+			"voting": {
+				"eligiblePopulation": 53307,
+				"totalVotes": 0,
+				"badVotes": 0,
+				"noVotes": 0,
+				"progress": 0,
+				"pollingUnits": {
+					"total": 76,
+					"reported": 0
+				},
+				"result": [
+					{
+						"candidateId": "คลองสาน-1",
+						"count": 0
+					},
+					{
+						"candidateId": "คลองสาน-2",
+						"count": 0
+					},
+					{
+						"candidateId": "คลองสาน-3",
+						"count": 0
+					},
+					{
+						"candidateId": "คลองสาน-4",
+						"count": 0
+					},
+					{
+						"candidateId": "คลองสาน-5",
+						"count": 0
+					}
+				]
+			}
+		},
+		{
+			"name": "ตลิ่งชัน",
+			"voting": {
+				"eligiblePopulation": 84954,
+				"totalVotes": 0,
+				"badVotes": 0,
+				"noVotes": 0,
+				"progress": 0,
+				"pollingUnits": {
+					"total": 122,
+					"reported": 0
+				},
+				"result": [
+					{
+						"candidateId": "ตลิ่งชัน-1",
+						"count": 0
+					},
+					{
+						"candidateId": "ตลิ่งชัน-2",
+						"count": 0
+					},
+					{
+						"candidateId": "ตลิ่งชัน-3",
+						"count": 0
+					},
+					{
+						"candidateId": "ตลิ่งชัน-4",
+						"count": 0
+					}
+				]
+			}
+		},
+		{
+			"name": "บางกอกน้อย",
+			"voting": {
+				"eligiblePopulation": 83321,
+				"totalVotes": 0,
+				"badVotes": 0,
+				"noVotes": 0,
+				"progress": 0,
+				"pollingUnits": {
+					"total": 119,
+					"reported": 0
+				},
+				"result": [
+					{
+						"candidateId": "บางกอกน้อย-1",
+						"count": 0
+					},
+					{
+						"candidateId": "บางกอกน้อย-2",
+						"count": 0
+					},
+					{
+						"candidateId": "บางกอกน้อย-3",
+						"count": 0
+					},
+					{
+						"candidateId": "บางกอกน้อย-4",
+						"count": 0
+					},
+					{
+						"candidateId": "บางกอกน้อย-5",
+						"count": 0
+					}
+				]
+			}
+		},
+		{
+			"name": "บางขุนเทียน",
+			"voting": {
+				"eligiblePopulation": 143434,
+				"totalVotes": 0,
+				"badVotes": 0,
+				"noVotes": 0,
+				"progress": 0,
+				"pollingUnits": {
+					"total": 205,
+					"reported": 0
+				},
+				"result": [
+					{
+						"candidateId": "บางขุนเทียน-1",
+						"count": 0
+					},
+					{
+						"candidateId": "บางขุนเทียน-2",
+						"count": 0
+					},
+					{
+						"candidateId": "บางขุนเทียน-3",
+						"count": 0
+					},
+					{
+						"candidateId": "บางขุนเทียน-4",
+						"count": 0
+					}
+				]
+			}
+		},
+		{
+			"name": "ภาษีเจริญ",
+			"voting": {
+				"eligiblePopulation": 100628,
+				"totalVotes": 0,
+				"badVotes": 0,
+				"noVotes": 0,
+				"progress": 0,
+				"pollingUnits": {
+					"total": 144,
+					"reported": 0
+				},
+				"result": [
+					{
+						"candidateId": "ภาษีเจริญ-1",
+						"count": 0
+					},
+					{
+						"candidateId": "ภาษีเจริญ-2",
+						"count": 0
+					},
+					{
+						"candidateId": "ภาษีเจริญ-3",
+						"count": 0
+					},
+					{
+						"candidateId": "ภาษีเจริญ-4",
+						"count": 0
+					}
+				]
+			}
+		},
+		{
+			"name": "หนองแขม",
+			"voting": {
+				"eligiblePopulation": 123840,
+				"totalVotes": 0,
+				"badVotes": 0,
+				"noVotes": 0,
+				"progress": 0,
+				"pollingUnits": {
+					"total": 177,
+					"reported": 0
+				},
+				"result": [
+					{
+						"candidateId": "หนองแขม-1",
+						"count": 0
+					},
+					{
+						"candidateId": "หนองแขม-2",
+						"count": 0
+					},
+					{
+						"candidateId": "หนองแขม-3",
+						"count": 0
+					},
+					{
+						"candidateId": "หนองแขม-4",
+						"count": 0
+					},
+					{
+						"candidateId": "หนองแขม-5",
+						"count": 0
+					},
+					{
+						"candidateId": "หนองแขม-6",
+						"count": 0
+					}
+				]
+			}
+		},
+		{
+			"name": "ราษฎร์บูรณะ",
+			"voting": {
+				"eligiblePopulation": 62386,
+				"totalVotes": 0,
+				"badVotes": 0,
+				"noVotes": 0,
+				"progress": 0,
+				"pollingUnits": {
+					"total": 89,
+					"reported": 0
+				},
+				"result": [
+					{
+						"candidateId": "ราษฎร์บูรณะ-1",
+						"count": 0
+					},
+					{
+						"candidateId": "ราษฎร์บูรณะ-2",
+						"count": 0
+					},
+					{
+						"candidateId": "ราษฎร์บูรณะ-3",
+						"count": 0
+					},
+					{
+						"candidateId": "ราษฎร์บูรณะ-4",
+						"count": 0
+					}
+				]
+			}
+		},
+		{
+			"name": "บางพลัด",
+			"voting": {
+				"eligiblePopulation": 74359,
+				"totalVotes": 0,
+				"badVotes": 0,
+				"noVotes": 0,
+				"progress": 0,
+				"pollingUnits": {
+					"total": 106,
+					"reported": 0
+				},
+				"result": [
+					{
+						"candidateId": "บางพลัด-1",
+						"count": 0
+					},
+					{
+						"candidateId": "บางพลัด-2",
+						"count": 0
+					},
+					{
+						"candidateId": "บางพลัด-3",
+						"count": 0
+					},
+					{
+						"candidateId": "บางพลัด-4",
+						"count": 0
+					}
+				]
+			}
+		},
+		{
+			"name": "ดินแดง",
+			"voting": {
+				"eligiblePopulation": 93387,
+				"totalVotes": 0,
+				"badVotes": 0,
+				"noVotes": 0,
+				"progress": 0,
+				"pollingUnits": {
+					"total": 134,
+					"reported": 0
+				},
+				"result": [
+					{
+						"candidateId": "ดินแดง-1",
+						"count": 0
+					},
+					{
+						"candidateId": "ดินแดง-2",
+						"count": 0
+					},
+					{
+						"candidateId": "ดินแดง-3",
+						"count": 0
+					},
+					{
+						"candidateId": "ดินแดง-4",
+						"count": 0
+					},
+					{
+						"candidateId": "ดินแดง-5",
+						"count": 0
+					}
+				]
+			}
+		},
+		{
+			"name": "บึงกุ่ม",
+			"voting": {
+				"eligiblePopulation": 113478,
+				"totalVotes": 0,
+				"badVotes": 0,
+				"noVotes": 0,
+				"progress": 0,
+				"pollingUnits": {
+					"total": 162,
+					"reported": 0
+				},
+				"result": [
+					{
+						"candidateId": "บึงกุ่ม-1",
+						"count": 0
+					},
+					{
+						"candidateId": "บึงกุ่ม-2",
+						"count": 0
+					},
+					{
+						"candidateId": "บึงกุ่ม-3",
+						"count": 0
+					},
+					{
+						"candidateId": "บึงกุ่ม-4",
+						"count": 0
+					},
+					{
+						"candidateId": "บึงกุ่ม-5",
+						"count": 0
+					},
+					{
+						"candidateId": "บึงกุ่ม-6",
+						"count": 0
+					}
+				]
+			}
+		},
+		{
+			"name": "สาทร",
+			"voting": {
+				"eligiblePopulation": 59821,
+				"totalVotes": 0,
+				"badVotes": 0,
+				"noVotes": 0,
+				"progress": 0,
+				"pollingUnits": {
+					"total": 86,
+					"reported": 0
+				},
+				"result": [
+					{
+						"candidateId": "สาทร-1",
+						"count": 0
+					},
+					{
+						"candidateId": "สาทร-2",
+						"count": 0
+					},
+					{
+						"candidateId": "สาทร-3",
+						"count": 0
+					},
+					{
+						"candidateId": "สาทร-4",
+						"count": 0
+					},
+					{
+						"candidateId": "สาทร-5",
+						"count": 0
+					}
+				]
+			}
+		},
+		{
+			"name": "บางซื่อ",
+			"voting": {
+				"eligiblePopulation": 100687,
+				"totalVotes": 0,
+				"badVotes": 0,
+				"noVotes": 0,
+				"progress": 0,
+				"pollingUnits": {
+					"total": 144,
+					"reported": 0
+				},
+				"result": [
+					{
+						"candidateId": "บางซื่อ-1",
+						"count": 0
+					},
+					{
+						"candidateId": "บางซื่อ-10",
+						"count": 0
+					},
+					{
+						"candidateId": "บางซื่อ-2",
+						"count": 0
+					},
+					{
+						"candidateId": "บางซื่อ-3",
+						"count": 0
+					},
+					{
+						"candidateId": "บางซื่อ-4",
+						"count": 0
+					},
+					{
+						"candidateId": "บางซื่อ-5",
+						"count": 0
+					},
+					{
+						"candidateId": "บางซื่อ-6",
+						"count": 0
+					},
+					{
+						"candidateId": "บางซื่อ-7",
+						"count": 0
+					},
+					{
+						"candidateId": "บางซื่อ-8",
+						"count": 0
+					},
+					{
+						"candidateId": "บางซื่อ-9",
+						"count": 0
+					}
+				]
+			}
+		},
+		{
+			"name": "จตุจักร",
+			"voting": {
+				"eligiblePopulation": 127138,
+				"totalVotes": 0,
+				"badVotes": 0,
+				"noVotes": 0,
+				"progress": 0,
+				"pollingUnits": {
+					"total": 182,
+					"reported": 0
+				},
+				"result": [
+					{
+						"candidateId": "จตุจักร-1",
+						"count": 0
+					},
+					{
+						"candidateId": "จตุจักร-2",
+						"count": 0
+					},
+					{
+						"candidateId": "จตุจักร-3",
+						"count": 0
+					},
+					{
+						"candidateId": "จตุจักร-4",
+						"count": 0
+					}
+				]
+			}
+		},
+		{
+			"name": "บางคอแหลม",
+			"voting": {
+				"eligiblePopulation": 64851,
+				"totalVotes": 0,
+				"badVotes": 0,
+				"noVotes": 0,
+				"progress": 0,
+				"pollingUnits": {
+					"total": 93,
+					"reported": 0
+				},
+				"result": [
+					{
+						"candidateId": "บางคอแหลม-1",
+						"count": 0
+					},
+					{
+						"candidateId": "บางคอแหลม-10",
+						"count": 0
+					},
+					{
+						"candidateId": "บางคอแหลม-11",
+						"count": 0
+					},
+					{
+						"candidateId": "บางคอแหลม-12",
+						"count": 0
+					},
+					{
+						"candidateId": "บางคอแหลม-2",
+						"count": 0
+					},
+					{
+						"candidateId": "บางคอแหลม-3",
+						"count": 0
+					},
+					{
+						"candidateId": "บางคอแหลม-4",
+						"count": 0
+					},
+					{
+						"candidateId": "บางคอแหลม-5",
+						"count": 0
+					},
+					{
+						"candidateId": "บางคอแหลม-6",
+						"count": 0
+					},
+					{
+						"candidateId": "บางคอแหลม-7",
+						"count": 0
+					},
+					{
+						"candidateId": "บางคอแหลม-8",
+						"count": 0
+					},
+					{
+						"candidateId": "บางคอแหลม-9",
+						"count": 0
+					}
+				]
+			}
+		},
+		{
+			"name": "ประเวศ",
+			"voting": {
+				"eligiblePopulation": 140134,
+				"totalVotes": 0,
+				"badVotes": 0,
+				"noVotes": 0,
+				"progress": 0,
+				"pollingUnits": {
+					"total": 200,
+					"reported": 0
+				},
+				"result": [
+					{
+						"candidateId": "ประเวศ-1",
+						"count": 0
+					},
+					{
+						"candidateId": "ประเวศ-2",
+						"count": 0
+					},
+					{
+						"candidateId": "ประเวศ-3",
+						"count": 0
+					},
+					{
+						"candidateId": "ประเวศ-4",
+						"count": 0
+					}
+				]
+			}
+		},
+		{
+			"name": "คลองเตย",
+			"voting": {
+				"eligiblePopulation": 73153,
+				"totalVotes": 0,
+				"badVotes": 0,
+				"noVotes": 0,
+				"progress": 0,
+				"pollingUnits": {
+					"total": 105,
+					"reported": 0
+				},
+				"result": [
+					{
+						"candidateId": "คลองเตย-1",
+						"count": 0
+					},
+					{
+						"candidateId": "คลองเตย-10",
+						"count": 0
+					},
+					{
+						"candidateId": "คลองเตย-11",
+						"count": 0
+					},
+					{
+						"candidateId": "คลองเตย-12",
+						"count": 0
+					},
+					{
+						"candidateId": "คลองเตย-13",
+						"count": 0
+					},
+					{
+						"candidateId": "คลองเตย-2",
+						"count": 0
+					},
+					{
+						"candidateId": "คลองเตย-3",
+						"count": 0
+					},
+					{
+						"candidateId": "คลองเตย-4",
+						"count": 0
+					},
+					{
+						"candidateId": "คลองเตย-5",
+						"count": 0
+					},
+					{
+						"candidateId": "คลองเตย-6",
+						"count": 0
+					},
+					{
+						"candidateId": "คลองเตย-7",
+						"count": 0
+					},
+					{
+						"candidateId": "คลองเตย-8",
+						"count": 0
+					},
+					{
+						"candidateId": "คลองเตย-9",
+						"count": 0
+					}
+				]
+			}
+		},
+		{
+			"name": "สวนหลวง",
+			"voting": {
+				"eligiblePopulation": 97144,
+				"totalVotes": 0,
+				"badVotes": 0,
+				"noVotes": 0,
+				"progress": 0,
+				"pollingUnits": {
+					"total": 139,
+					"reported": 0
+				},
+				"result": [
+					{
+						"candidateId": "สวนหลวง-1",
+						"count": 0
+					},
+					{
+						"candidateId": "สวนหลวง-2",
+						"count": 0
+					},
+					{
+						"candidateId": "สวนหลวง-3",
+						"count": 0
+					},
+					{
+						"candidateId": "สวนหลวง-4",
+						"count": 0
+					},
+					{
+						"candidateId": "สวนหลวง-5",
+						"count": 0
+					},
+					{
+						"candidateId": "สวนหลวง-6",
+						"count": 0
+					},
+					{
+						"candidateId": "สวนหลวง-7",
+						"count": 0
+					}
+				]
+			}
+		},
+		{
+			"name": "จอมทอง",
+			"voting": {
+				"eligiblePopulation": 117583,
+				"totalVotes": 0,
+				"badVotes": 0,
+				"noVotes": 0,
+				"progress": 0,
+				"pollingUnits": {
+					"total": 168,
+					"reported": 0
+				},
+				"result": [
+					{
+						"candidateId": "จอมทอง-1",
+						"count": 0
+					},
+					{
+						"candidateId": "จอมทอง-10",
+						"count": 0
+					},
+					{
+						"candidateId": "จอมทอง-11",
+						"count": 0
+					},
+					{
+						"candidateId": "จอมทอง-12",
+						"count": 0
+					},
+					{
+						"candidateId": "จอมทอง-13",
+						"count": 0
+					},
+					{
+						"candidateId": "จอมทอง-14",
+						"count": 0
+					},
+					{
+						"candidateId": "จอมทอง-15",
+						"count": 0
+					},
+					{
+						"candidateId": "จอมทอง-2",
+						"count": 0
+					},
+					{
+						"candidateId": "จอมทอง-3",
+						"count": 0
+					},
+					{
+						"candidateId": "จอมทอง-4",
+						"count": 0
+					},
+					{
+						"candidateId": "จอมทอง-5",
+						"count": 0
+					},
+					{
+						"candidateId": "จอมทอง-6",
+						"count": 0
+					},
+					{
+						"candidateId": "จอมทอง-7",
+						"count": 0
+					},
+					{
+						"candidateId": "จอมทอง-8",
+						"count": 0
+					},
+					{
+						"candidateId": "จอมทอง-9",
+						"count": 0
+					}
+				]
+			}
+		},
+		{
+			"name": "ดอนเมือง",
+			"voting": {
+				"eligiblePopulation": 132987,
+				"totalVotes": 0,
+				"badVotes": 0,
+				"noVotes": 0,
+				"progress": 0,
+				"pollingUnits": {
+					"total": 191,
+					"reported": 0
+				},
+				"result": [
+					{
+						"candidateId": "ดอนเมือง-1",
+						"count": 0
+					},
+					{
+						"candidateId": "ดอนเมือง-2",
+						"count": 0
+					},
+					{
+						"candidateId": "ดอนเมือง-3",
+						"count": 0
+					},
+					{
+						"candidateId": "ดอนเมือง-4",
+						"count": 0
+					},
+					{
+						"candidateId": "ดอนเมือง-5",
+						"count": 0
+					}
+				]
+			}
+		},
+		{
+			"name": "ราชเทวี",
+			"voting": {
+				"eligiblePopulation": 48780,
+				"totalVotes": 0,
+				"badVotes": 0,
+				"noVotes": 0,
+				"progress": 0,
+				"pollingUnits": {
+					"total": 70,
+					"reported": 0
+				},
+				"result": [
+					{
+						"candidateId": "ราชเทวี-1",
+						"count": 0
+					},
+					{
+						"candidateId": "ราชเทวี-2",
+						"count": 0
+					},
+					{
+						"candidateId": "ราชเทวี-3",
+						"count": 0
+					},
+					{
+						"candidateId": "ราชเทวี-4",
+						"count": 0
+					},
+					{
+						"candidateId": "ราชเทวี-5",
+						"count": 0
+					},
+					{
+						"candidateId": "ราชเทวี-6",
+						"count": 0
+					}
+				]
+			}
+		},
+		{
+			"name": "ลาดพร้าว",
+			"voting": {
+				"eligiblePopulation": 94462,
+				"totalVotes": 0,
+				"badVotes": 0,
+				"noVotes": 0,
+				"progress": 0,
+				"pollingUnits": {
+					"total": 135,
+					"reported": 0
+				},
+				"result": [
+					{
+						"candidateId": "ลาดพร้าว-1",
+						"count": 0
+					},
+					{
+						"candidateId": "ลาดพร้าว-2",
+						"count": 0
+					},
+					{
+						"candidateId": "ลาดพร้าว-3",
+						"count": 0
+					},
+					{
+						"candidateId": "ลาดพร้าว-4",
+						"count": 0
+					},
+					{
+						"candidateId": "ลาดพร้าว-5",
+						"count": 0
+					},
+					{
+						"candidateId": "ลาดพร้าว-6",
+						"count": 0
+					},
+					{
+						"candidateId": "ลาดพร้าว-7",
+						"count": 0
+					},
+					{
+						"candidateId": "ลาดพร้าว-8",
+						"count": 0
+					},
+					{
+						"candidateId": "ลาดพร้าว-9",
+						"count": 0
+					}
+				]
+			}
+		},
+		{
+			"name": "วัฒนา",
+			"voting": {
+				"eligiblePopulation": 55830,
+				"totalVotes": 0,
+				"badVotes": 0,
+				"noVotes": 0,
+				"progress": 0,
+				"pollingUnits": {
+					"total": 80,
+					"reported": 0
+				},
+				"result": [
+					{
+						"candidateId": "วัฒนา-1",
+						"count": 0
+					},
+					{
+						"candidateId": "วัฒนา-2",
+						"count": 0
+					},
+					{
+						"candidateId": "วัฒนา-3",
+						"count": 0
+					},
+					{
+						"candidateId": "วัฒนา-4",
+						"count": 0
+					},
+					{
+						"candidateId": "วัฒนา-5",
+						"count": 0
+					}
+				]
+			}
+		},
+		{
+			"name": "บางแค",
+			"voting": {
+				"eligiblePopulation": 157372,
+				"totalVotes": 0,
+				"badVotes": 0,
+				"noVotes": 0,
+				"progress": 0,
+				"pollingUnits": {
+					"total": 225,
+					"reported": 0
+				},
+				"result": [
+					{
+						"candidateId": "บางแค-1",
+						"count": 0
+					},
+					{
+						"candidateId": "บางแค-2",
+						"count": 0
+					},
+					{
+						"candidateId": "บางแค-3",
+						"count": 0
+					},
+					{
+						"candidateId": "บางแค-4",
+						"count": 0
+					},
+					{
+						"candidateId": "บางแค-5",
+						"count": 0
+					}
+				]
+			}
+		},
+		{
+			"name": "หลักสี่",
+			"voting": {
+				"eligiblePopulation": 82916,
+				"totalVotes": 0,
+				"badVotes": 0,
+				"noVotes": 0,
+				"progress": 0,
+				"pollingUnits": {
+					"total": 119,
+					"reported": 0
+				},
+				"result": [
+					{
+						"candidateId": "หลักสี่-1",
+						"count": 0
+					},
+					{
+						"candidateId": "หลักสี่-2",
+						"count": 0
+					},
+					{
+						"candidateId": "หลักสี่-3",
+						"count": 0
+					},
+					{
+						"candidateId": "หลักสี่-4",
+						"count": 0
+					},
+					{
+						"candidateId": "หลักสี่-5",
+						"count": 0
+					},
+					{
+						"candidateId": "หลักสี่-6",
+						"count": 0
+					},
+					{
+						"candidateId": "หลักสี่-7",
+						"count": 0
+					}
+				]
+			}
+		},
+		{
+			"name": "สายไหม",
+			"voting": {
+				"eligiblePopulation": 163082,
+				"totalVotes": 0,
+				"badVotes": 0,
+				"noVotes": 0,
+				"progress": 0,
+				"pollingUnits": {
+					"total": 233,
+					"reported": 0
+				},
+				"result": [
+					{
+						"candidateId": "สายไหม-1",
+						"count": 0
+					},
+					{
+						"candidateId": "สายไหม-2",
+						"count": 0
+					},
+					{
+						"candidateId": "สายไหม-3",
+						"count": 0
+					},
+					{
+						"candidateId": "สายไหม-4",
+						"count": 0
+					},
+					{
+						"candidateId": "สายไหม-5",
+						"count": 0
+					},
+					{
+						"candidateId": "สายไหม-6",
+						"count": 0
+					},
+					{
+						"candidateId": "สายไหม-7",
+						"count": 0
+					}
+				]
+			}
+		},
+		{
+			"name": "คันนายาว",
+			"voting": {
+				"eligiblePopulation": 70521,
+				"totalVotes": 0,
+				"badVotes": 0,
+				"noVotes": 0,
+				"progress": 0,
+				"pollingUnits": {
+					"total": 101,
+					"reported": 0
+				},
+				"result": [
+					{
+						"candidateId": "คันนายาว-1",
+						"count": 0
+					},
+					{
+						"candidateId": "คันนายาว-2",
+						"count": 0
+					},
+					{
+						"candidateId": "คันนายาว-3",
+						"count": 0
+					},
+					{
+						"candidateId": "คันนายาว-4",
+						"count": 0
+					},
+					{
+						"candidateId": "คันนายาว-5",
+						"count": 0
+					},
+					{
+						"candidateId": "คันนายาว-6",
+						"count": 0
+					},
+					{
+						"candidateId": "คันนายาว-7",
+						"count": 0
+					},
+					{
+						"candidateId": "คันนายาว-8",
+						"count": 0
+					},
+					{
+						"candidateId": "คันนายาว-9",
+						"count": 0
+					}
+				]
+			}
+		},
+		{
+			"name": "สะพานสูง",
+			"voting": {
+				"eligiblePopulation": 76216,
+				"totalVotes": 0,
+				"badVotes": 0,
+				"noVotes": 0,
+				"progress": 0,
+				"pollingUnits": {
+					"total": 109,
+					"reported": 0
+				},
+				"result": [
+					{
+						"candidateId": "สะพานสูง-1",
+						"count": 0
+					},
+					{
+						"candidateId": "สะพานสูง-2",
+						"count": 0
+					},
+					{
+						"candidateId": "สะพานสูง-3",
+						"count": 0
+					},
+					{
+						"candidateId": "สะพานสูง-4",
+						"count": 0
+					}
+				]
+			}
+		},
+		{
+			"name": "วังทองหลาง",
+			"voting": {
+				"eligiblePopulation": 85119,
+				"totalVotes": 0,
+				"badVotes": 0,
+				"noVotes": 0,
+				"progress": 0,
+				"pollingUnits": {
+					"total": 122,
+					"reported": 0
+				},
+				"result": [
+					{
+						"candidateId": "วังทองหลาง-1",
+						"count": 0
+					},
+					{
+						"candidateId": "วังทองหลาง-2",
+						"count": 0
+					},
+					{
+						"candidateId": "วังทองหลาง-3",
+						"count": 0
+					},
+					{
+						"candidateId": "วังทองหลาง-4",
+						"count": 0
+					},
+					{
+						"candidateId": "วังทองหลาง-5",
+						"count": 0
+					}
+				]
+			}
+		},
+		{
+			"name": "คลองสามวา",
+			"voting": {
+				"eligiblePopulation": 160227,
+				"totalVotes": 0,
+				"badVotes": 0,
+				"noVotes": 0,
+				"progress": 0,
+				"pollingUnits": {
+					"total": 229,
+					"reported": 0
+				},
+				"result": [
+					{
+						"candidateId": "คลองสามวา-1",
+						"count": 0
+					},
+					{
+						"candidateId": "คลองสามวา-2",
+						"count": 0
+					},
+					{
+						"candidateId": "คลองสามวา-3",
+						"count": 0
+					},
+					{
+						"candidateId": "คลองสามวา-4",
+						"count": 0
+					}
+				]
+			}
+		},
+		{
+			"name": "บางนา",
+			"voting": {
+				"eligiblePopulation": 70973,
+				"totalVotes": 0,
+				"badVotes": 0,
+				"noVotes": 0,
+				"progress": 0,
+				"pollingUnits": {
+					"total": 102,
+					"reported": 0
+				},
+				"result": [
+					{
+						"candidateId": "บางนา-1",
+						"count": 0
+					},
+					{
+						"candidateId": "บางนา-2",
+						"count": 0
+					},
+					{
+						"candidateId": "บางนา-3",
+						"count": 0
+					},
+					{
+						"candidateId": "บางนา-4",
+						"count": 0
+					},
+					{
+						"candidateId": "บางนา-5",
+						"count": 0
+					},
+					{
+						"candidateId": "บางนา-6",
+						"count": 0
+					},
+					{
+						"candidateId": "บางนา-7",
+						"count": 0
+					},
+					{
+						"candidateId": "บางนา-8",
+						"count": 0
+					}
+				]
+			}
+		},
+		{
+			"name": "ทวีวัฒนา",
+			"voting": {
+				"eligiblePopulation": 64832,
+				"totalVotes": 0,
+				"badVotes": 0,
+				"noVotes": 0,
+				"progress": 0,
+				"pollingUnits": {
+					"total": 93,
+					"reported": 0
+				},
+				"result": [
+					{
+						"candidateId": "ทวีวัฒนา-1",
+						"count": 0
+					},
+					{
+						"candidateId": "ทวีวัฒนา-2",
+						"count": 0
+					},
+					{
+						"candidateId": "ทวีวัฒนา-3",
+						"count": 0
+					},
+					{
+						"candidateId": "ทวีวัฒนา-4",
+						"count": 0
+					},
+					{
+						"candidateId": "ทวีวัฒนา-5",
+						"count": 0
+					}
+				]
+			}
+		},
+		{
+			"name": "ทุ่งครุ",
+			"voting": {
+				"eligiblePopulation": 98485,
+				"totalVotes": 0,
+				"badVotes": 0,
+				"noVotes": 0,
+				"progress": 0,
+				"pollingUnits": {
+					"total": 141,
+					"reported": 0
+				},
+				"result": [
+					{
+						"candidateId": "ทุ่งครุ-1",
+						"count": 0
+					},
+					{
+						"candidateId": "ทุ่งครุ-2",
+						"count": 0
+					},
+					{
+						"candidateId": "ทุ่งครุ-3",
+						"count": 0
+					},
+					{
+						"candidateId": "ทุ่งครุ-4",
+						"count": 0
+					},
+					{
+						"candidateId": "ทุ่งครุ-5",
+						"count": 0
+					}
+				]
+			}
+		},
+		{
+			"name": "บางบอน",
+			"voting": {
+				"eligiblePopulation": 79579,
+				"totalVotes": 0,
+				"badVotes": 0,
+				"noVotes": 0,
+				"progress": 0,
+				"pollingUnits": {
+					"total": 114,
+					"reported": 0
+				},
+				"result": [
+					{
+						"candidateId": "บางบอน-1",
+						"count": 0
+					},
+					{
+						"candidateId": "บางบอน-2",
+						"count": 0
+					},
+					{
+						"candidateId": "บางบอน-3",
+						"count": 0
+					},
+					{
+						"candidateId": "บางบอน-4",
+						"count": 0
+					},
+					{
+						"candidateId": "บางบอน-5",
+						"count": 0
+					},
+					{
+						"candidateId": "บางบอน-6",
+						"count": 0
+					},
+					{
+						"candidateId": "บางบอน-7",
+						"count": 0
+					}
+				]
+			}
+		}
+	]
+}

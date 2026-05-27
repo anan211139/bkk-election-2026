@@ -1,13 +1,5 @@
-const img = require('../public/images/candidates/1/1.webp');
-
-
 export const getCouncilImage = (districtId: number, councilNumber: number) => {
-  try {
-    const img = require(`../public/images/candidates/${districtId}/${councilNumber}.webp`);
-    return img.default.src as string;
-  } catch {
-    return '';
-  }
+  return `/candidate/image/${districtId}/${councilNumber}.webp`;
 };
 
 export const getCandidateOG = (id: number): string => {
@@ -42,16 +34,16 @@ export type numberListType =
   | 19
   | 20
   | 21
-  | 22
-  | 23
-  | 24
-  | 25
-  | 26
-  | 27
-  | 28
-  | 29
-  | 30
-  | 31;
+  | 22;
+  // | 23
+  // | 24
+  // | 25
+  // | 26
+  // | 27
+  // | 28
+  // | 29
+  // | 30
+  // | 31;
 
 export const colorDict = {
   1: '#F66C03',
@@ -76,15 +68,15 @@ export const colorDict = {
   20: '#FFA37C',
   21: '#B8E7B1',
   22: '#7CFFD8',
-  23: '#3C7EFF',
-  24: '#CDA682',
-  25: '#FF7C7C',
-  26: '#1892AD',
-  27: '#FFA149',
-  28: '#789978',
-  29: '#9867C9',
-  30: '#BFF27F',
-  31: '#FC4145',
+  // 23: '#3C7EFF',
+  // 24: '#CDA682',
+  // 25: '#FF7C7C',
+  // 26: '#1892AD',
+  // 27: '#FFA149',
+  // 28: '#789978',
+  // 29: '#9867C9',
+  // 30: '#BFF27F',
+  // 31: '#FC4145',
 };
 
 export const districtOrderList = [

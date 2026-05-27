@@ -1,5 +1,5 @@
-import governorCandidates from '../data/65-governor-candidates.json';
-import councilCandidates from '../data/65-bmc-candidates.json';
+import governorCandidates from '../data/69-governor-candidates.json';
+import councilCandidates from '../data/69-bmc-candidates.json';
 import candidate1 from '../data/original-candidates/1.json';
 import candidate2 from '../data/original-candidates/2.json';
 import candidate3 from '../data/original-candidates/3.json';
@@ -22,14 +22,14 @@ import candidate19 from '../data/original-candidates/19.json';
 import candidate20 from '../data/original-candidates/20.json';
 import candidate21 from '../data/original-candidates/21.json';
 import candidate22 from '../data/original-candidates/22.json';
-import candidate23 from '../data/original-candidates/23.json';
-import candidate24 from '../data/original-candidates/24.json';
-import candidate25 from '../data/original-candidates/25.json';
-import candidate26 from '../data/original-candidates/26.json';
-import candidate27 from '../data/original-candidates/27.json';
-import candidate29 from '../data/original-candidates/29.json';
-import candidate30 from '../data/original-candidates/30.json';
-import candidate31 from '../data/original-candidates/31.json';
+// import candidate23 from '../data/original-candidates/23.json';
+// import candidate24 from '../data/original-candidates/24.json';
+// import candidate25 from '../data/original-candidates/25.json';
+// import candidate26 from '../data/original-candidates/26.json';
+// import candidate27 from '../data/original-candidates/27.json';
+// import candidate29 from '../data/original-candidates/29.json';
+// import candidate30 from '../data/original-candidates/30.json';
+// import candidate31 from '../data/original-candidates/31.json';
 import { ICouncil, IGovernor } from '../types/business';
 
 interface MapCandidate {
@@ -135,14 +135,14 @@ const originalGovernorList = [
   candidate20,
   candidate21,
   candidate22,
-  candidate23,
-  candidate24,
-  candidate25,
-  candidate26,
-  candidate27,
-  candidate29,
-  candidate30,
-  candidate31,
+  // candidate23,
+  // candidate24,
+  // candidate25,
+  // candidate26,
+  // candidate27,
+  // candidate29,
+  // candidate30,
+  // candidate31,
 ].map((page) =>
   normalizeOriginalGovernor(page as unknown as OriginalCandidatePage)
 );

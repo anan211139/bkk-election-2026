@@ -4,6 +4,7 @@ import { SmoothGraphics as Graphics } from '@pixi/graphics-smooth';
 import { Viewport } from 'pixi-viewport';
 import * as PIXI from "pixi.js";
 import React, { useContext, useEffect, useMemo, useRef, useState } from 'react';
+import { DEFAULT_CANDIDATE_COLOR } from '../../constants/candidate';
 import { Preset, presetContext } from '../../contexts/preset';
 import { District, ElectionDataType } from '../../models/election';
 import DistrictTooltip from '../DistrictTooltip';
@@ -86,9 +87,11 @@ const GridWinner: React.FC<GridWinnerProps> = ({ onDistrictClick }: GridWinnerPr
 
         const graphics = new Graphics();
 
-        if (highestScoreCandidate) {
-          graphics.beginFill(+highestScoreCandidate.color.replace("#", "0x"), 1, true);
-        }
+        graphics.beginFill(
+          +(highestScoreCandidate?.color || DEFAULT_CANDIDATE_COLOR).replace("#", "0x"),
+          1,
+          true
+        );
         graphics.drawRoundedRect(x, y, rectSize, rectSize, 2);
         graphics.endFill();
         graphics.interactive = true;
