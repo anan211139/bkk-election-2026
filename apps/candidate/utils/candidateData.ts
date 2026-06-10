@@ -18,18 +18,6 @@ import candidate15 from '../data/original-candidates/15.json';
 import candidate16 from '../data/original-candidates/16.json';
 import candidate17 from '../data/original-candidates/17.json';
 import candidate18 from '../data/original-candidates/18.json';
-import candidate19 from '../data/original-candidates/19.json';
-import candidate20 from '../data/original-candidates/20.json';
-import candidate21 from '../data/original-candidates/21.json';
-import candidate22 from '../data/original-candidates/22.json';
-// import candidate23 from '../data/original-candidates/23.json';
-// import candidate24 from '../data/original-candidates/24.json';
-// import candidate25 from '../data/original-candidates/25.json';
-// import candidate26 from '../data/original-candidates/26.json';
-// import candidate27 from '../data/original-candidates/27.json';
-// import candidate29 from '../data/original-candidates/29.json';
-// import candidate30 from '../data/original-candidates/30.json';
-// import candidate31 from '../data/original-candidates/31.json';
 import { ICouncil, IGovernor } from '../types/business';
 
 interface MapCandidate {
@@ -130,19 +118,7 @@ const originalGovernorList = [
   candidate15,
   candidate16,
   candidate17,
-  candidate18,
-  candidate19,
-  candidate20,
-  candidate21,
-  candidate22,
-  // candidate23,
-  // candidate24,
-  // candidate25,
-  // candidate26,
-  // candidate27,
-  // candidate29,
-  // candidate30,
-  // candidate31,
+  candidate18
 ].map((page) =>
   normalizeOriginalGovernor(page as unknown as OriginalCandidatePage)
 );

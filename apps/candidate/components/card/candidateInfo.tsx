@@ -149,21 +149,10 @@ export function CandidateInfoCard({ governor }: PropsType) {
         {governor.age && (
           <div className="pb-[10px] border-b border-white/[0.1]">
             <p className="font-bold font-body mt-[10px] text-[14px]">
-              อายุ (นับถึงวันที่สมัคร)
+              อายุ (นับถึงวันเลือกตั้ง)
             </p>
             <div className="font-body text-[16px] mt-[10px]">
               {governor.age || '-'} ปี
-            </div>
-          </div>
-        )}
-
-        {governor.property && (
-          <div className="pb-[10px] border-b border-white/[0.1]">
-            <p className="font-bold font-body mt-[10px] text-[14px]">
-              บัญชีทรัพย์สิน
-            </p>
-            <div className="font-body text-[16px] mt-[10px]">
-              {toList(governor.property)}
             </div>
           </div>
         )}
@@ -180,7 +169,7 @@ export function CandidateInfoCard({ governor }: PropsType) {
         {governor.higher_education && (
           <div className="pb-[10px] border-b border-white/[0.1]">
             <p className="font-bold font-body mt-[10px] text-[14px]">
-              การศึกษาระดับอุดมศึกษา
+              การศึกษาสูงสุด
             </p>
             <div className="font-body text-[16px] mt-[10px]">
               {toList(governor.higher_education)}
@@ -200,7 +189,7 @@ export function CandidateInfoCard({ governor }: PropsType) {
         {governor.political_career && (
           <div className="pb-[10px] border-b border-white/[0.1]">
             <p className="font-bold font-body mt-[10px] text-[14px]">
-              ประวัติการดำรงตำแหน่งทางการเมือง และประวัติการสังกัดพรรคการเมือง
+              ประวัติการดำรงตำแหน่งทางการเมือง หรืออาชีพล่าสุด
             </p>
             <div className="font-body text-[16px] mt-[10px]">
               {toList(governor.political_career)}
