@@ -41,7 +41,7 @@ export function CandidatePage({
   };
   return (
     <div className="h-[calc(100vh-46px)]">
-      <div className="bg-[#333333] relative md:h-[100vh]">
+      <div className="bg-[#333333] relative h-[100vh] overflow-hidden md:overflow-visible">
         <div
           className="h-[100vh] w-full bg-cover md:bg-cover bg-center absolute z-0"
           style={{
@@ -60,7 +60,7 @@ export function CandidatePage({
               เบอร์ {governor.number}
             </h5>
           </div>
-          <div className="mt-[60vh] md:my-auto">
+          <div className="absolute inset-x-[10%] bottom-[20px] md:static md:my-auto">
             <CandidateInfoCard governor={governor} />
           </div>
         </div>

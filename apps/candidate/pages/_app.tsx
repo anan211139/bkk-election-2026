@@ -2,10 +2,13 @@ import 'tailwind/style.css';
 import '../custom.css';
 import type { AppProps } from 'next/app';
 import { useEffect } from 'react';
+import { useRouter } from 'next/router';
 import { loadUIComponents } from 'ui';
 import PlausibleProvider from 'next-plausible';
 
 function MyApp({ Component, pageProps }: AppProps) {
+  const router = useRouter();
+
   useEffect(() => {
     loadUIComponents();
   });
@@ -17,7 +20,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     >
       <ui-navbar />
       <Component {...pageProps} />
-      <ui-footer />
+      {router.pathname !== '/[id]' && <ui-footer />}
     </PlausibleProvider>
   );
 }
