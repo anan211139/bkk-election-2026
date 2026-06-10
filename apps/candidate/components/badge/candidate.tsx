@@ -6,14 +6,12 @@ import { colorDict, numberListType } from '../../utils/dict';
 import Link from 'next/link';
 interface PropType {
   candidate: IGovernor;
-  showPlayButton?: boolean;
   fromHome?: boolean;
   clientSide?: boolean;
 }
 
 export function CandidateBadge({
   candidate,
-  showPlayButton,
   fromHome,
   clientSide,
 }: PropType) {

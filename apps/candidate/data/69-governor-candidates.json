@@ -4,8 +4,8 @@
         "number": 1,
         "fullname": "หม่อมหลวงกรกสิวัฒน์ เกษมศรี",
         "shortname": "กรกสิวัฒน์",
-        "color": "#666666",
-        "party": "",
+        "color": "#b48c4f",
+        "party": "อิสระ",
         "image": "/map/images/69-governor-candidates/1.png"
     },
     "2": {
@@ -13,8 +13,8 @@
         "number": 2,
         "fullname": "นายสมัย ละเลิศ",
         "shortname": "สมัย",
-        "color": "#666666",
-        "party": "",
+        "color": "#fb2afa",
+        "party": "อิสระ",
         "image": "/map/images/69-governor-candidates/2.png"
     },
     "3": {
@@ -22,8 +22,8 @@
         "number": 3,
         "fullname": "นายพงษ์ศักดิ์ พัวพรพงษ์",
         "shortname": "พงษ์ศักดิ์",
-        "color": "#666666",
-        "party": "",
+        "color": "#ff4da6",
+        "party": "อิสระ",
         "image": "/map/images/69-governor-candidates/3.png"
     },
     "4": {
@@ -31,8 +31,8 @@
         "number": 4,
         "fullname": "นายประทีป วัชรโชคเกษม",
         "shortname": "ประทีป",
-        "color": "#666666",
-        "party": "",
+        "color": "#cde40b",
+        "party": "อิสระ",
         "image": "/map/images/69-governor-candidates/4.png"
     },
     "5": {
@@ -40,8 +40,8 @@
         "number": 5,
         "fullname": "นายอนุชา บูรพชัยศรี",
         "shortname": "อนุชา",
-        "color": "#666666",
-        "party": "",
+        "color": "#00c0ff",
+        "party": "พรรคประชาธิปัตย์",
         "image": "/map/images/69-governor-candidates/5.png"
     },
     "6": {
@@ -49,8 +49,8 @@
         "number": 6,
         "fullname": "นายพิศาล กิตติเยาวมาลย์",
         "shortname": "พิศาล",
-        "color": "#666666",
-        "party": "",
+        "color": "#00a896",
+        "party": "อิสระ",
         "image": "/map/images/69-governor-candidates/6.png"
     },
     "7": {
@@ -58,8 +58,8 @@
         "number": 7,
         "fullname": "นายภาสพงศ์ ไชยวิริญะวาณิชย์",
         "shortname": "ภาสพงศ์",
-        "color": "#666666",
-        "party": "",
+        "color": "#b400ff",
+        "party": "อิสระ",
         "image": "/map/images/69-governor-candidates/7.png"
     },
     "8": {
@@ -67,8 +67,8 @@
         "number": 8,
         "fullname": "นายวีรพจน์ ลือประสิทธิ์สกุล",
         "shortname": "วีรพจน์",
-        "color": "#666666",
-        "party": "",
+        "color": "#ca88f9",
+        "party": "อิสระ",
         "image": "/map/images/69-governor-candidates/8.png"
     },
     "9": {
@@ -76,8 +76,8 @@
         "number": 9,
         "fullname": "นายชัชชาติ สิทธิพันธุ์",
         "shortname": "ชัชชาติ",
-        "color": "#666666",
-        "party": "",
+        "color": "#5adc00",
+        "party": "อิสระ",
         "image": "/map/images/69-governor-candidates/9.png"
     },
     "10": {
@@ -85,8 +85,8 @@
         "number": 10,
         "fullname": "นายชัยวัฒน์ สถาวรวิจิตร",
         "shortname": "ชัยวัฒน์",
-        "color": "#666666",
-        "party": "",
+        "color": "#ff7f00",
+        "party": "พรรคประชาชน",
         "image": "/map/images/69-governor-candidates/10.png"
     },
     "11": {
@@ -94,8 +94,8 @@
         "number": 11,
         "fullname": "นายประยูร ครองยศ",
         "shortname": "ประยูร",
-        "color": "#666666",
-        "party": "",
+        "color": "#fc5948",
+        "party": "อิสระ",
         "image": "/map/images/69-governor-candidates/11.png"
     },
     "12": {
@@ -103,8 +103,8 @@
         "number": 12,
         "fullname": "พลตำรวจโทชาญเทพ เสสะเวช",
         "shortname": "ชาญเทพ",
-        "color": "#666666",
-        "party": "",
+        "color": "#ffbb00",
+        "party": "พรรคเศรษฐกิจ",
         "image": "/map/images/69-governor-candidates/12.png"
     },
     "13": {
@@ -112,8 +112,8 @@
         "number": 13,
         "fullname": "นายคมสัน พันธุ์วิชาติกุล",
         "shortname": "คมสัน",
-        "color": "#666666",
-        "party": "",
+        "color": "#48fcd8",
+        "party": "อิสระ",
         "image": "/map/images/69-governor-candidates/13.png"
     },
     "14": {
@@ -121,8 +121,8 @@
         "number": 14,
         "fullname": "นางมัลลิกา บุญมีตระกูล มหาสุข",
         "shortname": "มัลลิกา",
-        "color": "#666666",
-        "party": "",
+        "color": "#007dfe",
+        "party": "อิสระ",
         "image": "/map/images/69-governor-candidates/14.png"
     },
     "15": {
@@ -130,8 +130,8 @@
         "number": 15,
         "fullname": "นายโอฬาร ตั้งตราตระกูล",
         "shortname": "โอฬาร",
-        "color": "#666666",
-        "party": "",
+        "color": "#be905e",
+        "party": "อิสระ",
         "image": "/map/images/69-governor-candidates/15.png"
     },
     "16": {
@@ -139,8 +139,8 @@
         "number": 16,
         "fullname": "นางสาวศรีรัฏน์ ช่างเพ็ชร์",
         "shortname": "ศรีรัฏน์",
-        "color": "#666666",
-        "party": "",
+        "color": "#a3a42c",
+        "party": "อิสระ",
         "image": "/map/images/69-governor-candidates/16.png"
     },
     "17": {
@@ -148,8 +148,8 @@
         "number": 17,
         "fullname": "นางสาวลลนา มงคลหัสดินทร์",
         "shortname": "ลลนา",
-        "color": "#666666",
-        "party": "",
+        "color": "#ff8c69",
+        "party": "อิสระ",
         "image": "/map/images/69-governor-candidates/17.png"
     },
     "18": {
@@ -157,8 +157,8 @@
         "number": 18,
         "fullname": "นายสมชัย เจริญวรเกียรติ",
         "shortname": "สมชัย",
-        "color": "#666666",
-        "party": "",
+        "color": "#708090",
+        "party": "อิสระ",
         "image": "/map/images/69-governor-candidates/18.png"
     }
 }
