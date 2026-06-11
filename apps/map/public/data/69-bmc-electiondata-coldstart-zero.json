@@ -31,10 +31,6 @@
 						"count": 0
 					},
 					{
-						"candidateId": "พระนคร-10",
-						"count": 0
-					},
-					{
 						"candidateId": "พระนคร-2",
 						"count": 0
 					},
@@ -48,22 +44,6 @@
 					},
 					{
 						"candidateId": "พระนคร-5",
-						"count": 0
-					},
-					{
-						"candidateId": "พระนคร-6",
-						"count": 0
-					},
-					{
-						"candidateId": "พระนคร-7",
-						"count": 0
-					},
-					{
-						"candidateId": "พระนคร-8",
-						"count": 0
-					},
-					{
-						"candidateId": "พระนคร-9",
 						"count": 0
 					}
 				]
@@ -101,22 +81,6 @@
 					{
 						"candidateId": "ดุสิต-5",
 						"count": 0
-					},
-					{
-						"candidateId": "ดุสิต-6",
-						"count": 0
-					},
-					{
-						"candidateId": "ดุสิต-7",
-						"count": 0
-					},
-					{
-						"candidateId": "ดุสิต-8",
-						"count": 0
-					},
-					{
-						"candidateId": "ดุสิต-9",
-						"count": 0
 					}
 				]
 			}
@@ -149,22 +113,6 @@
 					{
 						"candidateId": "หนองจอก-4",
 						"count": 0
-					},
-					{
-						"candidateId": "หนองจอก-5",
-						"count": 0
-					},
-					{
-						"candidateId": "หนองจอก-6",
-						"count": 0
-					},
-					{
-						"candidateId": "หนองจอก-7",
-						"count": 0
-					},
-					{
-						"candidateId": "หนองจอก-8",
-						"count": 0
 					}
 				]
 			}
@@ -196,22 +144,6 @@
 					},
 					{
 						"candidateId": "บางรัก-4",
-						"count": 0
-					},
-					{
-						"candidateId": "บางรัก-5",
-						"count": 0
-					},
-					{
-						"candidateId": "บางรัก-6",
-						"count": 0
-					},
-					{
-						"candidateId": "บางรัก-7",
-						"count": 0
-					},
-					{
-						"candidateId": "บางรัก-8",
 						"count": 0
 					}
 				]
@@ -248,6 +180,10 @@
 					},
 					{
 						"candidateId": "บางเขน-5",
+						"count": 0
+					},
+					{
+						"candidateId": "บางเขน-6",
 						"count": 0
 					}
 				]
@@ -321,10 +257,6 @@
 					{
 						"candidateId": "ปทุมวัน-5",
 						"count": 0
-					},
-					{
-						"candidateId": "ปทุมวัน-6",
-						"count": 0
 					}
 				]
 			}
@@ -352,10 +284,6 @@
 					},
 					{
 						"candidateId": "ป้อมปราบศัตรูพ่าย-3",
-						"count": 0
-					},
-					{
-						"candidateId": "ป้อมปราบศัตรูพ่าย-4",
 						"count": 0
 					}
 				]
@@ -388,6 +316,14 @@
 					},
 					{
 						"candidateId": "พระโขนง-4",
+						"count": 0
+					},
+					{
+						"candidateId": "พระโขนง-5",
+						"count": 0
+					},
+					{
+						"candidateId": "พระโขนง-6",
 						"count": 0
 					}
 				]
@@ -453,6 +389,14 @@
 					{
 						"candidateId": "ลาดกระบัง-4",
 						"count": 0
+					},
+					{
+						"candidateId": "ลาดกระบัง-5",
+						"count": 0
+					},
+					{
+						"candidateId": "ลาดกระบัง-6",
+						"count": 0
 					}
 				]
 			}
@@ -493,6 +437,18 @@
 					{
 						"candidateId": "ยานนาวา-6",
 						"count": 0
+					},
+					{
+						"candidateId": "ยานนาวา-7",
+						"count": 0
+					},
+					{
+						"candidateId": "ยานนาวา-8",
+						"count": 0
+					},
+					{
+						"candidateId": "ยานนาวา-9",
+						"count": 0
 					}
 				]
 			}
@@ -515,51 +471,11 @@
 						"count": 0
 					},
 					{
-						"candidateId": "สัมพันธวงศ์-10",
-						"count": 0
-					},
-					{
-						"candidateId": "สัมพันธวงศ์-11",
-						"count": 0
-					},
-					{
-						"candidateId": "สัมพันธวงศ์-12",
-						"count": 0
-					},
-					{
-						"candidateId": "สัมพันธวงศ์-13",
-						"count": 0
-					},
-					{
 						"candidateId": "สัมพันธวงศ์-2",
 						"count": 0
 					},
 					{
 						"candidateId": "สัมพันธวงศ์-3",
-						"count": 0
-					},
-					{
-						"candidateId": "สัมพันธวงศ์-4",
-						"count": 0
-					},
-					{
-						"candidateId": "สัมพันธวงศ์-5",
-						"count": 0
-					},
-					{
-						"candidateId": "สัมพันธวงศ์-6",
-						"count": 0
-					},
-					{
-						"candidateId": "สัมพันธวงศ์-7",
-						"count": 0
-					},
-					{
-						"candidateId": "สัมพันธวงศ์-8",
-						"count": 0
-					},
-					{
-						"candidateId": "สัมพันธวงศ์-9",
 						"count": 0
 					}
 				]
@@ -597,6 +513,14 @@
 					{
 						"candidateId": "พญาไท-5",
 						"count": 0
+					},
+					{
+						"candidateId": "พญาไท-6",
+						"count": 0
+					},
+					{
+						"candidateId": "พญาไท-7",
+						"count": 0
 					}
 				]
 			}
@@ -619,26 +543,6 @@
 						"count": 0
 					},
 					{
-						"candidateId": "ธนบุรี-10",
-						"count": 0
-					},
-					{
-						"candidateId": "ธนบุรี-11",
-						"count": 0
-					},
-					{
-						"candidateId": "ธนบุรี-12",
-						"count": 0
-					},
-					{
-						"candidateId": "ธนบุรี-13",
-						"count": 0
-					},
-					{
-						"candidateId": "ธนบุรี-14",
-						"count": 0
-					},
-					{
 						"candidateId": "ธนบุรี-2",
 						"count": 0
 					},
@@ -652,22 +556,6 @@
 					},
 					{
 						"candidateId": "ธนบุรี-5",
-						"count": 0
-					},
-					{
-						"candidateId": "ธนบุรี-6",
-						"count": 0
-					},
-					{
-						"candidateId": "ธนบุรี-7",
-						"count": 0
-					},
-					{
-						"candidateId": "ธนบุรี-8",
-						"count": 0
-					},
-					{
-						"candidateId": "ธนบุรี-9",
 						"count": 0
 					}
 				]
@@ -697,10 +585,6 @@
 					{
 						"candidateId": "บางกอกใหญ่-3",
 						"count": 0
-					},
-					{
-						"candidateId": "บางกอกใหญ่-4",
-						"count": 0
 					}
 				]
 			}
@@ -723,34 +607,6 @@
 						"count": 0
 					},
 					{
-						"candidateId": "ห้วยขวาง-10",
-						"count": 0
-					},
-					{
-						"candidateId": "ห้วยขวาง-11",
-						"count": 0
-					},
-					{
-						"candidateId": "ห้วยขวาง-12",
-						"count": 0
-					},
-					{
-						"candidateId": "ห้วยขวาง-13",
-						"count": 0
-					},
-					{
-						"candidateId": "ห้วยขวาง-14",
-						"count": 0
-					},
-					{
-						"candidateId": "ห้วยขวาง-15",
-						"count": 0
-					},
-					{
-						"candidateId": "ห้วยขวาง-16",
-						"count": 0
-					},
-					{
 						"candidateId": "ห้วยขวาง-2",
 						"count": 0
 					},
@@ -768,18 +624,6 @@
 					},
 					{
 						"candidateId": "ห้วยขวาง-6",
-						"count": 0
-					},
-					{
-						"candidateId": "ห้วยขวาง-7",
-						"count": 0
-					},
-					{
-						"candidateId": "ห้วยขวาง-8",
-						"count": 0
-					},
-					{
-						"candidateId": "ห้วยขวาง-9",
 						"count": 0
 					}
 				]
@@ -881,10 +725,6 @@
 					{
 						"candidateId": "บางกอกน้อย-4",
 						"count": 0
-					},
-					{
-						"candidateId": "บางกอกน้อย-5",
-						"count": 0
 					}
 				]
 			}
@@ -949,6 +789,26 @@
 					{
 						"candidateId": "ภาษีเจริญ-4",
 						"count": 0
+					},
+					{
+						"candidateId": "ภาษีเจริญ-5",
+						"count": 0
+					},
+					{
+						"candidateId": "ภาษีเจริญ-6",
+						"count": 0
+					},
+					{
+						"candidateId": "ภาษีเจริญ-7",
+						"count": 0
+					},
+					{
+						"candidateId": "ภาษีเจริญ-8",
+						"count": 0
+					},
+					{
+						"candidateId": "ภาษีเจริญ-9",
+						"count": 0
 					}
 				]
 			}
@@ -985,10 +845,6 @@
 					{
 						"candidateId": "หนองแขม-5",
 						"count": 0
-					},
-					{
-						"candidateId": "หนองแขม-6",
-						"count": 0
 					}
 				]
 			}
@@ -1020,6 +876,10 @@
 					},
 					{
 						"candidateId": "ราษฎร์บูรณะ-4",
+						"count": 0
+					},
+					{
+						"candidateId": "ราษฎร์บูรณะ-5",
 						"count": 0
 					}
 				]
@@ -1187,10 +1047,6 @@
 						"count": 0
 					},
 					{
-						"candidateId": "บางซื่อ-10",
-						"count": 0
-					},
-					{
 						"candidateId": "บางซื่อ-2",
 						"count": 0
 					},
@@ -1204,22 +1060,6 @@
 					},
 					{
 						"candidateId": "บางซื่อ-5",
-						"count": 0
-					},
-					{
-						"candidateId": "บางซื่อ-6",
-						"count": 0
-					},
-					{
-						"candidateId": "บางซื่อ-7",
-						"count": 0
-					},
-					{
-						"candidateId": "บางซื่อ-8",
-						"count": 0
-					},
-					{
-						"candidateId": "บางซื่อ-9",
 						"count": 0
 					}
 				]
@@ -1253,6 +1093,14 @@
 					{
 						"candidateId": "จตุจักร-4",
 						"count": 0
+					},
+					{
+						"candidateId": "จตุจักร-5",
+						"count": 0
+					},
+					{
+						"candidateId": "จตุจักร-6",
+						"count": 0
 					}
 				]
 			}
@@ -1275,18 +1123,6 @@
 						"count": 0
 					},
 					{
-						"candidateId": "บางคอแหลม-10",
-						"count": 0
-					},
-					{
-						"candidateId": "บางคอแหลม-11",
-						"count": 0
-					},
-					{
-						"candidateId": "บางคอแหลม-12",
-						"count": 0
-					},
-					{
 						"candidateId": "บางคอแหลม-2",
 						"count": 0
 					},
@@ -1300,22 +1136,6 @@
 					},
 					{
 						"candidateId": "บางคอแหลม-5",
-						"count": 0
-					},
-					{
-						"candidateId": "บางคอแหลม-6",
-						"count": 0
-					},
-					{
-						"candidateId": "บางคอแหลม-7",
-						"count": 0
-					},
-					{
-						"candidateId": "บางคอแหลม-8",
-						"count": 0
-					},
-					{
-						"candidateId": "บางคอแหลม-9",
 						"count": 0
 					}
 				]
@@ -1349,6 +1169,14 @@
 					{
 						"candidateId": "ประเวศ-4",
 						"count": 0
+					},
+					{
+						"candidateId": "ประเวศ-5",
+						"count": 0
+					},
+					{
+						"candidateId": "ประเวศ-6",
+						"count": 0
 					}
 				]
 			}
@@ -1371,51 +1199,11 @@
 						"count": 0
 					},
 					{
-						"candidateId": "คลองเตย-10",
-						"count": 0
-					},
-					{
-						"candidateId": "คลองเตย-11",
-						"count": 0
-					},
-					{
-						"candidateId": "คลองเตย-12",
-						"count": 0
-					},
-					{
-						"candidateId": "คลองเตย-13",
-						"count": 0
-					},
-					{
 						"candidateId": "คลองเตย-2",
 						"count": 0
 					},
 					{
 						"candidateId": "คลองเตย-3",
-						"count": 0
-					},
-					{
-						"candidateId": "คลองเตย-4",
-						"count": 0
-					},
-					{
-						"candidateId": "คลองเตย-5",
-						"count": 0
-					},
-					{
-						"candidateId": "คลองเตย-6",
-						"count": 0
-					},
-					{
-						"candidateId": "คลองเตย-7",
-						"count": 0
-					},
-					{
-						"candidateId": "คลองเตย-8",
-						"count": 0
-					},
-					{
-						"candidateId": "คลองเตย-9",
 						"count": 0
 					}
 				]
@@ -1453,14 +1241,6 @@
 					{
 						"candidateId": "สวนหลวง-5",
 						"count": 0
-					},
-					{
-						"candidateId": "สวนหลวง-6",
-						"count": 0
-					},
-					{
-						"candidateId": "สวนหลวง-7",
-						"count": 0
 					}
 				]
 			}
@@ -1483,30 +1263,6 @@
 						"count": 0
 					},
 					{
-						"candidateId": "จอมทอง-10",
-						"count": 0
-					},
-					{
-						"candidateId": "จอมทอง-11",
-						"count": 0
-					},
-					{
-						"candidateId": "จอมทอง-12",
-						"count": 0
-					},
-					{
-						"candidateId": "จอมทอง-13",
-						"count": 0
-					},
-					{
-						"candidateId": "จอมทอง-14",
-						"count": 0
-					},
-					{
-						"candidateId": "จอมทอง-15",
-						"count": 0
-					},
-					{
 						"candidateId": "จอมทอง-2",
 						"count": 0
 					},
@@ -1520,22 +1276,6 @@
 					},
 					{
 						"candidateId": "จอมทอง-5",
-						"count": 0
-					},
-					{
-						"candidateId": "จอมทอง-6",
-						"count": 0
-					},
-					{
-						"candidateId": "จอมทอง-7",
-						"count": 0
-					},
-					{
-						"candidateId": "จอมทอง-8",
-						"count": 0
-					},
-					{
-						"candidateId": "จอมทอง-9",
 						"count": 0
 					}
 				]
@@ -1573,6 +1313,10 @@
 					{
 						"candidateId": "ดอนเมือง-5",
 						"count": 0
+					},
+					{
+						"candidateId": "ดอนเมือง-6",
+						"count": 0
 					}
 				]
 			}
@@ -1605,14 +1349,6 @@
 					{
 						"candidateId": "ราชเทวี-4",
 						"count": 0
-					},
-					{
-						"candidateId": "ราชเทวี-5",
-						"count": 0
-					},
-					{
-						"candidateId": "ราชเทวี-6",
-						"count": 0
 					}
 				]
 			}
@@ -1644,26 +1380,6 @@
 					},
 					{
 						"candidateId": "ลาดพร้าว-4",
-						"count": 0
-					},
-					{
-						"candidateId": "ลาดพร้าว-5",
-						"count": 0
-					},
-					{
-						"candidateId": "ลาดพร้าว-6",
-						"count": 0
-					},
-					{
-						"candidateId": "ลาดพร้าว-7",
-						"count": 0
-					},
-					{
-						"candidateId": "ลาดพร้าว-8",
-						"count": 0
-					},
-					{
-						"candidateId": "ลาดพร้าว-9",
 						"count": 0
 					}
 				]
@@ -1733,10 +1449,6 @@
 					{
 						"candidateId": "บางแค-4",
 						"count": 0
-					},
-					{
-						"candidateId": "บางแค-5",
-						"count": 0
 					}
 				]
 			}
@@ -1773,14 +1485,6 @@
 					{
 						"candidateId": "หลักสี่-5",
 						"count": 0
-					},
-					{
-						"candidateId": "หลักสี่-6",
-						"count": 0
-					},
-					{
-						"candidateId": "หลักสี่-7",
-						"count": 0
 					}
 				]
 			}
@@ -1816,14 +1520,6 @@
 					},
 					{
 						"candidateId": "สายไหม-5",
-						"count": 0
-					},
-					{
-						"candidateId": "สายไหม-6",
-						"count": 0
-					},
-					{
-						"candidateId": "สายไหม-7",
 						"count": 0
 					}
 				]
@@ -1977,6 +1673,30 @@
 					{
 						"candidateId": "คลองสามวา-4",
 						"count": 0
+					},
+					{
+						"candidateId": "คลองสามวา-5",
+						"count": 0
+					},
+					{
+						"candidateId": "คลองสามวา-6",
+						"count": 0
+					},
+					{
+						"candidateId": "คลองสามวา-7",
+						"count": 0
+					},
+					{
+						"candidateId": "คลองสามวา-8",
+						"count": 0
+					},
+					{
+						"candidateId": "คลองสามวา-9",
+						"count": 0
+					},
+					{
+						"candidateId": "คลองสามวา-10",
+						"count": 0
 					}
 				]
 			}
@@ -2012,18 +1732,6 @@
 					},
 					{
 						"candidateId": "บางนา-5",
-						"count": 0
-					},
-					{
-						"candidateId": "บางนา-6",
-						"count": 0
-					},
-					{
-						"candidateId": "บางนา-7",
-						"count": 0
-					},
-					{
-						"candidateId": "บางนา-8",
 						"count": 0
 					}
 				]
@@ -2132,14 +1840,6 @@
 					},
 					{
 						"candidateId": "บางบอน-5",
-						"count": 0
-					},
-					{
-						"candidateId": "บางบอน-6",
-						"count": 0
-					},
-					{
-						"candidateId": "บางบอน-7",
 						"count": 0
 					}
 				]
