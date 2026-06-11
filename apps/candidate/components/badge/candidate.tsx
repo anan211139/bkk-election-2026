@@ -2,7 +2,6 @@ import { IGovernor } from '../../types/business';
 import candidataImg from '../../static/images/candidate.png';
 import playGrayWhite from '../../static/icons/play-gw.svg';
 import { useRouter } from 'next/router';
-import { colorDict, numberListType } from '../../utils/dict';
 import Link from 'next/link';
 interface PropType {
   candidate: IGovernor;
@@ -54,7 +53,7 @@ export function CandidateBadge({
             <div className="flex text-white mt-[10px]">
               <div
                 style={{
-                  color: colorDict[(candidate.number as numberListType) || 1],
+                  color: candidate.color || '#666666',
                 }}
                 className="typo-h3 mr-[10px]"
               >

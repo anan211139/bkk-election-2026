@@ -1,7 +1,3 @@
-export const getCouncilImage = (districtId: number, councilNumber: number) => {
-  return `/candidate/image/${districtId}/${councilNumber}.webp`;
-};
-
 export const getCandidateOG = (id: number): string => {
   try {
     const img = require(`../static/images/og/candidates_${id}.png`);
@@ -9,47 +5,6 @@ export const getCandidateOG = (id: number): string => {
   } catch {
     return '';
   }
-};
-
-
-export type numberListType =
-  | 1
-  | 2
-  | 3
-  | 4
-  | 5
-  | 6
-  | 7
-  | 8
-  | 9
-  | 10
-  | 11
-  | 12
-  | 13
-  | 14
-  | 15
-  | 16
-  | 17
-  | 18;
-export const colorDict = {
-  1: '#b48c4f',
-  2: '#fb2afa', //
-  3: '#ff4da6', //
-  4: '#cde40b', //
-  5: '#00c0ff',
-  6: '#00a896', //
-  7: '#b400ff',
-  8: '#ca88f9', //
-  9: '#5adc00',
-  10: '#ff7f00',
-  11: '#fc5948',//
-  12: '#ffbb00',
-  13: '#48fcd8', //
-  14: '#007dfe',
-  15: '#be905e', //
-  16: '#a3a42c', //
-  17: '#ff8c69', //
-  18: '#708090' //
 };
 
 export const districtOrderList = [

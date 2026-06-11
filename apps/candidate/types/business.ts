@@ -8,6 +8,7 @@ export interface ICouncil {
   number: number;
   district: string;
   party: string;
+  image: string;
   age: number;
   sex: string;
   education: string;
@@ -26,6 +27,7 @@ export interface IGovernor {
   career: null | string;
   political_career: null | string;
   party: null | string;
+  color?: string;
   policy: null | string;
   contact_web: null | string;
   contact_facebook: null | string;

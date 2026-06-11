@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import searchIcon from '../../static/icons/search.svg';
 import { ICouncil } from '../../types/business';
-import { districtOrderList, getCouncilImage } from '../../utils/dict';
 
 interface PropsType {
   council: ICouncil;
@@ -9,10 +8,6 @@ interface PropsType {
 
 export function Council(props: PropsType) {
   const council = props.council;
-  const districtNumber =
-    districtOrderList.findIndex((d) => d === council.district) + 1;
-
-  const councilImage = getCouncilImage(districtNumber, council.number);
 
   const specialWord = (district: string) => {
     if (district === 'ป้อมปราบศัตรูพ่าย') {
@@ -40,8 +35,8 @@ export function Council(props: PropsType) {
         <div className="flex flex-col md:flex-row flex-1">
           <img
             className="w-[60px] h-[60px] md:w-[80px] md:h-[80px] rounded-[100px] object-cover object-top mt-[20px] ml-[20px]"
-            src={councilImage}
-            alt={`council-${districtNumber}-${council.number}`}
+            src={council.image}
+            alt={`council-${council.district}-${council.number}`}
           />
           <div className="flex flex-col ml-[20px] text-left flex-1">
             <p className="typo-h3 my-[20px]">{council.name}</p>

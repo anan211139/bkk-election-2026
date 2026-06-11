@@ -1,23 +1,5 @@
-import governorCandidates from '../data/69-governor-candidates.json';
-import councilCandidates from '../data/69-bmc-candidates.json';
-import candidate1 from '../data/original-candidates/1.json';
-import candidate2 from '../data/original-candidates/2.json';
-import candidate3 from '../data/original-candidates/3.json';
-import candidate4 from '../data/original-candidates/4.json';
-import candidate5 from '../data/original-candidates/5.json';
-import candidate6 from '../data/original-candidates/6.json';
-import candidate7 from '../data/original-candidates/7.json';
-import candidate8 from '../data/original-candidates/8.json';
-import candidate9 from '../data/original-candidates/9.json';
-import candidate10 from '../data/original-candidates/10.json';
-import candidate11 from '../data/original-candidates/11.json';
-import candidate12 from '../data/original-candidates/12.json';
-import candidate13 from '../data/original-candidates/13.json';
-import candidate14 from '../data/original-candidates/14.json';
-import candidate15 from '../data/original-candidates/15.json';
-import candidate16 from '../data/original-candidates/16.json';
-import candidate17 from '../data/original-candidates/17.json';
-import candidate18 from '../data/original-candidates/18.json';
+import governorCandidates from '../../map/public/data/69-governor-candidates.json';
+import councilCandidates from '../../map/public/data/69-bmc-candidates.json';
 import { ICouncil, IGovernor } from '../types/business';
 
 interface MapCandidate {
@@ -26,7 +8,8 @@ interface MapCandidate {
   fullname: string;
   party: string;
   image: string;
-  age?: number;
+  color?: string;
+  age?: number | string;
   education?: string;
   sex?: string;
   career?: string;
@@ -69,6 +52,7 @@ const createGovernorFromMapCandidate = (candidate: MapCandidate): IGovernor => (
   career: null,
   political_career: null,
   party: candidate.party,
+  color: candidate.color,
   policy: null,
   contact_web: null,
   contact_facebook: null,
@@ -89,10 +73,15 @@ const createGovernorFromMapCandidate = (candidate: MapCandidate): IGovernor => (
   disqualified: DISQUALIFIED_GOVERNOR[candidate.number] || '',
 });
 
-const normalizeOriginalGovernor = (page: OriginalCandidatePage): IGovernor => {
+const normalizeOriginalGovernor = (
+  page: OriginalCandidatePage,
+  summaryCandidate?: MapCandidate
+): IGovernor => {
   const candidate = page.pageProps.candidate;
   return {
     ...candidate,
+    party: summaryCandidate?.party || candidate.party,
+    color: summaryCandidate?.color,
     profile_pic:
       getLocalCandidateImage(candidate.number, 2) || candidate.profile_pic,
     cover_pic: getLocalCandidateImage(candidate.number, 3) || candidate.cover_pic,
@@ -100,44 +89,13 @@ const normalizeOriginalGovernor = (page: OriginalCandidatePage): IGovernor => {
   };
 };
 
-const originalGovernorList = [
-  candidate1,
-  candidate2,
-  candidate3,
-  candidate4,
-  candidate5,
-  candidate6,
-  candidate7,
-  candidate8,
-  candidate9,
-  candidate10,
-  candidate11,
-  candidate12,
-  candidate13,
-  candidate14,
-  candidate15,
-  candidate16,
-  candidate17,
-  candidate18
-].map((page) =>
-  normalizeOriginalGovernor(page as unknown as OriginalCandidatePage)
-);
-
 const mapGovernorList = Object.values(
   governorCandidates as unknown as Record<string, MapCandidate>
 )
   .map(createGovernorFromMapCandidate)
   .sort((a, b) => (a.number || 0) - (b.number || 0));
 
-export const governorList = mapGovernorList
-  .map((mapCandidate) => {
-    return (
-      originalGovernorList.find(
-        (candidate) => candidate.number === mapCandidate.number
-      ) || mapCandidate
-    );
-  })
-  .sort((a, b) => (a.number || 0) - (b.number || 0));
+export const governorList = mapGovernorList;
 
 export const councilList = Object.entries(
   councilCandidates as unknown as Record<string, MapCandidate>
@@ -149,17 +107,43 @@ export const councilList = Object.entries(
       number: candidate.number,
       district,
       party: candidate.party,
-      age: candidate.age || 0,
+      image: candidate.image,
+      age: Number(candidate.age) || 0,
       sex: candidate.sex || '',
       education: candidate.education || '',
       career: candidate.career || '',
+      disqualified: '',
     } as ICouncil;
   })
   .sort((a, b) => a.district.localeCompare(b.district) || a.number - b.number);
 
+const getOriginalGovernor = (candidateNumber: number) => {
+  try {
+    const page = require(`../data/original-candidates/${candidateNumber}.json`);
+    return page as OriginalCandidatePage;
+  } catch {
+    return null;
+  }
+};
+
 export const getGovernor = (id: string | string[] | undefined) => {
 	const candidateId = Array.isArray(id) ? id[0] : id;
-	return governorList.find(
+	const summaryCandidate = governorList.find(
 		(candidate) => candidate.id?.toString() === candidateId
 	);
+  if (!summaryCandidate?.number) {
+    return summaryCandidate;
+  }
+
+  const originalGovernor = getOriginalGovernor(summaryCandidate.number);
+  if (!originalGovernor) {
+    return summaryCandidate;
+  }
+
+  return normalizeOriginalGovernor(
+    originalGovernor,
+    (governorCandidates as unknown as Record<string, MapCandidate>)[
+      summaryCandidate.number.toString()
+    ]
+  );
 };
