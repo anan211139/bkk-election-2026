@@ -1,0 +1,8 @@
+.git
+.venv
+.vercel
+node_modules
+build
+apps/map/dist
+packages/ui/dist
+yarn-error.log

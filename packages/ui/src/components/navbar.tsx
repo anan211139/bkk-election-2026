@@ -11,7 +11,7 @@ const Navbar: Component = () => {
   return (
     <div class="ui-relative ui-p-2 md:ui-p-3 ui-flex ui-flex-col md:ui-flex-row ui-bg-white">
       <div class="ui-flex-1 ui-flex ui-flex-row ui-justify-between">
-        <a href="/map/map" class="ui-my-auto">
+        <a href="/map" class="ui-my-auto">
           <img
             src="/static/images/bangkok-vote-logo.svg"
             alt="Bangkok Vote 2026"
@@ -65,7 +65,7 @@ const Navbar: Component = () => {
               classList={{
                 'ui-font-bold':
                   location.pathname === href ||
-                  (href === '/map/map' && location.pathname.startsWith('/map/')),
+                  (href === '/map' && location.pathname.startsWith('/map')),
               }}
             >
               {label}

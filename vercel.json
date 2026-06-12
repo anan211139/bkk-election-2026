@@ -1,0 +1,7 @@
+{
+  "installCommand": "yarn install --frozen-lockfile",
+  "buildCommand": "bash scripts/vercel-build.sh",
+  "outputDirectory": "dist",
+  "cleanUrls": true,
+  "trailingSlash": false
+}
