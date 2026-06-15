@@ -4,12 +4,12 @@
         "number": 1,
         "fullname": "นายทรงวุฒิ จันทร์อำนวยโชค",
         "shortname": "ทรงวุฒิ",
-        "color": "#898f67",
-        "party": "ทดสอบ",
+        "color": "#ffbb00",
+        "party": "เศรษฐกิจ",
         "image": "/candidate/image/18/1.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "คลองสาน-2": {
@@ -17,12 +17,12 @@
         "number": 2,
         "fullname": "นายสมชาย เต็มไพบูลย์กุล",
         "shortname": "สมชาย",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#00c0ff",
+        "party": "ประชาธิปัตย์",
         "image": "/candidate/image/18/2.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "คลองสาน-3": {
@@ -30,12 +30,12 @@
         "number": 3,
         "fullname": "นางสาวณัฐจิรา ศุภพันธ์",
         "shortname": "ณัฐจิรา",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ff7f00",
+        "party": "ประชาชน",
         "image": "/candidate/image/18/3.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "หญิง",
         "career": ""
     },
     "คลองสาน-4": {
@@ -43,12 +43,12 @@
         "number": 4,
         "fullname": "นางสาวมาริสา บุนนาค",
         "shortname": "มาริสา",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#00eb00",
+        "party": "ทีมคนทำงาน",
         "image": "/candidate/image/18/4.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "หญิง",
         "career": ""
     },
     "คลองสาน-5": {
@@ -56,12 +56,12 @@
         "number": 5,
         "fullname": "นางสาวสายรุ้ง ปิ่นโมรา",
         "shortname": "สายรุ้ง",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#e70012",
+        "party": "เพื่อไทย",
         "image": "/candidate/image/18/5.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "หญิง",
         "career": ""
     },
     "คลองสามวา-1": {
@@ -69,12 +69,12 @@
         "number": 1,
         "fullname": "นายสุรเกียรติ หวังพิทักษ์",
         "shortname": "สุรเกียรติ",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ff7f00",
+        "party": "ประชาชน",
         "image": "/candidate/image/46/1.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "คลองสามวา-2": {
@@ -87,7 +87,7 @@
         "image": "/candidate/image/46/2.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "คลองสามวา-3": {
@@ -95,12 +95,12 @@
         "number": 3,
         "fullname": "นายณรงค์ เกียรติเสรีกุล",
         "shortname": "ณรงค์",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ffbb00",
+        "party": "เศรษฐกิจ",
         "image": "/candidate/image/46/3.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "คลองสามวา-4": {
@@ -113,7 +113,7 @@
         "image": "/candidate/image/46/4.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "คลองสามวา-5": {
@@ -121,12 +121,12 @@
         "number": 5,
         "fullname": "นายมนูญ อินช่วย",
         "shortname": "มนูญ",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#00c0ff",
+        "party": "ประชาธิปัตย์",
         "image": "/candidate/image/46/5.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "คลองสามวา-6": {
@@ -139,7 +139,7 @@
         "image": "/candidate/image/46/6.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "คลองสามวา-7": {
@@ -152,7 +152,7 @@
         "image": "/candidate/image/46/7.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "หญิง",
         "career": ""
     },
     "คลองสามวา-8": {
@@ -165,7 +165,7 @@
         "image": "/candidate/image/46/8.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "คลองสามวา-9": {
@@ -173,12 +173,12 @@
         "number": 9,
         "fullname": "นางสาวนฤนันมนต์ ห่วงทรัพย์",
         "shortname": "นฤนันมนต์",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#e70012",
+        "party": "เพื่อไทย",
         "image": "/candidate/image/46/9.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "หญิง",
         "career": ""
     },
     "คลองสามวา-10": {
@@ -186,12 +186,12 @@
         "number": 10,
         "fullname": "นายสายัณห์ กุศลพันธ์",
         "shortname": "สายัณห์",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#00eb00",
+        "party": "ทีมคนทำงาน",
         "image": "/candidate/image/46/10.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "คลองเตย-1": {
@@ -199,12 +199,12 @@
         "number": 1,
         "fullname": "นายสุชัย พงษ์เพียรชอบ",
         "shortname": "สุชัย",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#00c0ff",
+        "party": "ประชาธิปัตย์",
         "image": "/candidate/image/33/1.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "คลองเตย-2": {
@@ -212,12 +212,12 @@
         "number": 2,
         "fullname": "นางสาวพลอย เตลาน",
         "shortname": "พลอย",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ff7f00",
+        "party": "ประชาชน",
         "image": "/candidate/image/33/2.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "หญิง",
         "career": ""
     },
     "คลองเตย-3": {
@@ -225,12 +225,12 @@
         "number": 3,
         "fullname": "นางสาวศวนงชภรณ์ เงินดี",
         "shortname": "ศวนงชภรณ์",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ffbb00",
+        "party": "เศรษฐกิจ",
         "image": "/candidate/image/33/3.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "หญิง",
         "career": ""
     },
     "คันนายาว-1": {
@@ -238,12 +238,12 @@
         "number": 1,
         "fullname": "นางสาวเกษนันท์ เรืองตาบ",
         "shortname": "เกษนันท์",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#00c0ff",
+        "party": "ประชาธิปัตย์",
         "image": "/candidate/image/43/1.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "หญิง",
         "career": ""
     },
     "คันนายาว-2": {
@@ -256,7 +256,7 @@
         "image": "/candidate/image/43/2.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "หญิง",
         "career": ""
     },
     "คันนายาว-3": {
@@ -264,12 +264,12 @@
         "number": 3,
         "fullname": "นายดำรงศักดิ์ ปลอดโปร่ง",
         "shortname": "ดำรงศักดิ์",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ffbb00",
+        "party": "เศรษฐกิจ",
         "image": "/candidate/image/43/3.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "คันนายาว-4": {
@@ -277,12 +277,12 @@
         "number": 4,
         "fullname": "นางสาวนันท์นภัส สุขสิริฐานันท์",
         "shortname": "นันท์นภัส",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ff7f00",
+        "party": "ประชาชน",
         "image": "/candidate/image/43/4.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "หญิง",
         "career": ""
     },
     "คันนายาว-5": {
@@ -295,7 +295,7 @@
         "image": "/candidate/image/43/5.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "คันนายาว-6": {
@@ -308,7 +308,7 @@
         "image": "/candidate/image/43/6.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "คันนายาว-7": {
@@ -321,7 +321,7 @@
         "image": "/candidate/image/43/7.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "คันนายาว-8": {
@@ -334,7 +334,7 @@
         "image": "/candidate/image/43/8.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "คันนายาว-9": {
@@ -342,12 +342,12 @@
         "number": 9,
         "fullname": "นางชญาดา วิภัติภูมิประเทศ",
         "shortname": "ชญาดา",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#00eb00",
+        "party": "ทีมคนทำงาน",
         "image": "/candidate/image/43/9.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "หญิง",
         "career": ""
     },
     "จตุจักร-1": {
@@ -355,12 +355,12 @@
         "number": 1,
         "fullname": "นายอณุรักษ์ พุ่มพวง",
         "shortname": "อณุรักษ์",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#00eb00",
+        "party": "ทีมคนทำงาน",
         "image": "/candidate/image/30/1.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "จตุจักร-2": {
@@ -368,12 +368,12 @@
         "number": 2,
         "fullname": "นายชุมพล รุ่งวิชานิวัฒน์",
         "shortname": "ชุมพล",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#00c0ff",
+        "party": "ประชาธิปัตย์",
         "image": "/candidate/image/30/2.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "จตุจักร-3": {
@@ -381,12 +381,12 @@
         "number": 3,
         "fullname": "นายอภิวัฒน์ ด่านศรีชาญชัย",
         "shortname": "อภิวัฒน์",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ff7f00",
+        "party": "ประชาชน",
         "image": "/candidate/image/30/3.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "จตุจักร-4": {
@@ -394,12 +394,12 @@
         "number": 4,
         "fullname": "นายวริษทนนต์ คูณธนานุวัฒน์",
         "shortname": "วริษทนนต์",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ffbb00",
+        "party": "เศรษฐกิจ",
         "image": "/candidate/image/30/4.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "จตุจักร-5": {
@@ -412,7 +412,7 @@
         "image": "/candidate/image/30/5.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "จตุจักร-6": {
@@ -425,7 +425,7 @@
         "image": "/candidate/image/30/6.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "หญิง",
         "career": ""
     },
     "จอมทอง-1": {
@@ -433,12 +433,12 @@
         "number": 1,
         "fullname": "นายกิรติ จงพิพิธพร",
         "shortname": "กิรติ",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ff7f00",
+        "party": "ประชาชน",
         "image": "/candidate/image/35/1.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "จอมทอง-2": {
@@ -446,12 +446,12 @@
         "number": 2,
         "fullname": "นายสุทธิชัย วีรกุลสุนทร",
         "shortname": "สุทธิชัย",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#e70012",
+        "party": "เพื่อไทย",
         "image": "/candidate/image/35/2.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "จอมทอง-3": {
@@ -459,12 +459,12 @@
         "number": 3,
         "fullname": "นายสุรินทร์ ทองสิมา",
         "shortname": "สุรินทร์",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#00eb00",
+        "party": "ทีมคนทำงาน",
         "image": "/candidate/image/35/3.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "จอมทอง-4": {
@@ -472,12 +472,12 @@
         "number": 4,
         "fullname": "นายเจริญ เพ็ชรกิจ",
         "shortname": "เจริญ",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#00c0ff",
+        "party": "ประชาธิปัตย์",
         "image": "/candidate/image/35/4.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "จอมทอง-5": {
@@ -485,12 +485,12 @@
         "number": 5,
         "fullname": "นายสงกรานต์ พงษ์พันนา",
         "shortname": "สงกรานต์",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ffbb00",
+        "party": "เศรษฐกิจ",
         "image": "/candidate/image/35/5.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "ดอนเมือง-1": {
@@ -498,12 +498,12 @@
         "number": 1,
         "fullname": "นายพนา วุฒิเดช",
         "shortname": "พนา",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#e70012",
+        "party": "เพื่อไทย",
         "image": "/candidate/image/36/1.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "ดอนเมือง-2": {
@@ -511,12 +511,12 @@
         "number": 2,
         "fullname": "นายไกรศักดิ์ เสาเวียง",
         "shortname": "ไกรศักดิ์",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#00c0ff",
+        "party": "ประชาธิปัตย์",
         "image": "/candidate/image/36/2.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "ดอนเมือง-3": {
@@ -524,12 +524,12 @@
         "number": 3,
         "fullname": "นางกนกนุช กลิ่นสังข์",
         "shortname": "กนกนุช",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#a10308",
+        "party": "กลุ่มเพื่อนกนกนุช",
         "image": "/candidate/image/36/3.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "หญิง",
         "career": ""
     },
     "ดอนเมือง-4": {
@@ -537,12 +537,12 @@
         "number": 4,
         "fullname": "นายอดิศร ฤกษ์ลักษณี",
         "shortname": "อดิศร",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ff7f00",
+        "party": "ประชาชน",
         "image": "/candidate/image/36/4.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "ดอนเมือง-5": {
@@ -550,12 +550,12 @@
         "number": 5,
         "fullname": "นายเนติ นฤมิตร",
         "shortname": "เนติ",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#00eb00",
+        "party": "ทีมคนทำงาน",
         "image": "/candidate/image/36/5.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "ดอนเมือง-6": {
@@ -563,12 +563,12 @@
         "number": 6,
         "fullname": "นายชาญชัย ฉายบุ",
         "shortname": "ชาญชัย",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#b400ff",
+        "party": "กลุ่มกรุงเทพบินได้",
         "image": "/candidate/image/36/6.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "ดินแดง-1": {
@@ -581,7 +581,7 @@
         "image": "/candidate/image/26/1.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "หญิง",
         "career": ""
     },
     "ดินแดง-2": {
@@ -589,12 +589,12 @@
         "number": 2,
         "fullname": "นางสาวรุ่งรวิน พรประกาสิต",
         "shortname": "รุ่งรวิน",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#00eb00",
+        "party": "ทีมคนทำงาน",
         "image": "/candidate/image/26/2.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "หญิง",
         "career": ""
     },
     "ดินแดง-3": {
@@ -602,12 +602,12 @@
         "number": 3,
         "fullname": "นายอัมรินทร์ สวัสยานุภาพ",
         "shortname": "อัมรินทร์",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ff7f00",
+        "party": "ประชาชน",
         "image": "/candidate/image/26/3.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "ดินแดง-4": {
@@ -615,12 +615,12 @@
         "number": 4,
         "fullname": "นางสาวจันทิมา สิทธิสุราษฎร์",
         "shortname": "จันทิมา",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#00c0ff",
+        "party": "ประชาธิปัตย์",
         "image": "/candidate/image/26/4.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "หญิง",
         "career": ""
     },
     "ดินแดง-5": {
@@ -628,12 +628,12 @@
         "number": 5,
         "fullname": "พลตรี ดนัย ดิษาภิรมย์",
         "shortname": "ดนัย",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ffbb00",
+        "party": "เศรษฐกิจ",
         "image": "/candidate/image/26/5.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "ดุสิต-1": {
@@ -641,12 +641,12 @@
         "number": 1,
         "fullname": "นายวิชาญชัย บุญแสง",
         "shortname": "วิชาญชัย",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ffbb00",
+        "party": "เศรษฐกิจ",
         "image": "/candidate/image/2/1.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "ดุสิต-2": {
@@ -654,12 +654,12 @@
         "number": 2,
         "fullname": "นายศรราม ภูมิไชย",
         "shortname": "ศรราม",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#00c0ff",
+        "party": "ประชาธิปัตย์",
         "image": "/candidate/image/2/2.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "ดุสิต-3": {
@@ -667,12 +667,12 @@
         "number": 3,
         "fullname": "นายศิริพงษ์ ลิมปิชัย",
         "shortname": "ศิริพงษ์",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#e70012",
+        "party": "เพื่อไทย",
         "image": "/candidate/image/2/3.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "ดุสิต-4": {
@@ -680,12 +680,12 @@
         "number": 4,
         "fullname": "นายอัครชัย กันธมาลา",
         "shortname": "อัครชัย",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ff7f00",
+        "party": "ประชาชน",
         "image": "/candidate/image/2/4.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "ดุสิต-5": {
@@ -698,7 +698,7 @@
         "image": "/candidate/image/2/5.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "หญิง",
         "career": ""
     },
     "ตลิ่งชัน-1": {
@@ -706,12 +706,12 @@
         "number": 1,
         "fullname": "นายกันตพงศ์ ดีชัยยะ",
         "shortname": "กันตพงศ์",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ff7f00",
+        "party": "ประชาชน",
         "image": "/candidate/image/19/1.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "ตลิ่งชัน-2": {
@@ -719,12 +719,12 @@
         "number": 2,
         "fullname": "นางสาวพรพิมล ฉิมสวัสดิ์",
         "shortname": "พรพิมล",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ffbb00",
+        "party": "เศรษฐกิจ",
         "image": "/candidate/image/19/2.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "หญิง",
         "career": ""
     },
     "ตลิ่งชัน-3": {
@@ -737,7 +737,7 @@
         "image": "/candidate/image/19/3.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "ตลิ่งชัน-4": {
@@ -745,12 +745,12 @@
         "number": 4,
         "fullname": "นางลักขณา ภักดีนฤนาถ",
         "shortname": "ลักขณา",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#00c0ff",
+        "party": "ประชาธิปัตย์",
         "image": "/candidate/image/19/4.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "หญิง",
         "career": ""
     },
     "ทวีวัฒนา-1": {
@@ -758,12 +758,12 @@
         "number": 1,
         "fullname": "นายณัฐนนท์ นาคหล่อ",
         "shortname": "ณัฐนนท์",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ff7f00",
+        "party": "ประชาชน",
         "image": "/candidate/image/48/1.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "ทวีวัฒนา-2": {
@@ -771,12 +771,12 @@
         "number": 2,
         "fullname": "นายยงวุฒิ ทองอยู่",
         "shortname": "ยงวุฒิ",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#00eb00",
+        "party": "ทีมคนทำงาน",
         "image": "/candidate/image/48/2.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "ทวีวัฒนา-3": {
@@ -784,12 +784,12 @@
         "number": 3,
         "fullname": "นางสาวณัฐชยา ปานแก้ว",
         "shortname": "ณัฐชยา",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ffbb00",
+        "party": "เศรษฐกิจ",
         "image": "/candidate/image/48/3.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "หญิง",
         "career": ""
     },
     "ทวีวัฒนา-4": {
@@ -797,12 +797,12 @@
         "number": 4,
         "fullname": "นายยิ่งยงค์ จิตเพียรธรรม",
         "shortname": "ยิ่งยงค์",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#00c0ff",
+        "party": "ประชาธิปัตย์",
         "image": "/candidate/image/48/4.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "ทวีวัฒนา-5": {
@@ -810,12 +810,12 @@
         "number": 5,
         "fullname": "นายประเวช แสวงสุข",
         "shortname": "ประเวช",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#e70012",
+        "party": "เพื่อไทย",
         "image": "/candidate/image/48/5.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "ทุ่งครุ-1": {
@@ -823,12 +823,12 @@
         "number": 1,
         "fullname": "นายมหัทธวัฒน์ พรเภตรา",
         "shortname": "มหัทธวัฒน์",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ff7f00",
+        "party": "ประชาชน",
         "image": "/candidate/image/49/1.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "ทุ่งครุ-2": {
@@ -836,12 +836,12 @@
         "number": 2,
         "fullname": "นายกิตติพงศ์ รวยฟูพันธ์",
         "shortname": "กิตติพงศ์",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#e70012",
+        "party": "เพื่อไทย",
         "image": "/candidate/image/49/2.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "ทุ่งครุ-3": {
@@ -849,12 +849,12 @@
         "number": 3,
         "fullname": "นายโภคิน เกิดเปี่ยม",
         "shortname": "โภคิน",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#00eb00",
+        "party": "ทีมคนทำงาน",
         "image": "/candidate/image/49/3.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "ทุ่งครุ-4": {
@@ -862,12 +862,12 @@
         "number": 4,
         "fullname": "นายสันติ การสมจิตต์",
         "shortname": "สันติ",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ffbb00",
+        "party": "เศรษฐกิจ",
         "image": "/candidate/image/49/4.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "ทุ่งครุ-5": {
@@ -875,12 +875,12 @@
         "number": 5,
         "fullname": "นายพงศ์พัทธ์ เปี่ยมสวัสดิ์",
         "shortname": "พงศ์พัทธ์",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#00c0ff",
+        "party": "ประชาธิปัตย์",
         "image": "/candidate/image/49/5.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "ธนบุรี-1": {
@@ -888,12 +888,12 @@
         "number": 1,
         "fullname": "นายบัณทัต ฤทธิบุตร",
         "shortname": "บัณทัต",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ffbb00",
+        "party": "เศรษฐกิจ",
         "image": "/candidate/image/15/1.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "ธนบุรี-2": {
@@ -901,12 +901,12 @@
         "number": 2,
         "fullname": "นายสามารถ คุ้มทรงธรรม",
         "shortname": "สามารถ",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#00c0ff",
+        "party": "ประชาธิปัตย์",
         "image": "/candidate/image/15/2.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "ธนบุรี-3": {
@@ -914,12 +914,12 @@
         "number": 3,
         "fullname": "นายวรวิทย์ จุฬาพรหมเดช",
         "shortname": "วรวิทย์",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#021e81",
+        "party": "อนาคตไทย",
         "image": "/candidate/image/15/3.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "ธนบุรี-4": {
@@ -927,12 +927,12 @@
         "number": 4,
         "fullname": "นายสุวิจักขณ์ วิริยะธนการ",
         "shortname": "สุวิจักขณ์",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ff7f00",
+        "party": "ประชาชน",
         "image": "/candidate/image/15/4.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "ธนบุรี-5": {
@@ -940,12 +940,12 @@
         "number": 5,
         "fullname": "นายจิรเสกข์ วัฒนมงคล",
         "shortname": "จิรเสกข์",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#00eb00",
+        "party": "ทีมคนทำงาน",
         "image": "/candidate/image/15/5.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "บางกอกน้อย-1": {
@@ -953,12 +953,12 @@
         "number": 1,
         "fullname": "นายนภาพล จีระกุล",
         "shortname": "นภาพล",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#00c0ff",
+        "party": "ประชาธิปัตย์",
         "image": "/candidate/image/20/1.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "บางกอกน้อย-2": {
@@ -966,12 +966,12 @@
         "number": 2,
         "fullname": "นายอริย์ธัช ยอดไชยเกียรติ",
         "shortname": "อริย์ธัช",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ff7f00",
+        "party": "ประชาชน",
         "image": "/candidate/image/20/2.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "บางกอกน้อย-3": {
@@ -984,7 +984,7 @@
         "image": "/candidate/image/20/3.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "บางกอกน้อย-4": {
@@ -997,7 +997,7 @@
         "image": "/candidate/image/20/4.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "หญิง",
         "career": ""
     },
     "บางกอกใหญ่-1": {
@@ -1005,12 +1005,12 @@
         "number": 1,
         "fullname": "นายพลวริศ สุทธิคีรี",
         "shortname": "พลวริศ",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ff7f00",
+        "party": "ประชาชน",
         "image": "/candidate/image/16/1.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "บางกอกใหญ่-2": {
@@ -1018,12 +1018,12 @@
         "number": 2,
         "fullname": "นายภูบฎิณณ์ วงศ์สง่าศรี",
         "shortname": "ภูบฎิณณ์",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ffbb00",
+        "party": "เศรษฐกิจ",
         "image": "/candidate/image/16/2.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "บางกอกใหญ่-3": {
@@ -1031,12 +1031,12 @@
         "number": 3,
         "fullname": "นายวิรัช คงคาเขตร",
         "shortname": "วิรัช",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#00c0ff",
+        "party": "ประชาธิปัตย์",
         "image": "/candidate/image/16/3.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "บางกะปิ-1": {
@@ -1049,7 +1049,7 @@
         "image": "/candidate/image/6/1.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "บางกะปิ-2": {
@@ -1057,12 +1057,12 @@
         "number": 2,
         "fullname": "นายกัณฑ์ชาติ มนต์กันภัย",
         "shortname": "กัณฑ์ชาติ",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ffbb00",
+        "party": "เศรษฐกิจ",
         "image": "/candidate/image/6/2.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "บางกะปิ-3": {
@@ -1070,12 +1070,12 @@
         "number": 3,
         "fullname": "นายปรัชญา ศรีสอาด",
         "shortname": "ปรัชญา",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#00c0ff",
+        "party": "ประชาธิปัตย์",
         "image": "/candidate/image/6/3.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "บางกะปิ-4": {
@@ -1083,12 +1083,12 @@
         "number": 4,
         "fullname": "นายวีระชาติ เสประธานนท์",
         "shortname": "วีระชาติ",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ff7f00",
+        "party": "ประชาชน",
         "image": "/candidate/image/6/4.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "บางกะปิ-5": {
@@ -1096,12 +1096,12 @@
         "number": 5,
         "fullname": "นายพงศกร รัตนเรืองวัฒนา",
         "shortname": "พงศกร",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#00eb00",
+        "party": "ทีมคนทำงาน",
         "image": "/candidate/image/6/5.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "บางขุนเทียน-1": {
@@ -1109,12 +1109,12 @@
         "number": 1,
         "fullname": "นางสาวเนตรสกาว ชาหอม",
         "shortname": "เนตรสกาว",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#00c0ff",
+        "party": "ประชาธิปัตย์",
         "image": "/candidate/image/21/1.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "หญิง",
         "career": ""
     },
     "บางขุนเทียน-2": {
@@ -1122,12 +1122,12 @@
         "number": 2,
         "fullname": "นายสารัช ม่วงศิริ",
         "shortname": "สารัช",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#00eb00",
+        "party": "ทีมคนทำงาน",
         "image": "/candidate/image/21/2.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "บางขุนเทียน-3": {
@@ -1135,12 +1135,12 @@
         "number": 3,
         "fullname": "นายสุทิน พร้อมสระน้อย",
         "shortname": "สุทิน",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ffbb00",
+        "party": "เศรษฐกิจ",
         "image": "/candidate/image/21/3.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "บางขุนเทียน-4": {
@@ -1148,12 +1148,12 @@
         "number": 4,
         "fullname": "นางสาวเอษณา จรัสสุริยพงศ์",
         "shortname": "เอษณา",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ff7f00",
+        "party": "ประชาชน",
         "image": "/candidate/image/21/4.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "หญิง",
         "career": ""
     },
     "บางคอแหลม-1": {
@@ -1161,12 +1161,12 @@
         "number": 1,
         "fullname": "นายก้องนรา เสงี่ยมศักดิ์",
         "shortname": "ก้องนรา",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#78ad2a",
+        "party": "กลุ่มกรุงเทพฯ ที่ดีกว่า",
         "image": "/candidate/image/31/1.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "บางคอแหลม-2": {
@@ -1174,12 +1174,12 @@
         "number": 2,
         "fullname": "นางสาวสุดคนึง แก้วทอง",
         "shortname": "สุดคนึง",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#00c0ff",
+        "party": "ประชาธิปัตย์",
         "image": "/candidate/image/31/2.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "หญิง",
         "career": ""
     },
     "บางคอแหลม-3": {
@@ -1187,12 +1187,12 @@
         "number": 3,
         "fullname": "นางสาววาสนา ชาหอม",
         "shortname": "วาสนา",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ffbb00",
+        "party": "เศรษฐกิจ",
         "image": "/candidate/image/31/3.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "หญิง",
         "career": ""
     },
     "บางคอแหลม-4": {
@@ -1200,12 +1200,12 @@
         "number": 4,
         "fullname": "นายกิตติสัณห์ อุตสาหประดิษฐ์",
         "shortname": "กิตติสัณห์",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ff7f00",
+        "party": "ประชาชน",
         "image": "/candidate/image/31/4.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "บางคอแหลม-5": {
@@ -1213,12 +1213,12 @@
         "number": 5,
         "fullname": "นายปวิน แพทยานนท์",
         "shortname": "ปวิน",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#00eb00",
+        "party": "ทีมคนทำงาน",
         "image": "/candidate/image/31/5.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "บางซื่อ-1": {
@@ -1226,12 +1226,12 @@
         "number": 1,
         "fullname": "นายรวิภัทร ระวีเผ่าพงษ์",
         "shortname": "รวิภัทร",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ffbb00",
+        "party": "เศรษฐกิจ",
         "image": "/candidate/image/29/1.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "บางซื่อ-2": {
@@ -1239,12 +1239,12 @@
         "number": 2,
         "fullname": "นายพิสิษฐ์ เลิศศรีปัญญา",
         "shortname": "พิสิษฐ์",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#00eb00",
+        "party": "ทีมคนทำงาน",
         "image": "/candidate/image/29/2.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "บางซื่อ-3": {
@@ -1252,12 +1252,12 @@
         "number": 3,
         "fullname": "นายฐานวัฒน์ สถิตโอฬารโรจน์",
         "shortname": "ฐานวัฒน์",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#00c0ff",
+        "party": "ประชาธิปัตย์",
         "image": "/candidate/image/29/3.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "บางซื่อ-4": {
@@ -1265,12 +1265,12 @@
         "number": 4,
         "fullname": "นางสาวภัทราภรณ์ เก่งรุ่งเรืองชัย",
         "shortname": "ภัทราภรณ์",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ff7f00",
+        "party": "ประชาชน",
         "image": "/candidate/image/29/4.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "หญิง",
         "career": ""
     },
     "บางซื่อ-5": {
@@ -1283,7 +1283,7 @@
         "image": "/candidate/image/29/5.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "หญิง",
         "career": ""
     },
     "บางนา-1": {
@@ -1291,12 +1291,12 @@
         "number": 1,
         "fullname": "นายศิวโรจณ์ แสงจรัสโชติ",
         "shortname": "ศิวโรจณ์",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#00c0ff",
+        "party": "ประชาธิปัตย์",
         "image": "/candidate/image/47/1.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "บางนา-2": {
@@ -1304,12 +1304,12 @@
         "number": 2,
         "fullname": "นายพัทธนัย จิวรวิวัฒน์",
         "shortname": "พัทธนัย",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#00eb00",
+        "party": "ทีมคนทำงาน",
         "image": "/candidate/image/47/2.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "บางนา-3": {
@@ -1317,12 +1317,12 @@
         "number": 3,
         "fullname": "นายพีรพันธ์ สิริเอี่ยมสกุล",
         "shortname": "พีรพันธ์",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ffbb00",
+        "party": "เศรษฐกิจ",
         "image": "/candidate/image/47/3.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "บางนา-4": {
@@ -1330,12 +1330,12 @@
         "number": 4,
         "fullname": "นายฉัตรชัย หมอดี",
         "shortname": "ฉัตรชัย",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ff7f00",
+        "party": "ประชาชน",
         "image": "/candidate/image/47/4.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "บางนา-5": {
@@ -1348,7 +1348,7 @@
         "image": "/candidate/image/47/5.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "หญิง",
         "career": ""
     },
     "บางบอน-1": {
@@ -1356,12 +1356,12 @@
         "number": 1,
         "fullname": "นายณรงค์ศักดิ์ ม่วงศิริ",
         "shortname": "ณรงค์ศักดิ์",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#00eb00",
+        "party": "ทีมคนทำงาน",
         "image": "/candidate/image/50/1.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "บางบอน-2": {
@@ -1369,12 +1369,12 @@
         "number": 2,
         "fullname": "นายสมพร คงโครัด",
         "shortname": "สมพร",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#00c0ff",
+        "party": "ประชาธิปัตย์",
         "image": "/candidate/image/50/2.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "บางบอน-3": {
@@ -1382,12 +1382,12 @@
         "number": 3,
         "fullname": "นายเขมชาติ ฉัตรตรัสตรัย",
         "shortname": "เขมชาติ",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ff7f00",
+        "party": "ประชาชน",
         "image": "/candidate/image/50/3.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "บางบอน-4": {
@@ -1395,12 +1395,12 @@
         "number": 4,
         "fullname": "นายศุภกิจ พันธ์ครุฑ",
         "shortname": "ศุภกิจ",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ffbb00",
+        "party": "เศรษฐกิจ",
         "image": "/candidate/image/50/4.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "บางบอน-5": {
@@ -1408,12 +1408,12 @@
         "number": 5,
         "fullname": "นายเมืองชัย จันทวิมล",
         "shortname": "เมืองชัย",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#e70012",
+        "party": "เพื่อไทย",
         "image": "/candidate/image/50/5.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "บางพลัด-1": {
@@ -1421,12 +1421,12 @@
         "number": 1,
         "fullname": "นางสาวภัทราพร ปาลวงษ์",
         "shortname": "ภัทราพร",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#00c0ff",
+        "party": "ประชาธิปัตย์",
         "image": "/candidate/image/25/1.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "หญิง",
         "career": ""
     },
     "บางพลัด-2": {
@@ -1434,12 +1434,12 @@
         "number": 2,
         "fullname": "นายเอกนรินทร์ พัชรประกาย",
         "shortname": "เอกนรินทร์",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ff7f00",
+        "party": "ประชาชน",
         "image": "/candidate/image/25/2.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "บางพลัด-3": {
@@ -1452,7 +1452,7 @@
         "image": "/candidate/image/25/3.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "บางพลัด-4": {
@@ -1465,7 +1465,7 @@
         "image": "/candidate/image/25/4.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "บางรัก-1": {
@@ -1473,12 +1473,12 @@
         "number": 1,
         "fullname": "นายธนากร ลิ้มวาทะรส",
         "shortname": "ธนากร",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#00c0ff",
+        "party": "ประชาธิปัตย์",
         "image": "/candidate/image/4/1.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "บางรัก-2": {
@@ -1486,12 +1486,12 @@
         "number": 2,
         "fullname": "นายวิพุธ ศรีวะอุไร",
         "shortname": "วิพุธ",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#00eb00",
+        "party": "ทีมคนทำงาน",
         "image": "/candidate/image/4/2.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "บางรัก-3": {
@@ -1499,12 +1499,12 @@
         "number": 3,
         "fullname": "นางสาววนัสญาย์ สิริเหมะเวคิน",
         "shortname": "วนัสญาย์",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ff7f00",
+        "party": "ประชาชน",
         "image": "/candidate/image/4/3.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "หญิง",
         "career": ""
     },
     "บางรัก-4": {
@@ -1517,7 +1517,7 @@
         "image": "/candidate/image/4/4.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "บางเขน-1": {
@@ -1525,12 +1525,12 @@
         "number": 1,
         "fullname": "นายภาณุวัฒน์ ศรีวงษา",
         "shortname": "ภาณุวัฒน์",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ff7f00",
+        "party": "ประชาชน",
         "image": "/candidate/image/5/1.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "บางเขน-2": {
@@ -1538,12 +1538,12 @@
         "number": 2,
         "fullname": "นายชัชชนะพงศ์ แก้วทอง",
         "shortname": "ชัชชนะพงศ์",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#00c0ff",
+        "party": "ประชาธิปัตย์",
         "image": "/candidate/image/5/2.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "บางเขน-3": {
@@ -1556,7 +1556,7 @@
         "image": "/candidate/image/5/3.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "บางเขน-4": {
@@ -1569,7 +1569,7 @@
         "image": "/candidate/image/5/4.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "บางเขน-5": {
@@ -1577,12 +1577,12 @@
         "number": 5,
         "fullname": "นางสาวกาญจนา อ่อนทิมวงษ์",
         "shortname": "กาญจนา",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#021e81",
+        "party": "อนาคตไทย",
         "image": "/candidate/image/5/5.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "หญิง",
         "career": ""
     },
     "บางเขน-6": {
@@ -1590,12 +1590,12 @@
         "number": 6,
         "fullname": "นายกิตติศักดิ์ ทาทิพย์",
         "shortname": "กิตติศักดิ์",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ffbb00",
+        "party": "เศรษฐกิจ",
         "image": "/candidate/image/5/6.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "บางแค-1": {
@@ -1603,12 +1603,12 @@
         "number": 1,
         "fullname": "นายอำนาจ ปานเผือก",
         "shortname": "อำนาจ",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ff7f00",
+        "party": "ประชาชน",
         "image": "/candidate/image/40/1.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "บางแค-2": {
@@ -1616,12 +1616,12 @@
         "number": 2,
         "fullname": "นายสุพิน คล้ายนก",
         "shortname": "สุพิน",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#e70012",
+        "party": "เพื่อไทย",
         "image": "/candidate/image/40/2.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "บางแค-3": {
@@ -1629,12 +1629,12 @@
         "number": 3,
         "fullname": "นายกวิน ชาตะวนิช",
         "shortname": "กวิน",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#00c0ff",
+        "party": "ประชาธิปัตย์",
         "image": "/candidate/image/40/3.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "บางแค-4": {
@@ -1642,12 +1642,12 @@
         "number": 4,
         "fullname": "นายธเนศ ชูแสงโรจน์",
         "shortname": "ธเนศ",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ffbb00",
+        "party": "เศรษฐกิจ",
         "image": "/candidate/image/40/4.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "บึงกุ่ม-1": {
@@ -1655,12 +1655,12 @@
         "number": 1,
         "fullname": "นายรัชธิวรรษ์ รุ่งธีรกุล",
         "shortname": "รัชธิวรรษ์",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#78ad2a",
+        "party": "กลุ่มกรุงเทพฯ ที่ดีกว่า",
         "image": "/candidate/image/27/1.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "บึงกุ่ม-2": {
@@ -1668,12 +1668,12 @@
         "number": 2,
         "fullname": "นายอภิชาต ปรางทอง",
         "shortname": "อภิชาต",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ff7f00",
+        "party": "ประชาชน",
         "image": "/candidate/image/27/2.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "บึงกุ่ม-3": {
@@ -1681,12 +1681,12 @@
         "number": 3,
         "fullname": "นายกฤษฎ์ เครือเจริญพร",
         "shortname": "กฤษฎ์",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ffbb00",
+        "party": "เศรษฐกิจ",
         "image": "/candidate/image/27/3.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "บึงกุ่ม-4": {
@@ -1694,12 +1694,12 @@
         "number": 4,
         "fullname": "นายอาคร ประมงค์",
         "shortname": "อาคร",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#00c0ff",
+        "party": "ประชาธิปัตย์",
         "image": "/candidate/image/27/4.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "บึงกุ่ม-5": {
@@ -1707,12 +1707,12 @@
         "number": 5,
         "fullname": "นายเนติภูมิ มิ่งรุจิราลัย",
         "shortname": "เนติภูมิ",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#00eb00",
+        "party": "ทีมคนทำงาน",
         "image": "/candidate/image/27/5.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "บึงกุ่ม-6": {
@@ -1720,12 +1720,12 @@
         "number": 6,
         "fullname": "นายรัฐพันธ์ นาคดี",
         "shortname": "รัฐพันธ์",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#021e81",
+        "party": "อนาคตไทย",
         "image": "/candidate/image/27/6.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "ปทุมวัน-1": {
@@ -1733,12 +1733,12 @@
         "number": 1,
         "fullname": "นายธีรนัย จอมมณี",
         "shortname": "ธีรนัย",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ffbb00",
+        "party": "เศรษฐกิจ",
         "image": "/candidate/image/7/1.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "ปทุมวัน-2": {
@@ -1746,12 +1746,12 @@
         "number": 2,
         "fullname": "นายธนนรินทร์ ศิริหิรัญพงษ์",
         "shortname": "ธนนรินทร์",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#00c0ff",
+        "party": "ประชาธิปัตย์",
         "image": "/candidate/image/7/2.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "ปทุมวัน-3": {
@@ -1759,12 +1759,12 @@
         "number": 3,
         "fullname": "นางสาวเมธาวี ธารดำรงค์",
         "shortname": "เมธาวี",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#78ad2a",
+        "party": "กลุ่มกรุงเทพฯ ที่ดีกว่า",
         "image": "/candidate/image/7/3.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "หญิง",
         "career": ""
     },
     "ปทุมวัน-4": {
@@ -1772,12 +1772,12 @@
         "number": 4,
         "fullname": "นางสาวอัญชิสา โรจนยุกตานนท์",
         "shortname": "อัญชิสา",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ff7f00",
+        "party": "ประชาชน",
         "image": "/candidate/image/7/4.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "หญิง",
         "career": ""
     },
     "ปทุมวัน-5": {
@@ -1785,12 +1785,12 @@
         "number": 5,
         "fullname": "นายกลวัชร พึ่งสุพรรณ",
         "shortname": "กลวัชร",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#00eb00",
+        "party": "ทีมคนทำงาน",
         "image": "/candidate/image/7/5.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "ประเวศ-1": {
@@ -1798,12 +1798,12 @@
         "number": 1,
         "fullname": "นางสาวฐาปนีย์ สุขสำราญ",
         "shortname": "ฐาปนีย์",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ff7f00",
+        "party": "ประชาชน",
         "image": "/candidate/image/32/1.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "หญิง",
         "career": ""
     },
     "ประเวศ-2": {
@@ -1811,12 +1811,12 @@
         "number": 2,
         "fullname": "นายกิตติธัช อยู่ดี",
         "shortname": "กิตติธัช",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ffbb00",
+        "party": "เศรษฐกิจ",
         "image": "/candidate/image/32/2.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "ประเวศ-3": {
@@ -1824,12 +1824,12 @@
         "number": 3,
         "fullname": "นางสาวเย็นฤดี สมาคม",
         "shortname": "เย็นฤดี",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#021e81",
+        "party": "อนาคตไทย",
         "image": "/candidate/image/32/3.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "หญิง",
         "career": ""
     },
     "ประเวศ-4": {
@@ -1837,12 +1837,12 @@
         "number": 4,
         "fullname": "นายธนันชัย พฤฒิสวัสดี",
         "shortname": "ธนันชัย",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#e70012",
+        "party": "เพื่อไทย",
         "image": "/candidate/image/32/4.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "ประเวศ-5": {
@@ -1850,12 +1850,12 @@
         "number": 5,
         "fullname": "นายธนวัฒน์ เชิดชูกิจกุล",
         "shortname": "ธนวัฒน์",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#00c0ff",
+        "party": "ประชาธิปัตย์",
         "image": "/candidate/image/32/5.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "ประเวศ-6": {
@@ -1863,12 +1863,12 @@
         "number": 6,
         "fullname": "นายธนัช คงเกรียงไกร",
         "shortname": "ธนัช",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#00eb00",
+        "party": "ทีมคนทำงาน",
         "image": "/candidate/image/32/6.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "ป้อมปราบศัตรูพ่าย-1": {
@@ -1876,12 +1876,12 @@
         "number": 1,
         "fullname": "นางสาวอัยรินทร์ กลางประพันธ์",
         "shortname": "อัยรินทร์",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ff7f00",
+        "party": "ประชาชน",
         "image": "/candidate/image/8/1.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "หญิง",
         "career": ""
     },
     "ป้อมปราบศัตรูพ่าย-2": {
@@ -1889,12 +1889,12 @@
         "number": 2,
         "fullname": "นางสาวนิภาพรรณ จึงเลิศศิริ",
         "shortname": "นิภาพรรณ",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#00c0ff",
+        "party": "ประชาธิปัตย์",
         "image": "/candidate/image/8/2.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "หญิง",
         "career": ""
     },
     "ป้อมปราบศัตรูพ่าย-3": {
@@ -1902,12 +1902,12 @@
         "number": 3,
         "fullname": "นายโดมม์ บำรุงศรี",
         "shortname": "โดมม์",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ffbb00",
+        "party": "เศรษฐกิจ",
         "image": "/candidate/image/8/3.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "พญาไท-1": {
@@ -1920,7 +1920,7 @@
         "image": "/candidate/image/14/1.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "พญาไท-2": {
@@ -1928,12 +1928,12 @@
         "number": 2,
         "fullname": "นายวรวิทย์ ฉายสุวรรณ์",
         "shortname": "วรวิทย์",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ff7f00",
+        "party": "ประชาชน",
         "image": "/candidate/image/14/2.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "พญาไท-3": {
@@ -1941,12 +1941,12 @@
         "number": 3,
         "fullname": "นายนที ศิริธรรมวัฒน์",
         "shortname": "นที",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#00eb00",
+        "party": "ทีมคนทำงาน",
         "image": "/candidate/image/14/3.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "พญาไท-4": {
@@ -1959,7 +1959,7 @@
         "image": "/candidate/image/14/4.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "พญาไท-5": {
@@ -1972,7 +1972,7 @@
         "image": "/candidate/image/14/5.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "พญาไท-6": {
@@ -1980,12 +1980,12 @@
         "number": 6,
         "fullname": "นายกิตติคุณ ชื่นแย้ม",
         "shortname": "กิตติคุณ",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ffbb00",
+        "party": "เศรษฐกิจ",
         "image": "/candidate/image/14/6.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "พญาไท-7": {
@@ -1993,12 +1993,12 @@
         "number": 7,
         "fullname": "นายอนุชาญ กวางทอง",
         "shortname": "อนุชาญ",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#00c0ff",
+        "party": "ประชาธิปัตย์",
         "image": "/candidate/image/14/7.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "พระนคร-1": {
@@ -2006,12 +2006,12 @@
         "number": 1,
         "fullname": "นายอัครพล คฤหเดชรัตนา",
         "shortname": "อัครพล",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ffbb00",
+        "party": "เศรษฐกิจ",
         "image": "/candidate/image/1/1.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "พระนคร-2": {
@@ -2019,12 +2019,12 @@
         "number": 2,
         "fullname": "นางสาวศศิธร ประสิทธิ์พรอุดม",
         "shortname": "ศศิธร",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#e70012",
+        "party": "เพื่อไทย",
         "image": "/candidate/image/1/2.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "หญิง",
         "career": ""
     },
     "พระนคร-3": {
@@ -2032,12 +2032,12 @@
         "number": 3,
         "fullname": "นางสาวนัชธนัญญ์ ทรัพย์ญาณกรณ์",
         "shortname": "นัชธนัญญ์",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#00c0ff",
+        "party": "ประชาธิปัตย์",
         "image": "/candidate/image/1/3.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "หญิง",
         "career": ""
     },
     "พระนคร-4": {
@@ -2045,12 +2045,12 @@
         "number": 4,
         "fullname": "นายธีรกร ไหวดี",
         "shortname": "ธีรกร",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#00eb00",
+        "party": "ทีมคนทำงาน",
         "image": "/candidate/image/1/4.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "พระนคร-5": {
@@ -2058,12 +2058,12 @@
         "number": 5,
         "fullname": "นายอดิเจษฎ์ ประยูรพฤกษ์",
         "shortname": "อดิเจษฎ์",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ff7f00",
+        "party": "ประชาชน",
         "image": "/candidate/image/1/5.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "พระโขนง-1": {
@@ -2071,12 +2071,12 @@
         "number": 1,
         "fullname": "นางสาวชญาภา ปรีดาพากย์",
         "shortname": "ชญาภา",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#78ad2a",
+        "party": "กลุ่มกรุงเทพฯ ที่ดีกว่า",
         "image": "/candidate/image/9/1.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "หญิง",
         "career": ""
     },
     "พระโขนง-2": {
@@ -2084,12 +2084,12 @@
         "number": 2,
         "fullname": "นายสราวุธ อนันต์ชล",
         "shortname": "สราวุธ",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ff7f00",
+        "party": "ประชาชน",
         "image": "/candidate/image/9/2.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "พระโขนง-3": {
@@ -2097,12 +2097,12 @@
         "number": 3,
         "fullname": "นายอานนต์ ชินเวโรจน์",
         "shortname": "อานนต์",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ffbb00",
+        "party": "เศรษฐกิจ",
         "image": "/candidate/image/9/3.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "พระโขนง-4": {
@@ -2110,12 +2110,12 @@
         "number": 4,
         "fullname": "นายตรีสิทธิ์ ศิริวรรณ",
         "shortname": "ตรีสิทธิ์",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#00c0ff",
+        "party": "ประชาธิปัตย์",
         "image": "/candidate/image/9/4.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "พระโขนง-5": {
@@ -2123,12 +2123,12 @@
         "number": 5,
         "fullname": "นางสาวพรมาลา แก้วชนะ",
         "shortname": "พรมาลา",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#021e81",
+        "party": "อนาคตไทย",
         "image": "/candidate/image/9/5.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "หญิง",
         "career": ""
     },
     "พระโขนง-6": {
@@ -2141,7 +2141,7 @@
         "image": "/candidate/image/9/6.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "หญิง",
         "career": ""
     },
     "ภาษีเจริญ-1": {
@@ -2149,12 +2149,12 @@
         "number": 1,
         "fullname": "นางสาวพัณณ์ชิตา รณบรรณ",
         "shortname": "พัณณ์ชิตา",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ff7f00",
+        "party": "ประชาชน",
         "image": "/candidate/image/22/1.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "หญิง",
         "career": ""
     },
     "ภาษีเจริญ-2": {
@@ -2162,12 +2162,12 @@
         "number": 2,
         "fullname": "นายรัชชานนท์ พูนรัตน์",
         "shortname": "รัชชานนท์",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ffbb00",
+        "party": "เศรษฐกิจ",
         "image": "/candidate/image/22/2.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "ภาษีเจริญ-3": {
@@ -2175,12 +2175,12 @@
         "number": 3,
         "fullname": "นายวงศธรร์ พิสาลกาญจนกิจ",
         "shortname": "วงศธรร์",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#00c0ff",
+        "party": "ประชาธิปัตย์",
         "image": "/candidate/image/22/3.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "ภาษีเจริญ-4": {
@@ -2193,7 +2193,7 @@
         "image": "/candidate/image/22/4.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "ภาษีเจริญ-5": {
@@ -2206,7 +2206,7 @@
         "image": "/candidate/image/22/5.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "ภาษีเจริญ-6": {
@@ -2219,7 +2219,7 @@
         "image": "/candidate/image/22/6.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "ภาษีเจริญ-7": {
@@ -2232,20 +2232,20 @@
         "image": "/candidate/image/22/7.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "ภาษีเจริญ-8": {
         "id": "ภาษีเจริญ-8",
         "number": 8,
-        "fullname": "นายวรวิทย์ ฉายสุวรรณ์",
-        "shortname": "วรวิทย์",
+        "fullname": "นางสาวชาลิสา พ่วงนุช",
+        "shortname": "ชาลิสา",
         "color": "#666666",
         "party": "อิสระ",
         "image": "/candidate/image/22/8.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "หญิง",
         "career": ""
     },
     "ภาษีเจริญ-9": {
@@ -2253,12 +2253,12 @@
         "number": 9,
         "fullname": "นายกฤษฏ์ คงวุฒิปัญญา",
         "shortname": "กฤษฏ์",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#00eb00",
+        "party": "ทีมคนทำงาน",
         "image": "/candidate/image/22/9.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "มีนบุรี-1": {
@@ -2266,12 +2266,12 @@
         "number": 1,
         "fullname": "นายวิรัตน์ มีนชัยนันท์",
         "shortname": "วิรัตน์",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#e70012",
+        "party": "เพื่อไทย",
         "image": "/candidate/image/10/1.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "มีนบุรี-2": {
@@ -2279,12 +2279,12 @@
         "number": 2,
         "fullname": "นายจิรัฏฐ์ เชาว์อริยรัฐ",
         "shortname": "จิรัฏฐ์",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#00c0ff",
+        "party": "ประชาธิปัตย์",
         "image": "/candidate/image/10/2.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "มีนบุรี-3": {
@@ -2292,12 +2292,12 @@
         "number": 3,
         "fullname": "นายสมเกียรติ์ ขุนบุญจันทร์",
         "shortname": "สมเกียรติ์",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#27496c",
+        "party": "กลุ่มมีนบุรีพึ่งได้",
         "image": "/candidate/image/10/3.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "มีนบุรี-4": {
@@ -2305,12 +2305,12 @@
         "number": 4,
         "fullname": "นายกิตติคุณ รุจิมงคล",
         "shortname": "กิตติคุณ",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ff7f00",
+        "party": "ประชาชน",
         "image": "/candidate/image/10/4.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "ยานนาวา-1": {
@@ -2318,12 +2318,12 @@
         "number": 1,
         "fullname": "นายพงษ์พิชัย เหมวันต์",
         "shortname": "พงษ์พิชัย",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#e70012",
+        "party": "เพื่อไทย",
         "image": "/candidate/image/12/1.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "ยานนาวา-2": {
@@ -2331,12 +2331,12 @@
         "number": 2,
         "fullname": "นางสาวหัทกร โกศลจิตร์",
         "shortname": "หัทกร",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#00eb00",
+        "party": "ทีมคนทำงาน",
         "image": "/candidate/image/12/2.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "หญิง",
         "career": ""
     },
     "ยานนาวา-3": {
@@ -2344,12 +2344,12 @@
         "number": 3,
         "fullname": "นายสมเกียรติ ปัญญะธารา",
         "shortname": "สมเกียรติ",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#00c0ff",
+        "party": "ประชาธิปัตย์",
         "image": "/candidate/image/12/3.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "ยานนาวา-4": {
@@ -2362,7 +2362,7 @@
         "image": "/candidate/image/12/4.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "ยานนาวา-5": {
@@ -2370,12 +2370,12 @@
         "number": 5,
         "fullname": "นายภัทรศักดิ์ ใหม่พระเนตร",
         "shortname": "ภัทรศักดิ์",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ff7f00",
+        "party": "ประชาชน",
         "image": "/candidate/image/12/5.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "ยานนาวา-6": {
@@ -2383,12 +2383,12 @@
         "number": 6,
         "fullname": "นายพุทธิพัชร์ ธันยาธรรมนนท์",
         "shortname": "พุทธิพัชร์",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#78ad2a",
+        "party": "กลุ่มกรุงเทพฯ ที่ดีกว่า",
         "image": "/candidate/image/12/6.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "ยานนาวา-7": {
@@ -2396,12 +2396,12 @@
         "number": 7,
         "fullname": "นางสาวบุณยนุช ปทิตหิรัณยา",
         "shortname": "บุณยนุช",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ffbb00",
+        "party": "เศรษฐกิจ",
         "image": "/candidate/image/12/7.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "หญิง",
         "career": ""
     },
     "ยานนาวา-8": {
@@ -2414,7 +2414,7 @@
         "image": "/candidate/image/12/8.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "ยานนาวา-9": {
@@ -2427,7 +2427,7 @@
         "image": "/candidate/image/12/9.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "ราชเทวี-1": {
@@ -2435,12 +2435,12 @@
         "number": 1,
         "fullname": "นายคมจักร จักรพันธุ์ ณ อยุธยา",
         "shortname": "จักรพันธุ์",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#00eb00",
+        "party": "ทีมคนทำงาน",
         "image": "/candidate/image/37/1.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "ราชเทวี-2": {
@@ -2448,12 +2448,12 @@
         "number": 2,
         "fullname": "นายเอกกวิน โชคประสพรวย",
         "shortname": "เอกกวิน",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ff7f00",
+        "party": "ประชาชน",
         "image": "/candidate/image/37/2.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "ราชเทวี-3": {
@@ -2461,12 +2461,12 @@
         "number": 3,
         "fullname": "นายอำนาจ มัจฉา",
         "shortname": "อำนาจ",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ffbb00",
+        "party": "เศรษฐกิจ",
         "image": "/candidate/image/37/3.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "ราชเทวี-4": {
@@ -2474,12 +2474,12 @@
         "number": 4,
         "fullname": "นางสาวทัดดาว ตั้งตรงเจริญ",
         "shortname": "ทัดดาว",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#00c0ff",
+        "party": "ประชาธิปัตย์",
         "image": "/candidate/image/37/4.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "หญิง",
         "career": ""
     },
     "ราษฎร์บูรณะ-1": {
@@ -2487,12 +2487,12 @@
         "number": 1,
         "fullname": "นางสาวปราณี ธรรมนิยม",
         "shortname": "ปราณี",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ffbb00",
+        "party": "เศรษฐกิจ",
         "image": "/candidate/image/24/1.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "หญิง",
         "career": ""
     },
     "ราษฎร์บูรณะ-2": {
@@ -2500,12 +2500,12 @@
         "number": 2,
         "fullname": "นายไสว โชติกะสุภา",
         "shortname": "ไสว",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#00c0ff",
+        "party": "ประชาธิปัตย์",
         "image": "/candidate/image/24/2.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "ราษฎร์บูรณะ-3": {
@@ -2513,12 +2513,12 @@
         "number": 3,
         "fullname": "นายมณูเทพย์ ทองปน",
         "shortname": "มณูเทพย์",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ffbb00",
+        "party": "เศรษฐกิจ",
         "image": "/candidate/image/24/3.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "ราษฎร์บูรณะ-4": {
@@ -2526,12 +2526,12 @@
         "number": 4,
         "fullname": "นางสาวพิมพ์เพ็ญ วีรกุลสุนทร",
         "shortname": "พิมพ์เพ็ญ",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#e70012",
+        "party": "เพื่อไทย",
         "image": "/candidate/image/24/4.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "หญิง",
         "career": ""
     },
     "ราษฎร์บูรณะ-5": {
@@ -2539,12 +2539,12 @@
         "number": 5,
         "fullname": "นายปิยวัช รังผึ้ง",
         "shortname": "ปิยวัช",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ff7f00",
+        "party": "ประชาชน",
         "image": "/candidate/image/24/5.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "ลาดกระบัง-1": {
@@ -2552,12 +2552,12 @@
         "number": 1,
         "fullname": "นายอานนท์ แม้นเพชร",
         "shortname": "อานนท์",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ff7f00",
+        "party": "ประชาชน",
         "image": "/candidate/image/11/1.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "ลาดกระบัง-2": {
@@ -2565,12 +2565,12 @@
         "number": 2,
         "fullname": "นางสาวชวัลพัชร สำเร็จวาณิชย์",
         "shortname": "ชวัลพัชร",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#e70012",
+        "party": "เพื่อไทย",
         "image": "/candidate/image/11/2.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "หญิง",
         "career": ""
     },
     "ลาดกระบัง-3": {
@@ -2578,12 +2578,12 @@
         "number": 3,
         "fullname": "นายวันชัย รัตนขจรไชย",
         "shortname": "วันชัย",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ffbb00",
+        "party": "เศรษฐกิจ",
         "image": "/candidate/image/11/3.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "ลาดกระบัง-4": {
@@ -2596,7 +2596,7 @@
         "image": "/candidate/image/11/4.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "ลาดกระบัง-5": {
@@ -2604,12 +2604,12 @@
         "number": 5,
         "fullname": "นายสุรจิตต์ พงษ์สิงห์วิทยา",
         "shortname": "สุรจิตต์",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#78ad2a",
+        "party": "กลุ่มกรุงเทพฯ ที่ดีกว่า",
         "image": "/candidate/image/11/5.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "ลาดกระบัง-6": {
@@ -2617,12 +2617,12 @@
         "number": 6,
         "fullname": "นายอนันต์ ฤกษ์ดี",
         "shortname": "อนันต์",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#00c0ff",
+        "party": "ประชาธิปัตย์",
         "image": "/candidate/image/11/6.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "ลาดพร้าว-1": {
@@ -2630,12 +2630,12 @@
         "number": 1,
         "fullname": "นางสาวรัชญา เพ็งสุข",
         "shortname": "รัชญา",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ff7f00",
+        "party": "ประชาชน",
         "image": "/candidate/image/38/1.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "หญิง",
         "career": ""
     },
     "ลาดพร้าว-2": {
@@ -2643,12 +2643,12 @@
         "number": 2,
         "fullname": "นางสาวเฌอมินทร์ สถิตโอฬารโรจน์",
         "shortname": "เฌอมินทร์",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ffbb00",
+        "party": "เศรษฐกิจ",
         "image": "/candidate/image/38/2.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "หญิง",
         "career": ""
     },
     "ลาดพร้าว-3": {
@@ -2656,12 +2656,12 @@
         "number": 3,
         "fullname": "นายอัทรัณ มานุพีรพันธ์",
         "shortname": "อัทรัณ",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#00c0ff",
+        "party": "ประชาธิปัตย์",
         "image": "/candidate/image/38/3.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "ลาดพร้าว-4": {
@@ -2669,12 +2669,12 @@
         "number": 4,
         "fullname": "นางสาวขวัญนภา พลายมนต์",
         "shortname": "ขวัญนภา",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#00eb00",
+        "party": "ทีมคนทำงาน",
         "image": "/candidate/image/38/4.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "หญิง",
         "career": ""
     },
     "วังทองหลาง-1": {
@@ -2682,12 +2682,12 @@
         "number": 1,
         "fullname": "นายประสพ โกมลมาศ",
         "shortname": "ประสพ",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#78ad2a",
+        "party": "กลุ่มกรุงเทพฯ ที่ดีกว่า",
         "image": "/candidate/image/45/1.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "วังทองหลาง-2": {
@@ -2695,12 +2695,12 @@
         "number": 2,
         "fullname": "นายอธิการ ถิรวิริยพล",
         "shortname": "อธิการ",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ff7f00",
+        "party": "ประชาชน",
         "image": "/candidate/image/45/2.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "วังทองหลาง-3": {
@@ -2708,12 +2708,12 @@
         "number": 3,
         "fullname": "นายกิตติพัฒน์ มีสุวรรณ",
         "shortname": "กิตติพัฒน์",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#00eb00",
+        "party": "ทีมคนทำงาน",
         "image": "/candidate/image/45/3.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "วังทองหลาง-4": {
@@ -2721,12 +2721,12 @@
         "number": 4,
         "fullname": "นายสุรัตน์ ทับหิรัญ",
         "shortname": "สุรัตน์",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ffbb00",
+        "party": "เศรษฐกิจ",
         "image": "/candidate/image/45/4.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "วังทองหลาง-5": {
@@ -2734,12 +2734,12 @@
         "number": 5,
         "fullname": "นายอนุรักษ์ เลิศวัฒนาไพบูลย์",
         "shortname": "อนุรักษ์",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#00c0ff",
+        "party": "ประชาธิปัตย์",
         "image": "/candidate/image/45/5.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "วัฒนา-1": {
@@ -2747,12 +2747,12 @@
         "number": 1,
         "fullname": "นางสาวภัคญดา อำนวยเดชกร",
         "shortname": "ภัคญดา",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ff7f00",
+        "party": "ประชาชน",
         "image": "/candidate/image/39/1.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "หญิง",
         "career": ""
     },
     "วัฒนา-2": {
@@ -2760,12 +2760,12 @@
         "number": 2,
         "fullname": "นางสาวพัชรมณฑ์ ปลื้มอารมย์",
         "shortname": "พัชรมณฑ์",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ffbb00",
+        "party": "เศรษฐกิจ",
         "image": "/candidate/image/39/2.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "หญิง",
         "career": ""
     },
     "วัฒนา-3": {
@@ -2773,12 +2773,12 @@
         "number": 3,
         "fullname": "นายกานดิศ วรรณอรุณ",
         "shortname": "กานดิศ",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#00eb00",
+        "party": "ทีมคนทำงาน",
         "image": "/candidate/image/39/3.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "วัฒนา-4": {
@@ -2786,12 +2786,12 @@
         "number": 4,
         "fullname": "นายณธัช อัศดามงคล",
         "shortname": "ณธัช",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#e70012",
+        "party": "เพื่อไทย",
         "image": "/candidate/image/39/4.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "วัฒนา-5": {
@@ -2799,12 +2799,12 @@
         "number": 5,
         "fullname": "นายเมธวิน มีสุวรรณ",
         "shortname": "เมธวิน",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#00c0ff",
+        "party": "ประชาธิปัตย์",
         "image": "/candidate/image/39/5.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "สวนหลวง-1": {
@@ -2812,12 +2812,12 @@
         "number": 1,
         "fullname": "นางสาวปิยะวรรณ จระกา",
         "shortname": "ปิยะวรรณ",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#00eb00",
+        "party": "ทีมคนทำงาน",
         "image": "/candidate/image/34/1.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "หญิง",
         "career": ""
     },
     "สวนหลวง-2": {
@@ -2825,12 +2825,12 @@
         "number": 2,
         "fullname": "นายมาโนช วงศ์เกตุใจ",
         "shortname": "มาโนช",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ff7f00",
+        "party": "ประชาชน",
         "image": "/candidate/image/34/2.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "สวนหลวง-3": {
@@ -2838,12 +2838,12 @@
         "number": 3,
         "fullname": "นายสิทธิ นาคนาวา",
         "shortname": "สิทธิ",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ffbb00",
+        "party": "เศรษฐกิจ",
         "image": "/candidate/image/34/3.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "สวนหลวง-4": {
@@ -2856,7 +2856,7 @@
         "image": "/candidate/image/34/4.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "สวนหลวง-5": {
@@ -2864,12 +2864,12 @@
         "number": 5,
         "fullname": "นายณัชกรณ์ เชิดชูกิจกุล",
         "shortname": "ณัชกรณ์",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#00c0ff",
+        "party": "ประชาธิปัตย์",
         "image": "/candidate/image/34/5.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "สะพานสูง-1": {
@@ -2877,12 +2877,12 @@
         "number": 1,
         "fullname": "นางสาวเมธิณี หวังพิทักษ์",
         "shortname": "เมธิณี",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ff7f00",
+        "party": "ประชาชน",
         "image": "/candidate/image/44/1.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "หญิง",
         "career": ""
     },
     "สะพานสูง-2": {
@@ -2890,12 +2890,12 @@
         "number": 2,
         "fullname": "นางสาวมธุรส เบนท์",
         "shortname": "มธุรส",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#00eb00",
+        "party": "ทีมคนทำงาน",
         "image": "/candidate/image/44/2.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "หญิง",
         "career": ""
     },
     "สะพานสูง-3": {
@@ -2903,12 +2903,12 @@
         "number": 3,
         "fullname": "นายอรรถวิทย์ เซะวิเศษ",
         "shortname": "อรรถวิทย์",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#00c0ff",
+        "party": "ประชาธิปัตย์",
         "image": "/candidate/image/44/3.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "สะพานสูง-4": {
@@ -2916,12 +2916,12 @@
         "number": 4,
         "fullname": "นายหวังจันทร์ ยิ้มวิไล",
         "shortname": "หวังจันทร์",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ffbb00",
+        "party": "เศรษฐกิจ",
         "image": "/candidate/image/44/4.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "สัมพันธวงศ์-1": {
@@ -2929,12 +2929,12 @@
         "number": 1,
         "fullname": "นายธนภัทร เทียนกระจ่าง",
         "shortname": "ธนภัทร",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ff7f00",
+        "party": "ประชาชน",
         "image": "/candidate/image/13/1.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "สัมพันธวงศ์-2": {
@@ -2942,12 +2942,12 @@
         "number": 2,
         "fullname": "นายพินิจ กาญจนชูศักดิ์",
         "shortname": "พินิจ",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#00c0ff",
+        "party": "ประชาธิปัตย์",
         "image": "/candidate/image/13/2.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "สัมพันธวงศ์-3": {
@@ -2955,12 +2955,12 @@
         "number": 3,
         "fullname": "นายคมค์ปภัส ตั้งธนสิรินนท์",
         "shortname": "คมค์ปภัส",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ffbb00",
+        "party": "เศรษฐกิจ",
         "image": "/candidate/image/13/3.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "สาทร-1": {
@@ -2968,12 +2968,12 @@
         "number": 1,
         "fullname": "นายมนตรี เปรมบุญ",
         "shortname": "มนตรี",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#00c0ff",
+        "party": "ประชาธิปัตย์",
         "image": "/candidate/image/28/1.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "สาทร-2": {
@@ -2981,12 +2981,12 @@
         "number": 2,
         "fullname": "นายพิราพงศ์ ปริญานุภาพ",
         "shortname": "พิราพงศ์",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ffbb00",
+        "party": "เศรษฐกิจ",
         "image": "/candidate/image/28/2.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "สาทร-3": {
@@ -2994,12 +2994,12 @@
         "number": 3,
         "fullname": "ว่าที่ร้อยตรี ไซราม ประกายกิจ",
         "shortname": "ไซราม",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ff7f00",
+        "party": "ประชาชน",
         "image": "/candidate/image/28/3.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "สาทร-4": {
@@ -3007,12 +3007,12 @@
         "number": 4,
         "fullname": "นายธนากร พุ่มโพธิงาม",
         "shortname": "ธนากร",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#00eb00",
+        "party": "ทีมคนทำงาน",
         "image": "/candidate/image/28/4.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "สาทร-5": {
@@ -3025,7 +3025,7 @@
         "image": "/candidate/image/28/5.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "สายไหม-1": {
@@ -3033,12 +3033,12 @@
         "number": 1,
         "fullname": "นางสาวลมุลจิต วิเชียรศรี",
         "shortname": "ลมุลจิต",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#021e81",
+        "party": "อนาคตไทย",
         "image": "/candidate/image/42/1.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "หญิง",
         "career": ""
     },
     "สายไหม-2": {
@@ -3046,12 +3046,12 @@
         "number": 2,
         "fullname": "นายสมชาย เวสารัชตระกูล",
         "shortname": "สมชาย",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#e70012",
+        "party": "เพื่อไทย",
         "image": "/candidate/image/42/2.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "สายไหม-3": {
@@ -3059,12 +3059,12 @@
         "number": 3,
         "fullname": "นายกร สิงห์ธีร์",
         "shortname": "กร",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#00c0ff",
+        "party": "ประชาธิปัตย์",
         "image": "/candidate/image/42/3.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "สายไหม-4": {
@@ -3072,12 +3072,12 @@
         "number": 4,
         "fullname": "นางธัญทิพย์ คติยาจิตรายุส์",
         "shortname": "ธัญทิพย์",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ffbb00",
+        "party": "เศรษฐกิจ",
         "image": "/candidate/image/42/4.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "หญิง",
         "career": ""
     },
     "สายไหม-5": {
@@ -3085,12 +3085,12 @@
         "number": 5,
         "fullname": "นายภมร พลจันทร์",
         "shortname": "ภมร",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ff7f00",
+        "party": "ประชาชน",
         "image": "/candidate/image/42/5.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "หนองจอก-1": {
@@ -3098,12 +3098,12 @@
         "number": 1,
         "fullname": "นายหยกพรชัย อิสระเสรีพงษ์",
         "shortname": "หยกพรชัย",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ff7f00",
+        "party": "ประชาชน",
         "image": "/candidate/image/3/1.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "หนองจอก-2": {
@@ -3111,12 +3111,12 @@
         "number": 2,
         "fullname": "นายวรชัย สมบัติเจริญกิจ",
         "shortname": "วรชัย",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ffbb00",
+        "party": "เศรษฐกิจ",
         "image": "/candidate/image/3/2.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "หนองจอก-3": {
@@ -3124,12 +3124,12 @@
         "number": 3,
         "fullname": "นายเชิดพันธุ์ เตี่ยไพบูลย์",
         "shortname": "เชิดพันธุ์",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#00c0ff",
+        "party": "ประชาธิปัตย์",
         "image": "/candidate/image/3/3.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "หนองจอก-4": {
@@ -3137,12 +3137,12 @@
         "number": 4,
         "fullname": "นายพีระพงษ์ รัสมี",
         "shortname": "พีระพงษ์",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#e70012",
+        "party": "เพื่อไทย",
         "image": "/candidate/image/3/4.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "หนองแขม-1": {
@@ -3155,7 +3155,7 @@
         "image": "/candidate/image/23/1.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "หนองแขม-2": {
@@ -3168,7 +3168,7 @@
         "image": "/candidate/image/23/2.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "หญิง",
         "career": ""
     },
     "หนองแขม-3": {
@@ -3176,12 +3176,12 @@
         "number": 3,
         "fullname": "นายกิตติคุณ กชกรจารุพงศ์",
         "shortname": "กิตติคุณ",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ff7f00",
+        "party": "ประชาชน",
         "image": "/candidate/image/23/3.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "หนองแขม-4": {
@@ -3189,12 +3189,12 @@
         "number": 4,
         "fullname": "นางสาวนิธิสนี กลิ่นพันธหิรัญ",
         "shortname": "นิธิสนี",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ffbb00",
+        "party": "เศรษฐกิจ",
         "image": "/candidate/image/23/4.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "หญิง",
         "career": ""
     },
     "หนองแขม-5": {
@@ -3202,12 +3202,12 @@
         "number": 5,
         "fullname": "นายฮารูน มูหมัดอารี",
         "shortname": "ฮารูน",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#00c0ff",
+        "party": "ประชาธิปัตย์",
         "image": "/candidate/image/23/5.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "หลักสี่-1": {
@@ -3215,12 +3215,12 @@
         "number": 1,
         "fullname": "นายณพวิทย์ วงศ์อารีย์",
         "shortname": "ณพวิทย์",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ff7f00",
+        "party": "ประชาชน",
         "image": "/candidate/image/41/1.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "หลักสี่-2": {
@@ -3228,12 +3228,12 @@
         "number": 2,
         "fullname": "นายเกรียงไกร ไกรนรา",
         "shortname": "เกรียงไกร",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#00eb00",
+        "party": "ทีมคนทำงาน",
         "image": "/candidate/image/41/2.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "หลักสี่-3": {
@@ -3241,12 +3241,12 @@
         "number": 3,
         "fullname": "นายตกานต์ สุนนทวุฒิ",
         "shortname": "ตกานต์",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#e70012",
+        "party": "เพื่อไทย",
         "image": "/candidate/image/41/3.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "หลักสี่-4": {
@@ -3254,12 +3254,12 @@
         "number": 4,
         "fullname": "นายต้นรังสรรค์ กียปัจจ์",
         "shortname": "ต้นรังสรรค์",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#00c0ff",
+        "party": "ประชาธิปัตย์",
         "image": "/candidate/image/41/4.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "หลักสี่-5": {
@@ -3267,12 +3267,12 @@
         "number": 5,
         "fullname": "พลตรี อัชฌา บุญกระพือ",
         "shortname": "อัชฌา",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ffbb00",
+        "party": "เศรษฐกิจ",
         "image": "/candidate/image/41/5.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "ห้วยขวาง-1": {
@@ -3280,12 +3280,12 @@
         "number": 1,
         "fullname": "นายปภาวิน ติณณ์พิพัฒน์โสภณ",
         "shortname": "ปภาวิน",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ff7f00",
+        "party": "ประชาชน",
         "image": "/candidate/image/17/1.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "ห้วยขวาง-2": {
@@ -3293,12 +3293,12 @@
         "number": 2,
         "fullname": "นายสุวงศ์ จินตรักษ์",
         "shortname": "สุวงศ์",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#00eb00",
+        "party": "ทีมคนทำงาน",
         "image": "/candidate/image/17/2.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "ห้วยขวาง-3": {
@@ -3306,12 +3306,12 @@
         "number": 3,
         "fullname": "นายประพฤทธ์ หาญกิจจะกุล",
         "shortname": "ประพฤทธ์",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#00c0ff",
+        "party": "ประชาธิปัตย์",
         "image": "/candidate/image/17/3.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "ห้วยขวาง-4": {
@@ -3324,7 +3324,7 @@
         "image": "/candidate/image/17/4.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "ห้วยขวาง-5": {
@@ -3332,12 +3332,12 @@
         "number": 5,
         "fullname": "นายปัฐน์ชนนท์ คูณธนานุวัฒน์",
         "shortname": "ปัฐน์ชนนท์",
-        "color": "#666666",
-        "party": "อิสระ",
+        "color": "#ffbb00",
+        "party": "เศรษฐกิจ",
         "image": "/candidate/image/17/5.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     },
     "ห้วยขวาง-6": {
@@ -3350,7 +3350,7 @@
         "image": "/candidate/image/17/6.webp",
         "age": "",
         "education": "",
-        "sex": "",
+        "sex": "ชาย",
         "career": ""
     }
 }
