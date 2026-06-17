@@ -2,14 +2,14 @@
     "type": "LIVE",
     "total": {
         "eligiblePopulation": 4085322,
-        "totalVotes": 64095,
-        "badVotes": 1518,
-        "noVotes": 4008,
-        "goodVote": 58569,
-        "progress": 3.68,
+        "totalVotes": 0,
+        "badVotes": 0,
+        "noVotes": 0,
+        "goodVote": 0,
+        "progress": 0.0,
         "pollingUnits": {
             "total": 6628,
-            "reported": 244
+            "reported": 0
         },
         "result": []
     },
@@ -92,32 +92,32 @@
             "name": "หนองจอก",
             "voting": {
                 "eligiblePopulation": 141322,
-                "totalVotes": 53944,
-                "badVotes": 1398,
-                "noVotes": 4006,
-                "goodVote": 48540,
-                "progress": 95.2,
+                "totalVotes": 0,
+                "badVotes": 0,
+                "noVotes": 0,
+                "goodVote": 0,
+                "progress": 0,
                 "result": [
                     {
                         "candidateId": "หนองจอก-2",
-                        "count": 17243
+                        "count": 0
                     },
                     {
                         "candidateId": "หนองจอก-3",
-                        "count": 17076
+                        "count": 0
                     },
                     {
                         "candidateId": "หนองจอก-1",
-                        "count": 13813
+                        "count": 0
                     },
                     {
                         "candidateId": "หนองจอก-4",
-                        "count": 408
+                        "count": 0
                     }
                 ],
                 "pollingUnits": {
                     "total": 229,
-                    "reported": 218
+                    "reported": 0
                 }
             }
         },
@@ -470,28 +470,28 @@
             "name": "สัมพันธวงศ์",
             "voting": {
                 "eligiblePopulation": 16963,
-                "totalVotes": 10151,
-                "badVotes": 120,
-                "noVotes": 2,
-                "goodVote": 10029,
-                "progress": 96.3,
+                "totalVotes": 0,
+                "badVotes": 0,
+                "noVotes": 0,
+                "goodVote": 0,
+                "progress": 0,
                 "result": [
                     {
                         "candidateId": "สัมพันธวงศ์-3",
-                        "count": 7222
+                        "count": 0
                     },
                     {
                         "candidateId": "สัมพันธวงศ์-1",
-                        "count": 1920
+                        "count": 0
                     },
                     {
                         "candidateId": "สัมพันธวงศ์-2",
-                        "count": 887
+                        "count": 0
                     }
                 ],
                 "pollingUnits": {
                     "total": 27,
-                    "reported": 26
+                    "reported": 0
                 }
             }
         },
@@ -1062,31 +1062,31 @@
             "name": "บางซื่อ",
             "voting": {
                 "eligiblePopulation": 89186,
-                "totalVotes": 0,
+                "totalVotes": 502,
                 "badVotes": 0,
                 "noVotes": 0,
-                "goodVote": 0,
-                "progress": 0.0,
+                "goodVote": 502,
+                "progress": 2.3,
                 "result": [
                     {
                         "candidateId": "บางซื่อ-1",
-                        "count": 0
+                        "count": 89
                     },
                     {
                         "candidateId": "บางซื่อ-2",
-                        "count": 0
+                        "count": 33
                     },
                     {
                         "candidateId": "บางซื่อ-3",
-                        "count": 0
+                        "count": 342
                     },
                     {
                         "candidateId": "บางซื่อ-4",
-                        "count": 0
+                        "count": 4
                     },
                     {
                         "candidateId": "บางซื่อ-5",
-                        "count": 0
+                        "count": 34
                     }
                 ],
                 "pollingUnits": {
@@ -1099,7 +1099,7 @@
             "name": "จตุจักร",
             "voting": {
                 "eligiblePopulation": 111507,
-                "totalVotes": 0,
+                "totalVotes": 10,
                 "badVotes": 0,
                 "noVotes": 0,
                 "goodVote": 0,
@@ -1107,27 +1107,27 @@
                 "result": [
                     {
                         "candidateId": "จตุจักร-1",
-                        "count": 0
+                        "count": 1
                     },
                     {
                         "candidateId": "จตุจักร-2",
-                        "count": 0
+                        "count": 2
                     },
                     {
                         "candidateId": "จตุจักร-3",
-                        "count": 0
+                        "count": 1
                     },
                     {
                         "candidateId": "จตุจักร-4",
-                        "count": 0
+                        "count": 2
                     },
                     {
                         "candidateId": "จตุจักร-5",
-                        "count": 0
+                        "count": 4
                     },
                     {
                         "candidateId": "จตุจักร-6",
-                        "count": 0
+                        "count": 1
                     }
                 ],
                 "pollingUnits": {
@@ -1498,23 +1498,23 @@
             "name": "หลักสี่",
             "voting": {
                 "eligiblePopulation": 75976,
-                "totalVotes": 0,
+                "totalVotes": 100,
                 "badVotes": 0,
                 "noVotes": 0,
-                "goodVote": 0,
-                "progress": 0.0,
+                "goodVote": 100,
+                "progress": 95.0,
                 "result": [
                     {
                         "candidateId": "หลักสี่-1",
-                        "count": 0
+                        "count": 49
                     },
                     {
                         "candidateId": "หลักสี่-2",
-                        "count": 0
+                        "count": 23
                     },
                     {
                         "candidateId": "หลักสี่-3",
-                        "count": 0
+                        "count": 123
                     },
                     {
                         "candidateId": "หลักสี่-4",
@@ -1863,19 +1863,19 @@
             "name": "บางบอน",
             "voting": {
                 "eligiblePopulation": 71374,
-                "totalVotes": 0,
+                "totalVotes": 405550,
                 "badVotes": 0,
                 "noVotes": 0,
-                "goodVote": 0,
-                "progress": 0.0,
+                "goodVote": 33405,
+                "progress": 50.0,
                 "result": [
                     {
                         "candidateId": "บางบอน-1",
-                        "count": 0
+                        "count": 30450
                     },
                     {
                         "candidateId": "บางบอน-2",
-                        "count": 0
+                        "count": 3049
                     },
                     {
                         "candidateId": "บางบอน-3",
@@ -1897,5 +1897,5 @@
             }
         }
     ],
-    "lastUpdatedAt": "2026-06-15T02:14:25.716Z"
+    "lastUpdatedAt": "2026-06-16T02:14:25.716Z"
 }

@@ -110,9 +110,9 @@ const formatPercent = (value: number, fractionDigits = 1) =>
 const formatLastUpdatedAt = (lastUpdatedAt?: string) =>
 	lastUpdatedAt
 		? new Date(lastUpdatedAt).toLocaleString('th-TH', {
-				dateStyle: 'short',
-				timeStyle: 'short'
-		  })
+			dateStyle: 'short',
+			timeStyle: 'short'
+		})
 		: '-';
 
 const getProgress = (voting: Voting) => voting.progress ?? 100;
@@ -207,7 +207,7 @@ const Slideshow: FunctionComponent<SlideshowProps> = ({ config }) => {
 
 	return (
 		<presetContext.Provider value={activePreset}>
-			<div className="flex-1 min-h-0 flex flex-col bg-black text-white overflow-hidden">
+			<div className="flex-1 min-h-0 flex flex-col bg-black text-white overflow-hidden" style={{ fontFamily: 'Anuphan' }}>
 				{pageIndex === 0 ? (
 					<GovernorSlide
 						preset={governorPreset}
@@ -278,9 +278,8 @@ const SlideControls: FunctionComponent<SlideControlsProps> = ({ pageIndex, onPag
 						key={index}
 						type="button"
 						aria-label={`ไป slide ${index + 1}`}
-						className={`h-3 w-3 rounded-full border border-white/70 ${
-							index === pageIndex ? 'bg-white' : 'bg-transparent hover:bg-white/40'
-						}`}
+						className={`h-3 w-3 rounded-full border border-white/70 ${index === pageIndex ? 'bg-white' : 'bg-transparent hover:bg-white/40'
+							}`}
 						onClick={() => onPageChange(index)}
 					/>
 				))}
@@ -311,14 +310,12 @@ const GovernorSlide: FunctionComponent<GovernorSlideProps> = ({
 	<div className="w-[90vw] mx-auto flex-1 min-h-0 py-5 lg:py-8 flex flex-col gap-4">
 		<SlideHeader title={preset.fullname} pageIndex={pageIndex} onPageChange={onPageChange} />
 		<div className="grid grid-cols-1 lg:grid-cols-3 gap-5 flex-1 min-h-0">
-				<div className="lg:col-span-2 min-h-0 flex flex-col">
-					<h2 className="typo-h5 mb-3">คะแนนรวมทั้ง กทม.</h2>
-					<GovernorCandidateColumns voting={preset.electionData.total} preset={preset} />
-				</div>
+			<div className="lg:col-span-2 min-h-0 flex flex-col">
+				<GovernorCandidateColumns voting={preset.electionData.total} preset={preset} />
+			</div>
 			<div className="min-h-0 flex flex-col">
-				<div className="flex-1 min-h-[260px]" />
-				<div className="h-[38vh] min-h-[260px] max-h-[420px] border-t border-white/20 pt-3">
-					<h2 className="typo-h5 mb-2">กริดผู้ชนะรายเขต</h2>
+				<div className="h-[38vh] min-h-[260px] max-h-[420px] pt-3">
+					<h2 className="typo-h5 mb-2">ผู้ชนะรายเขต</h2>
 					<LazyloadContainer>
 						<GridWinner />
 					</LazyloadContainer>
@@ -404,9 +401,8 @@ const GovernorCandidateRow: FunctionComponent<GovernorCandidateRowProps> = ({
 			</span>
 		</div>
 		<div
-			className={`mt-2 bg-white/10 border-b-2 border-white/20 ${
-				showImage ? 'h-9' : 'h-1.5'
-			}`}
+			className={`mt-2 bg-white/10 overflow-hidden ${showImage ? 'h-9' : 'h-1.5'
+				}`}
 		>
 			<Progress
 				progressItems={
@@ -500,11 +496,8 @@ const DistrictResultCard: FunctionComponent<DistrictResultCardProps> = ({ distri
 					/>
 				)}
 			</div>
-				<div className="mt-2">
-					<div className="flex items-center justify-between gap-2 typo-footer text-white/70 mb-1">
-						<span>นับแล้ว {formatPercent(getProgress(district.voting))}</span>
-					</div>
-					<div className="h-2 bg-white/15">
+			<div className="mt-2">
+				<div className="h-2 bg-white/15">
 					<Progress
 						progressItems={
 							[
@@ -518,6 +511,11 @@ const DistrictResultCard: FunctionComponent<DistrictResultCardProps> = ({ distri
 						className="relative p-0"
 					/>
 				</div>
+				<div className="flex items-center justify-between gap-2 typo-footer text-white/70 mb-1 mt-3">
+					<span>นับแล้ว {formatPercent(getProgress(district.voting))}</span>
+				</div>
+
+
 			</div>
 			<div className="mt-3 space-y-3">
 				{topResults.map((result, index) => {
@@ -526,14 +524,17 @@ const DistrictResultCard: FunctionComponent<DistrictResultCardProps> = ({ distri
 						<div key={result.candidateId}>
 							<div className="grid grid-cols-[1fr,auto,auto] gap-2 items-baseline text-[13px] leading-tight">
 								<span className="font-semibold truncate">
-									{index + 1}. {candidate.fullname}
+									{parseInt(result.candidateId.split('-').pop() || '0', 10)} - {candidate.fullname}
 								</span>
 								<span className="font-semibold">{formatNumber(result.count)}</span>
 								<span className="text-white/70">
 									{formatPercent(getCandidatePercent(result.count, district.voting))}
 								</span>
 							</div>
-							<div className="h-2 mt-1 bg-white/10">
+							<div
+								className={`h-2 mt-1 ${result.count > 0 ? '' : 'bg-white/10'
+									}`}
+							>
 								<Progress
 									progressItems={
 										[
