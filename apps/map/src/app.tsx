@@ -4,6 +4,7 @@ import { loadUIComponents } from 'ui';
 import { dequal } from 'dequal';
 import Dashboard from './components/dashboard';
 import Footer from './components/Footer';
+import Slideshow from './components/Slideshow';
 import { Config, configContext } from './contexts/config';
 import { Preset, presetContext } from './contexts/preset';
 import { ElectionDataType } from './models/election';
@@ -14,6 +15,7 @@ const DEFAULT_PRESET_INDEX = 0;
 const MAX_REFRESH_JITTER_MS = 30000;
 
 const App: FunctionComponent = () => {
+	const isSlideshow = location.pathname === '/map/slideshow';
 	const [config, setConfig] = useState<Config | null>(null);
 	const [activePresetIndex, setActivePresetIndex] = useState<number>(DEFAULT_PRESET_INDEX);
 	const [configDefaultPresetIndex, setConfigDefaultPresetIndex] =
@@ -53,7 +55,7 @@ const App: FunctionComponent = () => {
 	}, [config, configDefaultPresetIndex]);
 
 	useEffect(() => {
-		if (!config) return;
+		if (!config || isSlideshow) return;
 
 		const presetIndex = config.presetIndexes[activePresetIndex];
 		const { refreshIntervalMs } = presetIndex;
@@ -105,7 +107,8 @@ const App: FunctionComponent = () => {
 			<div class="flex flex-col h-full">
 				<ui-navbar></ui-navbar>
 				<configContext.Provider value={config}>
-					{preset && (
+					{config && isSlideshow && <Slideshow config={config} />}
+					{!isSlideshow && preset && (
 						<presetContext.Provider value={preset}>
 							<Dashboard
 								activePresetIndex={activePresetIndex}
@@ -115,7 +118,7 @@ const App: FunctionComponent = () => {
 							<ui-footer></ui-footer>
 						</presetContext.Provider>
 					)}
-					{isNewPresetLoading && (
+					{!isSlideshow && isNewPresetLoading && (
 						<div class="absolute inset-0 top-12 md:top-14 flex items-center justify-center bg-black bg-opacity-50 z-50">
 							<div className="scale-50">
 								<div className="loader-spinner" />

@@ -63,9 +63,7 @@ const Navbar: Component = () => {
               href={href}
               class="ui-h-full ui-py-1 ui-px-2 typo-u4 hover:ui-underline ui-flex ui-items-center ui-justify-end"
               classList={{
-                'ui-font-bold':
-                  location.pathname === href ||
-                  (href === '/map/map' && location.pathname.startsWith('/map/')),
+                'ui-font-bold': location.pathname === href,
               }}
             >
               {label}

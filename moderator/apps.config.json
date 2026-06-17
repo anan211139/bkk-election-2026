@@ -9,7 +9,7 @@
   {
     "name": "map",
     "path": "/map",
-    "routes": ["/map/map"],
+    "routes": ["/map/map", "/map/slideshow"],
     "assets": [
       "/map/@vite",
       "/map/@fs",
