@@ -6,6 +6,7 @@ import apps from './apps.config.json';
 import assets from './assets.config.json';
 
 const PORT = 3000;
+const ROOT_DIR = join(__dirname, '..');
 export const STATIC_PATH = '/static/';
 
 const app = express();
@@ -23,7 +24,17 @@ type AppConfig = {
 };
 
 assets.forEach(({ source, serve }) => {
-  app.use(serve, express.static(join(__dirname, '..', source)));
+  app.use(serve, express.static(join(ROOT_DIR, source)));
+});
+
+app.use('/_app', express.static(join(ROOT_DIR, 'apps/landing/build/_app')));
+
+app.get('/about', (_req, res) => {
+  res.sendFile(join(ROOT_DIR, 'apps/landing/build/about.html'));
+});
+
+app.get('/map', (_req, res) => {
+  res.redirect('/map/map');
 });
 
 (apps as AppConfig[]).forEach(({ path, routes, assets: assetPaths = [], port, websocket }) => {
