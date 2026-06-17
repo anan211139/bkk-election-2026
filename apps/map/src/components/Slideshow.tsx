@@ -97,6 +97,8 @@ const DISTRICT_GROUPS: DistrictGroup[] = [
 	}
 ];
 
+const PAGE_COUNT = DISTRICT_GROUPS.length + 1;
+
 const formatNumber = (value: number) => Math.round(value).toLocaleString('th-TH');
 
 const formatPercent = (value: number, fractionDigits = 1) =>
@@ -105,7 +107,17 @@ const formatPercent = (value: number, fractionDigits = 1) =>
 		maximumFractionDigits: fractionDigits
 	})}%`;
 
+const formatLastUpdatedAt = (lastUpdatedAt?: string) =>
+	lastUpdatedAt
+		? new Date(lastUpdatedAt).toLocaleString('th-TH', {
+				dateStyle: 'short',
+				timeStyle: 'short'
+		  })
+		: '-';
+
 const getProgress = (voting: Voting) => voting.progress ?? 100;
+
+const isCompleteProgress = (voting: Voting) => getProgress(voting) >= 95;
 
 const getSortedResults = (voting: Voting) => [...voting.result].sort((a, b) => b.count - a.count);
 
@@ -126,12 +138,12 @@ const Slideshow: FunctionComponent<SlideshowProps> = ({ config }) => {
 	const [isLoading, setIsLoading] = useState(true);
 
 	useEffect(() => {
-		const timer = setInterval(() => {
-			setPageIndex((current) => (current + 1) % (DISTRICT_GROUPS.length + 1));
+		const timer = setTimeout(() => {
+			setPageIndex((current) => (current + 1) % PAGE_COUNT);
 		}, PAGE_INTERVAL_MS);
 
-		return () => clearInterval(timer);
-	}, []);
+		return () => clearTimeout(timer);
+	}, [pageIndex]);
 
 	useEffect(() => {
 		const governorPresetIndex = getPresetByCandidateData(config, '69-governor-candidates.json');
@@ -197,14 +209,23 @@ const Slideshow: FunctionComponent<SlideshowProps> = ({ config }) => {
 		<presetContext.Provider value={activePreset}>
 			<div className="flex-1 min-h-0 flex flex-col bg-black text-white overflow-hidden">
 				{pageIndex === 0 ? (
-					<GovernorSlide preset={governorPreset} pageIndex={pageIndex} />
+					<GovernorSlide
+						preset={governorPreset}
+						pageIndex={pageIndex}
+						onPageChange={setPageIndex}
+					/>
 				) : (
 					currentGroup && (
-						<CouncilGroupSlide preset={bmcPreset} group={currentGroup} pageIndex={pageIndex} />
+						<CouncilGroupSlide
+							preset={bmcPreset}
+							group={currentGroup}
+							pageIndex={pageIndex}
+							onPageChange={setPageIndex}
+						/>
 					)
 				)}
 			</div>
-			<Footer />
+			{pageIndex === 0 && <Footer />}
 		</presetContext.Provider>
 	);
 };
@@ -213,31 +234,87 @@ interface SlideHeaderProps {
 	title: string;
 	subtitle?: string;
 	pageIndex: number;
+	onPageChange: (pageIndex: number) => void;
 }
 
-const SlideHeader: FunctionComponent<SlideHeaderProps> = ({ title, subtitle, pageIndex }) => (
+const SlideHeader: FunctionComponent<SlideHeaderProps> = ({
+	title,
+	subtitle,
+	pageIndex,
+	onPageChange
+}) => (
 	<div className="flex flex-col md:flex-row md:items-end justify-between gap-2 border-b border-white/20 pb-3">
 		<div>
 			<p className="typo-u4 text-white/60">slide show {pageIndex + 1} / 7</p>
 			<h1 className="typo-h4 md:typo-h3">{title}</h1>
 			{subtitle && <p className="typo-u4 text-white/70 mt-1">{subtitle}</p>}
 		</div>
+		<SlideControls pageIndex={pageIndex} onPageChange={onPageChange} />
 	</div>
 );
+
+interface SlideControlsProps {
+	pageIndex: number;
+	onPageChange: (pageIndex: number) => void;
+}
+
+const SlideControls: FunctionComponent<SlideControlsProps> = ({ pageIndex, onPageChange }) => {
+	const goToPrevious = () => onPageChange((pageIndex + PAGE_COUNT - 1) % PAGE_COUNT);
+	const goToNext = () => onPageChange((pageIndex + 1) % PAGE_COUNT);
+
+	return (
+		<div className="flex items-center gap-3 shrink-0">
+			<button
+				type="button"
+				aria-label="ไปหน้าก่อนหน้า"
+				className="h-7 w-7 flex items-center justify-center border border-white/30 text-white/80 hover:bg-white hover:text-black"
+				onClick={goToPrevious}
+			>
+				‹
+			</button>
+			<div className="flex items-center gap-2">
+				{Array.from({ length: PAGE_COUNT }, (_, index) => (
+					<button
+						key={index}
+						type="button"
+						aria-label={`ไป slide ${index + 1}`}
+						className={`h-3 w-3 rounded-full border border-white/70 ${
+							index === pageIndex ? 'bg-white' : 'bg-transparent hover:bg-white/40'
+						}`}
+						onClick={() => onPageChange(index)}
+					/>
+				))}
+			</div>
+			<button
+				type="button"
+				aria-label="ไปหน้าถัดไป"
+				className="h-7 w-7 flex items-center justify-center border border-white/30 text-white/80 hover:bg-white hover:text-black"
+				onClick={goToNext}
+			>
+				›
+			</button>
+		</div>
+	);
+};
 
 interface GovernorSlideProps {
 	preset: Preset;
 	pageIndex: number;
+	onPageChange: (pageIndex: number) => void;
 }
 
-const GovernorSlide: FunctionComponent<GovernorSlideProps> = ({ preset, pageIndex }) => (
+const GovernorSlide: FunctionComponent<GovernorSlideProps> = ({
+	preset,
+	pageIndex,
+	onPageChange
+}) => (
 	<div className="w-[90vw] mx-auto flex-1 min-h-0 py-5 lg:py-8 flex flex-col gap-4">
-		<SlideHeader title={preset.fullname} pageIndex={pageIndex} />
+		<SlideHeader title={preset.fullname} pageIndex={pageIndex} onPageChange={onPageChange} />
 		<div className="grid grid-cols-1 lg:grid-cols-3 gap-5 flex-1 min-h-0">
-			<div className="lg:col-span-2 min-h-0 flex flex-col">
-				<h2 className="typo-h5 mb-3">คะแนนรวมทั้ง กทม.</h2>
-				<CompactCandidateGrid voting={preset.electionData.total} preset={preset} />
-			</div>
+				<div className="lg:col-span-2 min-h-0 flex flex-col">
+					<h2 className="typo-h5 mb-3">คะแนนรวมทั้ง กทม.</h2>
+					<GovernorCandidateColumns voting={preset.electionData.total} preset={preset} />
+				</div>
 			<div className="min-h-0 flex flex-col">
 				<div className="flex-1 min-h-[260px]" />
 				<div className="h-[38vh] min-h-[260px] max-h-[420px] border-t border-white/20 pt-3">
@@ -251,33 +328,56 @@ const GovernorSlide: FunctionComponent<GovernorSlideProps> = ({ preset, pageInde
 	</div>
 );
 
-interface CompactCandidateGridProps {
+interface GovernorCandidateColumnsProps {
 	voting: Voting;
 	preset: Preset;
 }
 
-const CompactCandidateGrid: FunctionComponent<CompactCandidateGridProps> = ({ voting, preset }) => {
+const GovernorCandidateColumns: FunctionComponent<GovernorCandidateColumnsProps> = ({
+	voting,
+	preset
+}) => {
 	const results = useMemo(() => getSortedResults(voting), [voting]);
 	const topVoteCount = Math.max(...results.map((result) => result.count), 1);
+	const columnSize = Math.ceil(results.length / 3);
+	const columns = [0, 1, 2].map((columnIndex) =>
+		results.slice(columnIndex * columnSize, (columnIndex + 1) * columnSize)
+	);
 
 	return (
-		<div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-x-5 gap-y-4 overflow-y-auto hide-scrollbar pr-1">
-			{results.map((result, index) => (
-				<CandidateScoreCard
-					key={result.candidateId}
-					candidate={preset.candidateMap[result.candidateId]}
-					result={result}
-					voting={voting}
-					topVoteCount={topVoteCount}
-					showImage={index < TOP_CANDIDATE_COUNT}
-					strip={preset.electionData.type === ElectionDataType.Live}
-				/>
+		<div className="grid grid-cols-1 md:grid-cols-3 gap-x-6 gap-y-5 overflow-hidden">
+			{columns.map((columnResults, columnIndex) => (
+				<div key={columnIndex} className="min-w-0 overflow-hidden">
+					<div className="grid grid-cols-[24px,1fr,72px,44px] gap-1.5 typo-footer text-white/60 border-b border-white/30 pb-1 mb-2">
+						<span>เบอร์</span>
+						<span>ชื่อผู้สมัคร</span>
+						<span className="text-right">คะแนนเสียง</span>
+						<span className="text-right">%</span>
+					</div>
+					<div className="space-y-2.5">
+						{columnResults.map((result, rowIndex) => {
+							const globalIndex = columnIndex * columnSize + rowIndex;
+
+							return (
+								<GovernorCandidateRow
+									key={result.candidateId}
+									candidate={preset.candidateMap[result.candidateId]}
+									result={result}
+									voting={voting}
+									topVoteCount={topVoteCount}
+									showImage={globalIndex < TOP_CANDIDATE_COUNT}
+									strip={preset.electionData.type === ElectionDataType.Live}
+								/>
+							);
+						})}
+					</div>
+				</div>
 			))}
 		</div>
 	);
 };
 
-interface CandidateScoreCardProps {
+interface GovernorCandidateRowProps {
 	candidate: Candidate;
 	result: Result;
 	voting: Voting;
@@ -286,7 +386,7 @@ interface CandidateScoreCardProps {
 	strip: boolean;
 }
 
-const CandidateScoreCard: FunctionComponent<CandidateScoreCardProps> = ({
+const GovernorCandidateRow: FunctionComponent<GovernorCandidateRowProps> = ({
 	candidate,
 	result,
 	voting,
@@ -294,31 +394,20 @@ const CandidateScoreCard: FunctionComponent<CandidateScoreCardProps> = ({
 	showImage,
 	strip
 }) => (
-	<div className="border-b border-white/15 pb-3 min-w-0">
-		<div className="flex items-start gap-3 min-h-[64px]">
-			<div
-				className="w-9 h-9 shrink-0 flex items-center justify-center typo-u4 font-semibold text-black"
-				style={{ backgroundColor: candidate.color || '#ffffff' }}
-			>
-				{candidate.number || '-'}
-			</div>
-			<div className="min-w-0 flex-1">
-				<p className="typo-u4 font-semibold leading-tight break-words">{candidate.fullname}</p>
-				<p className="typo-footer text-white/60 leading-tight mt-1 break-words">{candidate.party || '-'}</p>
-				<div className="flex items-end justify-between gap-2 mt-2">
-					<p className="typo-h5">{formatNumber(result.count)}</p>
-					<p className="typo-u4 text-white/70">{formatPercent(getCandidatePercent(result.count, voting))}</p>
-				</div>
-			</div>
-			{showImage && candidate.image && (
-				<img
-					src={candidate.image}
-					alt={candidate.fullname}
-					className="h-16 w-16 shrink-0 object-cover object-top rounded-full bg-white/10"
-				/>
-			)}
+	<div className="min-w-0">
+		<div className="grid grid-cols-[24px,1fr,72px,44px] gap-1.5 items-start text-[12px] leading-tight">
+			<span>{candidate.number || '-'}</span>
+			<span className="font-semibold break-words">{candidate.fullname}</span>
+			<span className="text-right font-semibold whitespace-nowrap">{formatNumber(result.count)}</span>
+			<span className="text-right text-white/80 whitespace-nowrap">
+				{formatPercent(getCandidatePercent(result.count, voting))}
+			</span>
 		</div>
-		<div className="h-2 mt-3 bg-white/10">
+		<div
+			className={`mt-2 bg-white/10 border-b-2 border-white/20 ${
+				showImage ? 'h-9' : 'h-1.5'
+			}`}
+		>
 			<Progress
 				progressItems={
 					[
@@ -330,7 +419,15 @@ const CandidateScoreCard: FunctionComponent<CandidateScoreCardProps> = ({
 					] as ProgressItem[]
 				}
 				className="relative p-0"
-			/>
+			>
+				{showImage && candidate.image && (
+					<img
+						src={candidate.image}
+						alt={candidate.fullname}
+						className="h-10 absolute right-2 bottom-0 object-cover"
+					/>
+				)}
+			</Progress>
 		</div>
 	</div>
 );
@@ -339,9 +436,15 @@ interface CouncilGroupSlideProps {
 	preset: Preset;
 	group: DistrictGroup;
 	pageIndex: number;
+	onPageChange: (pageIndex: number) => void;
 }
 
-const CouncilGroupSlide: FunctionComponent<CouncilGroupSlideProps> = ({ preset, group, pageIndex }) => {
+const CouncilGroupSlide: FunctionComponent<CouncilGroupSlideProps> = ({
+	preset,
+	group,
+	pageIndex,
+	onPageChange
+}) => {
 	const districtMap = useMemo(
 		() => new Map(preset.electionData.districts.map((district) => [district.name, district])),
 		[preset]
@@ -352,12 +455,18 @@ const CouncilGroupSlide: FunctionComponent<CouncilGroupSlideProps> = ({ preset, 
 
 	return (
 		<div className="w-[90vw] mx-auto flex-1 min-h-0 py-5 lg:py-8 flex flex-col gap-4">
-			<SlideHeader title={preset.fullname} subtitle={group.name} pageIndex={pageIndex} />
+			<SlideHeader
+				title={preset.fullname}
+				subtitle={group.name}
+				pageIndex={pageIndex}
+				onPageChange={onPageChange}
+			/>
 			<div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-5 auto-rows-fr gap-3 flex-1 min-h-0 overflow-hidden">
 				{districts.map((district) => (
 					<DistrictResultCard key={district.name} district={district} preset={preset} />
 				))}
 			</div>
+			<CouncilPartyLegend districts={districts} preset={preset} />
 		</div>
 	);
 };
@@ -370,20 +479,20 @@ interface DistrictResultCardProps {
 const DistrictResultCard: FunctionComponent<DistrictResultCardProps> = ({ district, preset }) => {
 	const topResults = getTopResults(district.voting);
 	const winner = topResults[0] ? preset.candidateMap[topResults[0].candidateId] : null;
+	const winnerResult = topResults[0];
+	const topVoteCount = Math.max(...topResults.map((result) => result.count), 1);
+	const complete = isCompleteProgress(district.voting);
 
 	return (
-		<div className="border border-white/20 p-2.5 flex flex-col min-h-0 bg-white/[0.03] overflow-hidden">
+		<div className="border border-white/20 p-3 flex flex-col min-h-0 bg-white/[0.03] overflow-hidden">
 			<div className="flex items-start gap-2">
 				<div className="min-w-0 flex-1">
 					<h2 className="text-[18px] font-semibold leading-tight break-words">เขต{district.name}</h2>
 					<p className="typo-footer text-white/60 mt-1">
 						ผู้มีสิทธิ์ {formatNumber(district.voting.eligiblePopulation)} คน
 					</p>
-					<p className="typo-footer text-white/60">
-						นับแล้ว {formatPercent(getProgress(district.voting))}
-					</p>
 				</div>
-				{winner?.image && (
+				{winner?.image && winnerResult && winnerResult.count > 0 && (
 					<img
 						src={winner.image}
 						alt={winner.fullname}
@@ -391,26 +500,99 @@ const DistrictResultCard: FunctionComponent<DistrictResultCardProps> = ({ distri
 					/>
 				)}
 			</div>
-			<div className="mt-2 space-y-1.5">
+				<div className="mt-2">
+					<div className="flex items-center justify-between gap-2 typo-footer text-white/70 mb-1">
+						<span>นับแล้ว {formatPercent(getProgress(district.voting))}</span>
+					</div>
+					<div className="h-2 bg-white/15">
+					<Progress
+						progressItems={
+							[
+								{
+									color: '#ffffff',
+									percent: Math.max(0.01, getProgress(district.voting) / 100),
+									strip: !complete
+								}
+							] as ProgressItem[]
+						}
+						className="relative p-0"
+					/>
+				</div>
+			</div>
+			<div className="mt-3 space-y-3">
 				{topResults.map((result, index) => {
 					const candidate = preset.candidateMap[result.candidateId];
 					return (
-						<div
-							key={result.candidateId}
-							className="grid grid-cols-[18px,1fr,auto] gap-1.5 items-center text-[13px] leading-tight"
-						>
-							<span
-								className="h-3 w-3"
-								style={{ backgroundColor: candidate.color || '#ffffff' }}
-							/>
-							<span className="font-semibold truncate">
-								{index + 1}. {candidate.fullname}
-							</span>
-							<span className="font-semibold">{formatNumber(result.count)}</span>
+						<div key={result.candidateId}>
+							<div className="grid grid-cols-[1fr,auto,auto] gap-2 items-baseline text-[13px] leading-tight">
+								<span className="font-semibold truncate">
+									{index + 1}. {candidate.fullname}
+								</span>
+								<span className="font-semibold">{formatNumber(result.count)}</span>
+								<span className="text-white/70">
+									{formatPercent(getCandidatePercent(result.count, district.voting))}
+								</span>
+							</div>
+							<div className="h-2 mt-1 bg-white/10">
+								<Progress
+									progressItems={
+										[
+											{
+												color: candidate.color || '#ffffff',
+												percent: result.count > 0 ? result.count / topVoteCount : 0,
+												strip: !complete
+											}
+										] as ProgressItem[]
+									}
+									className="relative p-0"
+								/>
+							</div>
 						</div>
 					);
 				})}
 			</div>
+		</div>
+	);
+};
+
+interface CouncilPartyLegendProps {
+	districts: District[];
+	preset: Preset;
+}
+
+const CouncilPartyLegend: FunctionComponent<CouncilPartyLegendProps> = ({ districts, preset }) => {
+	const labels = useMemo(() => {
+		const labelMap = new Map<string, string>();
+
+		districts.forEach((district) => {
+			getTopResults(district.voting).forEach((result) => {
+				const candidate = preset.candidateMap[result.candidateId];
+				if (!candidate || result.count <= 0) return;
+				if (!labelMap.has(candidate.color)) {
+					labelMap.set(candidate.color, candidate.party || 'อิสระ');
+				}
+			});
+		});
+
+		return Array.from(labelMap.entries()).map(([color, label]) => ({ color, label }));
+	}, [districts, preset]);
+
+	return (
+		<div className="border-t border-white/20 pt-2 flex flex-wrap items-center gap-x-4 gap-y-1 typo-footer text-white/80">
+			<span className="font-semibold text-white">สีสังกัด</span>
+			{labels.length === 0 ? (
+				<span className="text-white/60">ยังไม่มีคะแนนสำหรับแสดงสีสังกัด</span>
+			) : (
+				labels.map(({ color, label }) => (
+					<div key={`${color}-${label}`} className="flex items-center gap-1.5">
+						<span className="h-3 w-3 shrink-0" style={{ backgroundColor: color }} />
+						<span>{label}</span>
+					</div>
+				))
+			)}
+			<span className="ml-auto text-white/70">
+				อัปเดตล่าสุด {formatLastUpdatedAt(preset.electionData.lastUpdatedAt)}
+			</span>
 		</div>
 	);
 };
