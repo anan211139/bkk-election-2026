@@ -14,7 +14,7 @@ const Metadata: FunctionComponent<MetadataProps> = ({
   imageSrc,
   description = DEFAULT_DESCRIPTION,
 }) => {
-  const fullTitle = `${title} - Bangkok Election 2022`;
+  const fullTitle = `${title} - Bangkok Vote 2569`;
 
   return (
     <Head>

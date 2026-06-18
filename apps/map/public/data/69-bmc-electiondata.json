@@ -477,15 +477,15 @@
                 "progress": 0,
                 "result": [
                     {
-                        "candidateId": "สัมพันธวงศ์-3",
-                        "count": 0
-                    },
-                    {
                         "candidateId": "สัมพันธวงศ์-1",
                         "count": 0
                     },
                     {
                         "candidateId": "สัมพันธวงศ์-2",
+                        "count": 0
+                    },
+                    {
+                        "candidateId": "สัมพันธวงศ์-3",
                         "count": 0
                     }
                 ],
@@ -1498,10 +1498,10 @@
             "name": "หลักสี่",
             "voting": {
                 "eligiblePopulation": 75976,
-                "totalVotes": 100,
+                "totalVotes": 300,
                 "badVotes": 0,
                 "noVotes": 0,
-                "goodVote": 100,
+                "goodVote": 300,
                 "progress": 95.0,
                 "result": [
                     {
