@@ -18,7 +18,7 @@ const HeaderPresetToggle: FunctionComponent<PresetToggleProps> = ({ activeIndex,
 	return (
 		<div className="w-full lg:w-full flex flex-col relative">
 			<div className="flex-1 text-center">
-				<h1 className="font-heading typo-title text-[24px] lg:text-[36px] xl:text-[48px] leading-tight">
+				<h1 className="font-heading typo-title map-results-title leading-tight">
 					{config.presetIndexes[activeIndex].isLive && <LiveBadge />} {preset.fullname}
 				</h1>
 				<p className="font-body text-[12px] xs:text-[14px] lg:text-[16px] mt-2 lg:mt-1">
@@ -42,10 +42,7 @@ const HeaderPresetToggle: FunctionComponent<PresetToggleProps> = ({ activeIndex,
 							)}
 						</>
 					)}
-					<span
-						className="inline-flex items-center align-middle bg-[#ccc] m-1 p-[2px] rounded font-body text-[12px] xs:text-[14px] font-[600]"
-						aria-label="เลือกชุดข้อมูล"
-					>
+					<span className="map-preset-toggle" aria-label="เลือกชุดข้อมูล">
 						{config.presetIndexes.map(({ shortname, electionDataUrl }, index) => {
 							const label = shortname.includes('ส.ก') ? 'สก.' : 'ผู้ว่า';
 							const isActive = index === activeIndex;
@@ -60,13 +57,9 @@ const HeaderPresetToggle: FunctionComponent<PresetToggleProps> = ({ activeIndex,
 										onClick={() => {
 											if (electionDataUrl) onChange(index);
 										}}
-										className={`px-2 py-[1px] rounded-sm transition-colors duration-150 ${
-											isActive
-												? 'bg-black text-white'
-												: electionDataUrl
-												? 'text-black hover:bg-white'
-												: 'text-black opacity-40'
-										}`}
+										className={`map-preset-toggle-button ${
+											isActive ? 'map-preset-toggle-button-active' : ''
+										} ${!electionDataUrl ? 'map-preset-toggle-button-disabled' : ''}`}
 									>
 										{label}
 									</button>

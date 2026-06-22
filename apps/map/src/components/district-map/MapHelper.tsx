@@ -77,6 +77,15 @@ export interface RectColorWithCandidateRatio {
 export const WORLD_WIDTH = 1450
 export const WORLD_HEIGHT = 960;
 export const MAX_DISPLAY_RANK = 5;
+export const TILE_MAP_WORLD_WIDTH = 1600;
+export const TILE_MAP_WORLD_HEIGHT = 1100;
+export const TILE_MAP_FIT_PADDING_RATIO = 1.1;
+export const TILE_MAP_BOUNDS = {
+  centerX: 710,
+  centerY: 481.5,
+  width: 1420,
+  height: 963,
+};
 
 // MAP_WINNER - POLYGON MAP
 export class DistrictMapWinnerData {

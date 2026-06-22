@@ -134,6 +134,64 @@ body {
 			0 -0.83em 0 -0.477em;
 	}
 }
+
+.map-results-title {
+	font-size: 24px;
+	line-height: 1.25;
+}
+
+@media screen and (min-width: 1024px) {
+	.map-results-title {
+		font-size: 36px;
+	}
+}
+
+@media screen and (min-width: 1280px) {
+	.map-results-title {
+		font-size: 40px;
+	}
+}
+
+.map-preset-toggle {
+	display: inline-flex;
+	align-items: center;
+	vertical-align: middle;
+	background: #cccccc;
+	border: 2px solid #dadada;
+	border-radius: 6px;
+	margin: 0.25rem;
+	padding: 2px;
+	font-family: Anuphan, ui-serif;
+	font-size: 12px;
+	font-weight: 600;
+}
+
+@media screen and (min-width: 375px) {
+	.map-preset-toggle {
+		font-size: 14px;
+	}
+}
+
+.map-preset-toggle-button {
+	border-radius: 2px;
+	color: #000000;
+	padding: 1px 8px;
+	transition: color 150ms, background-color 150ms;
+}
+
+.map-preset-toggle-button:not(.map-preset-toggle-button-active):not(:disabled):hover {
+	background: #ffffff;
+}
+
+.map-preset-toggle-button-active {
+	background: #000000 !important;
+	color: #ffffff !important;
+}
+
+.map-preset-toggle-button-disabled {
+	color: #000000;
+	opacity: 0.4;
+}
 @keyframes load6 {
 	0% {
 		box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em,

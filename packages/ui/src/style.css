@@ -12,7 +12,7 @@
   @apply ui-font-heading ui-font-semibold ui-text-[28px] md:ui-text-[36px] ui-leading-[1.25];
 }
 .typo-h4 {
-  @apply ui-font-heading ui-font-semibold ui-text-[24px] md:ui-text-[32px] ui-leading-[1.25];
+  @apply ui-font-heading ui-font-semibold ui-text-[24px] md:ui-text-[32px] ui-leading-normal;;
 }
 .typo-h5 {
   @apply ui-font-heading ui-font-semibold ui-text-[21px] md:ui-text-[28px] ui-leading-[1.25];

@@ -15,7 +15,7 @@ const DEFAULT_PRESET_INDEX = 0;
 const MAX_REFRESH_JITTER_MS = 30000;
 
 const App: FunctionComponent = () => {
-	const isSlideshow = location.pathname === '/map/slideshow';
+	const isSlideshow = location.pathname.replace(/\/$/, '') === '/map/slideshow';
 	const [config, setConfig] = useState<Config | null>(null);
 	const [activePresetIndex, setActivePresetIndex] = useState<number>(DEFAULT_PRESET_INDEX);
 	const [configDefaultPresetIndex, setConfigDefaultPresetIndex] =

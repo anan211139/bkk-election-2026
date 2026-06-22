@@ -10,10 +10,15 @@ import { District, ElectionDataType } from '../../models/election';
 import DistrictTooltip from '../DistrictTooltip';
 import { BKKMapPolygonData, MapPolygon } from './MapPolygonData';
 import {
-  CLICK_TIMEOUT, DistrictMapWinnerData, MapProps, MAX_DISPLAY_RANK, WORLD_HEIGHT, WORLD_WIDTH
+  CLICK_TIMEOUT, DistrictMapWinnerData, MapProps, MAX_DISPLAY_RANK
 } from './MapHelper';
 
 PIXI.Loader.registerPlugin(AnimatedGIFLoader);
+
+const MAP_SCALE = 7;
+const MAP_FIT_PADDING_RATIO = 1.1;
+const MAP_WORLD_WIDTH = 1600;
+const MAP_WORLD_HEIGHT = 1100;
 
 const MapWinner: React.FC<MapProps> = ({ onDistrictClick }: MapProps) => {
   const preset = useContext(presetContext)! as Preset;
@@ -55,6 +60,34 @@ const MapWinner: React.FC<MapProps> = ({ onDistrictClick }: MapProps) => {
     });
   }
 
+  const getMapBounds = () => {
+    const polygonPoints = BKKMapPolygonData.flatMap(({ polygon }) => polygon);
+    let minX = Infinity;
+    let minY = Infinity;
+    let maxX = -Infinity;
+    let maxY = -Infinity;
+
+    for (let i = 0; i < polygonPoints.length; i += 2) {
+      minX = Math.min(minX, polygonPoints[i]);
+      minY = Math.min(minY, polygonPoints[i + 1]);
+      maxX = Math.max(maxX, polygonPoints[i]);
+      maxY = Math.max(maxY, polygonPoints[i + 1]);
+    }
+
+    return {
+      centerX: ((minX + maxX) / 2) * MAP_SCALE,
+      centerY: ((minY + maxY) / 2) * MAP_SCALE,
+      width: (maxX - minX) * MAP_SCALE,
+      height: (maxY - minY) * MAP_SCALE,
+    }
+  }
+
+  const fitMapToBounds = (viewport: Viewport) => {
+    const { centerX, centerY, width, height } = getMapBounds()
+    viewport.fit(true, width * MAP_FIT_PADDING_RATIO, height * MAP_FIT_PADDING_RATIO)
+    viewport.moveCenter(centerX, centerY)
+  }
+
   const draw = (app: PIXI.Application, viewport: Viewport) => {
     const anim = app.loader.resources.stripe.animation;
     if (anim) {
@@ -71,8 +104,8 @@ const MapWinner: React.FC<MapProps> = ({ onDistrictClick }: MapProps) => {
         graphics.beginFill(
           highestScoreCandidate ? +highestScoreCandidate.color.replace("#", "0x") : +DEFAULT_CANDIDATE_COLOR.replace("#", "0x"), 1, true);
         graphics.drawPolygon(mapPolygon?.polygon || []);
-        graphics.scale.x = 7
-        graphics.scale.y = 7;
+        graphics.scale.x = MAP_SCALE
+        graphics.scale.y = MAP_SCALE;
         graphics.endFill();
 
         graphics.interactive = true;
@@ -150,8 +183,8 @@ const MapWinner: React.FC<MapProps> = ({ onDistrictClick }: MapProps) => {
       const viewport = new Viewport({
         screenWidth: ref.current?.clientWidth,
         screenHeight: ref.current?.clientHeight,
-        worldWidth: WORLD_WIDTH,
-        worldHeight: WORLD_HEIGHT,
+        worldWidth: MAP_WORLD_WIDTH,
+        worldHeight: MAP_WORLD_HEIGHT,
         passiveWheel: false,
         stopPropagation: true,
         interaction: app.renderer.plugins.interaction // the interaction module is important for wheel to work properly when renderer.view is placed or scaled
@@ -191,9 +224,9 @@ const MapWinner: React.FC<MapProps> = ({ onDistrictClick }: MapProps) => {
 
       viewport.clamp({
         top: 0,
-        bottom: WORLD_HEIGHT,
+        bottom: MAP_WORLD_HEIGHT,
         left: 0,
-        right: WORLD_WIDTH
+        right: MAP_WORLD_WIDTH
       });
 
       viewport.clampZoom({
@@ -203,8 +236,7 @@ const MapWinner: React.FC<MapProps> = ({ onDistrictClick }: MapProps) => {
         maxHeight: 5000,                // maximum height
       })
 
-      viewport.fit()
-      viewport.moveCenter(WORLD_WIDTH / 2, WORLD_HEIGHT / 2)
+      fitMapToBounds(viewport)
 
       setApp(app)
       setViewport(viewport)
@@ -237,11 +269,11 @@ const MapWinner: React.FC<MapProps> = ({ onDistrictClick }: MapProps) => {
     const onResize = () => {
       if (!viewport || !ref.current) return;
   
-      viewport.fit();
       viewport.resize(
         ref.current.parentElement?.clientWidth || window.innerWidth,
         ref.current.parentElement?.clientHeight || window.innerHeight,
       );
+      fitMapToBounds(viewport);
     };
 
     window.addEventListener('resize', onResize);

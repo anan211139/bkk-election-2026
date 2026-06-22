@@ -8,7 +8,10 @@ import { DEFAULT_CANDIDATE_COLOR } from '../../constants/candidate';
 import { Preset, presetContext } from '../../contexts/preset';
 import { District, ElectionDataType } from '../../models/election';
 import DistrictTooltip from '../DistrictTooltip';
-import { CLICK_TIMEOUT, MapProps, DistrictGridRatioData, MAX_DISPLAY_RANK, RectColorWithCandidateRatio, WORLD_HEIGHT, WORLD_WIDTH } from './MapHelper';
+import {
+  CLICK_TIMEOUT, MapProps, DistrictGridRatioData, MAX_DISPLAY_RANK, RectColorWithCandidateRatio,
+  TILE_MAP_BOUNDS, TILE_MAP_FIT_PADDING_RATIO, TILE_MAP_WORLD_HEIGHT, TILE_MAP_WORLD_WIDTH
+} from './MapHelper';
 
 PIXI.Loader.registerPlugin(AnimatedGIFLoader);
 
@@ -73,6 +76,15 @@ const GridRatio: React.FC<MapProps> = ({ onDistrictClick }: MapProps) => {
     graphics.on('pointerup', (_) => {
       if (Date.now() - pointerDownTime.current < CLICK_TIMEOUT) onClick();
     });
+  }
+
+  const fitTileMapToBounds = (viewport: Viewport) => {
+    viewport.fit(
+      true,
+      TILE_MAP_BOUNDS.width * TILE_MAP_FIT_PADDING_RATIO,
+      TILE_MAP_BOUNDS.height * TILE_MAP_FIT_PADDING_RATIO
+    )
+    viewport.moveCenter(TILE_MAP_BOUNDS.centerX, TILE_MAP_BOUNDS.centerY)
   }
 
   const draw = (app: PIXI.Application, viewport: Viewport) => {
@@ -223,8 +235,8 @@ const GridRatio: React.FC<MapProps> = ({ onDistrictClick }: MapProps) => {
       const viewport = new Viewport({
         screenWidth: ref.current?.clientWidth,
         screenHeight: ref.current?.clientHeight,
-        worldWidth: WORLD_WIDTH,
-        worldHeight: WORLD_HEIGHT,
+        worldWidth: TILE_MAP_WORLD_WIDTH,
+        worldHeight: TILE_MAP_WORLD_HEIGHT,
         passiveWheel: false,
         stopPropagation: true,
         interaction: app.renderer.plugins.interaction, // the interaction module is important for wheel to work properly when renderer.view is placed or scaled
@@ -263,9 +275,9 @@ const GridRatio: React.FC<MapProps> = ({ onDistrictClick }: MapProps) => {
 
 			viewport.clamp({
 				top: 0,
-				bottom: WORLD_HEIGHT,
+				bottom: TILE_MAP_WORLD_HEIGHT,
 				left: 0,
-				right: WORLD_WIDTH
+				right: TILE_MAP_WORLD_WIDTH
 			});
 
       viewport.clampZoom({
@@ -275,8 +287,7 @@ const GridRatio: React.FC<MapProps> = ({ onDistrictClick }: MapProps) => {
         maxHeight: 5000,                // maximum height
       })
 
-      viewport.fit()
-      viewport.moveCenter(WORLD_WIDTH / 2, WORLD_HEIGHT / 2)
+      fitTileMapToBounds(viewport)
 
       setApp(app)
       setViewport(viewport)
@@ -309,11 +320,11 @@ const GridRatio: React.FC<MapProps> = ({ onDistrictClick }: MapProps) => {
     const onResize = () => {
       if (!viewport || !ref.current) return;
   
-      viewport.fit();
       viewport.resize(
         ref.current.parentElement?.clientWidth || window.innerWidth,
         ref.current.parentElement?.clientHeight || window.innerHeight,
       );
+      fitTileMapToBounds(viewport);
     };
 
     window.addEventListener('resize', onResize);

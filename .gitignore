@@ -31,3 +31,5 @@ yarn-error.log*
 
 # turbo
 .turbo
+apps/map/public/data/69-governor-electiondata.json
+apps/map/public/data/69-governor-electiondata.json
