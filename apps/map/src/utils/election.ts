@@ -1,4 +1,4 @@
-import { Voting } from '../models/election';
+import { District, ElectionData, Voting } from '../models/election';
 
 export const COMPLETE_PROGRESS_THRESHOLD = 95;
 
@@ -27,3 +27,28 @@ export const isVotingComplete = (voting: Voting) => {
 
 	return progress >= COMPLETE_PROGRESS_THRESHOLD;
 };
+
+export const isCouncilElectionData = (electionData: ElectionData) =>
+	electionData.districts.some((district) =>
+		district.voting.result.some((result) => result.candidateId.includes('-'))
+	);
+
+export const getCountingStatusVoting = (
+	district: District,
+	electionData: ElectionData,
+	countingReferenceElectionData?: ElectionData
+) => {
+	if (!isCouncilElectionData(electionData)) return district.voting;
+
+	return (
+		countingReferenceElectionData?.districts.find(
+			(referenceDistrict) => referenceDistrict.name === district.name
+		)?.voting || district.voting
+	);
+};
+
+export const isDistrictVotingComplete = (
+	district: District,
+	electionData: ElectionData,
+	countingReferenceElectionData?: ElectionData
+) => isVotingComplete(getCountingStatusVoting(district, electionData, countingReferenceElectionData));

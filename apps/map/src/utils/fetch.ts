@@ -35,6 +35,8 @@ export async function fetchPreset({
 
 	return {
 		...rest,
+		electionDataUrl,
+		candidateDataUrl,
 		electionData,
 		candidateMap
 	};

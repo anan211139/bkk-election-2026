@@ -7,7 +7,7 @@ import React, { useContext, useEffect, useMemo, useRef, useState } from 'react';
 import { DEFAULT_CANDIDATE_COLOR } from '../../constants/candidate';
 import { Preset, presetContext } from '../../contexts/preset';
 import { District, ElectionDataType } from '../../models/election';
-import { isVotingComplete } from '../../utils/election';
+import { isDistrictVotingComplete } from '../../utils/election';
 import DistrictTooltip from '../DistrictTooltip';
 import { BKKMapPolygonData, MapPolygon } from './MapPolygonData';
 import {
@@ -20,6 +20,7 @@ const MAP_SCALE = 7;
 const MAP_FIT_PADDING_RATIO = 1.1;
 const MAP_WORLD_WIDTH = 1600;
 const MAP_WORLD_HEIGHT = 1100;
+const STRIP_TEXTURE_SCALE = 100 / 30 / MAP_SCALE;
 
 const MapWinner: React.FC<MapProps> = ({ onDistrictClick }: MapProps) => {
   const preset = useContext(presetContext)! as Preset;
@@ -109,15 +110,30 @@ const MapWinner: React.FC<MapProps> = ({ onDistrictClick }: MapProps) => {
         graphics.scale.y = MAP_SCALE;
         graphics.endFill();
 
-        if (electionData.type === ElectionDataType.Live && !isVotingComplete(district.voting)) {
-          graphics.beginTextureFill({ alpha: 0.2, texture: anim.texture })
+        const showLiveStrip =
+          electionData.type === ElectionDataType.Live &&
+          !isDistrictVotingComplete(district, electionData, preset.countingReferenceElectionData);
+
+        if (showLiveStrip) {
+          graphics.beginTextureFill({
+            alpha: 0.2,
+            texture: anim.texture,
+            matrix: new PIXI.Matrix(
+              STRIP_TEXTURE_SCALE,
+              0,
+              0,
+              STRIP_TEXTURE_SCALE,
+              0,
+              0
+            )
+          })
           graphics.drawPolygon(mapPolygon?.polygon || []);
           graphics.endFill();
         }
 
         graphics.interactive = true;
         graphics.buttonMode = true;
-        graphics.cacheAsBitmap = true;
+        graphics.cacheAsBitmap = !showLiveStrip;
         graphics.cacheAsBitmapResolution = 43;
 
         registerOnclick(graphics, () => onDistrictClick?.(district));

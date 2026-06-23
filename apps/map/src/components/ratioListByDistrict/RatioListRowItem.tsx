@@ -2,7 +2,7 @@ import { useContext, useEffect, useMemo, useRef, useState } from 'react';
 import { DEFAULT_CANDIDATE_COLOR } from '../../constants/candidate';
 import { presetContext } from '../../contexts/preset';
 import { District, Result } from '../../models/election';
-import { isVotingComplete } from '../../utils/election';
+import { isDistrictVotingComplete } from '../../utils/election';
 import DistrictTooltip from '../DistrictTooltip';
 import Progress, { ProgressItem } from '../Progress';
 
@@ -27,7 +27,13 @@ export default function RatioListRowItem({
 	if (!preset) return <></>;
 
 	const [isTooltipOpen, setIsTooltipOpen] = useState<boolean>(false);
-	const showLiveStrip = isLive && !isVotingComplete(district.voting);
+	const showLiveStrip =
+		isLive &&
+		!isDistrictVotingComplete(
+			district,
+			preset.electionData,
+			preset.countingReferenceElectionData
+		);
 
 	const countingProgress: number = district.voting.progress || 0;
 	const countingProgressItems: ProgressItem[] = [

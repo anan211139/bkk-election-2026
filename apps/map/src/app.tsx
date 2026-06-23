@@ -7,8 +7,9 @@ import Footer from './components/Footer';
 import Slideshow from './components/Slideshow';
 import { Config, configContext } from './contexts/config';
 import { Preset, presetContext } from './contexts/preset';
-import { ElectionDataType } from './models/election';
-import { fetchConfig, fetchPreset } from './utils/fetch';
+import { ElectionData, ElectionDataType, PresetIndex } from './models/election';
+import { fetchConfig, fetchPreset, getJson } from './utils/fetch';
+import { isCouncilElectionData } from './utils/election';
 
 const DEFAULT_PRESET_INDEX = 0;
 // const CONFIG_REFRESH_INTERVAL = 60000;
@@ -65,8 +66,17 @@ const App: FunctionComponent = () => {
 		const loadPreset = (showLoading: boolean) => {
 			if (showLoading) setIsNewPresetLoading(true);
 			return fetchPreset(presetIndex)
-				.then((newPreset) => {
-					if (!isCancelled) setPreset(newPreset);
+				.then(async (newPreset) => {
+					const countingReferenceElectionData = await getCountingReferenceElectionData(
+						newPreset.electionData,
+						config.presetIndexes,
+						presetIndex
+					);
+					const nextPreset = countingReferenceElectionData
+						? { ...newPreset, countingReferenceElectionData }
+						: newPreset;
+
+					if (!isCancelled) setPreset(nextPreset);
 					return newPreset;
 				})
 				.catch((error) => {
@@ -130,6 +140,28 @@ const App: FunctionComponent = () => {
 		</div>
 	);
 };
+
+async function getCountingReferenceElectionData(
+	electionData: ElectionData,
+	presetIndexes: PresetIndex[],
+	activePresetIndex: PresetIndex
+) {
+	if (!isCouncilElectionData(electionData)) return undefined;
+
+	const governorPresetIndex = presetIndexes.find(
+		(presetIndex) =>
+			presetIndex.electionDataUrl !== activePresetIndex.electionDataUrl &&
+			presetIndex.candidateDataUrl !== activePresetIndex.candidateDataUrl &&
+			!presetIndex.candidateDataUrl.includes('bmc')
+	);
+
+	if (!governorPresetIndex) return undefined;
+
+	return getJson<ElectionData>(governorPresetIndex.electionDataUrl, 'no-cache').catch((error) => {
+		console.error('Failed to fetch counting reference election data', error);
+		return undefined;
+	});
+}
 
 function getRefreshDelay(refreshIntervalMs: number): number {
 	return refreshIntervalMs + Math.floor(Math.random() * MAX_REFRESH_JITTER_MS);

@@ -7,7 +7,7 @@ import React, { useContext, useEffect, useMemo, useRef, useState } from 'react';
 import { DEFAULT_CANDIDATE_COLOR } from '../../constants/candidate';
 import { Preset, presetContext } from '../../contexts/preset';
 import { District, ElectionDataType } from '../../models/election';
-import { isVotingComplete } from '../../utils/election';
+import { isDistrictVotingComplete } from '../../utils/election';
 import DistrictTooltip from '../DistrictTooltip';
 import {
   DistrictGridWinnerData, MAX_DISPLAY_RANK, TILE_MAP_BOUNDS, TILE_MAP_FIT_PADDING_RATIO,
@@ -124,7 +124,10 @@ const GridWinner: React.FC<GridWinnerProps> = ({ onDistrictClick }: GridWinnerPr
           }))
         });
 
-        if (electionData.type === ElectionDataType.Live && !isVotingComplete(district.voting)) {
+        if (
+          electionData.type === ElectionDataType.Live &&
+          !isDistrictVotingComplete(district, electionData, preset.countingReferenceElectionData)
+        ) {
           const bound = graphics.getBounds()
           graphics.beginTextureFill({ alpha: 0.2, texture: anim?.texture, matrix: new PIXI.Matrix(bound.width / 30, 0, 0, bound.height / 30, bound.x, bound.y) })
           graphics.drawRect(x, y, rectSize, rectSize,);
