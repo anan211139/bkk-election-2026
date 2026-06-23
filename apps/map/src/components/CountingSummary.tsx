@@ -1,5 +1,6 @@
 import React, { FunctionComponent } from 'react';
 import { ElectionDataType, Voting } from '../models/election';
+import { getVotingProgress, isVotingComplete } from '../utils/election';
 
 interface CountingSummaryProps {
 	votingData: Voting;
@@ -28,12 +29,10 @@ const percentOf = (value: number, total: number) => (total > 0 ? (value / total)
 const getGoodVotes = (votingData: Voting) =>
 	Math.max(0, votingData.totalVotes - (votingData.badVotes || 0) - (votingData.noVotes || 0));
 
-const getProgress = (votingData: Voting) => votingData.progress ?? 100;
-
 const getReportedUnits = (votingData: Voting) => {
 	const total = votingData.pollingUnits?.total || 0;
 	const reported =
-		votingData.pollingUnits?.reported ?? (total > 0 ? Math.round((total * getProgress(votingData)) / 100) : 0);
+		votingData.pollingUnits?.reported ?? (total > 0 ? Math.round((total * getVotingProgress(votingData)) / 100) : 0);
 
 	return {
 		total,
@@ -48,8 +47,9 @@ const CountingSummary: FunctionComponent<CountingSummaryProps> = ({
 	lastUpdatedAt,
 	compact
 }) => {
-	const progress = getProgress(votingData);
-	const shouldShowProgressStrip = electionType !== ElectionDataType.Completed;
+	const progress = getVotingProgress(votingData);
+	const shouldShowProgressStrip =
+		electionType !== ElectionDataType.Completed && !isVotingComplete(votingData);
 	const countedVotes = votingData.totalVotes;
 	const goodVotes = getGoodVotes(votingData);
 	const badVotes = votingData.badVotes || 0;

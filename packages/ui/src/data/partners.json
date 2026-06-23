@@ -4,17 +4,5 @@
     "logo": "/static/images/logo-wevis.svg",
     "logoBlack": "/static/images/logo-wevis-black.svg",
     "href": "https://wevis.info"
-  },
-  {
-    "name": "The Standard",
-    "logo": "/static/images/logo-tsd.svg",
-    "logoBlack": "/static/images/logo-tsd-black.svg",
-    "href": "https://thestandard.co/"
-  },
-  {
-    "name": "Wisesight",
-    "logo": "/static/images/logo-wisesight.svg",
-    "logoBlack": "/static/images/logo-wisesight-black.svg",
-    "href": "https://wisesight.com/"
   }
 ]

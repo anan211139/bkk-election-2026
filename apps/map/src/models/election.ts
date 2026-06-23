@@ -40,6 +40,7 @@ export interface Result {
 export interface PollingUnits {
 	total: number;
 	reported: number;
+	cap?: number;
 }
 
 export enum ElectionDataType {

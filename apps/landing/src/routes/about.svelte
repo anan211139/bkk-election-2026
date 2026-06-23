@@ -27,14 +27,14 @@
 	<div class="paragraph">
 		<h2 class="typo-h3">การพัฒนาต่อยอดและลิขสิทธิ์</h2>
 		<p>
-			ระบบนี้พัฒนาต่อยอดจากโครงสร้าง Open Source ของโปรเจกต์ <ExternalLink href="https://bkkelection2022.wevis.info/">Bangkok Election 2022</ExternalLink> <br/>โดยความร่วมมือของ WeVis, THE STANDARD และ Wisesight
+			ระบบนี้พัฒนาต่อยอดจากโครงสร้าง Open Source ของโปรเจกต์ <ExternalLink href="https://bkkelection2022.wevis.info/">Bangkok Election 2022</ExternalLink> <br/>ภายใต้การพัฒนาของ WeVis 
 			เพื่อให้เป็นไปตามเงื่อนไขลิขสิทธิ์ต้นฉบับ
 		</p>
 		<p>
 			กรุงเทพมหานครเผยแพร่เว็บไซต์นี้ภายใต้สัญญาอนุญาต Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) โดยมีหลักเกณฑ์ดังนี้:
 		</p>
 		<ul class="list-inside list-disc">
-			<li>ระบุที่มา: อ้างอิงถึงคณะผู้พัฒนาต้นฉบับ (WeVis x THE STANDARD x Wisesight)</li>
+			<li>ระบุที่มา: อ้างอิงถึงคณะผู้พัฒนาต้นฉบับ (WeVis)</li>
 			<li>ไม่ใช้เพื่อการค้า: ดำเนินการเพื่อประโยชน์สาธารณะโดยหน่วยงานรัฐ</li>
 			<li>ใช้สัญญาอนุญาตเดียวกัน: หากนำข้อมูลหรือซอร์สโค้ดไปพัฒนาต่อ ต้องเผยแพร่ภายใต้เงื่อนไข CC BY-NC-SA เช่นเดิม</li>
 		</ul>

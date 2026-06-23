@@ -3,6 +3,7 @@ import { Config } from '../contexts/config';
 import { Preset, presetContext } from '../contexts/preset';
 import { Candidate } from '../models/candidate';
 import { District, ElectionDataType, Result, Voting } from '../models/election';
+import { getVotingProgress, isVotingComplete } from '../utils/election';
 import { fetchPreset } from '../utils/fetch';
 import Footer from './Footer';
 import LazyloadContainer from './LazyloadContainer';
@@ -114,10 +115,6 @@ const formatLastUpdatedAt = (lastUpdatedAt?: string) =>
 			timeStyle: 'short'
 		})
 		: '-';
-
-const getProgress = (voting: Voting) => voting.progress ?? 100;
-
-const isCompleteProgress = (voting: Voting) => getProgress(voting) >= 95;
 
 const getSortedResults = (voting: Voting) => [...voting.result].sort((a, b) => b.count - a.count);
 
@@ -477,7 +474,7 @@ const DistrictResultCard: FunctionComponent<DistrictResultCardProps> = ({ distri
 	const winner = topResults[0] ? preset.candidateMap[topResults[0].candidateId] : null;
 	const winnerResult = topResults[0];
 	const topVoteCount = Math.max(...topResults.map((result) => result.count), 1);
-	const complete = isCompleteProgress(district.voting);
+	const complete = isVotingComplete(district.voting);
 
 	return (
 		<div className="border border-white/20 p-3 flex flex-col min-h-0 bg-white/[0.03] overflow-hidden">
@@ -503,7 +500,7 @@ const DistrictResultCard: FunctionComponent<DistrictResultCardProps> = ({ distri
 							[
 								{
 									color: '#ffffff',
-									percent: Math.max(0.01, getProgress(district.voting) / 100),
+									percent: Math.max(0.01, getVotingProgress(district.voting) / 100),
 									strip: !complete
 								}
 							] as ProgressItem[]
@@ -512,7 +509,7 @@ const DistrictResultCard: FunctionComponent<DistrictResultCardProps> = ({ distri
 					/>
 				</div>
 				<div className="flex items-center justify-between gap-2 typo-footer text-white/70 mb-1 mt-3">
-					<span>นับแล้ว {formatPercent(getProgress(district.voting))}</span>
+					<span>นับแล้ว {formatPercent(getVotingProgress(district.voting))}</span>
 				</div>
 
 

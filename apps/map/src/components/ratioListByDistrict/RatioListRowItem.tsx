@@ -2,6 +2,7 @@ import { useContext, useEffect, useMemo, useRef, useState } from 'react';
 import { DEFAULT_CANDIDATE_COLOR } from '../../constants/candidate';
 import { presetContext } from '../../contexts/preset';
 import { District, Result } from '../../models/election';
+import { isVotingComplete } from '../../utils/election';
 import DistrictTooltip from '../DistrictTooltip';
 import Progress, { ProgressItem } from '../Progress';
 
@@ -26,13 +27,14 @@ export default function RatioListRowItem({
 	if (!preset) return <></>;
 
 	const [isTooltipOpen, setIsTooltipOpen] = useState<boolean>(false);
+	const showLiveStrip = isLive && !isVotingComplete(district.voting);
 
 	const countingProgress: number = district.voting.progress || 0;
 	const countingProgressItems: ProgressItem[] = [
 		{
 			percent: countingProgress / 100,
 			color: '#FFFFFF',
-			strip: isLive
+			strip: showLiveStrip
 		},
 		{ percent: 1 - countingProgress / 100, color: 'rgba(255, 255, 255, 0.2)' }
 	];
@@ -52,7 +54,7 @@ export default function RatioListRowItem({
 					{
 						percent: percent || 0,
 						color: preset.candidateMap[curr.candidateId].color,
-						strip: isLive
+						strip: showLiveStrip
 					}
 				];
 			}, []);
@@ -63,7 +65,7 @@ export default function RatioListRowItem({
 					{
 						percent: 1,
 						color: DEFAULT_CANDIDATE_COLOR,
-						strip: isLive
+						strip: showLiveStrip
 					}
 				] as ProgressItem[];
 			}
@@ -77,13 +79,13 @@ export default function RatioListRowItem({
 					prog.push({
 						percent: diff,
 						color: DEFAULT_CANDIDATE_COLOR,
-						strip: isLive
+						strip: showLiveStrip
 					} as ProgressItem)
 				}
 			}
 
 			return prog;
-	}, [district]);
+	}, [district, preset, showLiveStrip]);
 
 	useEffect(() => {
 		if (rowRef.current) {

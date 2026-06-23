@@ -2,6 +2,7 @@ import { useContext, useState } from 'react';
 import { PARTY_UNDEFINED_STRING } from '../../constants/candidate';
 import { presetContext } from '../../contexts/preset';
 import { ElectionDataType, Voting } from '../../models/election';
+import { isVotingComplete } from '../../utils/election';
 import Modal from '../Modal';
 import Progress, { ProgressItem } from '../Progress';
 
@@ -32,6 +33,8 @@ export default function CandidateOverviewListRowItem({
 
 	const candidate = preset.candidateMap[candidateId];
 	const isCouncilCandidate = candidate.id.includes('-');
+	const showLiveStrip =
+		preset.electionData.type === ElectionDataType.Live && !isVotingComplete(votingData);
 
 	return (
 		<>
@@ -93,7 +96,7 @@ export default function CandidateOverviewListRowItem({
 										? candidate.color + '71'
 										: candidate.color,
 								percent: count > 0 ? count / topVoteCount : MIN_PROGRESS,
-								strip: preset.electionData.type === ElectionDataType.Live
+								strip: showLiveStrip
 							}
 						] as ProgressItem[]
 					}

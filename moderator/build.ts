@@ -13,10 +13,20 @@ if (existsSync(BUILD_DIR)) {
 
 mkdirSync(BUILD_DIR);
 
-apps.forEach(({ name, path, output, excludeFromProduction }) => {
+type AppConfig = {
+  name: string;
+  path: string;
+  routes?: string[];
+  output: string;
+  excludeFromProduction?: boolean;
+};
+
+apps.forEach(({ name, path, routes, output, excludeFromProduction }: AppConfig) => {
   if (process.env.BUILD_ENV !== 'PRODUCTION' || !excludeFromProduction) {
     console.log(`Copying ${name} output artifacts...`);
-    copySync(join(APPS_DIR, name, output), join(BUILD_DIR, path));
+    const appBuildDir = join(BUILD_DIR, path);
+    copySync(join(APPS_DIR, name, output), appBuildDir);
+    copyAppEntryToRoutes(path, routes, appBuildDir);
   } else {
     console.log(`Skipping ${name} output artifacts...`);
   }
@@ -26,3 +36,33 @@ assets.forEach(({ name, source, serve }) => {
   console.log(`Copying ${name} assets...`);
   copySync(join(ROOT_DIR, source), join(BUILD_DIR, serve));
 });
+
+function copyAppEntryToRoutes(appPath: string, routes: string[] | undefined, appBuildDir: string) {
+  const appEntry = join(appBuildDir, 'index.html');
+  if (!routes?.length || !existsSync(appEntry)) return;
+
+  routes.forEach((route) => {
+    const routePath = stripAppPath(route, appPath);
+    if (!routePath) return;
+
+    const routeHtml = join(appBuildDir, `${routePath}.html`);
+    const routeIndex = join(appBuildDir, routePath, 'index.html');
+
+    if (existsSync(routeHtml)) return;
+
+    copySync(appEntry, routeHtml);
+    copySync(appEntry, routeIndex);
+  });
+}
+
+function stripAppPath(route: string, appPath: string) {
+  const normalizedRoute = route.replace(/^\/|\/$/g, '');
+  const normalizedAppPath = appPath.replace(/^\/|\/$/g, '');
+
+  if (!normalizedAppPath) return normalizedRoute;
+  if (normalizedRoute === normalizedAppPath) return '';
+
+  return normalizedRoute.startsWith(`${normalizedAppPath}/`)
+    ? normalizedRoute.slice(normalizedAppPath.length + 1)
+    : normalizedRoute;
+}

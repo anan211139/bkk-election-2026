@@ -7,6 +7,7 @@ import React, { useContext, useEffect, useMemo, useRef, useState } from 'react';
 import { DEFAULT_CANDIDATE_COLOR } from '../../constants/candidate';
 import { Preset, presetContext } from '../../contexts/preset';
 import { District, ElectionDataType } from '../../models/election';
+import { isVotingComplete } from '../../utils/election';
 import DistrictTooltip from '../DistrictTooltip';
 import { BKKMapPolygonData, MapPolygon } from './MapPolygonData';
 import {
@@ -108,6 +109,12 @@ const MapWinner: React.FC<MapProps> = ({ onDistrictClick }: MapProps) => {
         graphics.scale.y = MAP_SCALE;
         graphics.endFill();
 
+        if (electionData.type === ElectionDataType.Live && !isVotingComplete(district.voting)) {
+          graphics.beginTextureFill({ alpha: 0.2, texture: anim.texture })
+          graphics.drawPolygon(mapPolygon?.polygon || []);
+          graphics.endFill();
+        }
+
         graphics.interactive = true;
         graphics.buttonMode = true;
         graphics.cacheAsBitmap = true;
@@ -134,15 +141,6 @@ const MapWinner: React.FC<MapProps> = ({ onDistrictClick }: MapProps) => {
         viewport.addChild(graphics)
       });
 
-      const { total } = electionData
-      if (electionData.type === ElectionDataType.Live) {
-        const tileStripe = new PIXI.TilingSprite(anim?.texture, viewport.worldWidth, viewport.worldHeight)
-        tileStripe.x = 0;
-        tileStripe.y = 0;
-        tileStripe.alpha = .2
-        tileStripe.blendMode = PIXI.BLEND_MODES.DST_OUT
-        viewport.addChild(tileStripe)
-      }
     }
   }
 
