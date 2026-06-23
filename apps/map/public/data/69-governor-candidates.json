@@ -2,163 +2,282 @@
     "1": {
         "id": "1",
         "number": 1,
+<<<<<<< Updated upstream
         "fullname": "นายสมชาย รัตนโชติ",
         "shortname": "สมชาย",
         "color": "#1E90FF",
         "party": "พรรคมหานครก้าวหน้า",
+=======
+        "fullname": "นางสวัสดี แสก",
+        "shortname": "สวัสดี",
+        "color": "#b48c4f",
+        "party": "อิสระ",
+>>>>>>> Stashed changes
         "image": "/map/images/69-governor-candidates/1.png"
     },
     "2": {
         "id": "2",
         "number": 2,
+<<<<<<< Updated upstream
         "fullname": "นายอัญวุฒิ สันติธรรม",
         "shortname": "อัญวุฒิ",
         "color": "#666666",
+=======
+        "fullname": "นายขขข นะโม",
+        "shortname": "ขขข",
+        "color": "#74a5df",
+>>>>>>> Stashed changes
         "party": "อิสระ",
         "image": "/map/images/69-governor-candidates/2.png"
     },
     "3": {
         "id": "3",
         "number": 3,
+<<<<<<< Updated upstream
         "fullname": "นางสาวศิริพร อารีย์เลิศ",
         "shortname": "ศิริพร",
         "color": "#008989",
         "party": "สวัสดีกรุงเทพ",
+=======
+        "fullname": "นายกกก ดีใจ",
+        "shortname": "กกก",
+        "color": "#d9d9d9",
+        "party": "อิสระ",
+>>>>>>> Stashed changes
         "image": "/map/images/69-governor-candidates/3.png"
     },
     "4": {
         "id": "4",
         "number": 4,
+<<<<<<< Updated upstream
         "fullname": "นางนภาลักษณ์ พงษ์ศิริ",
         "shortname": "นภาลักษณ์",
         "color": "#E31E2B",
         "party": "พรรครวมใจไทย",
+=======
+        "fullname": "นายอนุบาล สบายดี",
+        "shortname": "อนุบาล",
+        "color": "#cde40b",
+        "party": "อิสระ",
+>>>>>>> Stashed changes
         "image": "/map/images/69-governor-candidates/4.png"
     },
     "5": {
         "id": "5",
         "number": 5,
+<<<<<<< Updated upstream
         "fullname": "นางสาวกุลธิดา วงศ์สว่าง",
         "shortname": "กุลธิดา",
         "color": "#666666",
         "party": "อิสระ",
+=======
+        "fullname": "นายจำนง แก้วตา",
+        "shortname": "จำนง",
+        "color": "#00c0ff",
+        "party": "พรรคผ่อน",
+>>>>>>> Stashed changes
         "image": "/map/images/69-governor-candidates/5.png"
     },
     "6": {
         "id": "6",
         "number": 6,
+<<<<<<< Updated upstream
         "fullname": "นางมณีรัตน์ เกื้อกูล",
         "shortname": "มณีรัตน์",
         "color": "#009543",
         "party": "พรรคเขียวเพื่อเมือง",
+=======
+        "fullname": "นายทวีสุข ทุกข์ไม่มี",
+        "shortname": "ทวีสุข",
+        "color": "#00a896",
+        "party": "อิสระ",
+>>>>>>> Stashed changes
         "image": "/map/images/69-governor-candidates/6.png"
     },
     "7": {
         "id": "7",
         "number": 7,
+<<<<<<< Updated upstream
         "fullname": "นางสาวเจนจิรา พัฒนาการ",
         "shortname": "เจนจิรา",
         "color": "#666666",
+=======
+        "fullname": "นายอ่าองค์ สุรศรี",
+        "shortname": "อ่าองค์",
+        "color": "#b400ff",
+>>>>>>> Stashed changes
         "party": "อิสระ",
         "image": "/map/images/69-governor-candidates/7.png"
     },
     "8": {
         "id": "8",
         "number": 8,
+<<<<<<< Updated upstream
         "fullname": "นางนิตยา บุญรักษ์",
         "shortname": "นิตยา",
         "color": "#FFD700",
         "party": "พรรครุ่งเรืองอนาคต",
+=======
+        "fullname": "นายสอง ยกกำลัง",
+        "shortname": "สอง",
+        "color": "#ca88f9",
+        "party": "อิสระ",
+>>>>>>> Stashed changes
         "image": "/map/images/69-governor-candidates/8.png"
     },
     "9": {
         "id": "9",
         "number": 9,
+<<<<<<< Updated upstream
         "fullname": "นางสาวพิมลพรรณ สุขจิตต์",
         "shortname": "พิมลพรรณ",
         "color": "#666666",
+=======
+        "fullname": "นายยี่สิบ แก่กล้า",
+        "shortname": "ยี่สิบ",
+        "color": "#5adc00",
+>>>>>>> Stashed changes
         "party": "อิสระ",
         "image": "/map/images/69-governor-candidates/9.png"
     },
     "10": {
         "id": "10",
         "number": 10,
+<<<<<<< Updated upstream
         "fullname": "นายวรวุฒิ เลิศปัญญา",
         "shortname": "วรวุฒิ",
         "color": "#800080",
         "party": "พรรคทางเลือกใหม่",
+=======
+        "fullname": "นางสมทรง สดใหม่",
+        "shortname": "สมทรง",
+        "color": "#ff7f00",
+        "party": "พรรคอะไรดี",
+>>>>>>> Stashed changes
         "image": "/map/images/69-governor-candidates/10.png"
     },
     "11": {
         "id": "11",
         "number": 11,
+<<<<<<< Updated upstream
         "fullname": "นายประมวล แสงทอง",
         "shortname": "ประมวล",
         "color": "#666666",
+=======
+        "fullname": "นายนมัสการ พระผู้เป็นเจ้า",
+        "shortname": "นมัสการ",
+        "color": "#fc5948",
+>>>>>>> Stashed changes
         "party": "อิสระ",
         "image": "/map/images/69-governor-candidates/11.png"
     },
     "12": {
         "id": "12",
         "number": 12,
+<<<<<<< Updated upstream
         "fullname": "นายธนวัฒน์ ปรีชากุล",
         "shortname": "ธนวัฒน์",
         "color": "#FF69B4",
         "party": "พรรคสีสันกรุงเทพ",
+=======
+        "fullname": "นางสุขสวัสดิ์ พระประแดง",
+        "shortname": "สุขสวัสดิ์",
+        "color": "#ffbb00",
+        "party": "พรรคเถอะ",
+>>>>>>> Stashed changes
         "image": "/map/images/69-governor-candidates/12.png"
     },
     "13": {
         "id": "13",
         "number": 13,
+<<<<<<< Updated upstream
         "fullname": "ดร.วรรณภา สุขสวัสดิ์",
         "shortname": "ดร.วรรณภา",
         "color": "#666666",
+=======
+        "fullname": "นายวงแหวน รอบนอก",
+        "shortname": "วงแหวน",
+        "color": "#48fcd8",
+>>>>>>> Stashed changes
         "party": "อิสระ",
         "image": "/map/images/69-governor-candidates/13.png"
     },
     "14": {
         "id": "14",
         "number": 14,
+<<<<<<< Updated upstream
         "fullname": "นายชัยชนะ พูนสวัสดิ์",
         "shortname": "ชัยชนะ",
         "color": "#000080",
         "party": "พรรคภูมิปัญญาไทย",
+=======
+        "fullname": "นางพุทธมณฑล สายสอง",
+        "shortname": "พุทธมณฑล",
+        "color": "#007dfe",
+        "party": "อิสระ",
+>>>>>>> Stashed changes
         "image": "/map/images/69-governor-candidates/14.png"
     },
     "15": {
         "id": "15",
         "number": 15,
+<<<<<<< Updated upstream
         "fullname": "นางสาววิไลลักษณ์ จิตพะยอม",
         "shortname": "วิไลลักษณ์",
         "color": "#666666",
+=======
+        "fullname": "นายลาดพร้าว วังหิน",
+        "shortname": "ลาดพร้าว",
+        "color": "#be905e",
+>>>>>>> Stashed changes
         "party": "อิสระ",
         "image": "/map/images/69-governor-candidates/15.png"
     },
     "16": {
         "id": "16",
         "number": 16,
+<<<<<<< Updated upstream
         "fullname": "นายกิตติศักดิ์ มีสุข",
         "shortname": "กิตติศักดิ์",
         "color": "#FF4500",
         "party": "พรรคพลังธรรมภิบาล",
+=======
+        "fullname": "นางสาวปิ้งย่าง หมูกระทะ",
+        "shortname": "ปิ้งย่าง",
+        "color": "#a3a42c",
+        "party": "อิสระ",
+>>>>>>> Stashed changes
         "image": "/map/images/69-governor-candidates/16.png"
     },
     "17": {
         "id": "17",
         "number": 17,
+<<<<<<< Updated upstream
         "fullname": "นายสิทธิโชค ยั่งยืน",
         "shortname": "สิทธิโชค",
         "color": "#666666",
+=======
+        "fullname": "นางสาวแอน ทองดี",
+        "shortname": "แอน",
+        "color": "#ff8c69",
+>>>>>>> Stashed changes
         "party": "อิสระ",
         "image": "/map/images/69-governor-candidates/17.png"
     },
     "18": {
         "id": "18",
         "number": 18,
+<<<<<<< Updated upstream
         "fullname": "นายเกรียงไกร นำชัย",
         "shortname": "เกรียงไกร",
         "color": "#4B0082",
         "party": "พรรคพิทักษ์เมือง",
+=======
+        "fullname": "นายบุศบง คงทน",
+        "shortname": "บุศบง",
+        "color": "#708090",
+        "party": "อิสระ",
+>>>>>>> Stashed changes
         "image": "/map/images/69-governor-candidates/18.png"
     },
     "19": {
