@@ -27,6 +27,8 @@ assets.forEach(({ source, serve }) => {
   app.use(serve, express.static(join(ROOT_DIR, source)));
 });
 
+app.use('/results', express.static(join(ROOT_DIR, 'build/results')));
+
 app.use('/_app', express.static(join(ROOT_DIR, 'apps/landing/build/_app')));
 
 app.get('/about', (_req, res) => {

@@ -39,7 +39,7 @@ assets.forEach(({ name, source, serve }) => {
 
 function copyAppEntryToRoutes(appPath: string, routes: string[] | undefined, appBuildDir: string) {
   const appEntry = join(appBuildDir, 'index.html');
-  if (!routes?.length || !existsSync(appEntry)) return;
+  if (!routes?.length) return;
 
   routes.forEach((route) => {
     const routePath = stripAppPath(route, appPath);
@@ -47,11 +47,15 @@ function copyAppEntryToRoutes(appPath: string, routes: string[] | undefined, app
 
     const routeHtml = join(appBuildDir, `${routePath}.html`);
     const routeIndex = join(appBuildDir, routePath, 'index.html');
+    const sourceHtml = existsSync(routeHtml) ? routeHtml : appEntry;
 
-    if (existsSync(routeHtml)) return;
+    if (!existsSync(sourceHtml)) return;
 
-    copySync(appEntry, routeHtml);
-    copySync(appEntry, routeIndex);
+    if (!existsSync(routeHtml)) {
+      copySync(sourceHtml, routeHtml);
+    }
+
+    copySync(sourceHtml, routeIndex);
   });
 }
 
