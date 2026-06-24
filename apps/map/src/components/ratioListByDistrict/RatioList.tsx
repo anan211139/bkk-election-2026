@@ -64,7 +64,7 @@ export default function RatioListTable({ onDistrictClick }: RatioListTableProps)
 	}
 
 	const sortedDistricts = useMemo(() => {
-		const _dist = preset.electionData.districts;
+		const _dist = [...preset.electionData.districts];
 		switch (sortType) {
 			case DistrictRatioSortType.ELIGIBLE:
 				return _dist.sort(
@@ -73,7 +73,7 @@ export default function RatioListTable({ onDistrictClick }: RatioListTableProps)
 			case DistrictRatioSortType.PROGRESS:
 				return _dist.sort(
 					(a: District, b: District) => 
-						((a.voting.progress || 100) - (b.voting.progress || 100)) * sortDirection
+						((a.voting.progress ?? 100) - (b.voting.progress ?? 100)) * sortDirection
 				);
 			case DistrictRatioSortType.NAME:
 			default:
