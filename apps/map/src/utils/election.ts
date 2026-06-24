@@ -33,12 +33,17 @@ export const isCouncilElectionData = (electionData: ElectionData) =>
 		district.voting.result.some((result) => result.candidateId.includes('-'))
 	);
 
+const hasCountingStatus = (voting: Voting) =>
+	voting.progress !== undefined || voting.pollingUnits !== undefined;
+
 export const getCountingStatusVoting = (
 	district: District,
 	electionData: ElectionData,
 	countingReferenceElectionData?: ElectionData
 ) => {
-	if (!isCouncilElectionData(electionData)) return district.voting;
+	if (!isCouncilElectionData(electionData) || hasCountingStatus(district.voting)) {
+		return district.voting;
+	}
 
 	return (
 		countingReferenceElectionData?.districts.find(
