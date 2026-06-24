@@ -1,4 +1,4 @@
-import { existsSync, rmSync, mkdirSync, copySync } from 'fs-extra';
+import { existsSync, rmSync, mkdirSync, copySync, writeFileSync } from 'fs-extra';
 import { join } from 'path';
 import apps from './apps.config.json';
 import assets from './assets.config.json';
@@ -36,6 +36,23 @@ assets.forEach(({ name, source, serve }) => {
   console.log(`Copying ${name} assets...`);
   copySync(join(ROOT_DIR, source), join(BUILD_DIR, serve));
 });
+
+writeFileSync(
+  join(BUILD_DIR, 'index.html'),
+  `<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="refresh" content="0; url=/map" />
+    <script>location.replace('/map');</script>
+    <title>Redirecting...</title>
+  </head>
+  <body>
+    <a href="/map">Go to map</a>
+  </body>
+</html>
+`
+);
 
 function copyAppEntryToRoutes(appPath: string, routes: string[] | undefined, appBuildDir: string) {
   const appEntry = join(appBuildDir, 'index.html');

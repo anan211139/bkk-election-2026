@@ -8,11 +8,13 @@
 
 <div class="max-w-screen-md mx-auto px-4 py-12 md:py-24 space-y-16 md:space-y-20 typo-b4">
 	<div class="flex flex-col items-center space-y-4">
-		<img
-			src="/static/images/bangkok-vote-logo-big.svg"
-			class="w-full max-w-md"
-			alt="Bangkok Vote 2026"
-		/>
+		<a href="/" aria-label="กลับไปหน้าแรก" class="w-full max-w-md">
+			<img
+				src="/static/images/bangkok-vote-logo-big.svg"
+				class="w-full"
+				alt="Bangkok Vote 2026"
+			/>
+		</a>
 		<p class="typo-h6 text-center">ข้อมูลเกี่ยวกับการเลือกตั้งผู้ว่าฯ และสมาชิกสภา กทม. ปี 2569</p>
 	</div>
 

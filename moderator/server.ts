@@ -64,7 +64,7 @@ app.get('/map', (_req, res) => {
 });
 
 app.get('/', (_req, res) => {
-  res.redirect('/map/map');
+  res.redirect('/map');
 });
 
 app.use((_req, res) => {
