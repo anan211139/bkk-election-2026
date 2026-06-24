@@ -64,40 +64,40 @@ export default function RatioListRowItem({
 					}
 				];
 			}, []);
-		
-			
-			if (prog.length == 0) {
-				return [
-					{
-						percent: 1,
-						color: DEFAULT_CANDIDATE_COLOR,
-						strip: showLiveStrip
-					}
-				] as ProgressItem[];
-			}
-			const sum: number = prog.reduce((prev, curr) => prev + curr.percent, 0)
 
-			if (sum != 1) {
-				const diff = 1 - sum;
-				if (prog[prog.length - 1].color.localeCompare(DEFAULT_CANDIDATE_COLOR) === 0) {
-					prog[prog.length - 1].percent += diff;
-				} else {
-					prog.push({
-						percent: diff,
-						color: DEFAULT_CANDIDATE_COLOR,
-						strip: showLiveStrip
-					} as ProgressItem)
+
+		if (prog.length == 0) {
+			return [
+				{
+					percent: 1,
+					color: DEFAULT_CANDIDATE_COLOR,
+					strip: showLiveStrip
 				}
-			}
+			] as ProgressItem[];
+		}
+		const sum: number = prog.reduce((prev, curr) => prev + curr.percent, 0)
 
-			return prog;
+		if (sum != 1) {
+			const diff = 1 - sum;
+			if (prog[prog.length - 1].color.localeCompare(DEFAULT_CANDIDATE_COLOR) === 0) {
+				prog[prog.length - 1].percent += diff;
+			} else {
+				prog.push({
+					percent: diff,
+					color: DEFAULT_CANDIDATE_COLOR,
+					strip: showLiveStrip
+				} as ProgressItem)
+			}
+		}
+
+		return prog;
 	}, [district, preset, showLiveStrip]);
 
 	useEffect(() => {
 		if (rowRef.current) {
 			setIsTooltipOnTop(
 				rowRef.current.offsetTop - (rowRef.current.parentElement?.scrollTop || 0) <
-					(rowRef.current.parentElement?.clientHeight || 0) / 2
+				(rowRef.current.parentElement?.clientHeight || 0) / 2
 			);
 		}
 	}, [isTooltipOpen]);
@@ -105,7 +105,7 @@ export default function RatioListRowItem({
 	return (
 		<div
 			class={`grid ${isLive ? 'grid-cols-3 md:grid-cols-6' : 'grid-cols-2 md:grid-cols-5'
-				} typo-u4 gap-x-4 gap-y-1 md:gap-8 hover:bg-white/20 items-center py-1`}
+				} typo-u4 gap-x-4 gap-y-1 md:gap-6 hover:bg-white/20 items-center py-1`}
 			onMouseOver={() => setIsTooltipOpen(true)}
 			onMouseLeave={() => setIsTooltipOpen(false)}
 			ref={rowRef}
@@ -120,9 +120,8 @@ export default function RatioListRowItem({
 				)
 			</div>
 			<div
-				class={`${
-					isLive ? 'col-span-3' : 'col-span-2 md:col-span-3'
-				} relative flex h-full items-center order-last md:order-3`}
+				class={`${isLive ? 'col-span-3' : 'col-span-2 md:col-span-3'
+					} relative flex h-full items-center order-last md:order-3`}
 			>
 				<div className="flex grow order-last md:order-3">
 					<Progress border="1px solid #000000" className="h-[10px]" progressItems={progressItems} />
@@ -136,9 +135,13 @@ export default function RatioListRowItem({
 				/>
 			</div>
 			{isInProgress && isLive && (
-				<div class="flex md:basis-2/12 gap-2 order-4">
-					{countingProgress.toFixed(1)}%
-					<Progress progressItems={countingProgressItems} className="h-1 md:h-2" />
+				<div className="flex items-center justify-end md:basis-2/12 gap-2 order-4 w-full">
+					<span className="text-right">
+						{countingProgress.toFixed(1)}%
+					</span>
+					<div className="w-[60px] shrink-0">
+						<Progress progressItems={countingProgressItems} className="h-1 md:h-2" />
+					</div>
 				</div>
 			)}
 		</div>
