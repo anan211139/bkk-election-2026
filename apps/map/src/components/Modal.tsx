@@ -40,7 +40,7 @@ const Modal: FunctionComponent<ModalProps> = ({
 
 				{imageUrl && (
 					<div
-						className="bg-gray lg:basis-1/3 w-full min-h-[100px] lg:h-full bg-cover bg-center relative grayscale opacity-40"
+						className="lg:basis-1/3 w-full min-h-[100px] lg:h-full bg-cover bg-center relative opacity-40"
 						style={`background-image: url('${imageUrl}')`}
 					>
 						<div
