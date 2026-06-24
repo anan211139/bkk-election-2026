@@ -11,7 +11,7 @@
 	<meta property="og:description" content={description} />
 	<meta
 		property="og:image"
-		content="https://bkkelection2022.wevis.info/static/images/main_og.png"
+		content="https://bangkokvote69.bangkok.go.th/static/images/main_og.png"
 	/>
 	<meta name="twitter:card" content="summary_large_image" />
 </svelte:head>

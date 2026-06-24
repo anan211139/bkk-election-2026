@@ -8,8 +8,8 @@ Monorepo for Bangkok Election 2022 projects managed by [Turborepo](https://turbo
 
 | Name       | URL                                        | `process.env.BUILD_ENV` |
 | ---------- | ------------------------------------------ | ----------------------- |
-| Production | https://bkkelection2022.wevis.info         | `PRODUCTION`            |
-| Staging    | https://staging.bkkelection2022.wevis.info | `STAGING`               |
+| Production | https://bangkokvote69.bangkok.go.th         | `PRODUCTION`            |
+| Staging    | https://staging.bangkokvote69.bangkok.go.th | `STAGING`               |
 | Local      | http://localhost:3000                      | -                       |
 
 ## 🍱 Project structure

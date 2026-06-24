@@ -7,7 +7,7 @@ import Script from 'next/script';
 import { loadUIComponents } from 'ui';
 import PlausibleProvider from 'next-plausible';
 
-const GA_TRACKING_ID = 'G-EENH5FGC5G';
+const GA_TRACKING_ID = 'G-FG59FRR2CB';
 
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
@@ -37,7 +37,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <PlausibleProvider
       enabled={process.env.BUILD_ENV === 'PRODUCTION'}
-      domain="bkkelection2022.wevis.info"
+      domain="bangkokvote69.bangkok.go.th"
       customDomain="https://analytics.punchup.world/js/plausible.js?origin="
     >
       <Script

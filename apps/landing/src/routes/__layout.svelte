@@ -13,7 +13,7 @@
 		<script
 			async
 			defer
-			data-domain="bkkelection2022.wevis.info"
+			data-domain="bangkokvote69.bangkok.go.th"
 			src="https://analytics.punchup.world/js/plausible.js"></script>
 	{/if}
 </svelte:head>

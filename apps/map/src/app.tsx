@@ -32,7 +32,7 @@ const App: FunctionComponent = () => {
 			script.async = true;
 			script.defer = true;
 			script.src = 'https://analytics.punchup.world/js/plausible.js';
-			script.setAttribute('data-domain', 'bkkelection2022.wevis.info');
+			script.setAttribute('data-domain', 'bangkokvote69.bangkok.go.th');
 			document.head.appendChild(script);
 		}
 	}, []);
