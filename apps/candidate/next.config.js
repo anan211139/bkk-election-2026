@@ -7,6 +7,7 @@ const nextConfig = {
     path: '',
   },
   env: {
+    BUILD_ENV: process.env.BUILD_ENV || '',
     NOCO_API_URL: process.env.NOCO_API_URL || '',
     NOCO_AUTH_TOKEN: process.env.NOCO_AUTH_TOKEN || '',
     COMING_SOON: process.env.COMING_SOON || false,

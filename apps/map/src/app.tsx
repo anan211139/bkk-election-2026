@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { FunctionComponent, useEffect } from 'react';
-import { loadUIComponents } from 'ui';
+import { loadGoogleAnalytics, loadUIComponents } from 'ui';
 import { dequal } from 'dequal';
 import Dashboard from './components/dashboard';
 import Footer from './components/Footer';
@@ -26,6 +26,7 @@ const App: FunctionComponent = () => {
 
 	useEffect(() => {
 		loadUIComponents();
+		loadGoogleAnalytics(import.meta.env.VITE_BUILD_ENV);
 
 		if (import.meta.env.VITE_BUILD_ENV == 'PRODUCTION') {
 			const script = document.createElement('script');

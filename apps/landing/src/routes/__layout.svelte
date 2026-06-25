@@ -1,10 +1,11 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import { loadUIComponents } from 'ui';
+	import { loadGoogleAnalytics, loadUIComponents } from 'ui';
 	import 'tailwind/style.css';
 
 	onMount(() => {
 		loadUIComponents();
+		loadGoogleAnalytics(import.meta.env.VITE_BUILD_ENV);
 	});
 </script>
 
@@ -18,10 +19,12 @@
 	{/if}
 </svelte:head>
 
-<div>
-	<ui-navbar />
-	<slot />
-	
+<div class="min-h-screen flex flex-col">
+	<ui-navbar></ui-navbar>
+	<main class="flex-1">
+		<slot />
+	</main>
+
 	<footer class="bg-black text-white flex justify-center">
 		<p class="font-body text-[12px] leading-[1.25] w-full max-w-screen-xl m-6 md:m-8 text-center text-white/80">
 			© 2026 กรุงเทพมหานคร | พัฒนาต่อยอดจากโครงการ
