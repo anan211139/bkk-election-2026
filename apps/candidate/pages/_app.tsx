@@ -4,11 +4,10 @@ import type { AppProps } from 'next/app';
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
 import {
-  loadGoogleAnalytics,
+  loadAnalyticsWithConsent,
   loadUIComponents,
   trackGoogleAnalyticsPageView,
 } from 'ui';
-import PlausibleProvider from 'next-plausible';
 
 const BUILD_ENV = process.env.BUILD_ENV;
 
@@ -17,13 +16,15 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   useEffect(() => {
     loadUIComponents();
-    loadGoogleAnalytics(BUILD_ENV);
+    return loadAnalyticsWithConsent(BUILD_ENV);
   }, []);
 
   useEffect(() => {
     const handleRouteChange = () => {
+      const pagePath = window.location.pathname + window.location.search;
+
       trackGoogleAnalyticsPageView(
-        window.location.pathname + window.location.search,
+        pagePath,
         BUILD_ENV
       );
     };
@@ -36,15 +37,11 @@ function MyApp({ Component, pageProps }: AppProps) {
   }, [router.events]);
 
   return (
-    <PlausibleProvider
-      enabled={BUILD_ENV === 'PRODUCTION'}
-      domain="bangkokvote69.bangkok.go.th"
-      customDomain="https://analytics.punchup.world/js/plausible.js?origin="
-    >
+    <>
       <ui-navbar />
       <Component {...pageProps} />
       {router.pathname !== '/[id]' && <ui-footer />}
-    </PlausibleProvider>
+    </>
   );
 }
 

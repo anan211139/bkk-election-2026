@@ -12,7 +12,14 @@ const Footer: Component = () => {
         <a href="https://bkkelection2022.wevis.info/" target="_blank" rel="noreferrer" class="ui-underline">
           Bangkok Election 2022
         </a>{' '}
-        โดย WeVis ภายใต้สัญญาอนุญาต CC BY-NC-SA 4.0
+        โดย WeVis ภายใต้สัญญาอนุญาต CC BY-NC-SA 4.0{' '}
+        <button
+          type="button"
+          data-analytics-consent-settings
+          class="ui-underline ui-text-white/80"
+        >
+          ตั้งค่าคุกกี้
+        </button>
       </p>
     </div>
   );

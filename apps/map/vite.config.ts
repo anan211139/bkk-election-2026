@@ -24,13 +24,19 @@ export default defineConfig({
 			name: 'serve-results-from-build',
 			configureServer(server) {
 				server.middlewares.use((request, response, next) => {
-					if (!request.url?.startsWith('/results/')) {
+					if (
+						!request.url?.startsWith('/results/') &&
+						!request.url?.startsWith('/media-api/')
+					) {
 						next();
 						return;
 					}
 
 					const requestedPath = decodeURIComponent(request.url.split('?')[0]);
-					const filePath = resolve(resultsDir, requestedPath.replace(/^\/results\//, ''));
+					const filePath = resolve(
+						resultsDir,
+						requestedPath.replace(/^\/(?:results|media-api)\//, '')
+					);
 					const isInsideResultsDir =
 						filePath === resultsDir || filePath.startsWith(`${resultsDir}${sep}`);
 
@@ -40,6 +46,10 @@ export default defineConfig({
 					}
 
 					response.setHeader('Content-Type', 'application/json; charset=utf-8');
+					response.setHeader(
+						'Cache-Control',
+						'public, max-age=1, s-maxage=3, stale-while-revalidate=30'
+					);
 					createReadStream(filePath).pipe(response);
 				});
 			}

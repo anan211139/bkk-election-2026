@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { FunctionComponent, useEffect } from 'react';
-import { loadGoogleAnalytics, loadUIComponents } from 'ui';
+import { loadAnalyticsWithConsent, loadUIComponents } from 'ui';
 import { dequal } from 'dequal';
 import Dashboard from './components/dashboard';
 import Footer from './components/Footer';
@@ -26,16 +26,7 @@ const App: FunctionComponent = () => {
 
 	useEffect(() => {
 		loadUIComponents();
-		loadGoogleAnalytics(import.meta.env.VITE_BUILD_ENV);
-
-		if (import.meta.env.VITE_BUILD_ENV == 'PRODUCTION') {
-			const script = document.createElement('script');
-			script.async = true;
-			script.defer = true;
-			script.src = 'https://analytics.punchup.world/js/plausible.js';
-			script.setAttribute('data-domain', 'bangkokvote69.bangkok.go.th');
-			document.head.appendChild(script);
-		}
+		return loadAnalyticsWithConsent(import.meta.env.VITE_BUILD_ENV);
 	}, []);
 
 	useEffect(() => {
@@ -158,7 +149,7 @@ async function getCountingReferenceElectionData(
 
 	if (!governorPresetIndex) return undefined;
 
-	return getJson<ElectionData>(governorPresetIndex.electionDataUrl, 'no-cache').catch((error) => {
+	return getJson<ElectionData>(governorPresetIndex.electionDataUrl).catch((error) => {
 		console.error('Failed to fetch counting reference election data', error);
 		return undefined;
 	});

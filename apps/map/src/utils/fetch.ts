@@ -27,7 +27,7 @@ export async function fetchPreset({
 	...rest
 }: PresetIndex): Promise<Preset> {
 	const [electionData, candidateMap] = await Promise.all([
-		getJson<ElectionData>(electionDataUrl, 'no-cache'),
+		getJson<ElectionData>(electionDataUrl),
 		getCandidateMap(candidateDataUrl)
 	]);
 

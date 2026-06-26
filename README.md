@@ -80,6 +80,23 @@ yarn run build
 
 Each project will be built and combined in root `/build` folder
 
+### Production cache headers
+
+The project now sets origin cache headers in `moderator/server.ts` when the
+moderator gateway is used as the origin:
+
+- Live result JSON (`/map/data/*.json`, `/results/*.json`, `/media-api/*.json`):
+  `Cache-Control: public, max-age=1, s-maxage=3, stale-while-revalidate=30`
+- Static assets (`/map/assets/*`, `/_next/static/*`, `/ui/*`, `/static/*`):
+  `Cache-Control: public, max-age=31536000, immutable`
+- Static pages (`/candidate/*`, `/about`, `/map/map`, `/map/slideshow`):
+  `Cache-Control: public, max-age=300, s-maxage=1800, stale-while-revalidate=86400`
+
+If production serves the root `/build` directory directly from Nginx, include
+`deploy/nginx-cache.conf` inside the Nginx `server` block so the VM sends the
+same headers. Cloudflare Cache Rules should still be configured at the
+Cloudflare layer to cache these paths at the edge.
+
 ## ⚽ Working style
 
 - We use Trunk-based development.

@@ -1,23 +1,13 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import { loadGoogleAnalytics, loadUIComponents } from 'ui';
+	import { loadAnalyticsWithConsent, loadUIComponents } from 'ui';
 	import 'tailwind/style.css';
 
 	onMount(() => {
 		loadUIComponents();
-		loadGoogleAnalytics(import.meta.env.VITE_BUILD_ENV);
+		return loadAnalyticsWithConsent(import.meta.env.VITE_BUILD_ENV);
 	});
 </script>
-
-<svelte:head>
-	{#if import.meta.env.VITE_BUILD_ENV === 'PRODUCTION'}
-		<script
-			async
-			defer
-			data-domain="bangkokvote69.bangkok.go.th"
-			src="https://analytics.punchup.world/js/plausible.js"></script>
-	{/if}
-</svelte:head>
 
 <div class="min-h-screen flex flex-col">
 	<ui-navbar></ui-navbar>

@@ -6,6 +6,8 @@ import assets from './assets.config.json';
 const ROOT_DIR = join(__dirname, '..');
 const BUILD_DIR = join(ROOT_DIR, 'build');
 const APPS_DIR = join(ROOT_DIR, 'apps');
+const DEPLOY_DIR = join(ROOT_DIR, 'deploy');
+const MEDIA_API_FILES = ['69-governor-electiondata.json', '69-bmc-electiondata.json'];
 
 if (existsSync(BUILD_DIR)) {
   rmSync(BUILD_DIR, { recursive: true });
@@ -36,6 +38,21 @@ assets.forEach(({ name, source, serve }) => {
   console.log(`Copying ${name} assets...`);
   copySync(join(ROOT_DIR, source), join(BUILD_DIR, serve));
 });
+
+console.log('Copying public media API files...');
+MEDIA_API_FILES.forEach((fileName) => {
+  const source = join(BUILD_DIR, 'map/data', fileName);
+
+  if (!existsSync(source)) return;
+
+  copySync(source, join(BUILD_DIR, 'results', fileName));
+  copySync(source, join(BUILD_DIR, 'media-api', fileName));
+});
+
+if (existsSync(join(DEPLOY_DIR, 'nginx-cache.conf'))) {
+  console.log('Copying server config snippets...');
+  copySync(join(DEPLOY_DIR, 'nginx-cache.conf'), join(BUILD_DIR, '_server/nginx-cache.conf'));
+}
 
 writeFileSync(
   join(BUILD_DIR, 'index.html'),

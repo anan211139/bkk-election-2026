@@ -14,6 +14,9 @@ const HTTP_REDIRECT_PORT = process.env.HTTP_REDIRECT_PORT
   : undefined;
 const ROOT_DIR = join(__dirname, '..');
 export const STATIC_PATH = '/static/';
+const LIVE_JSON_CACHE_CONTROL = 'public, max-age=1, s-maxage=3, stale-while-revalidate=30';
+const STATIC_ASSET_CACHE_CONTROL = 'public, max-age=31536000, immutable';
+const STATIC_PAGE_CACHE_CONTROL = 'public, max-age=300, s-maxage=1800, stale-while-revalidate=86400';
 
 const app = express();
 const httpsOptions = getHttpsOptions();
@@ -30,11 +33,26 @@ type AppConfig = {
   excludeFromProduction?: boolean;
 };
 
+app.use((req, res, next) => {
+  const path = req.path;
+
+  if (isLiveJsonPath(path)) {
+    res.setHeader('Cache-Control', LIVE_JSON_CACHE_CONTROL);
+  } else if (isStaticAssetPath(path)) {
+    res.setHeader('Cache-Control', STATIC_ASSET_CACHE_CONTROL);
+  } else if (isStaticPagePath(path)) {
+    res.setHeader('Cache-Control', STATIC_PAGE_CACHE_CONTROL);
+  }
+
+  next();
+});
+
 assets.forEach(({ source, serve }) => {
   app.use(serve, express.static(join(ROOT_DIR, source)));
 });
 
 app.use('/results', express.static(join(ROOT_DIR, 'build/results')));
+app.use('/media-api', express.static(join(ROOT_DIR, 'build/media-api')));
 
 app.use('/_app', express.static(join(ROOT_DIR, 'apps/landing/build/_app')));
 
@@ -113,6 +131,29 @@ function getLocalUrl(path: string) {
   const port = httpsOptions ? HTTPS_PORT : PORT;
 
   return `${protocol}://localhost:${port}${path}`;
+}
+
+function isLiveJsonPath(path: string) {
+  return /^\/(?:map\/data|results|media-api)\/.+\.json$/.test(path);
+}
+
+function isStaticAssetPath(path: string) {
+  return (
+    path.startsWith('/map/assets/') ||
+    path.startsWith('/_next/static/') ||
+    path.startsWith('/ui/') ||
+    path.startsWith('/static/')
+  );
+}
+
+function isStaticPagePath(path: string) {
+  return (
+    path === '/about' ||
+    path === '/map/map' ||
+    path === '/map/slideshow' ||
+    path === '/candidate' ||
+    path.startsWith('/candidate/')
+  );
 }
 
 function getHttpsOptions(): https.ServerOptions | undefined {

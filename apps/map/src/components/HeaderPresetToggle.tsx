@@ -21,7 +21,7 @@ const HeaderPresetToggle: FunctionComponent<PresetToggleProps> = ({ activeIndex,
 				<h1 className="font-heading typo-title map-results-title leading-tight">
 					{config.presetIndexes[activeIndex].isLive && <LiveBadge />} {preset.fullname}
 				</h1>
-				<p className="font-body text-[12px] xs:text-[14px] lg:text-[16px] mt-2 lg:mt-1">
+				<p className="font-body text-[18px] mt-2 ">
 					{preset.subtitle}{' '}
 					{preset.descriptionModal && (
 						<>
@@ -42,28 +42,31 @@ const HeaderPresetToggle: FunctionComponent<PresetToggleProps> = ({ activeIndex,
 							)}
 						</>
 					)}
-					<span className="map-preset-toggle" aria-label="เลือกชุดข้อมูล">
+					<span className="map-header-preset-toggle" aria-label="เลือกชุดข้อมูล">
 						{config.presetIndexes.map(({ shortname, electionDataUrl }, index) => {
-							const label = shortname.includes('ส.ก') ? 'สก.' : 'ผู้ว่า';
+							const isOrkOr = shortname.includes('ส.ก');
+							const label = isOrkOr ? 'ส.ก.' : 'ผู้ว่าฯ';
 							const isActive = index === activeIndex;
 
 							return (
-								<React.Fragment key={shortname}>
-									{index > 0 && <span className="px-1 text-black">|</span>}
-									<button
-										type="button"
-										disabled={!electionDataUrl}
-										aria-pressed={isActive}
-										onClick={() => {
-											if (electionDataUrl) onChange(index);
-										}}
-										className={`map-preset-toggle-button ${
-											isActive ? 'map-preset-toggle-button-active' : ''
-										} ${!electionDataUrl ? 'map-preset-toggle-button-disabled' : ''}`}
-									>
-										{label}
-									</button>
-								</React.Fragment>
+								<button
+									key={shortname}
+									type="button"
+									disabled={!electionDataUrl}
+									aria-pressed={isActive}
+									onClick={() => {
+										if (electionDataUrl) onChange(index);
+									}}
+									className={`map-header-preset-toggle-button ${
+										isActive ? 'map-header-preset-toggle-button-active' : ''
+									} ${!electionDataUrl ? 'map-header-preset-toggle-button-disabled' : ''}`}
+								>
+									<span
+										className="map-header-preset-toggle-color"
+										style={{ backgroundColor: isOrkOr ? '#f490ce' : '#48c277' }}
+									/>
+									{label}
+								</button>
 							);
 						})}
 					</span>
