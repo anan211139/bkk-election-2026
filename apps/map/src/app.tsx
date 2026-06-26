@@ -1,8 +1,8 @@
-import { useState } from 'react';
-import { FunctionComponent, useEffect } from 'react';
+import { FunctionComponent, useEffect, useState } from 'react';
 import { loadAnalyticsWithConsent, loadUIComponents } from 'ui';
 import { dequal } from 'dequal';
 import Dashboard from './components/dashboard';
+import ElectionCloseCountdownModal from './components/ElectionCloseCountdownModal';
 import Footer from './components/Footer';
 import Slideshow from './components/Slideshow';
 import { Config, configContext } from './contexts/config';
@@ -23,6 +23,7 @@ const App: FunctionComponent = () => {
 		useState<number>(DEFAULT_PRESET_INDEX);
 	const [preset, setPreset] = useState<Preset | null>(null);
 	const [isNewPresetLoading, setIsNewPresetLoading] = useState(true);
+	const [isCountdownModalOpen, setIsCountdownModalOpen] = useState(true);
 
 	useEffect(() => {
 		loadUIComponents();
@@ -126,6 +127,9 @@ const App: FunctionComponent = () => {
 								<div className="loader-spinner" />
 							</div>
 						</div>
+					)}
+					{isCountdownModalOpen && (
+						<ElectionCloseCountdownModal onClose={() => setIsCountdownModalOpen(false)} />
 					)}
 				</configContext.Provider>
 			</div>
