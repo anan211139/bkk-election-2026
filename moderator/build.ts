@@ -8,6 +8,12 @@ const BUILD_DIR = join(ROOT_DIR, 'build');
 const APPS_DIR = join(ROOT_DIR, 'apps');
 const DEPLOY_DIR = join(ROOT_DIR, 'deploy');
 const MEDIA_API_FILES = ['69-governor-electiondata.json', '69-bmc-electiondata.json'];
+const MAP_URL = '/map/map';
+const DEFAULT_META = {
+  title: 'ผลการเลือกตั้ง - Bangkok Vote 2569',
+  description: `'เลือกตั้งผู้ว่าฯ กทม. 2569' และ 'เลือกตั้ง ส.ก.' เช็กผลเลือกตั้ง กทม. แบบเรียลไทม์`,
+  image: 'https://bangkokvote69.bangkok.go.th/map/images/og.png',
+};
 
 if (existsSync(BUILD_DIR)) {
   rmSync(BUILD_DIR, { recursive: true });
@@ -56,19 +62,7 @@ if (existsSync(join(DEPLOY_DIR, 'nginx-cache.conf'))) {
 
 writeFileSync(
   join(BUILD_DIR, 'index.html'),
-  `<!doctype html>
-<html lang="th">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="refresh" content="0; url=/map" />
-    <script>location.replace('/map');</script>
-    <title>Redirecting...</title>
-  </head>
-  <body>
-    <a href="/map">Go to map</a>
-  </body>
-</html>
-`
+  createRedirectHtml(MAP_URL)
 );
 
 function copyAppEntryToRoutes(appPath: string, routes: string[] | undefined, appBuildDir: string) {
@@ -103,4 +97,27 @@ function stripAppPath(route: string, appPath: string) {
   return normalizedRoute.startsWith(`${normalizedAppPath}/`)
     ? normalizedRoute.slice(normalizedAppPath.length + 1)
     : normalizedRoute;
+}
+
+function createRedirectHtml(url: string) {
+  return `<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>${DEFAULT_META.title}</title>
+    <meta name="description" content="${DEFAULT_META.description}" />
+    <meta property="og:title" content="${DEFAULT_META.title}" />
+    <meta property="og:description" content="${DEFAULT_META.description}" />
+    <meta property="og:image" content="${DEFAULT_META.image}" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta http-equiv="refresh" content="0; url=${url}" />
+    <script>location.replace('${url}');</script>
+  </head>
+  <body>
+    <a href="${url}">${DEFAULT_META.title}</a>
+  </body>
+</html>
+`;
 }

@@ -2,7 +2,7 @@ import express from 'express';
 import http from 'http';
 import https from 'https';
 import httpProxy from 'http-proxy';
-import { readFileSync } from 'fs';
+import { existsSync, readFileSync } from 'fs';
 import { join } from 'path';
 import apps from './apps.config.json';
 import assets from './assets.config.json';
@@ -17,6 +17,12 @@ export const STATIC_PATH = '/static/';
 const LIVE_JSON_CACHE_CONTROL = 'public, max-age=1, s-maxage=3, stale-while-revalidate=30';
 const STATIC_ASSET_CACHE_CONTROL = 'public, max-age=31536000, immutable';
 const STATIC_PAGE_CACHE_CONTROL = 'public, max-age=300, s-maxage=1800, stale-while-revalidate=86400';
+const MAP_URL = '/map/map';
+const DEFAULT_META = {
+  title: 'ผลการเลือกตั้ง - Bangkok Vote 2569',
+  description: `'เลือกตั้งผู้ว่าฯ กทม. 2569' และ 'เลือกตั้ง ส.ก.' เช็กผลเลือกตั้ง กทม. แบบเรียลไทม์`,
+  image: 'https://bangkokvote69.bangkok.go.th/map/images/og.png',
+};
 
 const app = express();
 const httpsOptions = getHttpsOptions();
@@ -61,7 +67,7 @@ app.get('/about', (_req, res) => {
 });
 
 app.get('/map', (_req, res) => {
-  res.redirect('/map/map');
+  res.send(createRedirectHtml(MAP_URL));
 });
 
 (apps as AppConfig[]).forEach(({ path, routes, assets: assetPaths = [], port, websocket }) => {
@@ -89,10 +95,17 @@ app.get('/map', (_req, res) => {
 });
 
 app.get('/', (_req, res) => {
-  res.redirect('/map');
+  res.send(createRedirectHtml(MAP_URL));
 });
 
 app.use((_req, res) => {
+  const fallbackPage = join(ROOT_DIR, 'build/candidate/404.html');
+
+  if (existsSync(fallbackPage)) {
+    res.status(404).sendFile(fallbackPage);
+    return;
+  }
+
   res.status(404).send('Not found');
 });
 
@@ -173,4 +186,27 @@ function getHttpsOptions(): https.ServerOptions | undefined {
     cert: readFileSync(process.env.SSL_CERT_PATH),
     ca: process.env.SSL_CA_PATH ? readFileSync(process.env.SSL_CA_PATH) : undefined,
   };
+}
+
+function createRedirectHtml(url: string) {
+  return `<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>${DEFAULT_META.title}</title>
+    <meta name="description" content="${DEFAULT_META.description}" />
+    <meta property="og:title" content="${DEFAULT_META.title}" />
+    <meta property="og:description" content="${DEFAULT_META.description}" />
+    <meta property="og:image" content="${DEFAULT_META.image}" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta http-equiv="refresh" content="0; url=${url}" />
+    <script>location.replace('${url}');</script>
+  </head>
+  <body>
+    <a href="${url}">${DEFAULT_META.title}</a>
+  </body>
+</html>
+`;
 }

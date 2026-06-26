@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "tsnd --respawn server.ts",
-    "build": "ts-node build.ts"
+    "build": "ts-node build.ts",
+    "preview:build": "ts-node preview-build.ts"
   },
   "dependencies": {
     "candidate": "*",

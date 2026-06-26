@@ -1,7 +1,11 @@
+import FallbackPage from '../components/fallbackPage';
+
 export default function ErrorPage() {
   return (
-    <div className="h-screen flex p-[20px]">
-      <p className="typo-h1 m-auto ">oops something went wrong</p>
-    </div>
+    <FallbackPage
+      code="500"
+      title="เกิดข้อผิดพลาด"
+      description="ระบบกำลังมีปัญหาชั่วคราว ลองกลับไปดูผลการเลือกตั้งหรือข้อมูลผู้สมัครก่อนได้"
+    />
   );
 }

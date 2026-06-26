@@ -13,5 +13,6 @@
 		property="og:image"
 		content="https://bangkokvote69.bangkok.go.th/static/images/main_og.png"
 	/>
+	<meta property="og:type" content="website" />
 	<meta name="twitter:card" content="summary_large_image" />
 </svelte:head>

@@ -1,10 +1,11 @@
+import FallbackPage from '../components/fallbackPage';
+
 export default function NotFoundPage() {
   return (
-    <div className="h-screen flex ">
-      <div className="m-auto flex flex-col p-[20px]">
-        <p className="typo-h1 text-center ">404</p>
-        <p className="typo-h2 ">Page Not Found</p>
-      </div>
-    </div>
+    <FallbackPage
+      code="404"
+      title="ไม่พบหน้านี้"
+      description="ลิงก์นี้อาจถูกย้ายหรือไม่มีอยู่แล้ว เลือกไปหน้าผลการเลือกตั้งหรือข้อมูลผู้สมัครต่อได้เลย"
+    />
   );
 }

@@ -14,6 +14,7 @@
     "dev:landing": "turbo run dev:landing --parallel",
     "dev:candidate": "turbo run dev:candidate --parallel",
     "dev:map": "turbo run dev:map --parallel",
+    "preview:build": "yarn workspace moderator preview:build",
     "lint": "turbo run lint"
   },
   "devDependencies": {

@@ -105,7 +105,7 @@ const Home = ({
   return (
     <>
       <Metadata
-        title="ข้อมูลผู้สมัครผู้ว่าฯ กทม. และ ส.ก. 2565"
+        title="ข้อมูลผู้สมัครผู้ว่าฯ กทม. และ ส.ก. 2569"
         imageSrc="/candidate/static/images/og/01-1.jpg"
       />
       <div>
