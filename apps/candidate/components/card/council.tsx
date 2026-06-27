@@ -39,29 +39,9 @@ export function Council(props: PropsType) {
             alt={`council-${council.district}-${council.number}`}
           />
           <div className="flex flex-col ml-[20px] text-left flex-1">
-            <p className="typo-h3 my-[20px]">{council.name}</p>
-            <div className="grid grid-cols-1 md:grid-cols-5 mb-[20px] ">
-              <div className="flex flex-col border-b md:border-b-0 md:border-r border-[#dadada] md:mr-[15px] pb-[5px] md:pb-0 mb-[5px] md:mb-0">
-                <p className="typo-b3 mb-[2px]">สังกัด</p>
-                <p className="typo-b3 font-bold">{council.party}</p>
-              </div>
-              {/* <div className="flex flex-col border-b md:border-b-0 md:border-r border-[#dadada] md:mr-[15px] pb-[5px] md:pb-0 mb-[5px] md:mb-0">
-                <p className="typo-b3 mb-[2px]">อายุ</p>
-                <p className="typo-b3 font-bold">{council.age} ปี</p>
-              </div> */}
-              <div className="flex flex-col">
-                <p className="typo-b3 mb-[2px]">เพศ</p>
-                <p className="typo-b3 font-bold">{council.sex}</p>
-              </div>
-              {/* <div className="flex flex-col border-b md:border-b-0 md:border-r border-[#dadada] md:mr-[15px] pb-[5px] md:pb-0 mb-[5px] md:mb-0">
-                <p className="typo-b3 mb-[2px]">การศึกษา</p>
-                <p className="typo-b3 font-bold">{council.education}</p>
-              </div>
-              <div className="flex flex-col">
-                <p className="typo-b3 mb-[2px]">อาชีพ</p>
-                <p className="typo-b3 font-bold">{council.career}</p>
-              </div> */}
-            </div>
+            <p className="typo-h3 mt-[20px] mb-[10px]">{council.name}</p>
+            <p className="typo-b3">{council.party}</p>
+  
           </div>
         </div>
       </div>

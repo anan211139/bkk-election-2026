@@ -24,9 +24,12 @@ const Dashboard: FunctionComponent<DashboardProps> = ({ activePresetIndex, onPre
 	);
 
 	const haveTotalResult = preset.electionData.total.result.length > 0;
+	const mobileBottomPadding = activeViz === Visualization.MAP_WINNER ? 'pb-20' : 'pb-32';
 
 	return (
-		<div className="min-h-[83vh] flex-1 flex flex-col bg-black text-white px-5 pt-4 pb-2 lg:px-12 lg:py-8 space-y-1 overflow-hidden overflow-auto-shortscreen lg:space-y-6 pb-12 xs:pb-16 lg:pb-8">
+		<div
+			className={`min-h-[83vh] flex-1 flex flex-col bg-black text-white px-5 pt-4 ${mobileBottomPadding} lg:px-12 lg:py-8 space-y-1 overflow-y-auto overflow-x-hidden lg:overflow-hidden lg:space-y-6 lg:pb-8`}
+		>
 			<div className="flex flex-col lg:flex-row gap-3 md:gap-4 lg:border-b lg:pb-6 border-gray items-center mb-2">
 				<HeaderPresetToggle activeIndex={activePresetIndex} onChange={onPresetChange} />
 			</div>

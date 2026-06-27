@@ -6,7 +6,7 @@ import { useEffect, useState } from 'react';
 import Metadata from '../components/metadata';
 import { getCandidateOG } from '../utils/dict';
 import { useRouter } from 'next/router';
-import { getGovernor, governorList } from '../utils/candidateData';
+import { getGovernor } from '../utils/candidateData';
 
 interface PropsType {
   candidate: IGovernor;
@@ -62,14 +62,7 @@ export default function Governor({
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const govList = governorList.filter((gov) => !gov.disqualified);
-
-  const paths = govList.map((gov) => {
-    return {
-      params: { id: gov.id?.toString() || '' },
-    };
-  });
-  return { paths, fallback: false };
+  return { paths: [], fallback: false };
 };
 
 export const getStaticProps: GetStaticProps<PropsType> = async (context) => {

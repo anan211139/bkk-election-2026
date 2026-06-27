@@ -17,6 +17,7 @@ export function loadUIComponents() {
 }
 
 export const GOOGLE_ANALYTICS_ID = 'G-FG59FRR2CB';
+export const PLAUSIBLE_SCRIPT_URL = 'https://plausible.io/js/pa-cXX45NtKK22gafkcYZwUj.js';
 const ANALYTICS_CONSENT_KEY = 'bkk-election-analytics-consent';
 const ANALYTICS_CONSENT_GRANTED = 'granted';
 const ANALYTICS_CONSENT_DENIED = 'denied';
@@ -191,6 +192,8 @@ export function showAnalyticsConsentPreferences(force = true) {
 }
 
 export function loadAnalyticsWithConsent(buildEnv) {
+  loadPlausibleAnalytics(buildEnv);
+
   if (!hasAnalyticsConsent()) {
     showAnalyticsConsentBanner();
   }
@@ -209,6 +212,31 @@ export function loadAnalyticsWithConsent(buildEnv) {
       loadGoogleAnalytics(buildEnv);
     }
   });
+}
+
+export function loadPlausibleAnalytics(buildEnv) {
+  if (!isAnalyticsEnabled(buildEnv) || document.getElementById('plausible-script')) {
+    return;
+  }
+
+  if (typeof window.plausible !== 'function') {
+    window.plausible = function plausible() {
+      window.plausible.q = window.plausible.q || [];
+      window.plausible.q.push(arguments);
+    };
+  }
+
+  window.plausible.init = window.plausible.init || function init(options) {
+    window.plausible.o = options || {};
+  };
+
+  window.plausible.init();
+
+  const script = document.createElement('script');
+  script.id = 'plausible-script';
+  script.async = true;
+  script.src = PLAUSIBLE_SCRIPT_URL;
+  document.head.appendChild(script);
 }
 
 export function loadGoogleAnalytics(buildEnv) {

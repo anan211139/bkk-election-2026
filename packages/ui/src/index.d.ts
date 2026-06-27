@@ -1,5 +1,6 @@
 declare module 'ui' {
   export const GOOGLE_ANALYTICS_ID: string;
+  export const PLAUSIBLE_SCRIPT_URL: string;
   export function loadUIComponents(): void;
   export function isAnalyticsEnabled(buildEnv: string | undefined): boolean;
   export function hasAnalyticsConsent(): boolean;
@@ -13,6 +14,7 @@ declare module 'ui' {
   export function loadAnalyticsWithConsent(
     buildEnv: string | undefined
   ): void | (() => void);
+  export function loadPlausibleAnalytics(buildEnv: string | undefined): void;
   export function loadGoogleAnalytics(buildEnv: string | undefined): void;
   export function trackGoogleAnalyticsPageView(
     path: string,

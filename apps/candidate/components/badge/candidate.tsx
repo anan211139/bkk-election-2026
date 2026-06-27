@@ -1,8 +1,5 @@
 import { IGovernor } from '../../types/business';
 import candidataImg from '../../static/images/candidate.png';
-import playGrayWhite from '../../static/icons/play-gw.svg';
-import { useRouter } from 'next/router';
-import Link from 'next/link';
 interface PropType {
   candidate: IGovernor;
   fromHome?: boolean;
@@ -11,19 +8,7 @@ interface PropType {
 
 export function CandidateBadge({
   candidate,
-  fromHome,
-  clientSide,
 }: PropType) {
-  const router = useRouter();
-
-  const getHref = () => {
-    if (clientSide) {
-      return `/${candidate.id}`;
-    } else {
-      return `/${candidate.id}${fromHome ? `#c-${candidate.id}` : ''}`;
-    }
-  };
-
   return (
     <div className="h-full max-w-[250px] w-[43vw] md:w-[15vw] relative">
       {candidate.disqualified && (
@@ -31,42 +16,33 @@ export function CandidateBadge({
           {candidate.disqualified}
         </div>
       )}
-      <Link href={getHref()}>
-        <a
-          style={{
-            pointerEvents: candidate.disqualified ? 'none' : 'auto',
-            cursor: candidate.disqualified ? 'auto' : 'pointer',
-          }}
-        >
+      <div
+        id={`c-${candidate.number}`}
+        className={`h-full max-w-[250px] w-[43vw] md:w-[15vw] m-auto`}
+      >
+        {/* eslint-disable */}
+        <div className="w-[43vw] h-[43vw] md:w-[15vw] md:h-[15vw] max-w-[250px] max-h-[250px] relative">
+          <img
+            src={candidate.profile_pic || candidataImg.src}
+            alt="candidate"
+            className={`w-[43vw] h-[43vw] md:w-[15vw] md:h-[15vw] max-w-[250px] max-h-[250px]`}
+          />
+        </div>
+        <div className="flex text-white mt-[10px]">
           <div
-            id={`c-${candidate.number}`}
-            className={`h-full max-w-[250px] w-[43vw] md:w-[15vw] m-auto hover:cursor-pointer`}
+            style={{
+              color: candidate.color || '#666666',
+            }}
+            className="typo-h3 mr-[10px]"
           >
-            {/* eslint-disable */}
-            <div className="w-[43vw] h-[43vw] md:w-[15vw] md:h-[15vw] max-w-[250px] max-h-[250px] relative">
-              <img
-                src={candidate.profile_pic || candidataImg.src}
-                alt="candidate"
-                className={`w-[43vw] h-[43vw] md:w-[15vw] md:h-[15vw] max-w-[250px] max-h-[250px] hover:border border-white`}
-              />
-            </div>
-            <div className="flex text-white mt-[10px]">
-              <div
-                style={{
-                  color: candidate.color || '#666666',
-                }}
-                className="typo-h3 mr-[10px]"
-              >
-                <h3>{candidate.number}</h3>
-              </div>
-              <div className="flex flex-col justify-center">
-                <p className="typo-h8">{candidate.name}</p>
-                <p className="typo-b5 text-[#ffffff80]">{candidate.party}</p>
-              </div>
-            </div>
+            <h3>{candidate.number}</h3>
           </div>
-        </a>
-      </Link>
+          <div className="flex flex-col justify-center">
+            <p className="typo-h8">{candidate.name}</p>
+            <p className="typo-b5 text-[#ffffff80]">{candidate.party}</p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

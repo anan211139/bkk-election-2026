@@ -20,9 +20,7 @@ const TabsView: FunctionComponent<TabsViewProps> = ({ tabs, className = '' }) =>
 	}
 
 	return (
-		<div
-			className={`flex flex-col ${className} overflow-hidden overflow-visible-shortscreen flex-1 pb-2`}
-		>
+		<div className={`flex flex-col ${className} flex-none overflow-visible pb-2 lg:flex-1 lg:overflow-hidden`}>
 			<div className="flex flex-row">
 				{tabs.map(({ name }, index) => (
 					<button
@@ -36,7 +34,7 @@ const TabsView: FunctionComponent<TabsViewProps> = ({ tabs, className = '' }) =>
 					</button>
 				))}
 			</div>
-			<div className="flex flex-col flex-1 mt-2 md:mt-4 overflow-hidden">
+			<div className="flex flex-col flex-none mt-2 md:mt-4 overflow-visible lg:flex-1 lg:overflow-hidden">
 				{tabs[activeTabIndex]?.component}
 			</div>
 		</div>

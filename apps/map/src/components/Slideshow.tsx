@@ -204,7 +204,7 @@ const Slideshow: FunctionComponent<SlideshowProps> = ({ config }) => {
 
 	return (
 		<presetContext.Provider value={activePreset}>
-			<div className="flex-1 min-h-0 flex flex-col bg-black text-white overflow-hidden" style={{ fontFamily: 'Anuphan' }}>
+			<div className="flex-1 min-h-0 flex flex-col bg-black text-white overflow-y-auto overflow-x-hidden" style={{ fontFamily: 'Anuphan' }}>
 				{pageIndex === 0 ? (
 					<GovernorSlide
 						preset={governorPreset}
@@ -275,8 +275,8 @@ const SlideControls: FunctionComponent<SlideControlsProps> = ({ pageIndex, onPag
 						key={index}
 						type="button"
 						aria-label={`ไป slide ${index + 1}`}
-						className={`h-3 w-3 rounded-full border border-white/70 ${index === pageIndex ? 'bg-white' : 'bg-transparent hover:bg-white/40'
-							}`}
+						className="h-3 w-3 rounded-full border border-white/70 bg-transparent hover:bg-white/40"
+						style={{ backgroundColor: index === pageIndex ? '#ffffff' : 'transparent' }}
 						onClick={() => onPageChange(index)}
 					/>
 				))}
@@ -304,13 +304,13 @@ const GovernorSlide: FunctionComponent<GovernorSlideProps> = ({
 	pageIndex,
 	onPageChange
 }) => (
-	<div className="w-[90vw] mx-auto flex-1 min-h-0 py-5 lg:py-8 flex flex-col gap-4">
+	<div className="w-full max-w-[90vw] mx-auto flex-none min-h-max pt-5 pb-56 lg:py-8 flex flex-col gap-4">
 		<SlideHeader title={preset.fullname} pageIndex={pageIndex} onPageChange={onPageChange} />
-		<div className="grid grid-cols-1 lg:grid-cols-3 gap-5 flex-1 min-h-0">
-			<div className="lg:col-span-2 min-h-0 flex flex-col">
+		<div className="grid grid-cols-1 lg:grid-cols-3 gap-5 flex-1 items-start">
+			<div className="lg:col-span-2 min-h-max flex flex-col">
 				<GovernorCandidateColumns voting={preset.electionData.total} preset={preset} />
 			</div>
-			<div className="min-h-0 flex flex-col">
+			<div className="min-h-max flex flex-col">
 				<div className="h-[38vh] min-h-[260px] max-h-[420px] pt-3">
 					<h2 className="typo-h5 mb-2">ผู้ชนะรายเขต</h2>
 					<LazyloadContainer>
@@ -339,10 +339,10 @@ const GovernorCandidateColumns: FunctionComponent<GovernorCandidateColumnsProps>
 	);
 
 	return (
-		<div className="grid grid-cols-1 md:grid-cols-3 gap-x-6 gap-y-5 overflow-hidden">
+		<div className="grid grid-cols-1 xl:grid-cols-3 gap-x-6 gap-y-5 auto-rows-min">
 			{columns.map((columnResults, columnIndex) => (
-				<div key={columnIndex} className="min-w-0 overflow-hidden">
-					<div className="grid grid-cols-[24px,1fr,72px,44px] gap-1.5 typo-footer text-white/60 border-b border-white/30 pb-1 mb-2">
+				<div key={columnIndex} className="w-full min-w-0 min-h-max">
+					<div className={`${columnIndex === 0 ? 'grid' : 'hidden xl:grid'} grid-cols-[24px,1fr,72px,44px] gap-1.5 typo-footer text-white/60 border-b border-white/30 pb-1 mb-2`}>
 						<span>เบอร์</span>
 						<span>ชื่อผู้สมัคร</span>
 						<span className="text-right">คะแนนเสียง</span>
@@ -447,14 +447,14 @@ const CouncilGroupSlide: FunctionComponent<CouncilGroupSlideProps> = ({
 		.filter((district): district is District => Boolean(district));
 
 	return (
-		<div className="w-[90vw] mx-auto flex-1 min-h-0 py-5 lg:py-8 flex flex-col gap-4">
+		<div className="w-full max-w-[90vw] mx-auto flex-none min-h-max py-5 lg:py-8 flex flex-col gap-4">
 			<SlideHeader
 				title={preset.fullname}
 				subtitle={group.name}
 				pageIndex={pageIndex}
 				onPageChange={onPageChange}
 			/>
-			<div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-5 auto-rows-fr gap-3 flex-1 min-h-0 overflow-hidden">
+			<div className="w-full min-w-0 max-w-full grid grid-cols-1 sm:grid-cols-[repeat(2,minmax(0,1fr))] xl:grid-cols-[repeat(5,minmax(0,1fr))] auto-rows-min gap-3 flex-1 content-start">
 				{districts.map((district) => (
 					<DistrictResultCard key={district.name} district={district} preset={preset} />
 				))}
@@ -477,7 +477,7 @@ const DistrictResultCard: FunctionComponent<DistrictResultCardProps> = ({ distri
 	const complete = isVotingComplete(district.voting);
 
 	return (
-		<div className="border border-white/20 p-3 flex flex-col min-h-0 bg-white/[0.03] overflow-hidden">
+		<div className="w-full min-w-0 max-w-full border border-white/20 p-3 flex flex-col min-h-max bg-white/[0.03]">
 			<div className="flex items-start gap-2">
 				<div className="min-w-0 flex-1">
 					<h2 className="text-[18px] font-semibold leading-tight break-words">เขต{district.name}</h2>
@@ -519,8 +519,8 @@ const DistrictResultCard: FunctionComponent<DistrictResultCardProps> = ({ distri
 					const candidate = preset.candidateMap[result.candidateId];
 					return (
 						<div key={result.candidateId}>
-							<div className="grid grid-cols-[1fr,auto,auto] gap-2 items-baseline text-[13px] leading-tight">
-								<span className="font-semibold truncate">
+							<div className="grid grid-cols-[minmax(0,1fr),auto,auto] gap-2 items-baseline text-[13px] leading-tight">
+								<span className="min-w-0 font-semibold truncate">
 									{parseInt(result.candidateId.split('-').pop() || '0', 10)} - {candidate.fullname}
 								</span>
 								<span className="font-semibold">{formatNumber(result.count)}</span>
@@ -576,7 +576,7 @@ const CouncilPartyLegend: FunctionComponent<CouncilPartyLegendProps> = ({ distri
 	}, [districts, preset]);
 
 	return (
-		<div className="border-t border-white/20 pt-2 flex flex-wrap items-center gap-x-4 gap-y-1 typo-footer text-white/80">
+		<div className="w-full min-w-0 max-w-full border-t border-white/20 pt-2 flex flex-wrap items-center gap-x-4 gap-y-1 typo-footer text-white/80">
 			<span className="font-semibold text-white">สีสังกัด</span>
 			{labels.length === 0 ? (
 				<span className="text-white/60">ยังไม่มีคะแนนสำหรับแสดงสีสังกัด</span>
@@ -588,7 +588,7 @@ const CouncilPartyLegend: FunctionComponent<CouncilPartyLegendProps> = ({ distri
 					</div>
 				))
 			)}
-			<span className="ml-auto text-white/70">
+			<span className="ml-0 sm:ml-auto text-white/70">
 				อัปเดตล่าสุด {formatLastUpdatedAt(preset.electionData.lastUpdatedAt)}
 			</span>
 		</div>

@@ -41,17 +41,7 @@ export default function CandidateOverviewListRowItem({
 			<div class="flex flex-row mt-4">
 				<span class="basis-10">{candidate.number || '-'}</span>
 				<div class="flex-1 flex flex-row">
-					{preset.enableCandidateLink ? (
-						<a
-							href={`/candidate/${candidate.number}`}
-							target="_blank"
-							class="text-left font-semibold hover:underline"
-						>
-							{candidate.fullname}
-						</a>
-					) : (
-						<p class="text-left font-semibold">{candidate.fullname}</p>
-					)}
+					<p class="text-left font-semibold">{candidate.fullname}</p>
 					{candidate.descriptionModal && (
 						<>
 							<button
