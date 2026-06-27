@@ -5,7 +5,12 @@ import { ElectionData, PresetIndex } from '../models/election';
 
 const candidateJsonCache = new Map<string, Promise<CandidateMap>>();
 
-export async function fetchConfig(): Promise<Config> {
+interface FetchOptions {
+	cache?: RequestCache;
+	cacheBustIntervalMs?: number;
+}
+
+export async function fetchConfig(options?: FetchOptions): Promise<Config> {
 	return getJson<Config>(
 		(() => {
 			switch (import.meta.env.VITE_BUILD_ENV) {
@@ -16,18 +21,20 @@ export async function fetchConfig(): Promise<Config> {
 				default:
 					return '/map/data/dev.config.json';
 			}
-		})()
+		})(),
+		options
 	);
 }
 
-export async function fetchPreset({
-	electionDataUrl,
-	candidateDataUrl,
-	refreshIntervalMs,
-	...rest
-}: PresetIndex): Promise<Preset> {
+export async function fetchPreset(
+	{ electionDataUrl, candidateDataUrl, refreshIntervalMs, ...rest }: PresetIndex,
+	options?: FetchOptions
+): Promise<Preset> {
 	const [electionData, candidateMap] = await Promise.all([
-		getJson<ElectionData>(electionDataUrl),
+		getJson<ElectionData>(electionDataUrl, {
+			...options,
+			cacheBustIntervalMs: options?.cacheBustIntervalMs ?? refreshIntervalMs
+		}),
 		getCandidateMap(candidateDataUrl)
 	]);
 
@@ -49,10 +56,20 @@ async function getCandidateMap(url: string): Promise<CandidateMap> {
 	return candidateJsonCache.get(url) as Promise<CandidateMap>;
 }
 
-export async function getJson<T>(url: string, cache?: RequestCache): Promise<T> {
-	const response = await fetch(url, cache ? { cache } : undefined);
+export async function getJson<T>(url: string, options?: FetchOptions): Promise<T> {
+	const response = await fetch(getCacheBustedUrl(url, options?.cacheBustIntervalMs), {
+		cache: options?.cache
+	});
 	if (!response.ok) {
 		throw new Error(`Fail to fetch ${url}: ${response.status}`);
 	}
 	return response.json();
+}
+
+function getCacheBustedUrl(url: string, intervalMs?: number): string {
+	if (!intervalMs) return url;
+
+	const refreshBucket = Math.floor(Date.now() / intervalMs);
+	const separator = url.includes('?') ? '&' : '?';
+	return `${url}${separator}refresh=${refreshBucket}`;
 }

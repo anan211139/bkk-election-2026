@@ -152,7 +152,12 @@ const Slideshow: FunctionComponent<SlideshowProps> = ({ config }) => {
 			if (!governorPresetIndex || !bmcPresetIndex) return Promise.resolve();
 			if (showLoading) setIsLoading(true);
 
-			return Promise.all([fetchPreset(governorPresetIndex), fetchPreset(bmcPresetIndex)])
+			return Promise.all([
+				fetchPreset(governorPresetIndex, {
+					cacheBustIntervalMs: governorPresetIndex.refreshIntervalMs
+				}),
+				fetchPreset(bmcPresetIndex, { cacheBustIntervalMs: bmcPresetIndex.refreshIntervalMs })
+			])
 				.then(([newGovernorPreset, newBmcPreset]) => {
 					if (isCancelled) return;
 					setGovernorPreset(newGovernorPreset);

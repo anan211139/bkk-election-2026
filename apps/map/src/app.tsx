@@ -12,7 +12,7 @@ import { fetchConfig, fetchPreset, getJson } from './utils/fetch';
 import { isCouncilElectionData } from './utils/election';
 
 const DEFAULT_PRESET_INDEX = 0;
-// const CONFIG_REFRESH_INTERVAL = 60000;
+const CONFIG_REFRESH_INTERVAL = 60000;
 const MAX_REFRESH_JITTER_MS = 30000;
 
 const App: FunctionComponent = () => {
@@ -32,7 +32,7 @@ const App: FunctionComponent = () => {
 
 	useEffect(() => {
 		const loadConfig = () =>
-			fetchConfig().then((newConfig) => {
+			fetchConfig({ cacheBustIntervalMs: CONFIG_REFRESH_INTERVAL }).then((newConfig) => {
 				if (!dequal(config, newConfig)) {
 					setConfig(newConfig);
 
@@ -44,8 +44,8 @@ const App: FunctionComponent = () => {
 			});
 
 		loadConfig();
-		// const timer = setInterval(loadConfig, CONFIG_REFRESH_INTERVAL);
-		// return () => clearInterval(timer);
+		const timer = setInterval(loadConfig, CONFIG_REFRESH_INTERVAL);
+		return () => clearInterval(timer);
 	}, [config, configDefaultPresetIndex]);
 
 	useEffect(() => {
@@ -58,12 +58,13 @@ const App: FunctionComponent = () => {
 
 		const loadPreset = (showLoading: boolean) => {
 			if (showLoading) setIsNewPresetLoading(true);
-			return fetchPreset(presetIndex)
+			return fetchPreset(presetIndex, { cacheBustIntervalMs: refreshIntervalMs })
 				.then(async (newPreset) => {
 					const countingReferenceElectionData = await getCountingReferenceElectionData(
 						newPreset.electionData,
 						config.presetIndexes,
-						presetIndex
+						presetIndex,
+						refreshIntervalMs
 					);
 					const nextPreset = countingReferenceElectionData
 						? { ...newPreset, countingReferenceElectionData }
@@ -140,7 +141,8 @@ const App: FunctionComponent = () => {
 async function getCountingReferenceElectionData(
 	electionData: ElectionData,
 	presetIndexes: PresetIndex[],
-	activePresetIndex: PresetIndex
+	activePresetIndex: PresetIndex,
+	refreshIntervalMs?: number
 ) {
 	if (!isCouncilElectionData(electionData)) return undefined;
 
@@ -153,7 +155,9 @@ async function getCountingReferenceElectionData(
 
 	if (!governorPresetIndex) return undefined;
 
-	return getJson<ElectionData>(governorPresetIndex.electionDataUrl).catch((error) => {
+	return getJson<ElectionData>(governorPresetIndex.electionDataUrl, {
+		cacheBustIntervalMs: refreshIntervalMs
+	}).catch((error) => {
 		console.error('Failed to fetch counting reference election data', error);
 		return undefined;
 	});
