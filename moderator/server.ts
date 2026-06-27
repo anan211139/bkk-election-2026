@@ -201,6 +201,12 @@ function createRedirectHtml(url: string) {
     <meta property="og:image" content="${DEFAULT_META.image}" />
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
+    <!-- Privacy-friendly analytics by Plausible -->
+    <script async src="https://plausible.io/js/pa-cXX45NtKK22gafkcYZwUj.js"></script>
+    <script>
+      window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+      plausible.init()
+    </script>
     <meta http-equiv="refresh" content="0; url=${url}" />
     <script>location.replace('${url}');</script>
   </head>
