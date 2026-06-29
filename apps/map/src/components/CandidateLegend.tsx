@@ -7,6 +7,7 @@ import Modal from './Modal';
 interface CandidateLegendProps {
 	topCandidatePerDistrict: number;
 	children?: React.ReactNode;
+	showLabels?: boolean;
 }
 
 interface Label {
@@ -20,7 +21,8 @@ const OTHER_CANDIDATES_TEXT = 'อื่นๆ';
 
 export default function CandidateLegend({
 	topCandidatePerDistrict,
-	children
+	children,
+	showLabels = true
 }: CandidateLegendProps) {
 	const [showModal, setShowModal] = useState<boolean>(false);
 	const preset = useContext(presetContext);
@@ -58,16 +60,18 @@ export default function CandidateLegend({
 	return (
 		<div class="flex md:flex-col gap-2 md:w-full typo-u4 relative ml-auto mr-auto">
 			<div class="flex gap-2 md:gap-4 w-full md:w-1/2 ml-auto mr-auto md:mr-0">
-				<div class="ml-auto overflow-auto overflow-y-hidden hide-scrollbar pointer-events-auto">
-					<div class="flex flex-row gap-2">
-						{candidateLabels.map((label: Label) => (
-							<div class="flex shrink-0 gap-1 items-center">
-								<span class="w-2 md:w-3 h-2 md:h-3" style={{ backgroundColor: label.color }}></span>
-								{label.text}
-							</div>
-						))}
+				{showLabels && (
+					<div class="ml-auto overflow-auto overflow-y-hidden hide-scrollbar pointer-events-auto">
+						<div class="flex flex-row gap-2">
+							{candidateLabels.map((label: Label) => (
+								<div class="flex shrink-0 gap-1 items-center">
+									<span class="w-2 md:w-3 h-2 md:h-3" style={{ backgroundColor: label.color }}></span>
+									{label.text}
+								</div>
+							))}
+						</div>
 					</div>
-				</div>
+				)}
 				<div
 					class={`flex flex-row shrink-0 gap-2 md:hidden ${children || 'hidden'}`}
 					onClick={() => setShowModal(true)}

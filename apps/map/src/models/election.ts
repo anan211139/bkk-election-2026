@@ -6,6 +6,7 @@ export interface PresetIndex {
 	electionDataUrl: string;
 	candidateDataUrl: string;
 	refreshIntervalMs?: number;
+	refreshOffsetMs?: number;
 	isLive?: boolean;
 }
 

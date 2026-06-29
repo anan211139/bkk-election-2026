@@ -22,6 +22,7 @@ interface CandidateOverviewListProps {
 	votingData: Voting;
 	enableTopHighlight: boolean;
 	topHighlightCount?: number;
+	hidePartyColumn?: boolean;
 }
 
 // export default function CandidateOverviewList({votingData, enableTopHighlight = true}: CandidateOverviewListProps) {
@@ -31,7 +32,8 @@ export default function CandidateOverviewList({
 	district,
 	votingData,
 	enableTopHighlight = true,
-	topHighlightCount = TOP_CANDIDATE_DISPLAY
+	topHighlightCount = TOP_CANDIDATE_DISPLAY,
+	hidePartyColumn = false
 }: CandidateOverviewListProps) {
 	const preset = useContext(presetContext);
 	const [isBottom, setIsBottom] = useState<boolean>(false);
@@ -106,11 +108,6 @@ export default function CandidateOverviewList({
 			sortType: CandidateOverviewSortType.NAME
 		},
 		{
-			text: 'สังกัด',
-			className: 'text-right basis-4/12 hidden 2xl:block',
-			sortType: CandidateOverviewSortType.PARTY
-		},
-		{
 			text: 'คะแนนเสียง',
 			className: 'text-right basis-3/12 2xl:basis-2/12 whitespace-nowrap',
 			sortType: CandidateOverviewSortType.COUNT
@@ -172,6 +169,7 @@ export default function CandidateOverviewList({
 								index < topHighlightCount
 							}
 							votingData={votingData}
+							hidePartyColumn={hidePartyColumn}
 						/>
 					);
 				})}

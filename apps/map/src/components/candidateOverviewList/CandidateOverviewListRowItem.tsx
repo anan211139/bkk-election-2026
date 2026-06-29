@@ -12,6 +12,7 @@ interface Props {
 	topVoteCount: number;
 	isInTop: boolean;
 	votingData: Voting;
+	hidePartyColumn?: boolean;
 }
 
 const MIN_PROGRESS = 0.01;
@@ -21,7 +22,8 @@ export default function CandidateOverviewListRowItem({
 	topVoteCount,
 	count,
 	isInTop,
-	votingData
+	votingData,
+	hidePartyColumn = false
 }: Props) {
 	const preset = useContext(presetContext);
 	const [isDescriptionModalOpen, setIsDescriptionModalOpen] = useState(false);
@@ -60,9 +62,11 @@ export default function CandidateOverviewListRowItem({
 						</>
 					)}
 				</div>
-				<span class="text-right basis-3/12 hidden 2xl:block">
-					{candidate.party || PARTY_UNDEFINED_STRING}
-				</span>
+				{!hidePartyColumn && (
+					<span class="text-right basis-3/12 hidden 2xl:block">
+						{candidate.party || PARTY_UNDEFINED_STRING}
+					</span>
+				)}
 				<span class="text-right basis-3/12 2xl:basis-2/12">{count.toLocaleString()}</span>
 				<span class="text-right basis-2/12">
 					{/* {(result.count / votingData.totalVotes).toLocaleString( */}

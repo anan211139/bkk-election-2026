@@ -1,4 +1,5 @@
 import { District, ElectionData, Voting } from '../models/election';
+import type { Preset } from '../contexts/preset';
 
 export const COMPLETE_PROGRESS_THRESHOLD = 95;
 
@@ -32,6 +33,12 @@ export const isCouncilElectionData = (electionData: ElectionData) =>
 	electionData.districts.some((district) =>
 		district.voting.result.some((result) => result.candidateId.includes('-'))
 	);
+
+export const isCouncilPreset = (preset: Pick<Preset, 'candidateDataUrl' | 'fullname' | 'shortname' | 'electionData'>) =>
+	preset.candidateDataUrl.includes('bmc') ||
+	preset.fullname.includes('ส.ก.') ||
+	preset.shortname.includes('ส.ก.') ||
+	isCouncilElectionData(preset.electionData);
 
 const hasCountingStatus = (voting: Voting) =>
 	voting.progress !== undefined || voting.pollingUnits !== undefined;

@@ -7,7 +7,8 @@
 			"subtitle": "แสดงผลคะแนน : ",
 			"electionDataUrl": "/results/69-governor-electiondata.json",
 			"candidateDataUrl": "/map/data/69-governor-candidates.json",
-			"refreshIntervalMs": 300000
+			"refreshIntervalMs": 300000,
+			"refreshOffsetMs": 60000
 		},
 		{
 			"shortname": "คะแนน ส.ก. '69 โดย กทม.",
@@ -15,7 +16,8 @@
 			"subtitle": "แสดงผลคะแนน : ",
 			"electionDataUrl": "/results/69-bmc-electiondata.json",
 			"candidateDataUrl": "/map/data/69-bmc-candidates.json",
-			"refreshIntervalMs": 300000
+			"refreshIntervalMs": 300000,
+			"refreshOffsetMs": 180000
 		}
 	]
 }

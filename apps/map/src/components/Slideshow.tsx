@@ -156,36 +156,51 @@ const Slideshow: FunctionComponent<SlideshowProps> = ({ config }) => {
 				fetchPreset(governorPresetIndex, {
 					cacheBustIntervalMs: governorPresetIndex.refreshIntervalMs
 				}),
-				fetchPreset(bmcPresetIndex, { cacheBustIntervalMs: bmcPresetIndex.refreshIntervalMs })
+				fetchPreset(bmcPresetIndex, {
+					cacheBustIntervalMs: bmcPresetIndex.refreshIntervalMs
+				})
 			])
 				.then(([newGovernorPreset, newBmcPreset]) => {
 					if (isCancelled) return;
 					setGovernorPreset(newGovernorPreset);
 					setBmcPreset(newBmcPreset);
+					return [newGovernorPreset, newBmcPreset];
 				})
 				.catch((error) => {
 					console.error('Failed to fetch slideshow presets', error);
+					return null;
 				})
 				.finally(() => {
 					if (!isCancelled && showLoading) setIsLoading(false);
 				});
 		};
 
-		const scheduleRefresh = () => {
-			const refreshIntervalMs = Math.min(
-				governorPresetIndex?.refreshIntervalMs || PAGE_INTERVAL_MS,
-				bmcPresetIndex?.refreshIntervalMs || PAGE_INTERVAL_MS
-			);
+		const scheduleRefresh = (presets: Preset[]) => {
+			const refreshDelays = presets
+				.map((preset, index) => ({
+					preset,
+					presetIndex: index === 0 ? governorPresetIndex : bmcPresetIndex
+				}))
+				.filter(({ preset }) => preset.electionData.type !== ElectionDataType.Completed)
+				.map(({ presetIndex }) =>
+					getNextRefreshDelay(
+						presetIndex?.refreshIntervalMs || PAGE_INTERVAL_MS,
+						presetIndex?.refreshOffsetMs
+					)
+				);
+			const refreshDelayMs = Math.min(...refreshDelays);
+
+			if (!Number.isFinite(refreshDelayMs)) return;
 
 			timer = setTimeout(() => {
-				loadPresets(false).then(() => {
-					if (!isCancelled) scheduleRefresh();
+				loadPresets(false).then((newPresets) => {
+					if (!isCancelled && hasLivePreset(newPresets)) scheduleRefresh(newPresets);
 				});
-			}, refreshIntervalMs);
+			}, refreshDelayMs);
 		};
 
-		loadPresets(true).then(() => {
-			if (!isCancelled) scheduleRefresh();
+		loadPresets(true).then((newPresets) => {
+			if (!isCancelled && hasLivePreset(newPresets)) scheduleRefresh(newPresets);
 		});
 
 		return () => {
@@ -231,6 +246,21 @@ const Slideshow: FunctionComponent<SlideshowProps> = ({ config }) => {
 		</presetContext.Provider>
 	);
 };
+
+function hasLivePreset(presets: Preset[] | null | void): presets is Preset[] {
+	return Boolean(
+		presets?.some((preset) => preset.electionData.type !== ElectionDataType.Completed)
+	);
+}
+
+function getNextRefreshDelay(refreshIntervalMs: number, refreshOffsetMs = 0): number {
+	const elapsedMs = positiveModulo(Date.now() - refreshOffsetMs, refreshIntervalMs);
+	return elapsedMs === 0 ? refreshIntervalMs : refreshIntervalMs - elapsedMs;
+}
+
+function positiveModulo(value: number, divisor: number): number {
+	return ((value % divisor) + divisor) % divisor;
+}
 
 interface SlideHeaderProps {
 	title: string;
@@ -582,17 +612,6 @@ const CouncilPartyLegend: FunctionComponent<CouncilPartyLegendProps> = ({ distri
 
 	return (
 		<div className="w-full min-w-0 max-w-full border-t border-white/20 pt-2 flex flex-wrap items-center gap-x-4 gap-y-1 typo-footer text-white/80">
-			<span className="font-semibold text-white">สีสังกัด</span>
-			{labels.length === 0 ? (
-				<span className="text-white/60">ยังไม่มีคะแนนสำหรับแสดงสีสังกัด</span>
-			) : (
-				labels.map(({ color, label }) => (
-					<div key={`${color}-${label}`} className="flex items-center gap-1.5">
-						<span className="h-3 w-3 shrink-0" style={{ backgroundColor: color }} />
-						<span>{label}</span>
-					</div>
-				))
-			)}
 			<span className="ml-0 sm:ml-auto text-white/70">
 				อัปเดตล่าสุด {formatLastUpdatedAt(preset.electionData.lastUpdatedAt)}
 			</span>

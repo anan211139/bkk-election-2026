@@ -40,8 +40,6 @@ export function Council(props: PropsType) {
           />
           <div className="flex flex-col ml-[20px] text-left flex-1">
             <p className="typo-h3 mt-[20px] mb-[10px]">{council.name}</p>
-            <p className="typo-b3">{council.party}</p>
-  
           </div>
         </div>
       </div>

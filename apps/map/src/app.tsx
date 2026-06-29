@@ -13,7 +13,6 @@ import { isCouncilElectionData } from './utils/election';
 
 const DEFAULT_PRESET_INDEX = 0;
 const CONFIG_REFRESH_INTERVAL = 60000;
-const MAX_REFRESH_JITTER_MS = 30000;
 
 const App: FunctionComponent = () => {
 	const isSlideshow = location.pathname.replace(/\/$/, '') === '/map/slideshow';
@@ -52,19 +51,18 @@ const App: FunctionComponent = () => {
 		if (!config || isSlideshow) return;
 
 		const presetIndex = config.presetIndexes[activePresetIndex];
-		const { refreshIntervalMs } = presetIndex;
+		const { refreshIntervalMs, refreshOffsetMs } = presetIndex;
 		let isCancelled = false;
 		let timer: ReturnType<typeof setTimeout> | null = null;
 
 		const loadPreset = (showLoading: boolean) => {
 			if (showLoading) setIsNewPresetLoading(true);
-			return fetchPreset(presetIndex, { cacheBustIntervalMs: refreshIntervalMs })
+			return fetchPreset(presetIndex)
 				.then(async (newPreset) => {
 					const countingReferenceElectionData = await getCountingReferenceElectionData(
 						newPreset.electionData,
 						config.presetIndexes,
-						presetIndex,
-						refreshIntervalMs
+						presetIndex
 					);
 					const nextPreset = countingReferenceElectionData
 						? { ...newPreset, countingReferenceElectionData }
@@ -91,7 +89,7 @@ const App: FunctionComponent = () => {
 						scheduleRefresh();
 					}
 				});
-			}, getRefreshDelay(refreshIntervalMs));
+			}, getNextRefreshDelay(refreshIntervalMs, refreshOffsetMs));
 		};
 
 		loadPreset(true).then((newPreset) => {
@@ -141,8 +139,7 @@ const App: FunctionComponent = () => {
 async function getCountingReferenceElectionData(
 	electionData: ElectionData,
 	presetIndexes: PresetIndex[],
-	activePresetIndex: PresetIndex,
-	refreshIntervalMs?: number
+	activePresetIndex: PresetIndex
 ) {
 	if (!isCouncilElectionData(electionData)) return undefined;
 
@@ -156,15 +153,21 @@ async function getCountingReferenceElectionData(
 	if (!governorPresetIndex) return undefined;
 
 	return getJson<ElectionData>(governorPresetIndex.electionDataUrl, {
-		cacheBustIntervalMs: refreshIntervalMs
+		cacheBustIntervalMs: governorPresetIndex.refreshIntervalMs,
+		cacheBustOffsetMs: governorPresetIndex.refreshOffsetMs
 	}).catch((error) => {
 		console.error('Failed to fetch counting reference election data', error);
 		return undefined;
 	});
 }
 
-function getRefreshDelay(refreshIntervalMs: number): number {
-	return refreshIntervalMs + Math.floor(Math.random() * MAX_REFRESH_JITTER_MS);
+function getNextRefreshDelay(refreshIntervalMs: number, refreshOffsetMs = 0): number {
+	const elapsedMs = positiveModulo(Date.now() - refreshOffsetMs, refreshIntervalMs);
+	return elapsedMs === 0 ? refreshIntervalMs : refreshIntervalMs - elapsedMs;
+}
+
+function positiveModulo(value: number, divisor: number): number {
+	return ((value % divisor) + divisor) % divisor;
 }
 
 export default App;

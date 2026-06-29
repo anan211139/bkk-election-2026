@@ -1,6 +1,7 @@
 import React, { FunctionComponent, useContext } from 'react';
 import { presetContext } from '../contexts/preset';
 import { District, Voting } from '../models/election';
+import { isCouncilPreset } from '../utils/election';
 import CandidateOverviewList from './candidateOverviewList/CandidateOverviewList';
 import CountingSummary from './CountingSummary';
 import Modal from './Modal';
@@ -33,6 +34,7 @@ const DistrictModal: FunctionComponent<DistrictModalProps> = ({
 					votingData={votingData}
 					enableTopHighlight={true}
 					topHighlightCount={1}
+					hidePartyColumn={isCouncilPreset(preset)}
 				/>
 			</div>
 			{votingData.progress !== undefined && (

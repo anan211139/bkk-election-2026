@@ -6,6 +6,7 @@ import CandidateLegend from './CandidateLegend';
 import { District } from '../models/election';
 import DistrictModal from './DistrictModal';
 import LazyloadContainer from './LazyloadContainer';
+import { isCouncilPreset } from '../utils/election';
 
 interface DistrictVisualizationProps {
 	activeViz: Visualization;
@@ -24,11 +25,14 @@ const DistrictVisualization: FunctionComponent<DistrictVisualizationProps> = ({
 	if (!preset || preset.electionData.districts.length === 0) return <></>;
 
 	const candidateLegend = useMemo(() => {
+		const isCouncilElection = isCouncilPreset(preset);
+
 		return (
 			<CandidateLegend
 				topCandidatePerDistrict={
 					activeViz === Visualization.GRID_WINNER || activeViz === Visualization.MAP_WINNER ? 1 : 3
 				}
+				showLabels={!isCouncilElection}
 			>
 				{activeViz === Visualization.GRID_RATIO ? (
 					<div>
