@@ -26,10 +26,12 @@
   {
     "name": "landing",
     "path": "/",
-    "routes": ["/about"],
+    "routes": ["/about", "/summary"],
     "assets": [
+      "/.svelte-kit",
       "/@vite",
       "/@fs",
+      "/@id",
       "/src",
       "/node_modules"
     ],

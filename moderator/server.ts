@@ -147,7 +147,7 @@ function getLocalUrl(path: string) {
 }
 
 function isLiveJsonPath(path: string) {
-  return /^\/(?:map\/data|results|media-api)\/.+\.json$/.test(path);
+  return /^\/(?:data|map\/data|results|media-api)\/.+\.json$/.test(path);
 }
 
 function isStaticAssetPath(path: string) {
@@ -155,6 +155,7 @@ function isStaticAssetPath(path: string) {
     path.startsWith('/map/assets/') ||
     path.startsWith('/_next/static/') ||
     path.startsWith('/ui/') ||
+    path.startsWith('/data/') ||
     path.startsWith('/static/')
   );
 }
@@ -162,6 +163,7 @@ function isStaticAssetPath(path: string) {
 function isStaticPagePath(path: string) {
   return (
     path === '/about' ||
+    path === '/summary' ||
     path === '/map/map' ||
     path === '/map/slideshow' ||
     path === '/candidate' ||
